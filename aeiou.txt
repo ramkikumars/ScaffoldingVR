@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 .[v,fs=[,vf[
+=======
+dont reject
+>>>>>>> Stashed changes
