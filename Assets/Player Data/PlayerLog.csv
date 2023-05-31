@@ -1,0 +1,3453 @@
+Time,Controller,PlayerName,PlayMode,Exercise,Object Name,Action
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+15:48:17,SG,Pranav,Evaluation,Ex1,BH Grab 33,Grabbed
+15:48:20,SG,Pranav,Evaluation,Ex1,BH Grab 33,Released
+15:48:25,SG,Pranav,Evaluation,Ex1,BH Grab 33,Grabbed
+15:48:26,SG,Pranav,Evaluation,Ex1,BH Grab 33,Released
+15:48:26,SG,Pranav,Evaluation,Ex1,BH Grab 33,Grabbed
+15:48:33,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:35,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:37,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:37,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:38,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:40,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:41,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:43,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:45,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:47,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:49,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:48:51,SG,Pranav,Evaluation,Ex1,nut,Released
+15:48:53,SG,Pranav,Evaluation,Ex1,BH Grab 33,Released
+15:49:03,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:49:05,SG,Pranav,Evaluation,Ex1,nut,Released
+15:49:08,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:49:09,SG,Pranav,Evaluation,Ex1,nut,Released
+15:49:11,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:49:15,SG,Pranav,Evaluation,Ex1,nut,Released
+15:50:51,SG,Pranav,Evaluation,Ex1,BH Grab 33,Grabbed
+15:50:54,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:50:55,SG,Pranav,Evaluation,Ex1,nut,Released
+15:50:56,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:50:57,SG,Pranav,Evaluation,Ex1,nut,Released
+15:50:58,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:50:59,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:00,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:01,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:02,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:03,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:07,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:08,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:09,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:10,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:17,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:19,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:20,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+15:51:24,SG,Pranav,Evaluation,Ex1,nut,Released
+15:51:26,SG,Pranav,Evaluation,Ex1,BH Grab 33,Released
+15:52:40,SG,Pranav,Evaluation,Ex2,movable_cup12,Grabbed
+15:52:45,SG,Pranav,Evaluation,Ex2,movable_cup12,Released
+15:52:46,SG,Pranav,Evaluation,Ex2,movable_cup12,Grabbed
+15:52:49,SG,Pranav,Evaluation,Ex2,movable_cup12,Released
+15:52:50,SG,Pranav,Evaluation,Ex2,movable_cup12,Grabbed
+15:52:51,SG,Pranav,Evaluation,Ex2,movable_cup12,Released
+15:53:05,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:53:09,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:53:11,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:53:20,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:53:22,SG,Pranav,Evaluation,Ex2,movable_cup13,Grabbed
+15:53:25,SG,Pranav,Evaluation,Ex2,movable_cup13,Released
+15:53:26,SG,Pranav,Evaluation,Ex2,movable_cup13,Grabbed
+15:53:29,SG,Pranav,Evaluation,Ex2,movable_cup13,Released
+15:53:33,SG,Pranav,Evaluation,Ex2,movable_cup13,Grabbed
+15:53:36,SG,Pranav,Evaluation,Ex2,movable_cup13,Released
+15:53:38,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:53:43,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:53:46,SG,Pranav,Evaluation,Ex2,movable_cup22,Grabbed
+15:53:56,SG,Pranav,Evaluation,Ex2,movable_cup22,Released
+15:54:02,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:54:06,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:54:09,SG,Pranav,Evaluation,Ex2,movable_cup23,Grabbed
+15:54:11,SG,Pranav,Evaluation,Ex2,movable_cup23,Released
+15:54:14,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:54:20,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:54:22,SG,Pranav,Evaluation,Ex2,movable_cup32,Grabbed
+15:54:23,SG,Pranav,Evaluation,Ex2,movable_cup32,Released
+15:54:25,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:54:27,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:54:28,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+15:54:30,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+15:54:31,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+15:54:31,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+15:54:31,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+15:54:33,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+15:54:37,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:54:43,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:54:46,SG,Pranav,Evaluation,Ex2,movable_cup42,Grabbed
+15:54:48,SG,Pranav,Evaluation,Ex2,movable_cup42,Released
+15:54:53,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:54:53,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:54:55,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:55:03,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:55:05,SG,Pranav,Evaluation,Ex2,movable_cup43,Grabbed
+15:55:08,SG,Pranav,Evaluation,Ex2,movable_cup43,Released
+15:55:11,SG,Pranav,Evaluation,Ex2,movable_cup43,Grabbed
+15:55:13,SG,Pranav,Evaluation,Ex2,movable_cup43,Released
+15:55:20,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:55:24,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:55:27,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+15:55:31,SG,Pranav,Evaluation,Ex2,Hammer,Released
+15:55:40,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:36:07,VR,Vishal,Training,Ex1,movable_cup31,Grabbed
+11:36:09,VR,Vishal,Training,Ex1,movable_cup31,Released
+11:36:10,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:16,VR,Vishal,Training,Ex1,movable_cup31,Grabbed
+11:36:18,VR,Vishal,Training,Ex1,movable_cup31,Released
+11:36:18,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:19,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:22,VR,Vishal,Training,Ex1,movable_cup31,Grabbed
+11:36:22,VR,Vishal,Training,Ex1,movable_cup31,Released
+11:36:25,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:28,VR,Vishal,Training,Ex1,nut,Released
+11:36:29,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:30,VR,Vishal,Training,Ex1,nut,Released
+11:36:30,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:32,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:32,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:34,VR,Vishal,Training,Ex1,nut,Released
+11:36:34,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:34,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:38,VR,Vishal,Training,Ex1,nut,Released
+11:36:39,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:40,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:42,VR,Vishal,Training,Ex1,nut,Released
+11:36:42,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:43,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:43,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:47,VR,Vishal,Training,Ex1,nut,Released
+11:36:47,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:48,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:36:49,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:52,VR,Vishal,Training,Ex1,nut,Released
+11:36:52,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:36:54,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:54,VR,Vishal,Training,Ex1,nut,Released
+11:36:55,VR,Vishal,Training,Ex1,nut,Grabbed
+11:36:56,VR,Vishal,Training,Ex1,BH Grab 33,Grabbed
+11:37:09,VR,Vishal,Training,Ex1,nut,Released
+11:37:10,VR,Vishal,Training,Ex1,nut,Grabbed
+11:37:11,VR,Vishal,Training,Ex1,nut,Released
+11:37:11,VR,Vishal,Training,Ex1,BH Grab 33,Released
+11:49:12,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:20,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:22,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:23,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:25,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:27,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:27,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:28,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:29,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:31,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:34,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:38,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:40,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:41,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:51,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:54,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:49:58,VR,Vishal,Training,Ex2,movable_cup12,Grabbed
+11:49:59,VR,Vishal,Training,Ex2,movable_cup12,Released
+11:50:04,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:50:11,VR,Vishal,Training,Ex2,Hammer,Released
+11:50:12,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:50:14,VR,Vishal,Training,Ex2,Hammer,Released
+11:50:15,VR,Vishal,Training,Ex2,movable_cup13,Grabbed
+11:50:17,VR,Vishal,Training,Ex2,movable_cup13,Released
+11:50:18,VR,Vishal,Training,Ex2,movable_cup13,Grabbed
+11:50:18,VR,Vishal,Training,Ex2,movable_cup13,Released
+11:50:19,VR,Vishal,Training,Ex2,movable_cup13,Grabbed
+11:50:19,VR,Vishal,Training,Ex2,movable_cup13,Released
+11:50:20,VR,Vishal,Training,Ex2,movable_cup13,Grabbed
+11:50:23,VR,Vishal,Training,Ex2,movable_cup13,Released
+11:50:23,VR,Vishal,Training,Ex2,movable_cup13,Grabbed
+11:50:24,VR,Vishal,Training,Ex2,movable_cup13,Released
+11:50:26,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:50:38,VR,Vishal,Training,Ex2,Hammer,Released
+11:50:45,VR,Vishal,Training,Ex2,movable_cup22,Grabbed
+11:50:47,VR,Vishal,Training,Ex2,movable_cup22,Released
+11:50:48,VR,Vishal,Training,Ex2,movable_cup22,Grabbed
+11:50:49,VR,Vishal,Training,Ex2,movable_cup22,Released
+11:50:49,VR,Vishal,Training,Ex2,movable_cup22,Grabbed
+11:50:51,VR,Vishal,Training,Ex2,movable_cup22,Released
+11:50:53,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:50:58,VR,Vishal,Training,Ex2,Hammer,Released
+11:50:59,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:51:00,VR,Vishal,Training,Ex2,Hammer,Released
+11:51:02,VR,Vishal,Training,Ex2,movable_cup23,Grabbed
+11:51:04,VR,Vishal,Training,Ex2,movable_cup23,Released
+11:51:04,VR,Vishal,Training,Ex2,movable_cup23,Grabbed
+11:51:04,VR,Vishal,Training,Ex2,movable_cup23,Released
+11:51:06,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:51:10,VR,Vishal,Training,Ex2,Hammer,Released
+11:51:17,VR,Vishal,Training,Ex2,movable_cup32,Grabbed
+11:51:18,VR,Vishal,Training,Ex2,movable_cup32,Released
+11:51:19,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:51:24,VR,Vishal,Training,Ex2,Hammer,Released
+11:51:37,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:38,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:38,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:39,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:39,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:40,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:40,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:40,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:41,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:43,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:45,VR,Vishal,Training,Ex2,movable_cup33,Grabbed
+11:51:47,VR,Vishal,Training,Ex2,movable_cup33,Released
+11:51:49,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:51:55,VR,Vishal,Training,Ex2,Hammer,Released
+11:52:07,VR,Vishal,Training,Ex2,movable_cup42,Grabbed
+11:52:08,VR,Vishal,Training,Ex2,movable_cup42,Released
+11:52:08,VR,Vishal,Training,Ex2,movable_cup42,Grabbed
+11:52:12,VR,Vishal,Training,Ex2,movable_cup42,Released
+11:52:13,VR,Vishal,Training,Ex2,movable_cup42,Grabbed
+11:52:14,VR,Vishal,Training,Ex2,movable_cup42,Released
+11:52:14,VR,Vishal,Training,Ex2,movable_cup42,Grabbed
+11:52:16,VR,Vishal,Training,Ex2,movable_cup42,Released
+11:52:17,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:52:21,VR,Vishal,Training,Ex2,Hammer,Released
+11:52:23,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:23,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:24,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:24,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:24,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:25,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:25,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:26,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:26,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:27,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:27,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:28,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:28,VR,Vishal,Training,Ex2,movable_cup43,Grabbed
+11:52:31,VR,Vishal,Training,Ex2,movable_cup43,Released
+11:52:32,VR,Vishal,Training,Ex2,Hammer,Grabbed
+11:52:36,VR,Vishal,Training,Ex2,Hammer,Released
+14:14:30,SG,Sreejith,Training,Ex1,BH Grab 33,Grabbed
+14:14:41,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:01,SG,Sreejith,Training,Ex1,nut,Released
+14:15:05,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:07,SG,Sreejith,Training,Ex1,nut,Released
+14:15:10,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:11,SG,Sreejith,Training,Ex1,nut,Released
+14:15:14,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:14,SG,Sreejith,Training,Ex1,nut,Released
+14:15:18,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:18,SG,Sreejith,Training,Ex1,nut,Released
+14:15:34,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:15:35,SG,Sreejith,Training,Ex1,nut,Released
+14:15:45,SG,Sreejith,Training,Ex1,BH Grab 33,Released
+14:27:09,SG,Sreejith,Training,Ex1,BH Grab 33,Grabbed
+14:27:10,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:15,SG,Sreejith,Training,Ex1,nut,Released
+14:27:17,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:17,SG,Sreejith,Training,Ex1,nut,Released
+14:27:20,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:23,SG,Sreejith,Training,Ex1,nut,Released
+14:27:25,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:30,SG,Sreejith,Training,Ex1,nut,Released
+14:27:36,SG,Sreejith,Training,Ex1,BH Grab 33,Released
+14:27:41,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:42,SG,Sreejith,Training,Ex1,nut,Released
+14:27:47,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:51,SG,Sreejith,Training,Ex1,nut,Released
+14:27:53,SG,Sreejith,Training,Ex1,nut,Grabbed
+14:27:56,SG,Sreejith,Training,Ex1,nut,Released
+17:44:47,VR,RamTrial,Training,Ex1,BH Grab 33,Grabbed
+17:44:50,VR,RamTrial,Training,Ex1,nut,Grabbed
+17:44:51,VR,RamTrial,Training,Ex1,nut,Released
+17:44:52,VR,RamTrial,Training,Ex1,nut,Grabbed
+17:44:53,VR,RamTrial,Training,Ex1,nut,Released
+17:44:53,VR,RamTrial,Training,Ex1,nut,Grabbed
+17:44:54,VR,RamTrial,Training,Ex1,nut,Released
+17:44:54,VR,RamTrial,Training,Ex1,BH Grab 33,Released
+18:30:04,VR,RamTrial,Training,Ex1,BH Grab 33,Grabbed
+18:30:06,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:30:09,VR,RamTrial,Training,Ex1,nut,Released
+18:30:09,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:30:11,VR,RamTrial,Training,Ex1,nut,Released
+18:30:12,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:30:15,VR,RamTrial,Training,Ex1,nut,Released
+18:30:16,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:30:18,VR,RamTrial,Training,Ex1,nut,Released
+18:30:20,VR,RamTrial,Training,Ex1,BH Grab 33,Released
+18:41:21,VR,RamTrial,Training,Ex1,BH Grab 33,Grabbed
+18:41:24,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:41:27,VR,RamTrial,Training,Ex1,nut,Released
+18:41:28,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:41:30,VR,RamTrial,Training,Ex1,nut,Released
+18:41:31,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:41:34,VR,RamTrial,Training,Ex1,nut,Released
+18:41:35,VR,RamTrial,Training,Ex1,nut,Grabbed
+18:41:36,VR,RamTrial,Training,Ex1,nut,Released
+18:41:39,VR,RamTrial,Training,Ex1,BH Grab 33,Released
+18:43:36,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:40,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:40,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:41,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:42,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:42,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:43,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:43,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:44,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:44,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:45,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:46,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:46,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:43:47,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:43:48,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:43:54,VR,RamTrial,Training,Ex2,Hammer,Released
+18:43:56,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:00,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:00,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:01,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:01,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:03,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:03,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:04,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:05,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:05,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:06,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:44:06,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:44:10,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:44:14,VR,RamTrial,Training,Ex2,Hammer,Released
+18:44:22,VR,RamTrial,Training,Ex2,movable_cup22,Grabbed
+18:44:31,VR,RamTrial,Training,Ex2,movable_cup22,Released
+18:44:32,VR,RamTrial,Training,Ex2,movable_cup22,Grabbed
+18:44:34,VR,RamTrial,Training,Ex2,movable_cup22,Released
+18:44:35,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:44:38,VR,RamTrial,Training,Ex2,Hammer,Released
+18:44:40,VR,RamTrial,Training,Ex2,movable_cup23,Grabbed
+18:44:41,VR,RamTrial,Training,Ex2,movable_cup23,Released
+18:44:42,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:44:45,VR,RamTrial,Training,Ex2,Hammer,Released
+18:44:48,VR,RamTrial,Training,Ex2,movable_cup23,Grabbed
+18:44:51,VR,RamTrial,Training,Ex2,movable_cup23,Released
+18:44:51,VR,RamTrial,Training,Ex2,movable_cup23,Grabbed
+18:44:52,VR,RamTrial,Training,Ex2,movable_cup23,Released
+18:44:53,VR,RamTrial,Training,Ex2,movable_cup23,Grabbed
+18:44:53,VR,RamTrial,Training,Ex2,movable_cup23,Released
+18:44:54,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:44:58,VR,RamTrial,Training,Ex2,Hammer,Released
+18:45:06,VR,RamTrial,Training,Ex2,movable_cup32,Grabbed
+18:45:09,VR,RamTrial,Training,Ex2,movable_cup32,Released
+18:45:11,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:45:14,VR,RamTrial,Training,Ex2,Hammer,Released
+18:45:16,VR,RamTrial,Training,Ex2,movable_cup33,Grabbed
+18:45:19,VR,RamTrial,Training,Ex2,movable_cup33,Released
+18:45:20,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:45:24,VR,RamTrial,Training,Ex2,Hammer,Released
+18:45:34,VR,RamTrial,Training,Ex2,movable_cup42,Grabbed
+18:45:37,VR,RamTrial,Training,Ex2,movable_cup42,Released
+18:45:38,VR,RamTrial,Training,Ex2,movable_cup42,Grabbed
+18:45:39,VR,RamTrial,Training,Ex2,movable_cup42,Released
+18:45:39,VR,RamTrial,Training,Ex2,movable_cup42,Grabbed
+18:45:41,VR,RamTrial,Training,Ex2,movable_cup42,Released
+18:45:42,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:45:45,VR,RamTrial,Training,Ex2,Hammer,Released
+18:45:49,VR,RamTrial,Training,Ex2,movable_cup43,Grabbed
+18:45:51,VR,RamTrial,Training,Ex2,movable_cup43,Released
+18:45:52,VR,RamTrial,Training,Ex2,movable_cup43,Grabbed
+18:45:52,VR,RamTrial,Training,Ex2,movable_cup43,Released
+18:45:53,VR,RamTrial,Training,Ex2,movable_cup43,Grabbed
+18:45:54,VR,RamTrial,Training,Ex2,movable_cup43,Released
+18:45:56,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:46:00,VR,RamTrial,Training,Ex2,Hammer,Released
+18:56:04,VR,RamTrial,Training,Ex2,movable_cup12,Grabbed
+18:56:07,VR,RamTrial,Training,Ex2,movable_cup12,Released
+18:56:09,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:56:13,VR,RamTrial,Training,Ex2,Hammer,Released
+18:56:15,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:56:17,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:56:18,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:56:19,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:56:19,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:56:21,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:56:22,VR,RamTrial,Training,Ex2,movable_cup13,Grabbed
+18:56:22,VR,RamTrial,Training,Ex2,movable_cup13,Released
+18:56:25,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:56:30,VR,RamTrial,Training,Ex2,Hammer,Released
+18:56:36,VR,RamTrial,Training,Ex2,movable_cup22,Grabbed
+18:56:38,VR,RamTrial,Training,Ex2,movable_cup22,Released
+18:56:39,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:56:42,VR,RamTrial,Training,Ex2,Hammer,Released
+18:56:45,VR,RamTrial,Training,Ex2,movable_cup23,Grabbed
+18:56:46,VR,RamTrial,Training,Ex2,movable_cup23,Released
+18:56:48,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:56:51,VR,RamTrial,Training,Ex2,Hammer,Released
+18:56:58,VR,RamTrial,Training,Ex2,movable_cup32,Grabbed
+18:57:00,VR,RamTrial,Training,Ex2,movable_cup32,Released
+18:57:02,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:57:04,VR,RamTrial,Training,Ex2,Hammer,Released
+18:57:06,VR,RamTrial,Training,Ex2,movable_cup33,Grabbed
+18:57:08,VR,RamTrial,Training,Ex2,movable_cup33,Released
+18:57:10,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:57:21,VR,RamTrial,Training,Ex2,Hammer,Released
+18:57:27,VR,RamTrial,Training,Ex2,movable_cup42,Grabbed
+18:57:29,VR,RamTrial,Training,Ex2,movable_cup42,Released
+18:57:30,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:57:34,VR,RamTrial,Training,Ex2,Hammer,Released
+18:57:36,VR,RamTrial,Training,Ex2,movable_cup43,Grabbed
+18:57:38,VR,RamTrial,Training,Ex2,movable_cup43,Released
+18:57:39,VR,RamTrial,Training,Ex2,Hammer,Grabbed
+18:57:43,VR,RamTrial,Training,Ex2,Hammer,Released
+11:24:00,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:05,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:10,VR,Rithin,Training,Ex1,nut,Released
+11:24:10,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:24:22,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:23,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:25,VR,Rithin,Training,Ex1,nut,Released
+11:24:25,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:24:26,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:27,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:30,VR,Rithin,Training,Ex1,nut,Released
+11:24:30,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:24:31,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:31,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:33,VR,Rithin,Training,Ex1,nut,Released
+11:24:34,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:24:34,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:35,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:36,VR,Rithin,Training,Ex1,nut,Released
+11:24:36,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:24:52,VR,Rithin,Training,Ex1,BH Grab 33,Grabbed
+11:24:55,VR,Rithin,Training,Ex1,nut,Grabbed
+11:24:57,VR,Rithin,Training,Ex1,nut,Released
+11:24:57,VR,Rithin,Training,Ex1,BH Grab 33,Released
+11:37:25,VR,Rithin,Training,Ex2,movable_cup12,Grabbed
+11:37:30,VR,Rithin,Training,Ex2,movable_cup12,Released
+11:37:33,VR,Rithin,Training,Ex2,movable_cup12,Grabbed
+11:37:36,VR,Rithin,Training,Ex2,movable_cup12,Released
+11:37:38,VR,Rithin,Training,Ex2,movable_cup12,Grabbed
+11:37:41,VR,Rithin,Training,Ex2,movable_cup12,Released
+11:37:44,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:37:48,VR,Rithin,Training,Ex2,Hammer,Released
+11:37:52,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:37:56,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:37:57,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:37:59,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:38:00,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:38:03,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:38:04,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:38:05,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:38:06,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:38:08,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:38:09,VR,Rithin,Training,Ex2,movable_cup13,Grabbed
+11:38:10,VR,Rithin,Training,Ex2,movable_cup13,Released
+11:38:12,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:38:15,VR,Rithin,Training,Ex2,Hammer,Released
+11:38:20,VR,Rithin,Training,Ex2,movable_cup22,Grabbed
+11:38:23,VR,Rithin,Training,Ex2,movable_cup22,Released
+11:38:24,VR,Rithin,Training,Ex2,movable_cup22,Grabbed
+11:38:25,VR,Rithin,Training,Ex2,movable_cup22,Released
+11:38:26,VR,Rithin,Training,Ex2,movable_cup22,Grabbed
+11:38:31,VR,Rithin,Training,Ex2,movable_cup22,Released
+11:38:33,VR,Rithin,Training,Ex2,movable_cup22,Grabbed
+11:38:34,VR,Rithin,Training,Ex2,movable_cup22,Released
+11:38:36,VR,Rithin,Training,Ex2,movable_cup22,Grabbed
+11:38:38,VR,Rithin,Training,Ex2,movable_cup22,Released
+11:38:39,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:38:42,VR,Rithin,Training,Ex2,Hammer,Released
+11:38:48,VR,Rithin,Training,Ex2,movable_cup23,Grabbed
+11:38:52,VR,Rithin,Training,Ex2,movable_cup23,Released
+11:38:53,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:38:56,VR,Rithin,Training,Ex2,Hammer,Released
+11:39:06,VR,Rithin,Training,Ex2,movable_cup32,Grabbed
+11:39:09,VR,Rithin,Training,Ex2,movable_cup32,Released
+11:39:10,VR,Rithin,Training,Ex2,movable_cup32,Grabbed
+11:39:11,VR,Rithin,Training,Ex2,movable_cup32,Released
+11:39:13,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:39:15,VR,Rithin,Training,Ex2,Hammer,Released
+11:39:19,VR,Rithin,Training,Ex2,movable_cup33,Grabbed
+11:39:21,VR,Rithin,Training,Ex2,movable_cup33,Released
+11:39:21,VR,Rithin,Training,Ex2,movable_cup33,Grabbed
+11:39:22,VR,Rithin,Training,Ex2,movable_cup33,Released
+11:39:24,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:39:26,VR,Rithin,Training,Ex2,Hammer,Released
+11:39:37,VR,Rithin,Training,Ex2,movable_cup42,Grabbed
+11:39:40,VR,Rithin,Training,Ex2,movable_cup42,Released
+11:39:41,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:39:44,VR,Rithin,Training,Ex2,Hammer,Released
+11:39:46,VR,Rithin,Training,Ex2,movable_cup43,Grabbed
+11:39:49,VR,Rithin,Training,Ex2,movable_cup43,Released
+11:39:51,VR,Rithin,Training,Ex2,Hammer,Grabbed
+11:39:54,VR,Rithin,Training,Ex2,Hammer,Released
+12:05:07,SG,Pranav,Training,Ex1,nut,Grabbed
+12:05:11,SG,Pranav,Training,Ex1,nut,Released
+12:05:11,SG,Pranav,Training,Ex1,BH Grab 32,Grabbed
+12:05:18,SG,Pranav,Training,Ex1,BH Grab 32,Released
+12:05:19,SG,Pranav,Training,Ex1,BH Grab 32,Grabbed
+12:05:19,SG,Pranav,Training,Ex1,BH Grab 32,Released
+12:05:28,SG,Pranav,Training,Ex1,BH Grab 33,Grabbed
+12:05:31,SG,Pranav,Training,Ex1,BH Grab 33,Released
+12:05:32,SG,Pranav,Training,Ex1,BH Grab 33,Grabbed
+12:05:34,SG,Pranav,Training,Ex1,BH Grab 33,Released
+12:05:36,SG,Pranav,Training,Ex1,BH Grab 33,Grabbed
+12:05:37,SG,Pranav,Training,Ex1,BH Grab 33,Released
+12:05:40,SG,Pranav,Training,Ex1,nut,Grabbed
+12:12:31,SG,Pranav,Training,Ex1,BH Grab 33,Grabbed
+12:12:43,SG,Pranav,Training,Ex1,nut,Grabbed
+12:12:49,SG,Pranav,Training,Ex1,nut,Released
+12:13:02,SG,Pranav,Training,Ex1,BH Grab 33,Released
+12:28:21,SG,Pranav,Training,Ex2,movable_cup12,Grabbed
+12:28:21,SG,Pranav,Training,Ex2,movable_cup12,Released
+12:28:22,SG,Pranav,Training,Ex2,movable_cup12,Grabbed
+12:28:25,SG,Pranav,Training,Ex2,movable_cup12,Released
+12:28:29,SG,Pranav,Training,Ex2,movable_cup12,Grabbed
+12:28:38,SG,Pranav,Training,Ex2,movable_cup12,Released
+12:28:41,SG,Pranav,Training,Ex2,movable_cup12,Grabbed
+12:28:43,SG,Pranav,Training,Ex2,movable_cup12,Released
+12:28:50,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:28:59,SG,Pranav,Training,Ex2,Hammer,Released
+12:29:12,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:29:34,SG,Pranav,Training,Ex2,Hammer,Released
+12:29:41,SG,Pranav,Training,Ex2,movable_cup13,Grabbed
+12:29:52,SG,Pranav,Training,Ex2,movable_cup13,Released
+12:30:22,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:30:30,SG,Pranav,Training,Ex2,Hammer,Released
+12:30:33,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:30:38,SG,Pranav,Training,Ex2,Hammer,Released
+12:30:57,SG,Pranav,Training,Ex2,movable_cup22,Grabbed
+12:31:04,SG,Pranav,Training,Ex2,movable_cup22,Released
+12:31:09,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:31:19,SG,Pranav,Training,Ex2,Hammer,Released
+12:31:38,SG,Pranav,Training,Ex2,movable_cup23,Grabbed
+12:31:45,SG,Pranav,Training,Ex2,movable_cup23,Released
+12:32:07,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:32:11,SG,Pranav,Training,Ex2,Hammer,Released
+12:32:21,SG,Pranav,Training,Ex2,movable_cup32,Grabbed
+12:32:29,SG,Pranav,Training,Ex2,movable_cup32,Released
+12:32:32,SG,Pranav,Training,Ex2,movable_cup32,Grabbed
+12:32:43,SG,Pranav,Training,Ex2,movable_cup32,Released
+12:32:59,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:33:01,SG,Pranav,Training,Ex2,Hammer,Released
+12:33:03,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:33:07,SG,Pranav,Training,Ex2,Hammer,Released
+12:33:10,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:33:13,SG,Pranav,Training,Ex2,Hammer,Released
+12:33:20,SG,Pranav,Training,Ex2,movable_cup33,Grabbed
+12:33:29,SG,Pranav,Training,Ex2,movable_cup33,Released
+12:33:31,SG,Pranav,Training,Ex2,movable_cup33,Grabbed
+12:33:48,SG,Pranav,Training,Ex2,movable_cup33,Released
+12:33:50,SG,Pranav,Training,Ex2,movable_cup33,Grabbed
+12:33:52,SG,Pranav,Training,Ex2,movable_cup33,Released
+12:33:53,SG,Pranav,Training,Ex2,movable_cup33,Grabbed
+12:33:56,SG,Pranav,Training,Ex2,movable_cup33,Released
+12:34:05,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:34:08,SG,Pranav,Training,Ex2,Hammer,Released
+12:34:21,SG,Pranav,Training,Ex2,movable_cup42,Grabbed
+12:34:36,SG,Pranav,Training,Ex2,movable_cup42,Released
+12:34:41,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:34:49,SG,Pranav,Training,Ex2,Hammer,Released
+12:34:50,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:34:55,SG,Pranav,Training,Ex2,Hammer,Released
+12:34:58,SG,Pranav,Training,Ex2,movable_cup43,Grabbed
+12:35:03,SG,Pranav,Training,Ex2,movable_cup43,Released
+12:35:11,SG,Pranav,Training,Ex2,Hammer,Grabbed
+12:35:14,SG,Pranav,Training,Ex2,Hammer,Released
+14:47:36,VR,Tr,Training,Ex1,movable_cup32,Grabbed
+14:47:36,VR,Tr,Training,Ex1,movable_cup32,Released
+14:54:08,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:10,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:12,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:17,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:19,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:21,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:23,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:25,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:26,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:28,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:31,SG,Tr,Training,Ex1,movable_cup12,Grabbed
+14:54:34,SG,Tr,Training,Ex1,movable_cup12,Released
+14:54:39,SG,Tr,Training,Ex1,movable_cup13,Grabbed
+14:54:41,SG,Tr,Training,Ex1,movable_cup13,Released
+14:54:42,SG,Tr,Training,Ex1,movable_cup13,Grabbed
+14:54:44,SG,Tr,Training,Ex1,movable_cup13,Released
+14:54:48,SG,Tr,Training,Ex1,BH Grab 11,Grabbed
+14:54:54,SG,Tr,Training,Ex1,BH Grab 11,Released
+14:54:56,SG,Tr,Training,Ex1,BH Grab 11,Grabbed
+14:54:57,SG,Tr,Training,Ex1,BH Grab 11,Released
+14:54:58,SG,Tr,Training,Ex1,BH Grab 11,Grabbed
+14:54:59,SG,Tr,Training,Ex1,BH Grab 11,Released
+14:55:00,SG,Tr,Training,Ex1,BH Grab 11,Grabbed
+14:55:01,SG,Tr,Training,Ex1,BH Grab 11,Released
+14:55:02,SG,Tr,Training,Ex1,BH Grab 11,Grabbed
+14:55:03,SG,Tr,Training,Ex1,BH Grab 11,Released
+15:08:37,VR,Sandeep,Training,Ex1,BH Grab 33,Grabbed
+15:08:39,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:41,VR,Sandeep,Training,Ex1,nut,Released
+15:08:42,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:45,VR,Sandeep,Training,Ex1,nut,Released
+15:08:45,VR,Sandeep,Training,Ex1,BH Grab 33,Released
+15:08:46,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:48,VR,Sandeep,Training,Ex1,nut,Released
+15:08:50,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:52,VR,Sandeep,Training,Ex1,nut,Released
+15:08:53,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:55,VR,Sandeep,Training,Ex1,nut,Released
+15:08:56,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:08:58,VR,Sandeep,Training,Ex1,nut,Released
+15:08:59,VR,Sandeep,Training,Ex1,nut,Grabbed
+15:09:01,VR,Sandeep,Training,Ex1,nut,Released
+15:20:51,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:20:55,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:20:59,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:03,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:04,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:11,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:21,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:23,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:25,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:27,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:30,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:31,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:31,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:32,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:33,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:36,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:38,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:39,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:42,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:45,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:46,VR,Sandeep,Training,Ex2,movable_cup12,Grabbed
+15:21:46,VR,Sandeep,Training,Ex2,movable_cup12,Released
+15:21:50,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:05,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:06,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:06,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:10,VR,Sandeep,Training,Ex2,movable_cup13,Grabbed
+15:22:13,VR,Sandeep,Training,Ex2,movable_cup13,Released
+15:22:15,VR,Sandeep,Training,Ex2,movable_cup13,Grabbed
+15:22:17,VR,Sandeep,Training,Ex2,movable_cup13,Released
+15:22:18,VR,Sandeep,Training,Ex2,movable_cup13,Grabbed
+15:22:20,VR,Sandeep,Training,Ex2,movable_cup13,Released
+15:22:22,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:27,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:29,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:32,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:34,VR,Sandeep,Training,Ex2,movable_cup22,Grabbed
+15:22:36,VR,Sandeep,Training,Ex2,movable_cup22,Released
+15:22:38,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:39,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:40,VR,Sandeep,Training,Ex2,movable_cup22,Grabbed
+15:22:44,VR,Sandeep,Training,Ex2,movable_cup22,Released
+15:22:46,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:50,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:51,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:22:52,VR,Sandeep,Training,Ex2,Hammer,Released
+15:22:55,VR,Sandeep,Training,Ex2,movable_cup23,Grabbed
+15:22:56,VR,Sandeep,Training,Ex2,movable_cup23,Released
+15:22:59,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:03,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:05,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:09,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:10,VR,Sandeep,Training,Ex2,movable_cup32,Grabbed
+15:23:13,VR,Sandeep,Training,Ex2,movable_cup32,Released
+15:23:18,VR,Sandeep,Training,Ex2,movable_cup32,Grabbed
+15:23:19,VR,Sandeep,Training,Ex2,movable_cup32,Released
+15:23:20,VR,Sandeep,Training,Ex2,movable_cup32,Grabbed
+15:23:23,VR,Sandeep,Training,Ex2,movable_cup32,Released
+15:23:25,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:25,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:26,VR,Sandeep,Training,Ex2,movable_cup32,Grabbed
+15:23:28,VR,Sandeep,Training,Ex2,movable_cup32,Released
+15:23:29,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:32,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:33,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:34,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:35,VR,Sandeep,Training,Ex2,movable_cup33,Grabbed
+15:23:38,VR,Sandeep,Training,Ex2,movable_cup33,Released
+15:23:39,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:42,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:44,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:48,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:50,VR,Sandeep,Training,Ex2,movable_cup42,Grabbed
+15:23:52,VR,Sandeep,Training,Ex2,movable_cup42,Released
+15:23:53,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:23:56,VR,Sandeep,Training,Ex2,Hammer,Released
+15:23:58,VR,Sandeep,Training,Ex2,movable_cup43,Grabbed
+15:23:59,VR,Sandeep,Training,Ex2,movable_cup43,Released
+15:24:01,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:24:03,VR,Sandeep,Training,Ex2,Hammer,Released
+15:24:09,VR,Sandeep,Training,Ex2,Hammer,Grabbed
+15:24:11,VR,Sandeep,Training,Ex2,Hammer,Released
+15:57:41,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:57:41,VR,Prameswari,Training,Ex1,nut,Released
+15:58:11,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:12,VR,Prameswari,Training,Ex1,nut,Released
+15:58:12,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:13,VR,Prameswari,Training,Ex1,nut,Released
+15:58:15,VR,Prameswari,Training,Ex1,movable_cup31,Grabbed
+15:58:15,VR,Prameswari,Training,Ex1,movable_cup31,Released
+15:58:20,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:23,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:24,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:27,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:29,VR,Prameswari,Training,Ex1,nut,Released
+15:58:30,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:30,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:31,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:32,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:33,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:33,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:35,VR,Prameswari,Training,Ex1,nut,Released
+15:58:36,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:37,VR,Prameswari,Training,Ex1,nut,Released
+15:58:38,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:39,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:42,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:43,VR,Prameswari,Training,Ex1,nut,Released
+15:58:44,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:45,VR,Prameswari,Training,Ex1,nut,Released
+15:58:45,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:46,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:46,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:48,VR,Prameswari,Training,Ex1,nut,Released
+15:58:49,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:50,VR,Prameswari,Training,Ex1,nut,Released
+15:58:51,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:51,VR,Prameswari,Training,Ex1,nut,Released
+15:58:52,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:58:53,VR,Prameswari,Training,Ex1,nut,Released
+15:58:54,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:55,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:56,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:58:58,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+15:58:59,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:59:00,VR,Prameswari,Training,Ex1,nut,Released
+15:59:01,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:59:02,VR,Prameswari,Training,Ex1,nut,Released
+15:59:02,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:59:03,VR,Prameswari,Training,Ex1,nut,Released
+15:59:04,VR,Prameswari,Training,Ex1,nut,Grabbed
+15:59:04,VR,Prameswari,Training,Ex1,nut,Released
+15:59:06,VR,Prameswari,Training,Ex1,BH Grab 33,Grabbed
+15:59:07,VR,Prameswari,Training,Ex1,BH Grab 33,Released
+16:09:42,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:09:43,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:09:44,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:09:45,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:09:46,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:09:46,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:09:53,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:09:59,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:09,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:10,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:10,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:11,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:11,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:12,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:12,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:13,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:14,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:14,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:15,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:16,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:18,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:21,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:23,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:26,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:27,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:29,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:30,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:31,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:32,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:34,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:35,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:36,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:37,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:40,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:42,VR,Prameswari,Training,Ex2,movable_cup12,Grabbed
+16:10:44,VR,Prameswari,Training,Ex2,movable_cup12,Released
+16:10:46,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:10:53,VR,Prameswari,Training,Ex2,Hammer,Released
+16:10:55,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:10:56,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:06,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:07,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:08,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:10,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:11,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:11,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:11,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:13,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:13,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:15,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:15,VR,Prameswari,Training,Ex2,movable_cup13,Grabbed
+16:11:18,VR,Prameswari,Training,Ex2,movable_cup13,Released
+16:11:20,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:24,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:25,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:25,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:26,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:27,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:33,VR,Prameswari,Training,Ex2,movable_cup22,Grabbed
+16:11:35,VR,Prameswari,Training,Ex2,movable_cup22,Released
+16:11:37,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:39,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:42,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:42,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:43,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:44,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:45,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:11:46,VR,Prameswari,Training,Ex2,Hammer,Released
+16:11:51,VR,Prameswari,Training,Ex2,movable_cup23,Grabbed
+16:11:54,VR,Prameswari,Training,Ex2,movable_cup23,Released
+16:11:56,VR,Prameswari,Training,Ex2,movable_cup23,Grabbed
+16:11:58,VR,Prameswari,Training,Ex2,movable_cup23,Released
+16:12:00,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:03,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:04,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:05,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:15,VR,Prameswari,Training,Ex2,movable_cup33,Grabbed
+16:12:17,VR,Prameswari,Training,Ex2,movable_cup33,Released
+16:12:19,VR,Prameswari,Training,Ex2,movable_cup33,Grabbed
+16:12:21,VR,Prameswari,Training,Ex2,movable_cup33,Released
+16:12:26,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:30,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:30,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:30,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:31,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:34,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:36,VR,Prameswari,Training,Ex2,movable_cup33,Grabbed
+16:12:38,VR,Prameswari,Training,Ex2,movable_cup33,Released
+16:12:40,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:43,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:50,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:12:53,VR,Prameswari,Training,Ex2,Hammer,Released
+16:12:59,VR,Prameswari,Training,Ex2,movable_cup32,Grabbed
+16:13:01,VR,Prameswari,Training,Ex2,movable_cup32,Released
+16:13:02,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:13:06,VR,Prameswari,Training,Ex2,Hammer,Released
+16:13:09,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:13:13,VR,Prameswari,Training,Ex2,Hammer,Released
+16:13:14,VR,Prameswari,Training,Ex2,Hammer,Grabbed
+16:13:15,VR,Prameswari,Training,Ex2,Hammer,Released
+10:56:59,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+10:57:03,SG,Pranav,Evaluation,Ex1,nut,Released
+10:57:08,SG,Pranav,Evaluation,Ex1,BH Grab 33,Grabbed
+10:57:12,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+10:57:12,SG,Pranav,Evaluation,Ex1,nut,Released
+10:57:21,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+10:57:21,SG,Pranav,Evaluation,Ex1,nut,Released
+10:57:41,SG,Pranav,Evaluation,Ex1,nut,Grabbed
+10:57:47,SG,Pranav,Evaluation,Ex1,nut,Released
+10:57:49,SG,Pranav,Evaluation,Ex1,BH Grab 33,Released
+11:04:29,SG,Pranav,Evaluation,Ex2,movable_cup12,Grabbed
+11:04:31,SG,Pranav,Evaluation,Ex2,movable_cup12,Released
+11:04:40,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:04:42,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:04:44,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:04:45,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:04:47,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:04:53,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:05:02,SG,Pranav,Evaluation,Ex2,movable_cup13,Grabbed
+11:05:05,SG,Pranav,Evaluation,Ex2,movable_cup13,Released
+11:05:08,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:05:16,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:05:19,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:05:23,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:05:26,SG,Pranav,Evaluation,Ex2,movable_cup22,Grabbed
+11:05:28,SG,Pranav,Evaluation,Ex2,movable_cup22,Released
+11:05:33,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:05:35,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:05:41,SG,Pranav,Evaluation,Ex2,movable_cup23,Grabbed
+11:05:44,SG,Pranav,Evaluation,Ex2,movable_cup23,Released
+11:05:55,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:05:57,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:05:58,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:03,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:04,SG,Pranav,Evaluation,Ex2,movable_cup32,Grabbed
+11:06:08,SG,Pranav,Evaluation,Ex2,movable_cup32,Released
+11:06:11,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:11,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:18,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:21,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:22,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:25,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:26,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:27,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+11:06:30,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+11:06:32,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:34,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+11:06:41,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+11:06:48,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:06:53,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:06:58,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:07:04,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:07:05,SG,Pranav,Evaluation,Ex2,movable_cup33,Grabbed
+11:07:24,SG,Pranav,Evaluation,Ex2,movable_cup33,Released
+11:07:31,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:07:36,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:07:38,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:07:41,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:07:50,SG,Pranav,Evaluation,Ex2,movable_cup42,Grabbed
+11:08:03,SG,Pranav,Evaluation,Ex2,movable_cup42,Released
+11:08:16,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:08:19,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:08:25,SG,Pranav,Evaluation,Ex2,movable_cup43,Grabbed
+11:08:25,SG,Pranav,Evaluation,Ex2,movable_cup43,Released
+11:08:42,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:08:50,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:08:53,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:09:01,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:09:02,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:09:02,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:09:18,SG,Pranav,Evaluation,Ex2,Hammer,Grabbed
+11:09:24,SG,Pranav,Evaluation,Ex2,Hammer,Released
+11:17:06,VR,Rithin,Evaluation,Ex1,BH Grab 33,Grabbed
+11:17:07,VR,Rithin,Evaluation,Ex1,BH Grab 33,Released
+11:17:07,VR,Rithin,Evaluation,Ex1,BH Grab 33,Grabbed
+11:17:11,VR,Rithin,Evaluation,Ex1,nut,Grabbed
+11:17:16,VR,Rithin,Evaluation,Ex1,nut,Released
+11:17:19,VR,Rithin,Evaluation,Ex1,nut,Grabbed
+11:17:22,VR,Rithin,Evaluation,Ex1,nut,Released
+11:17:23,VR,Rithin,Evaluation,Ex1,nut,Grabbed
+11:17:25,VR,Rithin,Evaluation,Ex1,nut,Released
+11:17:26,VR,Rithin,Evaluation,Ex1,BH Grab 33,Released
+11:18:31,VR,Rithin,Evaluation,Ex2,movable_cup13,Grabbed
+11:18:33,VR,Rithin,Evaluation,Ex2,movable_cup13,Released
+11:18:33,VR,Rithin,Evaluation,Ex2,movable_cup13,Grabbed
+11:18:35,VR,Rithin,Evaluation,Ex2,movable_cup13,Released
+11:18:35,VR,Rithin,Evaluation,Ex2,movable_cup13,Grabbed
+11:18:38,VR,Rithin,Evaluation,Ex2,movable_cup13,Released
+11:18:39,VR,Rithin,Evaluation,Ex2,movable_cup13,Grabbed
+11:18:41,VR,Rithin,Evaluation,Ex2,movable_cup13,Released
+11:18:42,VR,Rithin,Evaluation,Ex2,movable_cup13,Grabbed
+11:18:44,VR,Rithin,Evaluation,Ex2,movable_cup13,Released
+11:18:49,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:18:54,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:18:57,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:18:58,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:19:03,VR,Rithin,Evaluation,Ex2,movable_cup12,Grabbed
+11:19:05,VR,Rithin,Evaluation,Ex2,movable_cup12,Released
+11:19:06,VR,Rithin,Evaluation,Ex2,movable_cup12,Grabbed
+11:19:08,VR,Rithin,Evaluation,Ex2,movable_cup12,Released
+11:19:09,VR,Rithin,Evaluation,Ex2,movable_cup12,Grabbed
+11:19:12,VR,Rithin,Evaluation,Ex2,movable_cup12,Released
+11:19:12,VR,Rithin,Evaluation,Ex2,movable_cup12,Grabbed
+11:19:14,VR,Rithin,Evaluation,Ex2,movable_cup12,Released
+11:19:15,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:19:20,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:19:23,VR,Rithin,Evaluation,Ex2,movable_cup23,Grabbed
+11:19:24,VR,Rithin,Evaluation,Ex2,movable_cup23,Released
+11:19:25,VR,Rithin,Evaluation,Ex2,movable_cup23,Grabbed
+11:19:26,VR,Rithin,Evaluation,Ex2,movable_cup23,Released
+11:19:27,VR,Rithin,Evaluation,Ex2,movable_cup23,Grabbed
+11:19:29,VR,Rithin,Evaluation,Ex2,movable_cup23,Released
+11:19:32,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:19:35,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:19:36,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:19:38,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:19:43,VR,Rithin,Evaluation,Ex2,movable_cup22,Grabbed
+11:19:45,VR,Rithin,Evaluation,Ex2,movable_cup22,Released
+11:19:46,VR,Rithin,Evaluation,Ex2,movable_cup22,Grabbed
+11:19:47,VR,Rithin,Evaluation,Ex2,movable_cup22,Released
+11:19:48,VR,Rithin,Evaluation,Ex2,movable_cup22,Grabbed
+11:19:49,VR,Rithin,Evaluation,Ex2,movable_cup22,Released
+11:19:51,VR,Rithin,Evaluation,Ex2,movable_cup22,Grabbed
+11:19:52,VR,Rithin,Evaluation,Ex2,movable_cup22,Released
+11:19:53,VR,Rithin,Evaluation,Ex2,movable_cup22,Grabbed
+11:19:53,VR,Rithin,Evaluation,Ex2,movable_cup22,Released
+11:19:55,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:19:58,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:20:00,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:20:07,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:20:10,VR,Rithin,Evaluation,Ex2,movable_cup33,Grabbed
+11:20:11,VR,Rithin,Evaluation,Ex2,movable_cup33,Released
+11:20:12,VR,Rithin,Evaluation,Ex2,movable_cup33,Grabbed
+11:20:13,VR,Rithin,Evaluation,Ex2,movable_cup33,Released
+11:20:14,VR,Rithin,Evaluation,Ex2,movable_cup33,Grabbed
+11:20:14,VR,Rithin,Evaluation,Ex2,movable_cup33,Released
+11:20:16,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:20:19,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:20:20,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:20:21,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:20:23,VR,Rithin,Evaluation,Ex2,movable_cup32,Grabbed
+11:20:24,VR,Rithin,Evaluation,Ex2,movable_cup32,Released
+11:20:25,VR,Rithin,Evaluation,Ex2,movable_cup32,Grabbed
+11:20:26,VR,Rithin,Evaluation,Ex2,movable_cup32,Released
+11:20:28,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:20:35,VR,Rithin,Evaluation,Ex2,Hammer,Released
+11:20:37,VR,Rithin,Evaluation,Ex2,movable_cup43,Grabbed
+11:20:46,VR,Rithin,Evaluation,Ex2,movable_cup43,Released
+11:20:47,VR,Rithin,Evaluation,Ex2,movable_cup43,Grabbed
+11:20:49,VR,Rithin,Evaluation,Ex2,movable_cup43,Released
+11:20:59,VR,Rithin,Evaluation,Ex2,movable_cup43,Grabbed
+11:21:00,VR,Rithin,Evaluation,Ex2,movable_cup43,Released
+11:21:01,VR,Rithin,Evaluation,Ex2,movable_cup43,Grabbed
+11:21:03,VR,Rithin,Evaluation,Ex2,movable_cup43,Released
+11:21:04,VR,Rithin,Evaluation,Ex2,movable_cup43,Grabbed
+11:21:05,VR,Rithin,Evaluation,Ex2,movable_cup43,Released
+11:21:07,VR,Rithin,Evaluation,Ex2,Hammer,Grabbed
+11:21:10,VR,Rithin,Evaluation,Ex2,Hammer,Released
+16:01:30,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Grabbed
+16:01:31,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:33,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:01:34,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:35,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:01:35,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Released
+16:01:36,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:36,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Grabbed
+16:01:37,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Released
+16:01:37,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:01:38,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:38,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Grabbed
+16:01:39,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:01:40,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:42,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:01:42,VR,Pramesswari,Evaluation,Ex1,BH Grab 33,Released
+16:01:56,VR,Pramesswari,Evaluation,Ex1,BH Grab 44,Grabbed
+16:01:56,VR,Pramesswari,Evaluation,Ex1,BH Grab 44,Released
+16:01:57,VR,Pramesswari,Evaluation,Ex1,nut,Grabbed
+16:01:57,VR,Pramesswari,Evaluation,Ex1,nut,Released
+16:03:04,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:07,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:08,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:09,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:09,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:10,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:11,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:13,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:14,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:15,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:15,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:16,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:19,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:20,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:20,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:21,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:22,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:23,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:24,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:25,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:25,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:27,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:27,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:28,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:30,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:31,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:32,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:33,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:34,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:37,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:38,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:39,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:40,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:40,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:40,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:41,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:43,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:43,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:44,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:45,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:03:46,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:03:52,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:03,VR,Pramesswari,Evaluation,Ex2,movable_cup12,Grabbed
+16:04:05,VR,Pramesswari,Evaluation,Ex2,movable_cup12,Released
+16:04:05,VR,Pramesswari,Evaluation,Ex2,movable_cup12,Grabbed
+16:04:06,VR,Pramesswari,Evaluation,Ex2,movable_cup12,Released
+16:04:14,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:04:24,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:04:26,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:04:26,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:04:28,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:04:28,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:04:28,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:04:29,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:04:33,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:04:36,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:36,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:04:38,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:38,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:04:42,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:43,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:04:44,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:45,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Grabbed
+16:04:46,VR,Pramesswari,Evaluation,Ex2,movable_cup13,Released
+16:04:56,VR,Pramesswari,Evaluation,Ex2,movable_cup23,Grabbed
+16:05:01,VR,Pramesswari,Evaluation,Ex2,movable_cup23,Released
+16:05:04,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:07,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:08,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:11,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:12,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:14,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:19,VR,Pramesswari,Evaluation,Ex2,movable_cup22,Grabbed
+16:05:21,VR,Pramesswari,Evaluation,Ex2,movable_cup22,Released
+16:05:22,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:25,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:26,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:28,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:29,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:31,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:32,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:33,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:34,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:37,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:41,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Grabbed
+16:05:43,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Released
+16:05:44,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Grabbed
+16:05:45,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Released
+16:05:46,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Grabbed
+16:05:48,VR,Pramesswari,Evaluation,Ex2,movable_cup32,Released
+16:05:49,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:55,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:55,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:05:58,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:05:58,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:06:01,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:06:01,VR,Pramesswari,Evaluation,Ex2,movable_cup42,Grabbed
+16:06:04,VR,Pramesswari,Evaluation,Ex2,movable_cup42,Released
+16:06:06,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:06:10,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:06:11,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:06:12,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:06:13,VR,Pramesswari,Evaluation,Ex2,movable_cup41,Grabbed
+16:06:15,VR,Pramesswari,Evaluation,Ex2,movable_cup41,Released
+16:06:19,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:20,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:21,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:22,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:23,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:24,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:25,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:26,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:26,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:29,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:30,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:32,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:33,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:34,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:35,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:36,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:37,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:39,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:40,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:41,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:42,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:47,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:48,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Grabbed
+16:06:50,VR,Pramesswari,Evaluation,Ex2,movable_cup43,Released
+16:06:52,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:06:54,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+16:06:57,VR,Pramesswari,Evaluation,Ex2,movable_cup33,Grabbed
+16:06:59,VR,Pramesswari,Evaluation,Ex2,movable_cup33,Released
+16:07:00,VR,Pramesswari,Evaluation,Ex2,movable_cup33,Grabbed
+16:07:02,VR,Pramesswari,Evaluation,Ex2,movable_cup33,Released
+16:07:05,VR,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+16:07:10,VR,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:19,SG,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+10:59:20,SG,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:21,SG,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+10:59:26,SG,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:27,SG,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+10:59:28,SG,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:29,SG,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+10:59:29,SG,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:30,SG,Pramesswari,Evaluation,Ex2,Hammer,Grabbed
+10:59:32,SG,Pramesswari,Evaluation,Ex2,Hammer,Released
+10:59:42,SG,Pramesswari,Evaluation,Ex2,movable_cup42,Grabbed
+10:59:44,SG,Pramesswari,Evaluation,Ex2,movable_cup42,Released
+10:59:45,SG,Pramesswari,Evaluation,Ex2,movable_cup42,Grabbed
+10:59:46,SG,Pramesswari,Evaluation,Ex2,movable_cup42,Released
+11:00:09,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:12,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+11:00:17,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:20,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+11:00:21,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:23,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+11:00:24,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:26,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+11:00:29,SG,Pramesswari,Evaluation,Ex2,nut,Grabbed
+11:00:33,SG,Pramesswari,Evaluation,Ex2,nut,Released
+11:00:34,SG,Pramesswari,Evaluation,Ex2,nut,Grabbed
+11:00:36,SG,Pramesswari,Evaluation,Ex2,nut,Released
+11:00:38,SG,Pramesswari,Evaluation,Ex2,nut,Grabbed
+11:00:39,SG,Pramesswari,Evaluation,Ex2,nut,Released
+11:00:42,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:43,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+11:00:45,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Grabbed
+11:00:51,SG,Pramesswari,Evaluation,Ex2,BH Grab 11,Released
+10:18:37,SG,Ram,Training,Ex1,movable_cup31,Grabbed
+10:18:41,SG,Ram,Training,Ex1,movable_cup31,Released
+10:18:43,SG,Ram,Training,Ex1,movable_cup32,Grabbed
+10:18:45,SG,Ram,Training,Ex1,movable_cup32,Released
+10:18:46,SG,Ram,Training,Ex1,movable_cup32,Grabbed
+10:18:47,SG,Ram,Training,Ex1,movable_cup32,Released
+10:18:57,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:18:57,SG,Ram,Training,Ex1,Hammer,Released
+10:18:58,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:00,SG,Ram,Training,Ex1,Hammer,Released
+10:19:01,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:02,SG,Ram,Training,Ex1,Hammer,Released
+10:19:05,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:06,SG,Ram,Training,Ex1,Hammer,Released
+10:19:07,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:10,SG,Ram,Training,Ex1,Hammer,Released
+10:19:10,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:12,SG,Ram,Training,Ex1,Hammer,Released
+10:19:12,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:13,SG,Ram,Training,Ex1,Hammer,Released
+10:19:14,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:19,SG,Ram,Training,Ex1,Hammer,Released
+10:19:20,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:22,SG,Ram,Training,Ex1,Hammer,Released
+10:19:25,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:19:30,SG,Ram,Training,Ex1,Hammer,Released
+10:19:45,SG,Ram,Training,Ex1,nut,Grabbed
+10:19:46,SG,Ram,Training,Ex1,nut,Released
+10:19:48,SG,Ram,Training,Ex1,nut,Grabbed
+10:19:50,SG,Ram,Training,Ex1,nut,Released
+10:19:52,SG,Ram,Training,Ex1,nut,Grabbed
+10:19:53,SG,Ram,Training,Ex1,nut,Released
+10:27:42,VR,Ram,Training,Ex1,Hammer,Grabbed
+10:27:45,VR,Ram,Training,Ex1,Hammer,Released
+10:27:46,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:27:48,SG,Ram,Training,Ex1,Hammer,Released
+10:27:49,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:27:49,SG,Ram,Training,Ex1,Hammer,Released
+10:27:50,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:27:52,SG,Ram,Training,Ex1,Hammer,Released
+10:27:53,SG,Ram,Training,Ex1,Hammer,Grabbed
+10:27:56,SG,Ram,Training,Ex1,Hammer,Released
+10:59:48,SG,Ram,Training,Ex1,movable_cup12,Grabbed
+10:59:50,SG,Ram,Training,Ex1,movable_cup12,Released
+10:59:51,SG,Ram,Training,Ex1,movable_cup12,Grabbed
+10:59:52,SG,Ram,Training,Ex1,movable_cup12,Released
+11:00:16,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:24,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:26,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:28,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:31,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:34,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:36,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:38,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:39,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:40,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:41,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:49,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:50,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:52,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:56,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:00:58,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:00:59,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:01:01,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:01:02,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:01:03,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:01:04,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:01:05,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:01:08,SG,Ram,Training,Ex1,nut,Grabbed
+11:01:09,SG,Ram,Training,Ex1,nut,Released
+11:10:23,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:10:29,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:10:32,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:10:38,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:10:45,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:10:48,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:10:51,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:10:57,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:10:58,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:11:07,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:11:08,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:11:15,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:11:16,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:11:18,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:11:19,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:11:20,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:11:21,SG,Ram,Training,Ex1,BH Grab 33,Grabbed
+11:11:22,SG,Ram,Training,Ex1,BH Grab 33,Released
+11:11:25,SG,Ram,Training,Ex1,nut,Grabbed
+11:11:27,SG,Ram,Training,Ex1,nut,Released
+11:11:28,SG,Ram,Training,Ex1,nut,Grabbed
+11:11:30,SG,Ram,Training,Ex1,nut,Released
+11:11:31,SG,Ram,Training,Ex1,nut,Grabbed
+11:11:33,SG,Ram,Training,Ex1,nut,Released
+11:11:35,SG,Ram,Training,Ex1,nut,Grabbed
+11:11:37,SG,Ram,Training,Ex1,nut,Released
+11:11:39,SG,Ram,Training,Ex1,nut,Grabbed
+11:11:41,SG,Ram,Training,Ex1,nut,Released
+16:42:05,VR,Shredha,Training,Ex1,movable_cup31,Grabbed
+16:42:05,VR,Shredha,Training,Ex1,movable_cup31,Released
+16:42:17,VR,Shredha,Training,Ex1,movable_cup31,Grabbed
+16:42:19,VR,Shredha,Training,Ex1,movable_cup31,Released
+16:42:20,VR,Shredha,Training,Ex1,BH Grab 33,Grabbed
+16:42:26,VR,Shredha,Training,Ex1,movable_cup31,Grabbed
+16:42:28,VR,Shredha,Training,Ex1,movable_cup31,Released
+16:42:29,VR,Shredha,Training,Ex1,BH Grab 33,Released
+16:42:32,VR,Shredha,Training,Ex1,nut,Grabbed
+16:42:40,VR,Shredha,Training,Ex1,nut,Released
+16:42:42,VR,Shredha,Training,Ex1,nut,Grabbed
+16:42:45,VR,Shredha,Training,Ex1,nut,Released
+16:42:47,VR,Shredha,Training,Ex1,nut,Grabbed
+16:42:50,VR,Shredha,Training,Ex1,nut,Released
+16:42:51,VR,Shredha,Training,Ex1,nut,Grabbed
+16:42:54,VR,Shredha,Training,Ex1,nut,Released
+16:44:43,VR,Shredha,Training,Ex1,BH Grab 33,Grabbed
+16:44:48,VR,Shredha,Training,Ex1,nut,Grabbed
+16:44:55,VR,Shredha,Training,Ex1,nut,Released
+16:44:56,VR,Shredha,Training,Ex1,nut,Grabbed
+16:44:58,VR,Shredha,Training,Ex1,nut,Released
+16:44:59,VR,Shredha,Training,Ex1,BH Grab 33,Released
+17:05:00,VR,Vikashini,Training,Ex1,BH Grab 33,Grabbed
+17:05:02,VR,Vikashini,Training,Ex1,movable_cup31,Grabbed
+17:05:08,VR,Vikashini,Training,Ex1,BH Grab 33,Released
+17:05:08,VR,Vikashini,Training,Ex1,movable_cup31,Released
+17:05:10,VR,Vikashini,Training,Ex1,nut,Grabbed
+17:05:12,VR,Vikashini,Training,Ex1,nut,Released
+17:05:17,VR,Vikashini,Training,Ex1,BH Grab 33,Grabbed
+17:05:18,VR,Vikashini,Training,Ex1,BH Grab 33,Released
+17:05:21,VR,Vikashini,Training,Ex1,nut,Grabbed
+17:05:22,VR,Vikashini,Training,Ex1,BH Grab 33,Grabbed
+17:05:35,VR,Vikashini,Training,Ex1,BH Grab 33,Released
+17:05:35,VR,Vikashini,Training,Ex1,nut,Released
+17:05:37,VR,Vikashini,Training,Ex1,BH Grab 33,Grabbed
+17:05:39,VR,Vikashini,Training,Ex1,nut,Grabbed
+17:05:40,VR,Vikashini,Training,Ex1,nut,Released
+17:05:40,VR,Vikashini,Training,Ex1,BH Grab 33,Released
+17:30:34,SG,Ajmal,Training,Ex1,BH Grab 33,Grabbed
+17:31:01,SG,Ajmal,Training,Ex1,nut,Grabbed
+17:31:06,SG,Ajmal,Training,Ex1,nut,Released
+17:31:08,SG,Ajmal,Training,Ex1,nut,Grabbed
+17:31:13,SG,Ajmal,Training,Ex1,nut,Released
+17:31:14,SG,Ajmal,Training,Ex1,BH Grab 33,Released
+17:41:35,SG,Ajmal,Training,Ex2,movable_cup12,Grabbed
+17:41:37,SG,Ajmal,Training,Ex2,movable_cup12,Released
+17:41:51,SG,Ajmal,Training,Ex2,movable_cup12,Grabbed
+17:41:52,SG,Ajmal,Training,Ex2,movable_cup12,Released
+17:41:55,SG,Ajmal,Training,Ex2,movable_cup12,Grabbed
+17:41:59,SG,Ajmal,Training,Ex2,movable_cup12,Released
+17:42:05,SG,Ajmal,Training,Ex2,movable_cup12,Grabbed
+17:42:07,SG,Ajmal,Training,Ex2,movable_cup12,Released
+17:42:15,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:42:25,SG,Ajmal,Training,Ex2,Hammer,Released
+17:42:28,SG,Ajmal,Training,Ex2,movable_cup13,Grabbed
+17:42:32,SG,Ajmal,Training,Ex2,movable_cup13,Released
+17:42:36,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:42:47,SG,Ajmal,Training,Ex2,Hammer,Released
+17:42:58,SG,Ajmal,Training,Ex2,movable_cup22,Grabbed
+17:43:03,SG,Ajmal,Training,Ex2,movable_cup22,Released
+17:43:04,SG,Ajmal,Training,Ex2,movable_cup22,Grabbed
+17:43:05,SG,Ajmal,Training,Ex2,movable_cup22,Released
+17:43:06,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:43:13,SG,Ajmal,Training,Ex2,Hammer,Released
+17:43:17,SG,Ajmal,Training,Ex2,movable_cup23,Grabbed
+17:43:22,SG,Ajmal,Training,Ex2,movable_cup23,Released
+17:43:24,SG,Ajmal,Training,Ex2,movable_cup23,Grabbed
+17:43:27,SG,Ajmal,Training,Ex2,movable_cup23,Released
+17:43:30,SG,Ajmal,Training,Ex2,movable_cup23,Grabbed
+17:43:33,SG,Ajmal,Training,Ex2,movable_cup23,Grabbed
+17:43:33,SG,Ajmal,Training,Ex2,movable_cup23,Released
+17:43:36,SG,Ajmal,Training,Ex2,movable_cup23,Released
+17:43:41,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:43:49,SG,Ajmal,Training,Ex2,Hammer,Released
+17:43:56,SG,Ajmal,Training,Ex2,movable_cup32,Grabbed
+17:43:59,SG,Ajmal,Training,Ex2,movable_cup32,Released
+17:44:06,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:44:14,SG,Ajmal,Training,Ex2,Hammer,Released
+17:44:16,SG,Ajmal,Training,Ex2,movable_cup33,Grabbed
+17:44:20,SG,Ajmal,Training,Ex2,movable_cup33,Released
+17:44:22,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:44:37,SG,Ajmal,Training,Ex2,Hammer,Released
+17:44:42,SG,Ajmal,Training,Ex2,movable_cup42,Grabbed
+17:44:45,SG,Ajmal,Training,Ex2,movable_cup42,Released
+17:44:47,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:44:50,SG,Ajmal,Training,Ex2,Hammer,Released
+17:44:53,SG,Ajmal,Training,Ex2,movable_cup43,Grabbed
+17:44:55,SG,Ajmal,Training,Ex2,movable_cup43,Released
+17:45:20,SG,Ajmal,Training,Ex2,Hammer,Grabbed
+17:45:25,SG,Ajmal,Training,Ex2,Hammer,Released
+18:36:35,SG,Prajwal,Training,Ex1,BH Grab 33,Grabbed
+18:36:40,SG,Prajwal,Training,Ex1,nut,Grabbed
+18:36:42,SG,Prajwal,Training,Ex1,nut,Released
+18:36:46,SG,Prajwal,Training,Ex1,nut,Grabbed
+18:36:49,SG,Prajwal,Training,Ex1,nut,Released
+18:36:51,SG,Prajwal,Training,Ex1,nut,Grabbed
+18:37:06,SG,Prajwal,Training,Ex1,nut,Released
+18:37:08,SG,Prajwal,Training,Ex1,BH Grab 33,Released
+18:38:31,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:38:37,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:38:39,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:38:44,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:38:47,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:38:53,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:38:54,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:38:55,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:38:59,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:39:02,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:39:04,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:39:05,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:39:17,SG,Prajwal,Training,Ex2,movable_cup12,Grabbed
+18:39:18,SG,Prajwal,Training,Ex2,movable_cup12,Released
+18:39:28,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:39:40,SG,Prajwal,Training,Ex2,Hammer,Released
+18:39:43,SG,Prajwal,Training,Ex2,movable_cup13,Grabbed
+18:39:57,SG,Prajwal,Training,Ex2,movable_cup13,Released
+18:40:01,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:40:02,SG,Prajwal,Training,Ex2,Hammer,Released
+18:40:03,SG,Prajwal,Training,Ex2,movable_cup13,Grabbed
+18:40:08,SG,Prajwal,Training,Ex2,movable_cup13,Released
+18:40:10,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:40:18,SG,Prajwal,Training,Ex2,Hammer,Released
+18:40:21,SG,Prajwal,Training,Ex2,movable_cup22,Grabbed
+18:40:23,SG,Prajwal,Training,Ex2,movable_cup22,Released
+18:40:27,SG,Prajwal,Training,Ex2,movable_cup22,Grabbed
+18:40:28,SG,Prajwal,Training,Ex2,movable_cup22,Released
+18:40:37,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:40:42,SG,Prajwal,Training,Ex2,Hammer,Released
+18:40:46,SG,Prajwal,Training,Ex2,movable_cup23,Grabbed
+18:40:49,SG,Prajwal,Training,Ex2,movable_cup23,Released
+18:40:50,SG,Prajwal,Training,Ex2,movable_cup23,Grabbed
+18:40:52,SG,Prajwal,Training,Ex2,movable_cup23,Released
+18:40:54,SG,Prajwal,Training,Ex2,movable_cup23,Grabbed
+18:40:56,SG,Prajwal,Training,Ex2,movable_cup23,Released
+18:40:59,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:41:08,SG,Prajwal,Training,Ex2,Hammer,Released
+18:41:14,SG,Prajwal,Training,Ex2,movable_cup32,Grabbed
+18:41:17,SG,Prajwal,Training,Ex2,movable_cup32,Released
+18:41:19,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:41:20,SG,Prajwal,Training,Ex2,Hammer,Released
+18:41:22,SG,Prajwal,Training,Ex2,movable_cup32,Grabbed
+18:41:22,SG,Prajwal,Training,Ex2,movable_cup32,Released
+18:41:27,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:41:31,SG,Prajwal,Training,Ex2,Hammer,Released
+18:41:32,SG,Prajwal,Training,Ex2,movable_cup33,Grabbed
+18:41:36,SG,Prajwal,Training,Ex2,movable_cup33,Released
+18:41:37,SG,Prajwal,Training,Ex2,movable_cup33,Grabbed
+18:41:40,SG,Prajwal,Training,Ex2,movable_cup33,Released
+18:41:43,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:41:52,SG,Prajwal,Training,Ex2,Hammer,Released
+18:41:54,SG,Prajwal,Training,Ex2,movable_cup42,Grabbed
+18:41:54,SG,Prajwal,Training,Ex2,movable_cup42,Released
+18:42:06,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:42:10,SG,Prajwal,Training,Ex2,Hammer,Released
+18:42:13,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:42:14,SG,Prajwal,Training,Ex2,Hammer,Released
+18:42:14,SG,Prajwal,Training,Ex2,movable_cup43,Grabbed
+18:42:16,SG,Prajwal,Training,Ex2,movable_cup43,Released
+18:42:35,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:42:43,SG,Prajwal,Training,Ex2,Hammer,Released
+18:43:28,SG,Prajwal,Training,Ex2,movable_cup42,Grabbed
+18:43:32,SG,Prajwal,Training,Ex2,movable_cup42,Released
+18:44:04,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:06,SG,Prajwal,Training,Ex2,Hammer,Released
+18:44:23,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:23,SG,Prajwal,Training,Ex2,Hammer,Released
+18:44:30,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:35,SG,Prajwal,Training,Ex2,Hammer,Released
+18:44:37,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:39,SG,Prajwal,Training,Ex2,Hammer,Released
+18:44:49,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:52,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:53,SG,Prajwal,Training,Ex2,Hammer,Released
+18:44:58,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:44:59,SG,Prajwal,Training,Ex2,Hammer,Released
+18:45:03,SG,Prajwal,Training,Ex2,Hammer,Released
+18:45:05,SG,Prajwal,Training,Ex2,Hammer,Grabbed
+18:45:09,SG,Prajwal,Training,Ex2,Hammer,Released
+15:25:30,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:25:30,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:25:31,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:25:32,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:25:33,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:25:33,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:25:34,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:25:35,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:21,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Grabbed
+15:26:22,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:24,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:24,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Released
+15:26:25,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Grabbed
+15:26:25,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:25,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:26,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Released
+15:26:27,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Grabbed
+15:26:28,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:29,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:29,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Released
+15:26:31,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:32,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:33,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:34,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Grabbed
+15:26:35,VR,Sandheep,Evaluation,Ex1,BH Grab 33,Released
+15:26:35,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:37,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:37,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:39,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:40,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:26:41,VR,Sandheep,Evaluation,Ex1,nut,Grabbed
+15:26:42,VR,Sandheep,Evaluation,Ex1,nut,Released
+15:27:55,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:27:57,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:27:59,VR,Sandheep,Evaluation,Ex2,movable_cup12,Grabbed
+15:28:02,VR,Sandheep,Evaluation,Ex2,movable_cup12,Released
+15:28:03,VR,Sandheep,Evaluation,Ex2,movable_cup12,Grabbed
+15:28:05,VR,Sandheep,Evaluation,Ex2,movable_cup12,Released
+15:28:06,VR,Sandheep,Evaluation,Ex2,movable_cup12,Grabbed
+15:28:07,VR,Sandheep,Evaluation,Ex2,movable_cup12,Released
+15:28:09,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:28:13,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:28:15,VR,Sandheep,Evaluation,Ex2,movable_cup12,Grabbed
+15:28:17,VR,Sandheep,Evaluation,Ex2,movable_cup12,Released
+15:28:18,VR,Sandheep,Evaluation,Ex2,movable_cup12,Grabbed
+15:28:22,VR,Sandheep,Evaluation,Ex2,movable_cup12,Released
+15:28:23,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:28:27,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:28:34,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:28:38,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:28:39,VR,Sandheep,Evaluation,Ex2,movable_cup13,Grabbed
+15:28:40,VR,Sandheep,Evaluation,Ex2,movable_cup13,Released
+15:28:41,VR,Sandheep,Evaluation,Ex2,movable_cup13,Grabbed
+15:28:42,VR,Sandheep,Evaluation,Ex2,movable_cup13,Released
+15:28:42,VR,Sandheep,Evaluation,Ex2,movable_cup13,Grabbed
+15:28:43,VR,Sandheep,Evaluation,Ex2,movable_cup13,Released
+15:28:45,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:28:48,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:28:49,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:28:53,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:28:54,VR,Sandheep,Evaluation,Ex2,movable_cup43,Grabbed
+15:28:55,VR,Sandheep,Evaluation,Ex2,movable_cup43,Released
+15:28:56,VR,Sandheep,Evaluation,Ex2,movable_cup43,Grabbed
+15:28:57,VR,Sandheep,Evaluation,Ex2,movable_cup43,Released
+15:28:58,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:01,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:02,VR,Sandheep,Evaluation,Ex2,movable_cup42,Grabbed
+15:29:04,VR,Sandheep,Evaluation,Ex2,movable_cup42,Released
+15:29:06,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:09,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:10,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:14,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:15,VR,Sandheep,Evaluation,Ex2,movable_cup32,Grabbed
+15:29:18,VR,Sandheep,Evaluation,Ex2,movable_cup32,Released
+15:29:19,VR,Sandheep,Evaluation,Ex2,movable_cup32,Grabbed
+15:29:20,VR,Sandheep,Evaluation,Ex2,movable_cup32,Released
+15:29:21,VR,Sandheep,Evaluation,Ex2,movable_cup32,Grabbed
+15:29:22,VR,Sandheep,Evaluation,Ex2,movable_cup32,Released
+15:29:23,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:27,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:28,VR,Sandheep,Evaluation,Ex2,movable_cup33,Grabbed
+15:29:29,VR,Sandheep,Evaluation,Ex2,movable_cup33,Released
+15:29:30,VR,Sandheep,Evaluation,Ex2,movable_cup33,Grabbed
+15:29:31,VR,Sandheep,Evaluation,Ex2,movable_cup33,Released
+15:29:33,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:36,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:37,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:41,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:42,VR,Sandheep,Evaluation,Ex2,movable_cup23,Grabbed
+15:29:43,VR,Sandheep,Evaluation,Ex2,movable_cup23,Released
+15:29:44,VR,Sandheep,Evaluation,Ex2,movable_cup23,Grabbed
+15:29:45,VR,Sandheep,Evaluation,Ex2,movable_cup23,Released
+15:29:47,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:50,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:51,VR,Sandheep,Evaluation,Ex2,movable_cup22,Grabbed
+15:29:52,VR,Sandheep,Evaluation,Ex2,movable_cup22,Released
+15:29:53,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:29:57,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:29:57,VR,Sandheep,Evaluation,Ex2,Hammer,Grabbed
+15:30:19,VR,Sandheep,Evaluation,Ex2,Hammer,Released
+15:44:25,SG,PRajwal,Evaluation,Ex1,BH Grab 11,Grabbed
+15:44:26,SG,PRajwal,Evaluation,Ex1,BH Grab 11,Released
+15:45:19,SG,PRajwal,Evaluation,Ex1,BH Grab 11,Grabbed
+15:45:23,SG,PRajwal,Evaluation,Ex1,BH Grab 11,Released
+15:45:59,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Grabbed
+15:46:06,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Released
+15:46:11,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Grabbed
+15:46:11,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Released
+15:46:13,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Grabbed
+15:46:15,SG,PRajwal,Evaluation,Ex1,nut,Grabbed
+15:46:21,SG,PRajwal,Evaluation,Ex1,nut,Released
+15:46:22,SG,PRajwal,Evaluation,Ex1,BH Grab 33,Released
+15:46:31,SG,PRajwal,Evaluation,Ex1,nut,Grabbed
+15:46:33,SG,PRajwal,Evaluation,Ex1,nut,Released
+15:47:41,SG,PRajwal,Evaluation,Ex2,movable_cup13,Grabbed
+15:47:47,SG,PRajwal,Evaluation,Ex2,movable_cup13,Released
+15:48:03,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:48:12,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:48:13,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:48:19,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:48:25,SG,PRajwal,Evaluation,Ex2,movable_cup23,Grabbed
+15:48:28,SG,PRajwal,Evaluation,Ex2,movable_cup23,Released
+15:48:30,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:48:41,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:48:43,SG,PRajwal,Evaluation,Ex2,movable_cup12,Grabbed
+15:48:51,SG,PRajwal,Evaluation,Ex2,movable_cup12,Released
+15:48:53,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:48:59,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:49:03,SG,PRajwal,Evaluation,Ex2,movable_cup22,Grabbed
+15:49:04,SG,PRajwal,Evaluation,Ex2,movable_cup22,Released
+15:49:06,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:49:16,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:49:18,SG,PRajwal,Evaluation,Ex2,movable_cup33,Grabbed
+15:49:20,SG,PRajwal,Evaluation,Ex2,movable_cup33,Released
+15:49:21,SG,PRajwal,Evaluation,Ex2,movable_cup33,Grabbed
+15:49:22,SG,PRajwal,Evaluation,Ex2,movable_cup33,Released
+15:49:23,SG,PRajwal,Evaluation,Ex2,movable_cup33,Grabbed
+15:49:27,SG,PRajwal,Evaluation,Ex2,movable_cup33,Released
+15:49:29,SG,PRajwal,Evaluation,Ex2,movable_cup33,Grabbed
+15:49:32,SG,PRajwal,Evaluation,Ex2,movable_cup33,Released
+15:49:37,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:49:39,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:49:41,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:49:45,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:49:48,SG,PRajwal,Evaluation,Ex2,movable_cup32,Grabbed
+15:49:53,SG,PRajwal,Evaluation,Ex2,movable_cup32,Released
+15:49:56,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:50:03,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:50:07,SG,PRajwal,Evaluation,Ex2,movable_cup31,Grabbed
+15:50:08,SG,PRajwal,Evaluation,Ex2,movable_cup31,Released
+15:50:12,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:50:17,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:50:18,SG,PRajwal,Evaluation,Ex2,movable_cup43,Grabbed
+15:50:20,SG,PRajwal,Evaluation,Ex2,movable_cup43,Released
+15:50:21,SG,PRajwal,Evaluation,Ex2,movable_cup43,Grabbed
+15:50:23,SG,PRajwal,Evaluation,Ex2,movable_cup43,Released
+15:50:24,SG,PRajwal,Evaluation,Ex2,movable_cup43,Grabbed
+15:50:27,SG,PRajwal,Evaluation,Ex2,movable_cup43,Released
+15:50:29,SG,PRajwal,Evaluation,Ex2,movable_cup42,Grabbed
+15:50:31,SG,PRajwal,Evaluation,Ex2,movable_cup42,Released
+15:50:32,SG,PRajwal,Evaluation,Ex2,movable_cup42,Grabbed
+15:50:34,SG,PRajwal,Evaluation,Ex2,movable_cup42,Released
+15:50:35,SG,PRajwal,Evaluation,Ex2,movable_cup42,Grabbed
+15:50:37,SG,PRajwal,Evaluation,Ex2,movable_cup42,Released
+15:50:40,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:50:55,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:50:57,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:51:03,SG,PRajwal,Evaluation,Ex2,Hammer,Grabbed
+15:51:06,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+15:51:06,SG,PRajwal,Evaluation,Ex2,Hammer,Released
+16:45:36,VR,Sudharsan,Training,Ex1,nut,Grabbed
+16:45:39,VR,Sudharsan,Training,Ex1,nut,Released
+16:45:45,VR,Sudharsan,Training,Ex1,BH Grab 33,Grabbed
+16:45:47,VR,Sudharsan,Training,Ex1,nut,Grabbed
+16:45:56,VR,Sudharsan,Training,Ex1,nut,Released
+16:45:57,VR,Sudharsan,Training,Ex1,BH Grab 33,Released
+16:54:39,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:54:39,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:54:43,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:54:45,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:54:51,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:54:51,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:54:53,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:54:55,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:54:57,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:55:04,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:55:06,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:55:06,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:55:06,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:55:08,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:55:10,VR,Sudharsan,Training,Ex2,movable_cup12,Grabbed
+16:55:13,VR,Sudharsan,Training,Ex2,movable_cup12,Released
+16:55:16,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:55:20,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:55:21,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:55:22,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:55:26,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:30,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:33,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:35,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:36,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:41,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:47,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:48,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:52,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:53,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:53,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:53,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:55:55,VR,Sudharsan,Training,Ex2,movable_cup13,Grabbed
+16:55:56,VR,Sudharsan,Training,Ex2,movable_cup13,Released
+16:56:00,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:56:05,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:56:17,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:20,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:21,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:24,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:25,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:27,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:28,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:30,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:31,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:33,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:34,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:36,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:36,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:39,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:40,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:41,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:42,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:46,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:47,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:52,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:53,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:56:56,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:56:58,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:57:00,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:57:01,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:57:02,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:57:02,VR,Sudharsan,Training,Ex2,movable_cup22,Grabbed
+16:57:07,VR,Sudharsan,Training,Ex2,movable_cup22,Released
+16:57:09,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:57:11,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:57:18,VR,Sudharsan,Training,Ex2,movable_cup23,Grabbed
+16:57:19,VR,Sudharsan,Training,Ex2,movable_cup23,Released
+16:57:22,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:57:25,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:57:32,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:35,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:36,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:37,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:41,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:42,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:43,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:44,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:45,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:48,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:49,VR,Sudharsan,Training,Ex2,movable_cup32,Grabbed
+16:57:51,VR,Sudharsan,Training,Ex2,movable_cup32,Released
+16:57:53,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:57:56,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:57:59,VR,Sudharsan,Training,Ex2,movable_cup33,Grabbed
+16:58:02,VR,Sudharsan,Training,Ex2,movable_cup33,Released
+16:58:04,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:58:07,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:58:16,VR,Sudharsan,Training,Ex2,movable_cup42,Grabbed
+16:58:18,VR,Sudharsan,Training,Ex2,movable_cup42,Released
+16:58:19,VR,Sudharsan,Training,Ex2,movable_cup42,Grabbed
+16:58:20,VR,Sudharsan,Training,Ex2,movable_cup42,Released
+16:58:20,VR,Sudharsan,Training,Ex2,movable_cup42,Grabbed
+16:58:21,VR,Sudharsan,Training,Ex2,movable_cup42,Released
+16:58:22,VR,Sudharsan,Training,Ex2,movable_cup42,Grabbed
+16:58:23,VR,Sudharsan,Training,Ex2,movable_cup42,Released
+16:58:24,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:58:27,VR,Sudharsan,Training,Ex2,Hammer,Released
+16:58:29,VR,Sudharsan,Training,Ex2,movable_cup43,Grabbed
+16:58:31,VR,Sudharsan,Training,Ex2,movable_cup43,Released
+16:58:32,VR,Sudharsan,Training,Ex2,movable_cup43,Grabbed
+16:58:35,VR,Sudharsan,Training,Ex2,movable_cup43,Released
+16:58:37,VR,Sudharsan,Training,Ex2,Hammer,Grabbed
+16:58:39,VR,Sudharsan,Training,Ex2,Hammer,Released
+17:59:09,SG,Ankit,Training,Ex1,BH Grab 33,Grabbed
+17:59:13,SG,Ankit,Training,Ex1,nut,Grabbed
+17:59:19,SG,Ankit,Training,Ex1,nut,Released
+17:59:38,SG,Ankit,Training,Ex1,BH Grab 33,Released
+17:59:44,SG,Ankit,Training,Ex1,BH Grab 33,Grabbed
+17:59:56,SG,Ankit,Training,Ex1,BH Grab 33,Released
+18:00:31,SG,Ankit,Training,Ex1,BH Grab 33,Grabbed
+18:00:40,SG,Ankit,Training,Ex1,nut,Grabbed
+18:00:40,SG,Ankit,Training,Ex1,nut,Released
+18:00:46,SG,Ankit,Training,Ex1,BH Grab 33,Released
+18:10:38,SG,Ankit,Training,Ex2,movable_cup12,Grabbed
+18:10:40,SG,Ankit,Training,Ex2,movable_cup12,Released
+18:10:43,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:10:46,SG,Ankit,Training,Ex2,Hammer,Released
+18:10:50,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:10:58,SG,Ankit,Training,Ex2,Hammer,Released
+18:11:10,SG,Ankit,Training,Ex2,movable_cup13,Grabbed
+18:11:10,SG,Ankit,Training,Ex2,movable_cup13,Released
+18:11:40,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:11:50,SG,Ankit,Training,Ex2,Hammer,Released
+18:11:53,SG,Ankit,Training,Ex2,movable_cup22,Grabbed
+18:11:57,SG,Ankit,Training,Ex2,movable_cup22,Released
+18:12:02,SG,Ankit,Training,Ex2,movable_cup22,Grabbed
+18:12:03,SG,Ankit,Training,Ex2,movable_cup22,Released
+18:12:06,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:12:10,SG,Ankit,Training,Ex2,Hammer,Released
+18:12:14,SG,Ankit,Training,Ex2,movable_cup23,Grabbed
+18:12:16,SG,Ankit,Training,Ex2,movable_cup23,Released
+18:13:55,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:14:12,SG,Ankit,Training,Ex2,Hammer,Released
+18:14:29,SG,Ankit,Training,Ex2,movable_cup32,Grabbed
+18:14:33,SG,Ankit,Training,Ex2,movable_cup32,Released
+18:14:44,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:14:51,SG,Ankit,Training,Ex2,Hammer,Released
+18:14:53,SG,Ankit,Training,Ex2,movable_cup33,Grabbed
+18:14:55,SG,Ankit,Training,Ex2,movable_cup33,Released
+18:14:59,SG,Ankit,Training,Ex2,movable_cup33,Grabbed
+18:15:01,SG,Ankit,Training,Ex2,movable_cup33,Released
+18:15:02,SG,Ankit,Training,Ex2,movable_cup33,Grabbed
+18:15:03,SG,Ankit,Training,Ex2,movable_cup33,Released
+18:15:05,SG,Ankit,Training,Ex2,movable_cup33,Grabbed
+18:15:11,SG,Ankit,Training,Ex2,movable_cup33,Released
+18:15:14,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:15:22,SG,Ankit,Training,Ex2,Hammer,Released
+18:15:24,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:15:25,SG,Ankit,Training,Ex2,Hammer,Released
+18:15:32,SG,Ankit,Training,Ex2,movable_cup42,Grabbed
+18:15:35,SG,Ankit,Training,Ex2,movable_cup42,Released
+18:15:36,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:15:41,SG,Ankit,Training,Ex2,Hammer,Released
+18:15:44,SG,Ankit,Training,Ex2,movable_cup43,Grabbed
+18:15:47,SG,Ankit,Training,Ex2,movable_cup43,Released
+18:15:48,SG,Ankit,Training,Ex2,movable_cup43,Grabbed
+18:15:50,SG,Ankit,Training,Ex2,movable_cup43,Released
+18:15:50,SG,Ankit,Training,Ex2,movable_cup43,Grabbed
+18:15:51,SG,Ankit,Training,Ex2,movable_cup43,Released
+18:15:52,SG,Ankit,Training,Ex2,movable_cup43,Grabbed
+18:15:54,SG,Ankit,Training,Ex2,movable_cup43,Released
+18:16:01,SG,Ankit,Training,Ex2,Hammer,Grabbed
+18:16:06,SG,Ankit,Training,Ex2,Hammer,Released
+15:16:02,SG,Chandu,Training,Ex1,BH Grab 33,Grabbed
+15:16:04,SG,Chandu,Training,Ex1,nut,Grabbed
+15:16:08,SG,Chandu,Training,Ex1,nut,Released
+15:16:09,SG,Chandu,Training,Ex1,nut,Grabbed
+15:16:12,SG,Chandu,Training,Ex1,nut,Released
+15:16:13,SG,Chandu,Training,Ex1,nut,Grabbed
+15:16:16,SG,Chandu,Training,Ex1,nut,Released
+15:16:18,SG,Chandu,Training,Ex1,BH Grab 33,Released
+15:27:52,SG,Chandu,Training,Ex2,movable_cup12,Grabbed
+15:27:56,SG,Chandu,Training,Ex2,movable_cup12,Released
+15:28:02,SG,Chandu,Training,Ex2,movable_cup12,Grabbed
+15:28:03,SG,Chandu,Training,Ex2,movable_cup12,Released
+15:28:04,SG,Chandu,Training,Ex2,movable_cup12,Grabbed
+15:28:05,SG,Chandu,Training,Ex2,movable_cup12,Released
+15:28:08,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:28:14,SG,Chandu,Training,Ex2,Hammer,Released
+15:28:14,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:28:17,SG,Chandu,Training,Ex2,Hammer,Released
+15:28:22,SG,Chandu,Training,Ex2,movable_cup13,Grabbed
+15:28:25,SG,Chandu,Training,Ex2,movable_cup13,Released
+15:28:57,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:29:00,SG,Chandu,Training,Ex2,Hammer,Released
+15:29:06,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:29:07,SG,Chandu,Training,Ex2,Hammer,Released
+15:29:08,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:29:10,SG,Chandu,Training,Ex2,Hammer,Released
+15:29:13,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:29:13,SG,Chandu,Training,Ex2,Hammer,Released
+15:29:15,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:29:23,SG,Chandu,Training,Ex2,Hammer,Released
+15:29:35,SG,Chandu,Training,Ex2,movable_cup22,Grabbed
+15:29:37,SG,Chandu,Training,Ex2,movable_cup22,Released
+15:29:38,SG,Chandu,Training,Ex2,movable_cup22,Grabbed
+15:29:39,SG,Chandu,Training,Ex2,movable_cup22,Released
+15:29:40,SG,Chandu,Training,Ex2,movable_cup22,Grabbed
+15:29:41,SG,Chandu,Training,Ex2,movable_cup22,Released
+15:30:06,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:30:08,SG,Chandu,Training,Ex2,Hammer,Released
+15:30:12,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:30:24,SG,Chandu,Training,Ex2,Hammer,Released
+15:30:26,SG,Chandu,Training,Ex2,movable_cup23,Grabbed
+15:30:28,SG,Chandu,Training,Ex2,movable_cup23,Released
+15:30:28,SG,Chandu,Training,Ex2,movable_cup23,Grabbed
+15:30:31,SG,Chandu,Training,Ex2,movable_cup23,Released
+15:30:32,SG,Chandu,Training,Ex2,movable_cup23,Grabbed
+15:30:35,SG,Chandu,Training,Ex2,movable_cup23,Released
+15:30:41,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:30:53,SG,Chandu,Training,Ex2,Hammer,Released
+15:30:56,SG,Chandu,Training,Ex2,movable_cup32,Grabbed
+15:30:58,SG,Chandu,Training,Ex2,movable_cup32,Released
+15:30:59,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:31:00,SG,Chandu,Training,Ex2,Hammer,Released
+15:31:07,SG,Chandu,Training,Ex2,movable_cup32,Grabbed
+15:31:09,SG,Chandu,Training,Ex2,movable_cup32,Released
+15:31:14,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:31:26,SG,Chandu,Training,Ex2,Hammer,Released
+15:31:29,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:31:30,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:31:33,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:31:54,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:31:57,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:31:59,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:00,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:05,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:06,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:10,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:12,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:13,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:14,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:16,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:16,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:18,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:18,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:20,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:21,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:22,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:23,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:24,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:24,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:25,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:28,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:28,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:29,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:30,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:31,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:32,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:32,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:33,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:34,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:35,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:35,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:36,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:37,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:39,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:40,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:43,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:47,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:47,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:32:49,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:32:51,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:16,SG,Chandu,Training,Ex2,movable_cup42,Grabbed
+15:33:18,SG,Chandu,Training,Ex2,movable_cup42,Released
+15:33:35,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:33:37,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:38,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:33:39,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:42,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:33:45,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:46,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:33:49,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:51,SG,Chandu,Training,Ex2,movable_cup33,Grabbed
+15:33:53,SG,Chandu,Training,Ex2,movable_cup33,Released
+15:33:56,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:34:05,SG,Chandu,Training,Ex2,Hammer,Released
+15:34:24,SG,Chandu,Training,Ex2,movable_cup42,Grabbed
+15:34:31,SG,Chandu,Training,Ex2,movable_cup42,Released
+15:34:36,SG,Chandu,Training,Ex2,Hammer,Grabbed
+15:34:51,SG,Chandu,Training,Ex2,Hammer,Released
+16:37:34,VR,Sourab,Training,Ex1,BH Grab 33,Grabbed
+16:37:38,VR,Sourab,Training,Ex1,nut,Grabbed
+16:37:45,VR,Sourab,Training,Ex1,BH Grab 33,Released
+16:37:45,VR,Sourab,Training,Ex1,nut,Released
+16:38:28,VR,Sourab,Training,Ex1,BH Grab 33,Grabbed
+16:38:31,VR,Sourab,Training,Ex1,nut,Grabbed
+16:38:34,VR,Sourab,Training,Ex1,nut,Released
+16:38:36,VR,Sourab,Training,Ex1,nut,Grabbed
+16:38:46,VR,Sourab,Training,Ex1,nut,Released
+16:38:46,VR,Sourab,Training,Ex1,BH Grab 33,Released
+16:38:49,VR,Sourab,Training,Ex1,BH Grab 33,Grabbed
+16:38:50,VR,Sourab,Training,Ex1,BH Grab 33,Released
+16:48:11,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:48:15,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:48:19,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:48:22,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:48:25,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:48:28,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:48:36,VR,Sourab,Training,Ex2,movable_cup11,Grabbed
+16:48:36,VR,Sourab,Training,Ex2,movable_cup11,Released
+16:48:42,VR,Sourab,Training,Ex2,movable_cup11,Grabbed
+16:48:45,VR,Sourab,Training,Ex2,movable_cup11,Released
+16:48:48,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:48:53,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:48:59,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:49:01,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:49:06,VR,Sourab,Training,Ex2,movable_cup12,Grabbed
+16:49:07,VR,Sourab,Training,Ex2,movable_cup12,Released
+16:49:15,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:49:24,VR,Sourab,Training,Ex2,Hammer,Released
+16:49:33,VR,Sourab,Training,Ex2,movable_cup13,Grabbed
+16:49:36,VR,Sourab,Training,Ex2,movable_cup13,Released
+16:49:38,VR,Sourab,Training,Ex2,movable_cup13,Grabbed
+16:49:40,VR,Sourab,Training,Ex2,movable_cup13,Released
+16:49:45,VR,Sourab,Training,Ex2,movable_cup13,Grabbed
+16:49:47,VR,Sourab,Training,Ex2,movable_cup13,Released
+16:49:47,VR,Sourab,Training,Ex2,movable_cup13,Grabbed
+16:49:50,VR,Sourab,Training,Ex2,movable_cup13,Released
+16:49:56,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:50:04,VR,Sourab,Training,Ex2,Hammer,Released
+16:50:13,VR,Sourab,Training,Ex2,movable_cup22,Grabbed
+16:50:16,VR,Sourab,Training,Ex2,movable_cup22,Released
+16:50:21,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:50:23,VR,Sourab,Training,Ex2,Hammer,Released
+16:50:25,VR,Sourab,Training,Ex2,movable_cup22,Grabbed
+16:50:26,VR,Sourab,Training,Ex2,movable_cup22,Released
+16:50:27,VR,Sourab,Training,Ex2,movable_cup22,Grabbed
+16:50:29,VR,Sourab,Training,Ex2,movable_cup22,Released
+16:50:30,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:50:37,VR,Sourab,Training,Ex2,Hammer,Released
+16:50:41,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:50:43,VR,Sourab,Training,Ex2,Hammer,Released
+16:50:47,VR,Sourab,Training,Ex2,movable_cup23,Grabbed
+16:50:48,VR,Sourab,Training,Ex2,movable_cup23,Released
+16:50:50,VR,Sourab,Training,Ex2,movable_cup23,Grabbed
+16:50:55,VR,Sourab,Training,Ex2,movable_cup23,Released
+16:50:56,VR,Sourab,Training,Ex2,movable_cup23,Grabbed
+16:51:03,VR,Sourab,Training,Ex2,movable_cup23,Released
+16:51:06,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:51:12,VR,Sourab,Training,Ex2,Hammer,Released
+16:51:20,VR,Sourab,Training,Ex2,movable_cup32,Grabbed
+16:51:24,VR,Sourab,Training,Ex2,movable_cup32,Released
+16:51:27,VR,Sourab,Training,Ex2,movable_cup32,Grabbed
+16:51:30,VR,Sourab,Training,Ex2,movable_cup32,Released
+16:51:32,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:51:37,VR,Sourab,Training,Ex2,Hammer,Released
+16:51:42,VR,Sourab,Training,Ex2,movable_cup33,Grabbed
+16:51:45,VR,Sourab,Training,Ex2,movable_cup33,Released
+16:51:48,VR,Sourab,Training,Ex2,movable_cup33,Grabbed
+16:51:50,VR,Sourab,Training,Ex2,movable_cup33,Released
+16:51:51,VR,Sourab,Training,Ex2,movable_cup33,Grabbed
+16:51:52,VR,Sourab,Training,Ex2,movable_cup33,Released
+16:51:56,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:52:05,VR,Sourab,Training,Ex2,Hammer,Released
+16:52:12,VR,Sourab,Training,Ex2,movable_cup42,Grabbed
+16:52:16,VR,Sourab,Training,Ex2,movable_cup42,Released
+16:52:20,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:52:27,VR,Sourab,Training,Ex2,Hammer,Released
+16:52:30,VR,Sourab,Training,Ex2,movable_cup43,Grabbed
+16:52:33,VR,Sourab,Training,Ex2,movable_cup43,Released
+16:52:35,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:52:35,VR,Sourab,Training,Ex2,Hammer,Released
+16:52:35,VR,Sourab,Training,Ex2,Hammer,Grabbed
+16:52:41,VR,Sourab,Training,Ex2,Hammer,Released
+17:12:57,SG,Ankit,Evaluation,Ex1,BH Grab 33,Grabbed
+17:13:03,SG,Ankit,Evaluation,Ex1,nut,Grabbed
+17:13:03,SG,Ankit,Evaluation,Ex1,nut,Released
+17:13:07,SG,Ankit,Evaluation,Ex1,nut,Grabbed
+17:13:19,SG,Ankit,Evaluation,Ex1,nut,Released
+17:13:21,SG,Ankit,Evaluation,Ex1,nut,Grabbed
+17:13:23,SG,Ankit,Evaluation,Ex1,nut,Released
+17:13:24,SG,Ankit,Evaluation,Ex1,BH Grab 33,Released
+17:15:27,SG,Ankit,Evaluation,Ex2,movable_cup12,Grabbed
+17:15:30,SG,Ankit,Evaluation,Ex2,movable_cup12,Released
+17:15:37,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:15:43,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:15:45,SG,Ankit,Evaluation,Ex2,movable_cup13,Grabbed
+17:15:48,SG,Ankit,Evaluation,Ex2,movable_cup13,Released
+17:15:50,SG,Ankit,Evaluation,Ex2,movable_cup13,Grabbed
+17:15:52,SG,Ankit,Evaluation,Ex2,movable_cup13,Released
+17:15:53,SG,Ankit,Evaluation,Ex2,movable_cup13,Grabbed
+17:15:55,SG,Ankit,Evaluation,Ex2,movable_cup13,Released
+17:16:02,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:16:13,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:16:26,SG,Ankit,Evaluation,Ex2,movable_cup22,Grabbed
+17:16:29,SG,Ankit,Evaluation,Ex2,movable_cup22,Released
+17:16:33,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:16:37,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:16:39,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:41,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:42,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:43,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:45,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:47,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:48,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:49,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:51,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:52,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:54,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:54,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:55,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:57,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:58,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:16:58,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:16:59,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:17:01,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:17:02,SG,Ankit,Evaluation,Ex2,movable_cup23,Grabbed
+17:17:04,SG,Ankit,Evaluation,Ex2,movable_cup23,Released
+17:17:11,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:17:17,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:17:22,SG,Ankit,Evaluation,Ex2,movable_cup32,Grabbed
+17:17:25,SG,Ankit,Evaluation,Ex2,movable_cup32,Released
+17:17:29,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:17:33,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:17:38,SG,Ankit,Evaluation,Ex2,movable_cup33,Grabbed
+17:17:41,SG,Ankit,Evaluation,Ex2,movable_cup33,Released
+17:17:46,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:17:50,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:17:55,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:17:57,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:17:59,SG,Ankit,Evaluation,Ex2,movable_cup42,Grabbed
+17:18:02,SG,Ankit,Evaluation,Ex2,movable_cup42,Released
+17:18:12,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:18:14,SG,Ankit,Evaluation,Ex2,Hammer,Grabbed
+17:18:14,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:18:19,SG,Ankit,Evaluation,Ex2,Hammer,Released
+17:18:20,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:25,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:26,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:27,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:30,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:31,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:33,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:36,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:38,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:41,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:43,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:45,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:46,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:46,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:46,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:48,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:50,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:50,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:51,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:53,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:54,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:18:57,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:18:58,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:00,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:01,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:02,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:02,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:03,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:05,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:07,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:09,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:12,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:14,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:14,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:14,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:15,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:16,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:16,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:19,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:19,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:20,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:21,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:23,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:24,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:28,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:30,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:38,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:39,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+17:19:40,SG,Ankit,Evaluation,Ex2,movable_cup43,Grabbed
+17:19:43,SG,Ankit,Evaluation,Ex2,movable_cup43,Released
+18:17:06,VR,Sudharsan,Evaluation,Ex1,nut,Grabbed
+18:17:06,VR,Sudharsan,Evaluation,Ex1,nut,Released
+18:17:46,VR,Sudharsan,Evaluation,Ex1,BH Grab 33,Grabbed
+18:17:47,VR,Sudharsan,Evaluation,Ex1,nut,Grabbed
+18:17:50,VR,Sudharsan,Evaluation,Ex1,nut,Released
+18:17:51,VR,Sudharsan,Evaluation,Ex1,nut,Grabbed
+18:17:57,VR,Sudharsan,Evaluation,Ex1,nut,Released
+18:17:58,VR,Sudharsan,Evaluation,Ex1,BH Grab 33,Released
+18:19:21,VR,Sudharsan,Evaluation,Ex2,movable_cup12,Grabbed
+18:19:22,VR,Sudharsan,Evaluation,Ex2,movable_cup12,Released
+18:19:23,VR,Sudharsan,Evaluation,Ex2,movable_cup12,Grabbed
+18:19:26,VR,Sudharsan,Evaluation,Ex2,movable_cup12,Released
+18:19:30,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:19:34,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:19:35,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:37,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:38,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:40,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:43,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:45,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:45,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:46,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:47,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:51,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:52,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:55,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:19:56,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:19:58,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:20:01,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:20:02,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:20:03,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Grabbed
+18:20:05,VR,Sudharsan,Evaluation,Ex2,movable_cup13,Released
+18:20:07,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:20:09,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:20:21,VR,Sudharsan,Evaluation,Ex2,movable_cup23,Grabbed
+18:20:23,VR,Sudharsan,Evaluation,Ex2,movable_cup23,Released
+18:20:24,VR,Sudharsan,Evaluation,Ex2,movable_cup23,Grabbed
+18:20:26,VR,Sudharsan,Evaluation,Ex2,movable_cup23,Released
+18:20:46,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:20:49,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:20:51,VR,Sudharsan,Evaluation,Ex2,movable_cup22,Grabbed
+18:20:53,VR,Sudharsan,Evaluation,Ex2,movable_cup22,Released
+18:20:54,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:20:56,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:21:03,VR,Sudharsan,Evaluation,Ex2,movable_cup33,Grabbed
+18:21:05,VR,Sudharsan,Evaluation,Ex2,movable_cup33,Released
+18:21:20,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:21:25,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:21:26,VR,Sudharsan,Evaluation,Ex2,movable_cup32,Grabbed
+18:21:28,VR,Sudharsan,Evaluation,Ex2,movable_cup32,Released
+18:21:29,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:21:32,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:21:41,VR,Sudharsan,Evaluation,Ex2,movable_cup43,Grabbed
+18:21:43,VR,Sudharsan,Evaluation,Ex2,movable_cup43,Released
+18:21:44,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:21:48,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+18:21:48,VR,Sudharsan,Evaluation,Ex2,movable_cup42,Grabbed
+18:21:49,VR,Sudharsan,Evaluation,Ex2,movable_cup42,Released
+18:21:50,VR,Sudharsan,Evaluation,Ex2,Hammer,Grabbed
+18:21:55,VR,Sudharsan,Evaluation,Ex2,Hammer,Released
+14:02:25,SG,Chandu,Evaluation,Ex1,BH Grab 33,Grabbed
+14:02:31,SG,Chandu,Evaluation,Ex1,BH Grab 33,Released
+14:02:37,SG,Chandu,Evaluation,Ex1,BH Grab 33,Grabbed
+14:02:44,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:02:46,SG,Chandu,Evaluation,Ex1,nut,Released
+14:02:47,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:02:48,SG,Chandu,Evaluation,Ex1,nut,Released
+14:02:50,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:02:51,SG,Chandu,Evaluation,Ex1,nut,Released
+14:02:54,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:02:56,SG,Chandu,Evaluation,Ex1,nut,Released
+14:02:59,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:03:02,SG,Chandu,Evaluation,Ex1,nut,Released
+14:03:03,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:03:17,SG,Chandu,Evaluation,Ex1,nut,Released
+14:03:20,SG,Chandu,Evaluation,Ex1,nut,Grabbed
+14:03:21,SG,Chandu,Evaluation,Ex1,nut,Released
+14:03:22,SG,Chandu,Evaluation,Ex1,BH Grab 33,Released
+14:07:21,SG,Chandu,Evaluation,Ex2,movable_cup12,Grabbed
+14:07:22,SG,Chandu,Evaluation,Ex2,movable_cup12,Released
+14:07:30,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:07:32,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:07:38,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:07:47,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:07:56,SG,Chandu,Evaluation,Ex2,movable_cup13,Grabbed
+14:07:59,SG,Chandu,Evaluation,Ex2,movable_cup13,Released
+14:08:00,SG,Chandu,Evaluation,Ex2,movable_cup13,Grabbed
+14:08:02,SG,Chandu,Evaluation,Ex2,movable_cup13,Released
+14:08:03,SG,Chandu,Evaluation,Ex2,movable_cup13,Grabbed
+14:08:08,SG,Chandu,Evaluation,Ex2,movable_cup13,Released
+14:08:14,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:08:21,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:08:47,SG,Chandu,Evaluation,Ex2,movable_cup22,Grabbed
+14:08:48,SG,Chandu,Evaluation,Ex2,movable_cup22,Released
+14:09:04,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:09:12,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:09:14,SG,Chandu,Evaluation,Ex2,movable_cup23,Grabbed
+14:09:17,SG,Chandu,Evaluation,Ex2,movable_cup23,Released
+14:09:18,SG,Chandu,Evaluation,Ex2,movable_cup23,Grabbed
+14:09:23,SG,Chandu,Evaluation,Ex2,movable_cup23,Released
+14:09:26,SG,Chandu,Evaluation,Ex2,movable_cup23,Grabbed
+14:09:27,SG,Chandu,Evaluation,Ex2,movable_cup23,Released
+14:09:28,SG,Chandu,Evaluation,Ex2,movable_cup23,Grabbed
+14:09:30,SG,Chandu,Evaluation,Ex2,movable_cup23,Released
+14:09:32,SG,Chandu,Evaluation,Ex2,movable_cup23,Grabbed
+14:09:35,SG,Chandu,Evaluation,Ex2,movable_cup23,Released
+14:09:38,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:09:48,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:10:01,SG,Chandu,Evaluation,Ex2,movable_cup32,Grabbed
+14:10:04,SG,Chandu,Evaluation,Ex2,movable_cup32,Released
+14:10:08,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:10:12,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:10:13,SG,Chandu,Evaluation,Ex2,movable_cup33,Grabbed
+14:10:14,SG,Chandu,Evaluation,Ex2,movable_cup33,Released
+14:10:15,SG,Chandu,Evaluation,Ex2,movable_cup33,Grabbed
+14:10:16,SG,Chandu,Evaluation,Ex2,movable_cup33,Released
+14:10:18,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:10:23,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:10:30,SG,Chandu,Evaluation,Ex2,movable_cup42,Grabbed
+14:10:31,SG,Chandu,Evaluation,Ex2,movable_cup42,Released
+14:10:41,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:10:47,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:10:49,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:10:51,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:10:52,SG,Chandu,Evaluation,Ex2,movable_cup43,Grabbed
+14:10:55,SG,Chandu,Evaluation,Ex2,movable_cup43,Released
+14:10:56,SG,Chandu,Evaluation,Ex2,movable_cup43,Grabbed
+14:10:58,SG,Chandu,Evaluation,Ex2,movable_cup43,Released
+14:11:05,SG,Chandu,Evaluation,Ex2,Hammer,Grabbed
+14:11:10,SG,Chandu,Evaluation,Ex2,Hammer,Released
+14:16:43,VR,Sourab,Evaluation,Ex1,BH Grab 33,Grabbed
+14:16:45,VR,Sourab,Evaluation,Ex1,nut,Grabbed
+14:16:52,VR,Sourab,Evaluation,Ex1,nut,Released
+14:16:52,VR,Sourab,Evaluation,Ex1,BH Grab 33,Released
+14:16:54,VR,Sourab,Evaluation,Ex1,nut,Grabbed
+14:16:54,VR,Sourab,Evaluation,Ex1,BH Grab 33,Grabbed
+14:17:03,VR,Sourab,Evaluation,Ex1,nut,Released
+14:17:03,VR,Sourab,Evaluation,Ex1,BH Grab 33,Released
+14:17:04,VR,Sourab,Evaluation,Ex1,BH Grab 33,Grabbed
+14:17:06,VR,Sourab,Evaluation,Ex1,nut,Grabbed
+14:17:10,VR,Sourab,Evaluation,Ex1,nut,Released
+14:17:10,VR,Sourab,Evaluation,Ex1,BH Grab 33,Released
+14:20:57,VR,Sourab,Evaluation,Ex2,movable_cup12,Grabbed
+14:21:01,VR,Sourab,Evaluation,Ex2,movable_cup12,Released
+14:21:06,VR,Sourab,Evaluation,Ex2,movable_cup12,Grabbed
+14:21:11,VR,Sourab,Evaluation,Ex2,movable_cup12,Released
+14:21:15,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:21:23,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:21:27,VR,Sourab,Evaluation,Ex2,movable_cup13,Grabbed
+14:21:30,VR,Sourab,Evaluation,Ex2,movable_cup13,Released
+14:21:31,VR,Sourab,Evaluation,Ex2,movable_cup13,Grabbed
+14:21:35,VR,Sourab,Evaluation,Ex2,movable_cup13,Released
+14:21:37,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:21:45,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:21:48,VR,Sourab,Evaluation,Ex2,movable_cup22,Grabbed
+14:21:49,VR,Sourab,Evaluation,Ex2,movable_cup22,Released
+14:21:50,VR,Sourab,Evaluation,Ex2,movable_cup22,Grabbed
+14:21:53,VR,Sourab,Evaluation,Ex2,movable_cup22,Released
+14:21:55,VR,Sourab,Evaluation,Ex2,movable_cup22,Grabbed
+14:21:58,VR,Sourab,Evaluation,Ex2,movable_cup22,Released
+14:21:59,VR,Sourab,Evaluation,Ex2,movable_cup22,Grabbed
+14:22:02,VR,Sourab,Evaluation,Ex2,movable_cup22,Released
+14:22:04,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:22:10,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:22:12,VR,Sourab,Evaluation,Ex2,movable_cup23,Grabbed
+14:22:15,VR,Sourab,Evaluation,Ex2,movable_cup23,Released
+14:22:16,VR,Sourab,Evaluation,Ex2,movable_cup23,Grabbed
+14:22:17,VR,Sourab,Evaluation,Ex2,movable_cup23,Released
+14:22:19,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:22:20,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:22:21,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:22:25,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:22:27,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:22:33,VR,Sourab,Evaluation,Ex2,movable_cup32,Grabbed
+14:22:38,VR,Sourab,Evaluation,Ex2,movable_cup32,Released
+14:22:39,VR,Sourab,Evaluation,Ex2,movable_cup32,Grabbed
+14:22:40,VR,Sourab,Evaluation,Ex2,movable_cup32,Released
+14:22:41,VR,Sourab,Evaluation,Ex2,movable_cup32,Grabbed
+14:22:42,VR,Sourab,Evaluation,Ex2,movable_cup32,Released
+14:22:46,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:22:47,VR,Sourab,Evaluation,Ex2,movable_cup32,Grabbed
+14:22:50,VR,Sourab,Evaluation,Ex2,movable_cup32,Released
+14:22:51,VR,Sourab,Evaluation,Ex2,movable_cup32,Grabbed
+14:22:52,VR,Sourab,Evaluation,Ex2,movable_cup32,Released
+14:22:54,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:22:59,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:23:00,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:23:01,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:23:02,VR,Sourab,Evaluation,Ex2,movable_cup33,Grabbed
+14:23:07,VR,Sourab,Evaluation,Ex2,movable_cup33,Released
+14:23:08,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:23:13,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:23:14,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:23:17,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:21,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:23,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:24,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:25,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:26,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:27,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:29,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:31,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:33,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:34,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:36,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:37,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:38,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:39,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:41,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:44,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:46,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:46,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:23:47,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:49,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:52,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:54,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:23:56,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:23:58,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:24:02,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:24:04,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:24:05,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:24:06,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:24:07,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:24:08,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:24:09,VR,Sourab,Evaluation,Ex2,movable_cup42,Grabbed
+14:24:09,VR,Sourab,Evaluation,Ex2,movable_cup42,Released
+14:24:11,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:24:14,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:24:16,VR,Sourab,Evaluation,Ex2,movable_cup43,Grabbed
+14:24:20,VR,Sourab,Evaluation,Ex2,movable_cup43,Released
+14:24:21,VR,Sourab,Evaluation,Ex2,movable_cup43,Grabbed
+14:24:22,VR,Sourab,Evaluation,Ex2,movable_cup43,Released
+14:24:25,VR,Sourab,Evaluation,Ex2,Hammer,Grabbed
+14:24:34,VR,Sourab,Evaluation,Ex2,Hammer,Released
+14:41:46,SG,Sree Hari,Evaluation,Ex1,BH Grab 33,Grabbed
+14:41:50,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:41:52,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:41:57,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:42:00,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:42:02,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:42:04,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:42:08,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:42:11,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:42:13,SG,Sree Hari,Evaluation,Ex1,BH Grab 33,Released
+14:53:23,SG,Sree Hari,Training,Ex2,movable_cup12,Grabbed
+14:53:24,SG,Sree Hari,Training,Ex2,movable_cup12,Released
+14:53:25,SG,Sree Hari,Training,Ex2,movable_cup12,Grabbed
+14:53:27,SG,Sree Hari,Training,Ex2,movable_cup12,Released
+14:53:29,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:53:36,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:53:43,SG,Sree Hari,Training,Ex2,movable_cup13,Grabbed
+14:53:45,SG,Sree Hari,Training,Ex2,movable_cup13,Released
+14:53:46,SG,Sree Hari,Training,Ex2,movable_cup13,Grabbed
+14:53:47,SG,Sree Hari,Training,Ex2,movable_cup13,Released
+14:53:49,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:53:54,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:54:03,SG,Sree Hari,Training,Ex2,movable_cup22,Grabbed
+14:54:06,SG,Sree Hari,Training,Ex2,movable_cup22,Released
+14:54:10,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:54:13,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:54:15,SG,Sree Hari,Training,Ex2,movable_cup23,Grabbed
+14:54:19,SG,Sree Hari,Training,Ex2,movable_cup23,Released
+14:54:20,SG,Sree Hari,Training,Ex2,movable_cup23,Grabbed
+14:54:21,SG,Sree Hari,Training,Ex2,movable_cup23,Released
+14:54:22,SG,Sree Hari,Training,Ex2,movable_cup23,Grabbed
+14:54:24,SG,Sree Hari,Training,Ex2,movable_cup23,Released
+14:54:25,SG,Sree Hari,Training,Ex2,movable_cup23,Grabbed
+14:54:26,SG,Sree Hari,Training,Ex2,movable_cup23,Released
+14:54:27,SG,Sree Hari,Training,Ex2,movable_cup23,Grabbed
+14:54:28,SG,Sree Hari,Training,Ex2,movable_cup23,Released
+14:54:32,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:54:35,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:54:45,SG,Sree Hari,Training,Ex2,movable_cup32,Grabbed
+14:54:47,SG,Sree Hari,Training,Ex2,movable_cup32,Released
+14:54:54,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:54:57,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:55:01,SG,Sree Hari,Training,Ex2,movable_cup33,Grabbed
+14:55:02,SG,Sree Hari,Training,Ex2,movable_cup33,Released
+14:55:03,SG,Sree Hari,Training,Ex2,movable_cup33,Grabbed
+14:55:05,SG,Sree Hari,Training,Ex2,movable_cup33,Released
+14:55:09,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:55:12,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:55:20,SG,Sree Hari,Training,Ex2,movable_cup42,Grabbed
+14:55:22,SG,Sree Hari,Training,Ex2,movable_cup42,Released
+14:55:34,SG,Sree Hari,Training,Ex2,movable_cup42,Grabbed
+14:55:35,SG,Sree Hari,Training,Ex2,movable_cup42,Released
+14:55:46,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:55:49,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:55:56,SG,Sree Hari,Training,Ex2,movable_cup43,Grabbed
+14:55:57,SG,Sree Hari,Training,Ex2,movable_cup43,Released
+14:56:00,SG,Sree Hari,Training,Ex2,movable_cup43,Grabbed
+14:56:00,SG,Sree Hari,Training,Ex2,movable_cup43,Released
+14:56:05,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:56:06,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:56:08,SG,Sree Hari,Training,Ex2,Hammer,Grabbed
+14:56:12,SG,Sree Hari,Training,Ex2,Hammer,Released
+14:29:24,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:29:27,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:29:30,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:29:34,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:29:38,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:29:38,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:29:41,SG,Sree Hari,Evaluation,Ex1,nut,Grabbed
+14:29:45,SG,Sree Hari,Evaluation,Ex1,nut,Released
+14:30:44,SG,Sree Hari,Evaluation,Ex2,movable_cup13,Grabbed
+14:30:45,SG,Sree Hari,Evaluation,Ex2,movable_cup13,Released
+14:30:54,SG,Sree Hari,Evaluation,Ex2,movable_cup13,Grabbed
+14:30:57,SG,Sree Hari,Evaluation,Ex2,movable_cup13,Released
+14:31:15,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:31:18,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:31:32,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:31:36,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:31:39,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:31:41,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:31:43,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:31:47,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:31:59,SG,Sree Hari,Evaluation,Ex2,movable_cup12,Grabbed
+14:32:00,SG,Sree Hari,Evaluation,Ex2,movable_cup12,Released
+14:32:08,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:32:13,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:32:16,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:32:20,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:32:37,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:32:39,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:32:43,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:32:46,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:32:47,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:32:49,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:32:52,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:32:53,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:32:54,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:32:56,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:33:00,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:33:00,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:33:01,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:33:04,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:33:07,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Grabbed
+14:33:08,SG,Sree Hari,Evaluation,Ex2,movable_cup43,Released
+14:33:14,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:33:16,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:33:25,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:33:30,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:33:33,SG,Sree Hari,Evaluation,Ex2,movable_cup42,Grabbed
+14:33:35,SG,Sree Hari,Evaluation,Ex2,movable_cup42,Released
+14:33:39,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:33:49,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:33:57,SG,Sree Hari,Evaluation,Ex2,movable_cup33,Grabbed
+14:33:59,SG,Sree Hari,Evaluation,Ex2,movable_cup33,Released
+14:34:06,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:34:10,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:34:13,SG,Sree Hari,Evaluation,Ex2,movable_cup32,Grabbed
+14:34:14,SG,Sree Hari,Evaluation,Ex2,movable_cup32,Released
+14:34:24,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:34:29,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:34:31,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:34:38,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:34:43,SG,Sree Hari,Evaluation,Ex2,movable_cup23,Grabbed
+14:34:45,SG,Sree Hari,Evaluation,Ex2,movable_cup23,Released
+14:34:49,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:34:53,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+14:34:56,SG,Sree Hari,Evaluation,Ex2,movable_cup22,Grabbed
+14:34:57,SG,Sree Hari,Evaluation,Ex2,movable_cup22,Released
+14:35:02,SG,Sree Hari,Evaluation,Ex2,Hammer,Grabbed
+14:35:07,SG,Sree Hari,Evaluation,Ex2,Hammer,Released
+18:34:03,SG,7,Training,Ex2,nut,Grabbed
+18:35:26,SG,7,Training,Ex2,movable_cup12,Grabbed
+18:35:29,SG,7,Training,Ex2,movable_cup12,Released
+18:35:29,SG,7,Training,Ex2,movable_cup12,Grabbed
+18:35:31,SG,7,Training,Ex2,movable_cup12,Released
+18:35:31,SG,7,Training,Ex2,movable_cup12,Grabbed
+18:35:32,SG,7,Training,Ex2,movable_cup12,Released
+18:35:35,SG,7,Training,Ex2,Hammer,Grabbed
+18:35:38,SG,7,Training,Ex2,Hammer,Released
+18:35:39,SG,7,Training,Ex2,Hammer,Grabbed
+18:35:43,SG,7,Training,Ex2,Hammer,Released
+18:35:49,SG,7,Training,Ex2,movable_cup13,Grabbed
+18:35:50,SG,7,Training,Ex2,movable_cup13,Released
+18:35:55,SG,7,Training,Ex2,movable_cup13,Grabbed
+18:35:57,SG,7,Training,Ex2,movable_cup13,Released
+20:12:15,VR,7,Training,Ex1,Box,Grabbed
+20:12:20,VR,7,Training,Ex1,Holder,Released
+20:12:24,VR,7,Training,Ex1,Holder,Released
+20:12:25,VR,7,Training,Ex1,Box,Released
+20:22:22,VR,7,Training,Ex1,Box,Grabbed
+20:22:24,VR,7,Training,Ex1,Holder,Grabbed
+20:22:26,VR,7,Training,Ex1,Holder,Released
+20:22:28,VR,7,Training,Ex1,Holder,Grabbed
+20:22:29,VR,7,Training,Ex1,Holder,Released
+20:22:30,VR,7,Training,Ex1,Holder,Grabbed
+20:22:31,VR,7,Training,Ex1,Holder,Released
+20:22:32,VR,7,Training,Ex1,Holder,Grabbed
+20:22:33,VR,7,Training,Ex1,Holder,Released
+20:22:34,VR,7,Training,Ex1,Holder,Grabbed
+20:22:39,VR,7,Training,Ex1,Holder,Released
+20:22:40,VR,7,Training,Ex1,Holder,Grabbed
+20:22:42,VR,7,Training,Ex1,Holder,Released
+20:22:44,VR,7,Training,Ex1,Holder,Grabbed
+20:22:47,VR,7,Training,Ex1,Holder,Released
+20:22:49,VR,7,Training,Ex1,Holder,Grabbed
+20:22:51,VR,7,Training,Ex1,Holder,Released
+20:22:52,VR,7,Training,Ex1,Holder,Grabbed
+20:22:54,VR,7,Training,Ex1,Holder,Released
+20:22:57,VR,7,Training,Ex1,Holder,Grabbed
+20:22:58,VR,7,Training,Ex1,Holder,Released
+20:22:59,VR,7,Training,Ex1,Holder,Grabbed
+20:22:59,VR,7,Training,Ex1,Holder,Released
+20:23:00,VR,7,Training,Ex1,Holder,Grabbed
+20:23:02,VR,7,Training,Ex1,Holder,Released
+20:23:04,VR,7,Training,Ex1,Holder,Grabbed
+20:23:05,VR,7,Training,Ex1,Holder,Released
+20:23:07,VR,7,Training,Ex1,Holder,Grabbed
+20:23:08,VR,7,Training,Ex1,Holder,Released
+20:23:08,VR,7,Training,Ex1,Holder,Grabbed
+20:23:09,VR,7,Training,Ex1,Holder,Released
+20:23:11,VR,7,Training,Ex1,Holder,Grabbed
+20:23:12,VR,7,Training,Ex1,Holder,Released
+20:23:13,VR,7,Training,Ex1,Holder,Grabbed
+20:23:14,VR,7,Training,Ex1,Holder,Released
+20:23:15,VR,7,Training,Ex1,Box,Released
+20:25:27,VR,7,Training,Ex1,Box,Grabbed
+20:25:29,VR,7,Training,Ex1,Holder,Grabbed
+20:25:31,VR,7,Training,Ex1,Holder,Released
+20:25:32,VR,7,Training,Ex1,Holder,Grabbed
+20:25:34,VR,7,Training,Ex1,Holder,Released
+20:25:36,VR,7,Training,Ex1,Holder,Grabbed
+20:25:37,VR,7,Training,Ex1,Holder,Released
+20:25:38,VR,7,Training,Ex1,Holder,Grabbed
+20:25:39,VR,7,Training,Ex1,Holder,Released
+20:25:40,VR,7,Training,Ex1,Holder,Grabbed
+20:25:42,VR,7,Training,Ex1,Holder,Released
+20:25:42,VR,7,Training,Ex1,Holder,Grabbed
+20:25:43,VR,7,Training,Ex1,Holder,Released
+20:25:43,VR,7,Training,Ex1,Holder,Grabbed
+20:25:44,VR,7,Training,Ex1,Holder,Released
+20:25:45,VR,7,Training,Ex1,Holder,Grabbed
+20:25:47,VR,7,Training,Ex1,Box,Released
+20:25:47,VR,7,Training,Ex1,Holder,Released
+20:27:51,VR,7,Training,Ex1,Box,Grabbed
+20:27:52,VR,7,Training,Ex1,Holder,Grabbed
+20:27:52,VR,7,Training,Ex1,Holder,Released
+20:27:52,VR,7,Training,Ex1,Holder,Grabbed
+20:27:54,VR,7,Training,Ex1,Holder,Released
+20:27:55,VR,7,Training,Ex1,Holder,Grabbed
+20:27:58,VR,7,Training,Ex1,Holder,Released
+20:27:59,VR,7,Training,Ex1,Holder,Grabbed
+20:28:00,VR,7,Training,Ex1,Holder,Released
+20:28:02,VR,7,Training,Ex1,Holder,Grabbed
+20:28:03,VR,7,Training,Ex1,Holder,Released
+20:28:04,VR,7,Training,Ex1,Holder,Grabbed
+20:28:06,VR,7,Training,Ex1,Holder,Released
+20:28:08,VR,7,Training,Ex1,Holder,Grabbed
+20:28:09,VR,7,Training,Ex1,Holder,Released
+20:28:09,VR,7,Training,Ex1,Holder,Grabbed
+20:28:13,VR,7,Training,Ex1,Holder,Released
+20:28:14,VR,7,Training,Ex1,Holder,Grabbed
+20:28:15,VR,7,Training,Ex1,Holder,Released
+20:28:16,VR,7,Training,Ex1,Holder,Grabbed
+20:28:17,VR,7,Training,Ex1,Holder,Released
+20:28:18,VR,7,Training,Ex1,Holder,Grabbed
+20:28:18,VR,7,Training,Ex1,Holder,Released
+20:28:19,VR,7,Training,Ex1,Holder,Grabbed
+20:28:23,VR,7,Training,Ex1,Holder,Released
+20:28:24,VR,7,Training,Ex1,Holder,Grabbed
+20:28:25,VR,7,Training,Ex1,Holder,Released
+20:28:26,VR,7,Training,Ex1,Holder,Grabbed
+20:28:27,VR,7,Training,Ex1,Holder,Released
+20:28:28,VR,7,Training,Ex1,Holder,Grabbed
+20:28:30,VR,7,Training,Ex1,Holder,Released
+20:28:31,VR,7,Training,Ex1,Holder,Grabbed
+20:28:34,VR,7,Training,Ex1,Holder,Released
+20:28:35,VR,7,Training,Ex1,Holder,Grabbed
+20:28:36,VR,7,Training,Ex1,Holder,Released
+20:28:37,VR,7,Training,Ex1,Holder,Grabbed
+20:28:39,VR,7,Training,Ex1,Holder,Released
+20:28:40,VR,7,Training,Ex1,Holder,Grabbed
+20:28:42,VR,7,Training,Ex1,Holder,Released
+20:28:43,VR,7,Training,Ex1,Holder,Grabbed
+20:28:44,VR,7,Training,Ex1,Holder,Released
+20:28:45,VR,7,Training,Ex1,Holder,Grabbed
+20:28:46,VR,7,Training,Ex1,Holder,Released
+20:28:46,VR,7,Training,Ex1,Holder,Grabbed
+20:28:49,VR,7,Training,Ex1,Holder,Released
+20:28:51,VR,7,Training,Ex1,Holder,Grabbed
+20:28:52,VR,7,Training,Ex1,Holder,Released
+20:28:54,VR,7,Training,Ex1,Holder,Grabbed
+20:28:55,VR,7,Training,Ex1,Holder,Released
+20:28:57,VR,7,Training,Ex1,Holder,Grabbed
+20:29:00,VR,7,Training,Ex1,Holder,Released
+20:29:01,VR,7,Training,Ex1,Box,Released
+20:29:01,VR,7,Training,Ex1,Box,Grabbed
+20:29:02,VR,7,Training,Ex1,Box,Released
+20:29:02,VR,7,Training,Ex1,Box,Grabbed
+20:29:03,VR,7,Training,Ex1,Holder,Grabbed
+20:29:05,VR,7,Training,Ex1,Holder,Released
+20:29:06,VR,7,Training,Ex1,Holder,Grabbed
+20:29:08,VR,7,Training,Ex1,Holder,Released
+20:29:09,VR,7,Training,Ex1,Holder,Grabbed
+20:29:17,VR,7,Training,Ex1,Holder,Released
+20:29:19,VR,7,Training,Ex1,Holder,Grabbed
+20:29:21,VR,7,Training,Ex1,Box,Released
+20:29:21,VR,7,Training,Ex1,Box,Grabbed
+20:29:21,VR,7,Training,Ex1,Holder,Released
+20:29:22,VR,7,Training,Ex1,Holder,Grabbed
+20:29:24,VR,7,Training,Ex1,Holder,Released
+20:29:25,VR,7,Training,Ex1,Holder,Grabbed
+20:29:26,VR,7,Training,Ex1,Holder,Released
+20:29:27,VR,7,Training,Ex1,Box,Released
+20:42:12,VR,7,Training,Ex1,Box,Grabbed
+20:42:13,VR,7,Training,Ex1,Box,Released
+21:43:23,VR,7,Training,Ex1,Box,Grabbed
+21:43:25,VR,7,Training,Ex1,Holder,Grabbed
+21:43:27,VR,7,Training,Ex1,Holder,Released
+21:43:28,VR,7,Training,Ex1,Holder,Grabbed
+21:43:30,VR,7,Training,Ex1,Holder,Released
+21:43:33,VR,7,Training,Ex1,Holder,Grabbed
+21:43:36,VR,7,Training,Ex1,Holder,Released
+21:43:38,VR,7,Training,Ex1,Box,Released
+21:43:38,VR,7,Training,Ex1,Box,Grabbed
+21:43:39,VR,7,Training,Ex1,Box,Released
+21:43:39,VR,7,Training,Ex1,Box,Grabbed
+21:43:40,VR,7,Training,Ex1,Holder,Grabbed
+21:43:42,VR,7,Training,Ex1,Holder,Released
+21:43:44,VR,7,Training,Ex1,Box,Released
+21:43:44,VR,7,Training,Ex1,Box,Grabbed
+21:43:45,VR,7,Training,Ex1,Box,Released
+21:43:45,VR,7,Training,Ex1,Box,Grabbed
+21:43:46,VR,7,Training,Ex1,Holder,Grabbed
+21:43:48,VR,7,Training,Ex1,Holder,Released
+21:43:52,VR,7,Training,Ex1,Box,Released
+21:45:30,VR,7,Training,Ex1,Holder,Grabbed
+21:45:32,VR,7,Training,Ex1,Holder,Released
+21:45:33,VR,7,Training,Ex1,Box,Grabbed
+21:45:35,VR,7,Training,Ex1,Holder,Grabbed
+21:45:37,VR,7,Training,Ex1,Holder,Released
+21:45:38,VR,7,Training,Ex1,Holder,Grabbed
+21:45:40,VR,7,Training,Ex1,Holder,Released
+21:45:42,VR,7,Training,Ex1,Box,Released
+21:45:42,VR,7,Training,Ex1,Box,Grabbed
+21:45:43,VR,7,Training,Ex1,Box,Released
+21:45:43,VR,7,Training,Ex1,Box,Grabbed
+21:45:44,VR,7,Training,Ex1,Holder,Grabbed
+21:45:45,VR,7,Training,Ex1,Holder,Released
+21:45:47,VR,7,Training,Ex1,Holder,Grabbed
+21:45:48,VR,7,Training,Ex1,Holder,Released
+21:45:49,VR,7,Training,Ex1,Holder,Grabbed
+21:45:50,VR,7,Training,Ex1,Holder,Released
+21:45:51,VR,7,Training,Ex1,Holder,Grabbed
+21:45:52,VR,7,Training,Ex1,Holder,Released
+21:45:53,VR,7,Training,Ex1,Holder,Grabbed
+21:45:53,VR,7,Training,Ex1,Holder,Released
+21:45:54,VR,7,Training,Ex1,Holder,Grabbed
+21:45:55,VR,7,Training,Ex1,Holder,Released
+21:45:56,VR,7,Training,Ex1,Holder,Grabbed
+21:45:57,VR,7,Training,Ex1,Holder,Released
+21:45:59,VR,7,Training,Ex1,Box,Released
+21:45:59,VR,7,Training,Ex1,Box,Grabbed
+21:46:01,VR,7,Training,Ex1,Holder,Grabbed
+21:46:03,VR,7,Training,Ex1,Holder,Released
+21:46:04,VR,7,Training,Ex1,Holder,Grabbed
+21:46:05,VR,7,Training,Ex1,Holder,Released
+21:46:06,VR,7,Training,Ex1,Holder,Grabbed
+21:46:07,VR,7,Training,Ex1,Holder,Released
+21:46:09,VR,7,Training,Ex1,Holder,Grabbed
+21:46:10,VR,7,Training,Ex1,Holder,Released
+21:46:12,VR,7,Training,Ex1,Holder,Grabbed
+21:46:13,VR,7,Training,Ex1,Holder,Released
+21:46:14,VR,7,Training,Ex1,Box,Released
+21:52:14,VR,7,Training,Ex1,Holder,Grabbed
+21:52:15,VR,7,Training,Ex1,Holder,Released
+21:52:17,VR,7,Training,Ex1,Box,Grabbed
+21:52:18,VR,7,Training,Ex1,Holder,Grabbed
+21:52:19,VR,7,Training,Ex1,Holder,Released
+21:52:20,VR,7,Training,Ex1,Holder,Grabbed
+21:52:24,VR,7,Training,Ex1,Holder,Released
+21:52:26,VR,7,Training,Ex1,Holder,Grabbed
+21:52:29,VR,7,Training,Ex1,Holder,Released
+21:52:31,VR,7,Training,Ex1,Box,Released
+21:53:46,VR,7,Training,Ex1,Box,Grabbed
+21:53:48,VR,7,Training,Ex1,Holder,Grabbed
+21:53:49,VR,7,Training,Ex1,Holder,Released
+21:53:51,VR,7,Training,Ex1,Box,Released
+21:53:51,VR,7,Training,Ex1,Box,Grabbed
+21:53:52,VR,7,Training,Ex1,Holder,Grabbed
+21:53:54,VR,7,Training,Ex1,Holder,Released
+21:53:55,VR,7,Training,Ex1,Holder,Grabbed
+21:53:56,VR,7,Training,Ex1,Holder,Released
+21:53:57,VR,7,Training,Ex1,Holder,Grabbed
+21:53:58,VR,7,Training,Ex1,Holder,Released
+21:53:59,VR,7,Training,Ex1,Holder,Grabbed
+21:54:00,VR,7,Training,Ex1,Holder,Released
+21:54:01,VR,7,Training,Ex1,Holder,Grabbed
+21:54:01,VR,7,Training,Ex1,Holder,Released
+21:54:02,VR,7,Training,Ex1,Holder,Grabbed
+21:54:03,VR,7,Training,Ex1,Holder,Released
+21:54:04,VR,7,Training,Ex1,Holder,Grabbed
+21:54:05,VR,7,Training,Ex1,Holder,Released
+21:54:06,VR,7,Training,Ex1,Holder,Grabbed
+21:54:07,VR,7,Training,Ex1,Holder,Released
+21:54:09,VR,7,Training,Ex1,Holder,Grabbed
+21:54:12,VR,7,Training,Ex1,Holder,Released
+21:54:15,VR,7,Training,Ex1,Holder,Grabbed
+21:54:17,VR,7,Training,Ex1,Holder,Released
+21:54:19,VR,7,Training,Ex1,Holder,Grabbed
+21:54:20,VR,7,Training,Ex1,Holder,Released
+21:54:22,VR,7,Training,Ex1,Holder,Grabbed
+21:54:22,VR,7,Training,Ex1,Holder,Released
+21:54:24,VR,7,Training,Ex1,Holder,Grabbed
+21:54:27,VR,7,Training,Ex1,Holder,Released
+21:54:30,VR,7,Training,Ex1,Box,Released
+21:54:30,VR,7,Training,Ex1,Box,Grabbed
+21:54:31,VR,7,Training,Ex1,Holder,Grabbed
+21:54:32,VR,7,Training,Ex1,Holder,Released
+21:54:33,VR,7,Training,Ex1,Holder,Grabbed
+21:54:34,VR,7,Training,Ex1,Holder,Released
+21:54:36,VR,7,Training,Ex1,Box,Released
+21:54:36,VR,7,Training,Ex1,Box,Grabbed
+21:54:38,VR,7,Training,Ex1,Box,Released
+21:54:38,VR,7,Training,Ex1,Box,Grabbed
+21:54:39,VR,7,Training,Ex1,Box,Released
+21:54:39,VR,7,Training,Ex1,Box,Grabbed
+21:54:40,VR,7,Training,Ex1,Box,Released
+21:54:40,VR,7,Training,Ex1,Box,Grabbed
+21:54:40,VR,7,Training,Ex1,Box,Released
+21:54:40,VR,7,Training,Ex1,Box,Grabbed
+21:54:41,VR,7,Training,Ex1,Box,Released
+21:54:41,VR,7,Training,Ex1,Box,Grabbed
+21:54:42,VR,7,Training,Ex1,Box,Released
+21:54:42,VR,7,Training,Ex1,Box,Grabbed
+21:54:43,VR,7,Training,Ex1,Box,Released
+21:54:43,VR,7,Training,Ex1,Box,Grabbed
+21:54:44,VR,7,Training,Ex1,Box,Released
+21:54:44,VR,7,Training,Ex1,Box,Grabbed
+21:54:44,VR,7,Training,Ex1,Box,Released
+21:56:30,VR,7,Training,Ex1,Box,Grabbed
+21:56:31,VR,7,Training,Ex1,Box,Released
+21:56:31,VR,7,Training,Ex1,Box,Grabbed
+21:56:32,VR,7,Training,Ex1,Holder,Grabbed
+21:56:33,VR,7,Training,Ex1,Holder,Released
+21:56:34,VR,7,Training,Ex1,Box,Released
+21:56:34,VR,7,Training,Ex1,Box,Grabbed
+21:56:35,VR,7,Training,Ex1,Box,Released
+21:56:35,VR,7,Training,Ex1,Box,Grabbed
+21:56:36,VR,7,Training,Ex1,Box,Released
+21:56:36,VR,7,Training,Ex1,Box,Grabbed
+21:56:38,VR,7,Training,Ex1,Holder,Grabbed
+21:56:39,VR,7,Training,Ex1,Holder,Released
+21:56:41,VR,7,Training,Ex1,Holder,Grabbed
+21:56:42,VR,7,Training,Ex1,Holder,Released
+21:56:43,VR,7,Training,Ex1,Box,Released
+21:56:43,VR,7,Training,Ex1,Box,Grabbed
+21:56:44,VR,7,Training,Ex1,Box,Released
+21:56:44,VR,7,Training,Ex1,Box,Grabbed
+21:56:46,VR,7,Training,Ex1,Box,Released
+21:56:46,VR,7,Training,Ex1,Box,Grabbed
+21:56:47,VR,7,Training,Ex1,Holder,Grabbed
+21:56:47,VR,7,Training,Ex1,Holder,Released
+21:56:49,VR,7,Training,Ex1,Box,Released
+21:56:49,VR,7,Training,Ex1,Box,Grabbed
+21:56:50,VR,7,Training,Ex1,Box,Released
+21:56:50,VR,7,Training,Ex1,Box,Grabbed
+21:56:52,VR,7,Training,Ex1,Box,Released
+21:56:52,VR,7,Training,Ex1,Box,Grabbed
+21:56:53,VR,7,Training,Ex1,Holder,Grabbed
+21:56:55,VR,7,Training,Ex1,Holder,Released
+21:56:56,VR,7,Training,Ex1,Holder,Grabbed
+21:56:57,VR,7,Training,Ex1,Holder,Released
+21:56:58,VR,7,Training,Ex1,Holder,Grabbed
+21:56:59,VR,7,Training,Ex1,Holder,Released
+21:57:01,VR,7,Training,Ex1,Holder,Grabbed
+21:57:02,VR,7,Training,Ex1,Holder,Released
+21:57:03,VR,7,Training,Ex1,Holder,Grabbed
+21:57:04,VR,7,Training,Ex1,Holder,Released
+21:57:05,VR,7,Training,Ex1,Holder,Grabbed
+21:57:06,VR,7,Training,Ex1,Holder,Released
+21:57:07,VR,7,Training,Ex1,Holder,Grabbed
+21:57:09,VR,7,Training,Ex1,Holder,Released
+21:57:10,VR,7,Training,Ex1,Holder,Grabbed
+21:57:11,VR,7,Training,Ex1,Holder,Released
+21:57:12,VR,7,Training,Ex1,Holder,Grabbed
+21:57:13,VR,7,Training,Ex1,Holder,Released
+21:57:15,VR,7,Training,Ex1,Box,Released
+12:08:14,VR,7,Training,Ex1,Holder,Grabbed
+12:08:15,VR,7,Training,Ex1,Holder,Released
+12:08:15,VR,7,Training,Ex1,Holder,Grabbed
+12:08:16,VR,7,Training,Ex1,Holder,Released
+12:08:17,VR,7,Training,Ex1,Box,Grabbed
+12:08:30,VR,7,Training,Ex1,Box,Released
+15:44:07,VR,7,Training,Ex1,Box,Grabbed
+15:44:09,VR,7,Training,Ex1,Box,Released
+15:44:49,VR,7,Training,Ex1,Box,Grabbed
+15:44:59,VR,7,Training,Ex1,Holder,Released
+15:45:06,VR,7,Training,Ex1,Holder,Released
+15:45:11,VR,7,Training,Ex1,Holder,Released
+15:45:12,VR,7,Training,Ex1,Holder,Released
+15:45:14,VR,7,Training,Ex1,Holder,Released
+15:45:17,VR,7,Training,Ex1,Holder,Released
+15:45:20,VR,7,Training,Ex1,Holder,Released
+15:45:23,VR,7,Training,Ex1,Holder,Released
+15:45:30,VR,7,Training,Ex1,Holder,Released
+15:45:32,VR,7,Training,Ex1,Holder,Released
+15:45:33,VR,7,Training,Ex1,Box,Released
+15:58:42,VR,7,Training,Ex1,Box,Grabbed
+15:58:44,VR,7,Training,Ex1,Box,Released
+15:58:44,VR,7,Training,Ex1,Box,Grabbed
+15:58:47,VR,7,Training,Ex1,Holder,Grabbed
+15:59:37,VR,7,Training,Ex1,Holder,Released
+15:59:39,VR,7,Training,Ex1,Holder,Grabbed
+15:59:47,VR,7,Training,Ex1,Holder,Released
+15:59:48,VR,7,Training,Ex1,Holder,Grabbed
+15:59:53,VR,7,Training,Ex1,Holder,Released
+15:59:54,VR,7,Training,Ex1,Holder,Grabbed
+15:59:55,VR,7,Training,Ex1,Holder,Released
+15:59:55,VR,7,Training,Ex1,Box,Released
+19:29:32,VR,7,Training,Ex1,Box,Grabbed
+19:30:26,VR,7,Training,Ex1,Box,Released
+19:34:47,VR,7,Training,Ex1,Box,Grabbed
+19:35:17,VR,7,Training,Ex1,Box,Released
+19:38:32,VR,7,Training,Ex1,Box,Grabbed
+19:39:09,VR,7,Training,Ex1,Box,Released
+19:40:14,VR,7,Training,Ex1,Box,Grabbed
+19:40:31,VR,7,Training,Ex1,Box,Released
+19:40:34,VR,7,Training,Ex1,Hammer,Grabbed
+19:41:06,VR,7,Training,Ex1,Hammer,Released
+19:41:25,VR,7,Training,Ex1,Box,Grabbed
+19:41:35,VR,7,Training,Ex1,Box,Released
+19:42:58,VR,7,Training,Ex1,Box,Grabbed
+19:43:19,VR,7,Training,Ex1,Box,Released
+19:44:29,VR,7,Training,Ex1,Box,Grabbed
+19:44:35,VR,7,Training,Ex1,Box,Released
+19:44:36,VR,7,Training,Ex1,Holder,Grabbed
+19:44:36,VR,7,Training,Ex1,Holder,Released
+19:44:37,VR,7,Training,Ex1,Box,Grabbed
+19:44:37,VR,7,Training,Ex1,Box,Released
+19:45:55,VR,7,Training,Ex1,Box,Grabbed
+19:46:00,VR,7,Training,Ex1,Box,Released
+19:46:05,VR,7,Training,Ex1,Holder,Grabbed
+19:46:07,VR,7,Training,Ex1,Holder,Released
+19:46:08,VR,7,Training,Ex1,Box,Grabbed
+19:46:13,VR,7,Training,Ex1,Box,Released
+19:46:13,VR,7,Training,Ex1,Box,Grabbed
+19:46:19,VR,7,Training,Ex1,Box,Released
+19:46:21,VR,7,Training,Ex1,Holder,Grabbed
+19:46:23,VR,7,Training,Ex1,Holder,Released
+20:12:23,VR,7,Training,Ex1,Box,Grabbed
+20:12:40,VR,7,Training,Ex1,Box,Released
+20:12:42,VR,7,Training,Ex1,Box,Grabbed
+20:12:42,VR,7,Training,Ex1,Box,Released
+20:15:44,VR,7,Training,Ex1,Box,Grabbed
+20:15:58,VR,7,Training,Ex1,Box,Released
+20:15:59,VR,7,Training,Ex1,Holder,Grabbed
+20:16:00,VR,7,Training,Ex1,Holder,Released
+20:16:00,VR,7,Training,Ex1,Box,Grabbed
+20:16:01,VR,7,Training,Ex1,Box,Released
+20:16:02,VR,7,Training,Ex1,Box,Grabbed
+20:16:04,VR,7,Training,Ex1,Box,Released
+20:16:06,VR,7,Training,Ex1,Box,Grabbed
+20:16:07,VR,7,Training,Ex1,Box,Released
+20:16:08,VR,7,Training,Ex1,Box,Grabbed
+20:16:10,VR,7,Training,Ex1,Box,Released
+20:16:10,VR,7,Training,Ex1,Holder,Grabbed
+20:16:11,VR,7,Training,Ex1,Holder,Released
+20:16:12,VR,7,Training,Ex1,Box,Grabbed
+20:16:12,VR,7,Training,Ex1,Box,Released
+20:22:13,VR,7,Training,Ex1,Box,Grabbed
+20:22:22,VR,7,Training,Ex1,Box,Released
+20:22:23,VR,7,Training,Ex1,Box,Grabbed
+20:22:24,VR,7,Training,Ex1,Box,Released
+20:22:31,VR,7,Training,Ex1,Box,Grabbed
+20:22:32,VR,7,Training,Ex1,Box,Released
+20:22:33,VR,7,Training,Ex1,Box,Grabbed
+20:22:33,VR,7,Training,Ex1,Box,Released
+20:22:34,VR,7,Training,Ex1,Box,Grabbed
+20:22:34,VR,7,Training,Ex1,Box,Released
+20:22:34,VR,7,Training,Ex1,Box,Grabbed
+20:22:35,VR,7,Training,Ex1,Box,Released
+20:22:35,VR,7,Training,Ex1,Box,Grabbed
+20:22:36,VR,7,Training,Ex1,Box,Released
+20:22:37,VR,7,Training,Ex1,Box,Grabbed
+20:22:37,VR,7,Training,Ex1,Box,Released
+20:22:37,VR,7,Training,Ex1,Box,Grabbed
+20:22:38,VR,7,Training,Ex1,Box,Released
+20:22:38,VR,7,Training,Ex1,Box,Grabbed
+20:22:39,VR,7,Training,Ex1,Box,Released
+20:22:39,VR,7,Training,Ex1,Box,Grabbed
+20:22:39,VR,7,Training,Ex1,Box,Released
+20:22:39,VR,7,Training,Ex1,Box,Grabbed
+20:22:39,VR,7,Training,Ex1,Box,Released
+20:22:39,VR,7,Training,Ex1,Box,Grabbed
+20:22:40,VR,7,Training,Ex1,Box,Released
+20:22:40,VR,7,Training,Ex1,Box,Grabbed
+20:22:40,VR,7,Training,Ex1,Box,Released
+20:22:41,VR,7,Training,Ex1,Box,Grabbed
+20:22:42,VR,7,Training,Ex1,Box,Released
+20:23:01,VR,7,Training,Ex1,Box,Grabbed
+20:23:03,VR,7,Training,Ex1,Box,Released
+20:24:23,VR,7,Training,Ex1,Holder,Grabbed
+20:24:25,VR,7,Training,Ex1,Holder,Released
+20:24:26,VR,7,Training,Ex1,Box,Grabbed
+20:24:38,VR,7,Training,Ex1,Box,Released
+20:24:39,VR,7,Training,Ex1,Box,Grabbed
+20:24:44,VR,7,Training,Ex1,Box,Released
+20:24:44,VR,7,Training,Ex1,BH Grab 22,Grabbed
+20:24:45,VR,7,Training,Ex1,BH Grab 22,Released
+20:24:46,VR,7,Training,Ex1,Box,Grabbed
+20:24:58,VR,7,Training,Ex1,Box,Released
+20:24:59,VR,7,Training,Ex1,BH Grab 22,Grabbed
+20:24:59,VR,7,Training,Ex1,BH Grab 22,Released
+20:27:28,VR,7,Training,Ex1,Box,Grabbed
+20:27:35,VR,7,Training,Ex1,Box,Released
+20:27:36,VR,7,Training,Ex1,Holder,Grabbed
+20:27:37,VR,7,Training,Ex1,Holder,Released
+20:27:38,VR,7,Training,Ex1,Holder,Grabbed
+20:27:38,VR,7,Training,Ex1,Holder,Released
+20:27:39,VR,7,Training,Ex1,Box,Grabbed
+20:27:51,VR,7,Training,Ex1,Box,Released
+20:27:52,VR,7,Training,Ex1,Holder,Grabbed
+20:27:52,VR,7,Training,Ex1,Holder,Released
+20:27:53,VR,7,Training,Ex1,Holder,Grabbed
+20:27:53,VR,7,Training,Ex1,Holder,Released
+20:27:54,VR,7,Training,Ex1,Box,Grabbed
+20:28:00,VR,7,Training,Ex1,Box,Released
+20:28:30,VR,7,Training,Ex1,Holder,Grabbed
+20:28:31,VR,7,Training,Ex1,Holder,Released
+20:28:31,VR,7,Training,Ex1,Holder,Grabbed
+20:28:32,VR,7,Training,Ex1,Holder,Released
+20:28:32,VR,7,Training,Ex1,Holder,Grabbed
+20:28:33,VR,7,Training,Ex1,Holder,Released
+20:28:34,VR,7,Training,Ex1,Box,Grabbed
+20:28:37,VR,7,Training,Ex1,Box,Released
+20:28:38,VR,7,Training,Ex1,movable_cup21,Grabbed
+20:28:38,VR,7,Training,Ex1,movable_cup21,Released
+20:28:56,VR,7,Training,Ex1,Box,Grabbed
+20:29:19,VR,7,Training,Ex1,Box,Released
+20:43:32,VR,7,Training,Ex1,Box,Grabbed
+20:43:44,VR,7,Training,Ex1,Box,Released
+20:43:45,VR,7,Training,Ex1,Holder,Grabbed
+20:43:47,VR,7,Training,Ex1,Holder,Released
+20:43:53,VR,7,Training,Ex1,Holder,Grabbed
+20:43:54,VR,7,Training,Ex1,Holder,Released
+20:43:54,VR,7,Training,Ex1,Box,Grabbed
+20:44:12,VR,7,Training,Ex1,Box,Released
+20:48:15,VR,7,Training,Ex1,Holder,Grabbed
+20:48:17,VR,7,Training,Ex1,Holder,Released
+20:48:20,VR,7,Training,Ex1,Holder,Grabbed
+20:48:20,VR,7,Training,Ex1,Holder,Released
+20:48:25,VR,7,Training,Ex1,Box,Grabbed
+20:48:32,VR,7,Training,Ex1,Box,Released
+20:48:32,VR,7,Training,Ex1,Holder,Grabbed
+20:48:33,VR,7,Training,Ex1,Holder,Released
+20:48:35,VR,7,Training,Ex1,Holder,Grabbed
+20:48:35,VR,7,Training,Ex1,Holder,Released
+20:48:46,VR,7,Training,Ex1,Holder,Grabbed
+20:48:47,VR,7,Training,Ex1,Holder,Released
+20:48:48,VR,7,Training,Ex1,Holder,Grabbed
+20:48:48,VR,7,Training,Ex1,Holder,Released
+20:48:48,VR,7,Training,Ex1,Holder,Grabbed
+20:48:49,VR,7,Training,Ex1,Holder,Released
+20:48:51,VR,7,Training,Ex1,Box,Grabbed
+20:49:09,VR,7,Training,Ex1,Box,Released
+20:50:48,VR,7,Training,Ex1,Holder,Grabbed
+20:50:49,VR,7,Training,Ex1,Holder,Released
+20:50:51,VR,7,Training,Ex1,Box,Grabbed
+20:51:11,VR,7,Training,Ex1,Box,Released
+20:53:25,VR,7,Training,Ex1,Box,Grabbed
+20:53:35,VR,7,Training,Ex1,Box,Released
+20:53:37,VR,7,Training,Ex1,movable_cup21,Grabbed
+20:53:37,VR,7,Training,Ex1,movable_cup21,Released
+20:53:38,VR,7,Training,Ex1,Box,Grabbed
+20:53:41,VR,7,Training,Ex1,Box,Released
+20:53:43,VR,7,Training,Ex1,movable_cup21,Grabbed
+20:53:44,VR,7,Training,Ex1,movable_cup21,Released
+20:53:45,VR,7,Training,Ex1,Box,Grabbed
+20:53:47,VR,7,Training,Ex1,Box,Released
