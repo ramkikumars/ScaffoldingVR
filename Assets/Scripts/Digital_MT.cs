@@ -59,11 +59,11 @@ public class Digital_MT : MonoBehaviour
         scaleChange.x = Mathf.Clamp(measuredDist, 1, maxDist * 100);
         tape.transform.localScale = scaleChange;
 
-        _text.text = Mathf.Clamp(measuredDist - 2.00f, 0, maxDist * 100).ToString("F2");
+        _text.text = Mathf.Clamp(measuredDist, 0, maxDist * 100).ToString("F2");
         if(holderGrab.IsBeingGrabbed){
             velocity=velocityEstimator.GetVelocityEstimate().magnitude;
             velocity= Mathf.Round(velocity * 100f) / 100f;
-            if(velocity==0){
+            if(velocity<=0.01){
                 tapeOpeningHaptics.Stop();
             }
             else if(!tapeOpeningHaptics.audioSource.isPlaying)
@@ -95,6 +95,7 @@ public class Digital_MT : MonoBehaviour
     public void OnHolderReleased(object sender, UxrManipulationEventArgs e)
     {
         Debug.Log("Holder is Released");
+        holderGrab.IsLockedInPlace=false;
         tapeOpeningHaptics.Stop();
         holderRel=true;
         if(e.Grabber.Side.ToString()=="Right"){

@@ -163,8 +163,8 @@ public class NewMain : MonoBehaviour
             wingNutFx[i] = scaffoldingSet[i].transform.Find("Base/wing_nut/curved arrow");
             horizontalGrabsPairs[i, 0] = horizontalGrab[i].GetChild(0);
             horizontalGrabsPairs[i, 1] = horizontalGrab[i].GetChild(1);
-            refPlanes[i,0]=scaffoldingSet[i].transform.Find("Distance Measurer/Ref Planes").GetChild(0); //Bottom Plane
-            refPlanes[i,1]=scaffoldingSet[i].transform.Find("Distance Measurer/Ref Planes").GetChild(1); //Top Plane
+            refPlanes[i,0]=scaffoldingSet[i].transform.Find("Base/wing_nut/Plane 1"); //Top Plane
+            refPlanes[i,1]=scaffoldingSet[i].transform.Find("Base/Plane 2");//Bottom Plane
 
             for (int k = 0; k < 4; k++)
             {
@@ -415,6 +415,7 @@ public class NewMain : MonoBehaviour
             movableCup[i, 0].Rotate(eulerRot, Space.Self);
             // measureSphere[i].GetComponent<Renderer>().enabled = false;
         }
+        scaffoldingSet[0].transform.parent.transform.position=new Vector3(0,0.3f,0);
         if (playmode1 == "Training")
         {
             // playerName += "Ex2";
@@ -460,21 +461,15 @@ public class NewMain : MonoBehaviour
             // yield return new WaitUntil(() => CheckRecentlyGrabbed("Box"));
             //write on panel to measure the distance between base and wingnut
             WriteOnPanel("Keep the tape on the top plane");
-            yield return new WaitUntil(() => CheckCollisionWithBox(refPlanes[i,1]));
-            boxGrabObj.IsLockedInPlace=true;
-            box.transform.eulerAngles = new Vector3(0, 90, -90);
-            box.transform.position = refPlanes[i, 1].transform.position;
-            WriteOnPanel("Pull the tape to below plane");
-            yield return new WaitUntil(() => CheckCollisionWithHolder(refPlanes[i, 0]));
-            holderGrabObj.IsLockedInPlace=true;
+            yield return new WaitUntil(() => CheckCollisionWithBox(refPlanes[i,0]));
+            // boxGrabObj.IsLockedInPlace=true;
+            WriteOnPanel("Pull the tape to the bottom plane");
+            yield return new WaitUntil(() => CheckCollisionWithHolder(refPlanes[i, 1]));
             successHaptics.Play();
-            WriteOnPanel("Note the Measurement");
-            //wait for the player to measure the distance between base and wingnut
-            // yield return new WaitUntil(() => checkNearWINGnut());
-            // write on panel press the button
-            // WriteOnPanel("Press the trigger of the controller");
-            // yield return new WaitUntil(() => IsButtonPressed(i));
-            yield return new WaitForSeconds(3f);
+            WriteOnPanel("After Noting the Measurement, Release the tape");
+             yield return new WaitUntil(() => CheckRecentlyReleased("Holder"));
+            WriteOnPanel("Take the measuring tape");
+            yield return new WaitUntil(() => CheckRecentlyGrabbed("Box"));
 
         }
         // yield return new WaitUntil(IsAllMeasurementOn);

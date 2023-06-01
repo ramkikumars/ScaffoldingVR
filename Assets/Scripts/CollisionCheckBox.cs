@@ -7,6 +7,8 @@ public class CollisionCheckBox : MonoBehaviour
     // Start is called before the first frame update
     [System.NonSerialized]
     public bool collidedWithBox=false;
+    [System.NonSerialized]
+    public bool releaseTheObject = false;
     void Start()
     {
 
@@ -19,12 +21,26 @@ public class CollisionCheckBox : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        collidedWithBox=true;
+        if(other.name=="Box"&&other.GetComponent<UxrGrabbableObject>().IsBeingGrabbed){
+            // other.GetComponent<UxrGrabbableObject>().IsLockedInPlace=true;
+            other.GetComponent<UxrGrabbableObject>().ReleaseGrabs(true);
+            // other.transform.eulerAngles = new Vector3(0, 90, -90);
+            other.transform.rotation=transform.rotation;
+            other.transform.position=transform.position;
+            other.transform.eulerAngles=new Vector3(transform.eulerAngles.x,transform.eulerAngles.y,-90);
+            collidedWithBox=true;
+        releaseTheObject = false;
+        }
+
     }
 
-    private void OnTriggerStay(Collider other){
-
-    }
+    // private void OnTriggerStay(Collider other){
+    //     if (other.name == "Box" && !releaseTheObject)
+    //     {
+    //         other.transform.eulerAngles = new Vector3(0, 90, -90);
+    //         other.transform.position = transform.position;
+    //     }
+    // }
     private void OnTriggerExit(Collider other){
         collidedWithBox = false;
     }

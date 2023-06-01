@@ -224,8 +224,8 @@ MonoBehaviour:
     _editorName: 
     _grabMode: 0
     _useDefaultGrabButtons: 1
-    _bothHandsCompatible: 1
-    _handSide: 0
+    _bothHandsCompatible: 0
+    _handSide: 1
     _inputButtons: 65536
     _hideHandGrabberRenderer: 0
     _defaultGripPoseInfo:
@@ -460,7 +460,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 74e42a569b5cedc44ac54c0949350dcc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: c500dfdc9d2c8914da576f2ef5944f68, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1155,7 +1155,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -1205,7 +1205,7 @@ MonoBehaviour:
     _editorName: 
     _grabMode: 0
     _useDefaultGrabButtons: 1
-    _bothHandsCompatible: 1
+    _bothHandsCompatible: 0
     _handSide: 0
     _inputButtons: 0
     _hideHandGrabberRenderer: 0

@@ -656,7 +656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103325585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.00001, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2418,6 +2418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Safety Hat
       objectReference: {fileID: 0}
+    - target: {fileID: 649685431962566546, guid: 5cec1ae7d6d22024897686a5b2e86342, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 653868367440877032, guid: 5cec1ae7d6d22024897686a5b2e86342, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -2464,6 +2468,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cec1ae7d6d22024897686a5b2e86342, type: 3}
+--- !u!114 &1042049790 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 283362168492366785, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
+  m_PrefabInstance: {fileID: 830907933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7b06a52e9ced0e46a369c9a6e98a92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1124115772 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2815719597688491831, guid: bb7eb36dc0d8af7438dbb9893fe906e0, type: 3}
@@ -2714,7 +2729,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1332513545}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2744,15 +2759,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.0911808
+      value: 2.478
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.000010043383
+      value: 0.499
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.7728281
+      value: 0.522
       objectReference: {fileID: 0}
     - target: {fileID: 400010, guid: efe9381559c516743bd05cef82f39ebb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2807,6 +2822,18 @@ PrefabInstance:
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
       objectReference: {fileID: 1671449083}
+    - target: {fileID: 3943634633755007987, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _previewPosesRegenerationType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634633755007987, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _previewPosesRegenerationIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634633755007987, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _grabPoint._avatarGripPoseEntries.Array.data[0]._handPose
+      value: 
+      objectReference: {fileID: 11400000, guid: c7c27714e3a85a94b94d3500dc8e0375, type: 2}
     - target: {fileID: 3943634634359492293, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2854,6 +2881,38 @@ PrefabInstance:
     - target: {fileID: 3943634634359492295, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: m_Name
       value: Simple_Tape12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _startAnchor
+      value: 
+      objectReference: {fileID: 1042049790}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _useParenting
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _grabPoint._handSide
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _grabPoint._alignToController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _previewPosesRegenerationType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _previewPosesRegenerationIndex
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _grabPoint._bothHandsCompatible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3943634635341219340, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: _grabPoint._useDefaultGrabButtons
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8099481927716126148, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
@@ -3843,6 +3902,10 @@ PrefabInstance:
       value: 0.2338155
       objectReference: {fileID: 0}
     - target: {fileID: 474319650110039816, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
+      propertyPath: _rigType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 474319650110039816, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
       propertyPath: _rigInfo._leftArmInfo._ringInfo._distalLocalTip.x
       value: -0.027229583
       objectReference: {fileID: 0}
@@ -4516,7 +4579,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474319650110039819, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 474319650110039819, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5149,12 +5212,12 @@ MonoBehaviour:
   - {fileID: 706040257}
   playExercise1: 1
   playExercise2: 0
-  targetHeight: 0.2
+  targetHeight: 0.4
   verticalHeight:
-  - 0.2
-  - 0.2
-  - 0.18
-  - 0.2
+  - 0.4
+  - 0.4
+  - 0.38
+  - 0.4
   hammer: {fileID: 919132148768289140}
   holder: {fileID: 1436212924}
   box: {fileID: 1436212925}
