@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1664073481754011083}
   - component: {fileID: 5555639696819556054}
   - component: {fileID: 1085689358627781415}
+  - component: {fileID: 1595581505759726835}
   m_Layer: 0
   m_Name: Plane 1
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 977942011575436040}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -0.1264}
-  m_LocalScale: {x: 0.022127075, y: 0.088934734, z: 0.0019008107}
+  m_LocalScale: {x: 0.022127071, y: 0.088934734, z: 0.005193585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 420149112598426030}
@@ -135,6 +136,20 @@ MonoBehaviour:
   _activateOnHandNearAndGrabbable: {fileID: 0}
   _activateOnPlaced: {fileID: 0}
   _activateOnEmpty: {fileID: 0}
+--- !u!114 &1595581505759726835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977942011575436040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecd2c3f489b3a548b93751fe2687c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  diasableMeshRendererNotFlashing: 0
 --- !u!1 &3836815802488775930
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +870,7 @@ GameObject:
   - component: {fileID: 453154597227591301}
   - component: {fileID: 4175705633040866644}
   - component: {fileID: 2640842319700752380}
+  - component: {fileID: 9063788171414709875}
   m_Layer: 0
   m_Name: Plane 2
   m_TagString: Untagged
@@ -871,7 +887,7 @@ Transform:
   m_GameObject: {fileID: 5540193804312680055}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: -0.1264}
-  m_LocalScale: {x: 0.022127071, y: 0.088934734, z: 0.0019008107}
+  m_LocalScale: {x: 0.022127071, y: 0.088934734, z: 0.005193585}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7493535131972853605}
@@ -952,6 +968,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4fcc3bc058cafb40a3e2b37990df589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9063788171414709875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5540193804312680055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecd2c3f489b3a548b93751fe2687c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  diasableMeshRendererNotFlashing: 0
 --- !u!1 &9009210387424147339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1229,6 +1259,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9009210388129149760}
     m_Modifications:
+    - target: {fileID: 256338993122944019, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6b83b3caeb41a074f9869f22805765b9, type: 3}
     - target: {fileID: 3362792647048670877, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.141
@@ -1237,6 +1271,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Base
       objectReference: {fileID: 0}
+    - target: {fileID: 4259259812022650706, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3d3857f74cbcafa4da4cee884c7b00bd, type: 3}
     - target: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_RootOrder
       value: 1
