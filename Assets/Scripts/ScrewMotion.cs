@@ -4,8 +4,6 @@ using UnityEngine;
 using Interhaptics.Utils;
 
 using UltimateXR.Manipulation;
-using UltimateXR.Avatar;
-using UltimateXR.Haptics;
 
 public class ScrewMotion : MonoBehaviour
 {
@@ -17,7 +15,7 @@ public class ScrewMotion : MonoBehaviour
     [SerializeField] private AudioHapticSource rotatingHaptics;
     [SerializeField] private AudioHapticSource squeakHaptics;
     private Vector3 tempVect, newPos;
-    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle,velocity;
+    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle,velocity,random;
     float lerpTime = 1;
     private UxrGrabbableObject grabObj => GetComponentInChildren<UxrGrabbableObject>();
 
@@ -68,10 +66,14 @@ public class ScrewMotion : MonoBehaviour
 
             }
 
-            if (Mathf.Abs(CurrentAngle - prevAngle) >= 20)
-            {
+            // if (Mathf.Abs(CurrentAngle - prevAngle) >= 20)
+            // {
+            //     StartCoroutine(WaitAndUnlock(duration));
+            //     prevAngle = CurrentAngle;
+            // }
+
+            if(Random.Range(1, 10)>=5){
                 StartCoroutine(WaitAndUnlock(duration));
-                prevAngle = CurrentAngle;
             }
             rotateObj.transform.hasChanged = false;
 
