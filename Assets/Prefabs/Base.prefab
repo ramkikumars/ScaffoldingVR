@@ -252,8 +252,8 @@ MonoBehaviour:
   pitch: 1
   duration: 0
   velocityEstimator: {fileID: 0}
-  rotatingHaptics: {fileID: 0}
-  squeakHaptics: {fileID: 0}
+  rotatingHaptics: {fileID: 7260825711576501003}
+  squeakHaptics: {fileID: 4206951470450453618}
 --- !u!82 &4259259812022650706
 AudioSource:
   m_ObjectHideFlags: 0
@@ -362,13 +362,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add947522e3b4e3489a84d14109063fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticMaterial: {fileID: 0}
+  hapticMaterial: {fileID: -6750239444755058063, guid: 60765d717a9bde94f9c68eacfdd6a698, type: 3}
   vibrationOffset: 0
   textureOffset: 0
   stiffnessOffset: 0
   debugMode: 0
   audioSource: {fileID: 0}
-  hapticBodyParts: []
+  hapticBodyParts:
+  - {fileID: 0}
+  - {fileID: 0}
   playOnAwake: 0
 --- !u!82 &256338993122944019
 AudioSource:
@@ -478,13 +480,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: add947522e3b4e3489a84d14109063fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hapticMaterial: {fileID: 0}
+  hapticMaterial: {fileID: -6750239444755058063, guid: 72e03b5337d6a5849add9ac281f65437, type: 3}
   vibrationOffset: 0
   textureOffset: 0
   stiffnessOffset: 0
   debugMode: 0
-  audioSource: {fileID: 0}
-  hapticBodyParts: []
+  audioSource: {fileID: 256338993122944019}
+  hapticBodyParts:
+  - {fileID: 0}
+  - {fileID: 0}
   playOnAwake: 0
 --- !u!1 &1178473764213496444
 GameObject:

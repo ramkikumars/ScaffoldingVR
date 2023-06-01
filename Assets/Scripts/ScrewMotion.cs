@@ -73,6 +73,7 @@ public class ScrewMotion : MonoBehaviour
             // }
 
             if(Random.Range(1, 10)>=5){
+                
                 StartCoroutine(WaitAndUnlock(duration));
             }
             rotateObj.transform.hasChanged = false;
@@ -83,6 +84,7 @@ public class ScrewMotion : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         grabObj.IsLockedInPlace = true;
+
         squeakHaptics.Play();
         yield return new WaitForSeconds(seconds);
         squeakHaptics.Stop();
