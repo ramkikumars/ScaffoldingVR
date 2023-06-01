@@ -17,17 +17,18 @@ public class CollisionCheck : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Collide Object with Plane: "+other.name);
+        // Debug.Log("Collide Object with Plane: "+other.name);
         if (other.name == "Box"&&other.GetComponent<UxrGrabbableObject>().IsBeingGrabbed)
         {
             other.GetComponent<UxrGrabbableObject>().IsLockedInPlace=true;
-            other.transform.rotation = transform.rotation;
+            // other.transform.rotation = transform.rotation;
         }
     }
 
     private void OnTriggerStay(Collider other){
         if (other.name == "Box" && other.GetComponent<UxrGrabbableObject>().IsBeingGrabbed)
         {
+            other.transform.eulerAngles=new Vector3(0,90,-90);
             other.transform.position = transform.position;
             // other.transform.LookAt(transform.position, new Vector3(0, 1, 0));
 

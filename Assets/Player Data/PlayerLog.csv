@@ -3451,3 +3451,5 @@ Time,Controller,PlayerName,PlayMode,Exercise,Object Name,Action
 20:53:44,VR,7,Training,Ex1,movable_cup21,Released
 20:53:45,VR,7,Training,Ex1,Box,Grabbed
 20:53:47,VR,7,Training,Ex1,Box,Released
+12:59:15,VR,7,Training,Ex1,Box,Grabbed
+12:59:40,VR,7,Training,Ex1,Box,Released

@@ -26,6 +26,7 @@ public class Digital_MT : MonoBehaviour
     private UxrGrabbableObject holderGrab;
     private UxrGrabbableObject boxGrab;
     private float velocity;
+    private bool holderRel;
     void Start()
     {
         holderGrab = holder.GetComponent<UxrGrabbableObject>();
@@ -61,7 +62,16 @@ public class Digital_MT : MonoBehaviour
         _text.text = Mathf.Clamp(measuredDist - 2.00f, 0, maxDist * 100).ToString("F2");
         if(holderGrab.IsBeingGrabbed){
             velocity=velocityEstimator.GetVelocityEstimate().magnitude;
-            Debug.Log("Holder Velocity,"+velocity);
+            velocity= Mathf.Round(velocity * 100f) / 100f;
+            if(velocity==0){
+                tapeOpeningHaptics.Stop();
+            }
+            else if(!tapeOpeningHaptics.audioSource.isPlaying)
+                tapeOpeningHaptics.Play();
+            }
+            // Debug.Log("Holder Velocity,"+velocity);
+        if(holderRel){
+            HolderReturn();
         }
     }
 
@@ -69,7 +79,6 @@ public class Digital_MT : MonoBehaviour
     {
         // Debug.Log("The box is grabbed by "+e.Grabber.Side);
         // Debug.Log("Box is Grabbed");
-        // eventHapticSource.Play();
         // box.GetComponent<AudioSource>().Play();
     }
     public void OnBoxReleased(object sender, UxrManipulationEventArgs e)
@@ -78,15 +87,16 @@ public class Digital_MT : MonoBehaviour
     }
     public void OnHolderGrabbed(object sender, UxrManipulationEventArgs e)
     {
-        Debug.Log("Holder is Grabbed");
-        // tapeStretchingHaptics.Play();
+        // Debug.Log("Holder is Grabbed");
         // tapeOpeningHaptics.Play();
+        holderRel = false;
     }
 
     public void OnHolderReleased(object sender, UxrManipulationEventArgs e)
     {
         Debug.Log("Holder is Released");
-
+        tapeOpeningHaptics.Stop();
+        holderRel=true;
         if(e.Grabber.Side.ToString()=="Right"){
             tapeClosingHapticsRight.Play();
             Debug.Log("Holder Grabbed with"+"Right Hand");
@@ -129,10 +139,11 @@ public class Digital_MT : MonoBehaviour
 
         // holder.transform.localPosition = Vector3.Lerp(holder.transform.localPosition, startPosition, lerpSpeed);
 
+    }
 
-
+    private void HolderReturn(){
         float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
-        // AudioSource.PlayClipAtPoint(audioClip, transform.position);
+                                                      // AudioSource.PlayClipAtPoint(audioClip, transform.position);
 
 
         float lerpSpeed = Mathf.Lerp(0.05f, 1f, distanceRatio); // Adjust the lerp speed based on the distance ratio
@@ -148,8 +159,8 @@ public class Digital_MT : MonoBehaviour
         clampedPosition.z = Mathf.Clamp(clampedPosition.z, startPosition.z - clampRange, startPosition.z + clampRange);
 
         holder.transform.localPosition = clampedPosition;
-
     }
+
 
 
 
