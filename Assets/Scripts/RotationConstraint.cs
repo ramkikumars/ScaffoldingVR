@@ -14,7 +14,7 @@ public class RotationConstraint : MonoBehaviour
     private float startAngle, endAngle, diff;
     public bool allowChange;
     // [SerializeField] private GameObject ball;
-    [SerializeField] private TextMeshProUGUI dText;
+    // [SerializeField] private TextMeshProUGUI dText;
     void Start()
     {
         uxrObj = this.GetComponent<UxrGrabbableObject>();
@@ -30,7 +30,7 @@ public class RotationConstraint : MonoBehaviour
         endAngle = this.transform.rotation.eulerAngles.y;
         // // Debug.Log($"Angle at releasing:{endAngle}");
         diff = Mathf.Abs(startAngle - endAngle);
-        dText.text = $"Diff: {diff}\nAllow Change{allowChange}";
+        // dText.text = $"Diff: {diff}\nAllow Change{allowChange}";
         // // allowChange = Mathf.Approximately(diff, 180);
     }
     private void AddMainpulationEvents(Transform obj)

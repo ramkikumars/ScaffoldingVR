@@ -11,7 +11,7 @@ using UltimateXR.Devices;
 // using UnityEngine.Windows.Speech;
 // using ReadSpeaker;
 // using System.Speech.Synthesis;
-
+using Interhaptics.Utils;
 
 /*
 Note:
@@ -63,14 +63,15 @@ public class NewMain : MonoBehaviour
 
     private string filepath, ExerciseName, temp, playmode1;
     private Transform[] vertical, wingNut, distMeasure, horizontalGrab, cups, verticalFx, wingNutFx, measureSphere;
-    private Transform[,] horizontalGrabsPairs, movableCup, horizontal;
+    private Transform[,] horizontalGrabsPairs, movableCup, horizontal,refPlanes;
     private Collider[] verticalBound = new Collider[4];
     private string recentlyGrabbed, recentlyreleased, controllerName;
     public GameObject holder;
     public GameObject box;
-    public GameObject cube;
     public TextMeshProUGUI heightPanel;
     public Digital_MT digital_MT;
+    [SerializeField] private AudioHapticSource successHaptics;
+    [SerializeField] private AudioHapticSource failureHaptics;
     private float[] measuredHeight = new float[4];
     private string[] measuredText = new string[4];
     // public TMPro.TextMeshProUGUI text2;
@@ -147,6 +148,7 @@ public class NewMain : MonoBehaviour
         verticalFx = new Transform[n];
         wingNutFx = new Transform[n];
         measureSphere = new Transform[n];
+        refPlanes=new Transform[4, 2];
         for (int i = 0; i < 4; i++)
         {
             vertical[i] = scaffoldingSet[i].transform.Find("Ledgers/Vertical");
@@ -161,7 +163,8 @@ public class NewMain : MonoBehaviour
             wingNutFx[i] = scaffoldingSet[i].transform.Find("Base/wing_nut/curved arrow");
             horizontalGrabsPairs[i, 0] = horizontalGrab[i].GetChild(0);
             horizontalGrabsPairs[i, 1] = horizontalGrab[i].GetChild(1);
-            distMeasure[i].GetComponent<MeasureDistance>().targetDist = targetHeight;
+            refPlanes[i,0]=scaffoldingSet[i].transform.Find("Distance Measurer/Ref Planes").GetChild(0); //Bottom Plane
+            refPlanes[i,1]=scaffoldingSet[i].transform.Find("Distance Measurer/Ref Planes").GetChild(1); //Top Plane
 
             for (int k = 0; k < 4; k++)
             {
@@ -456,13 +459,22 @@ public class NewMain : MonoBehaviour
             // //wait for the player to grab the measuring tape
             // yield return new WaitUntil(() => CheckRecentlyGrabbed("Box"));
             //write on panel to measure the distance between base and wingnut
-            WriteOnPanel("After Measuring the distance between base and wingnut, press the trigger");
-
+            WriteOnPanel("Keep the tape on the top plane");
+            yield return new WaitUntil(() => CheckCollisionWithBox(refPlanes[i,1]));
+            boxGrabObj.IsLockedInPlace=true;
+            box.transform.eulerAngles = new Vector3(0, 90, -90);
+            box.transform.position = refPlanes[i, 1].transform.position;
+            WriteOnPanel("Pull the tape to below plane");
+            yield return new WaitUntil(() => CheckCollisionWithHolder(refPlanes[i, 0]));
+            holderGrabObj.IsLockedInPlace=true;
+            successHaptics.Play();
+            WriteOnPanel("Note the Measurement");
             //wait for the player to measure the distance between base and wingnut
             // yield return new WaitUntil(() => checkNearWINGnut());
             // write on panel press the button
             // WriteOnPanel("Press the trigger of the controller");
-            yield return new WaitUntil(() => IsButtonPressed(i));
+            // yield return new WaitUntil(() => IsButtonPressed(i));
+            yield return new WaitForSeconds(3f);
 
         }
         // yield return new WaitUntil(IsAllMeasurementOn);
@@ -619,6 +631,14 @@ public class NewMain : MonoBehaviour
     private bool CheckAllowChange(Transform obj)
     {
         return obj.GetComponent<RotationConstraint>().allowChange;
+    }
+    private bool CheckCollisionWithBox(Transform obj)
+    {
+        return obj.GetComponent<CollisionCheckBox>().collidedWithBox;
+    }
+    private bool CheckCollisionWithHolder(Transform obj)
+    {
+        return obj.GetComponent<CollisionCheckHolder>().collidedWithHolder;
     }
 
 

@@ -251,7 +251,7 @@ MonoBehaviour:
   translateObj: {fileID: 734389163889610085}
   pitch: 1
   duration: 0
-  velocityEstimator: {fileID: 0}
+  velocityEstimator: {fileID: 5473781343934783965}
   rotatingHaptics: {fileID: 7260825711576501003}
   squeakHaptics: {fileID: 4206951470450453618}
 --- !u!82 &4259259812022650706
@@ -265,7 +265,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -383,7 +383,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
