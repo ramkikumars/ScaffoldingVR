@@ -2919,6 +2919,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8099481927716126148, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8099481927716126148, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
       objectReference: {fileID: 1671449083}
@@ -3381,7 +3385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebe72f90241cb148ab7b48ca05a7747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyPart: 302
+  BodyPart: 201
   Side: 1
 --- !u!1 &1692560017
 GameObject:
@@ -5164,7 +5168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebe72f90241cb148ab7b48ca05a7747, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BodyPart: 302
+  BodyPart: 201
   Side: 2
 --- !u!1 &2083848920
 GameObject:
@@ -6019,10 +6023,26 @@ PrefabInstance:
       propertyPath: _grabPoint._avatarGripPoseEntries.Array.data[0]._avatarPrefabGuid
       value: dc011efb41f2d4a419389aefb4b4270d
       objectReference: {fileID: 0}
+    - target: {fileID: 5412399755892691831, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
+      propertyPath: debugMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1173145386}
+    - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
+      propertyPath: hapticMaterial
+      value: 
+      objectReference: {fileID: -6750239444755058063, guid: 60765d717a9bde94f9c68eacfdd6a698, type: 3}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 

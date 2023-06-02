@@ -13,12 +13,13 @@ public class ScrewMotion : MonoBehaviour
     [SerializeField] private float duration;
     [SerializeField] private VelocityEstimator velocityEstimator;
     [SerializeField] private AudioHapticSource rotatingHaptics;
+
     [SerializeField] private AudioHapticSource squeakHaptics;
     private Vector3 tempVect, newPos;
-    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle,velocity,random;
+    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle, velocity, random;
     float lerpTime = 1;
     private UxrGrabbableObject grabObj => GetComponentInChildren<UxrGrabbableObject>();
-
+    public Rigidbody rb;
     void Start()
     {
 
@@ -26,6 +27,10 @@ public class ScrewMotion : MonoBehaviour
         lastAngle = intitialAngle;
         prevAngle = intitialAngle;
         unit_dist = pitch / 360f;
+        rb = GetComponent<Rigidbody>();
+        
+        
+
     }
 
     // Update is called once per frame
@@ -39,7 +44,9 @@ public class ScrewMotion : MonoBehaviour
         {
             velocity = velocityEstimator.GetAngularVelocityEstimate().magnitude;
             velocity = Mathf.Round(velocity * 100f) / 100f;
-            Debug.Log("Ang Velocity:"+velocity);
+            Debug.Log("Ang Velocity:" + velocity);
+            // SET IS KINEMATIC TO FALSE 
+            rb.isKinematic = false;
             // if (velocity == 0)
             // {
             //     rotatingHaptics.Stop();
@@ -48,13 +55,32 @@ public class ScrewMotion : MonoBehaviour
             //     rotatingHaptics.Play();
             // }
         }
+        else
+        {
+            // SET IS KINEMATIC TO TRUE
+            rb.isKinematic = true;
+            rotatingHaptics.Stop();
+        }
         if (rotateObj.transform.hasChanged)
         {
 
-            if (!rotatingHaptics.audioSource.isPlaying)
+            if (velocity <= 0.01)
             {
-                rotatingHaptics.Play();
+                rotatingHaptics.Stop();
             }
+            else if (!rotatingHaptics.audioSource.isPlaying)
+
+                rotatingHaptics.Play();
+            if (rb.angularVelocity.magnitude < 5)
+                Debug.Log(rb.angularVelocity.magnitude);
+
+            // if (!squeakHaptics.audioSource.isPlaying)
+            // {
+            //     random = Random.Range(1, 10);
+            //     if (random >= 5)
+            //         squeakHaptics.Play();
+            //     // rotatingHaptics.Play();
+            // }
             CurrentAngle = Mathf.Round(rotateObj.transform.localRotation.eulerAngles.y);
 
             if (Mathf.Abs(CurrentAngle - lastAngle) >= 2)
@@ -84,7 +110,8 @@ public class ScrewMotion : MonoBehaviour
             rotateObj.transform.hasChanged = false;
 
         }
-        else{
+        else
+        {
             rotatingHaptics.Stop();
         }
     }
