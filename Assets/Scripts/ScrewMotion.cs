@@ -7,6 +7,7 @@ using UltimateXR.Manipulation;
 
 public class ScrewMotion : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     [SerializeField] private GameObject rotateObj, translateObj;
     [SerializeField] float pitch = 1;
