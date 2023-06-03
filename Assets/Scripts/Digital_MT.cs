@@ -59,7 +59,7 @@ public class Digital_MT : MonoBehaviour
         scaleChange.x = Mathf.Clamp(measuredDist, 1, maxDist * 100);
         tape.transform.localScale = scaleChange;
 
-        _text.text = Mathf.Clamp(measuredDist-1, 0, maxDist * 100).ToString("F2");
+        _text.text = ((Mathf.Clamp(measuredDist-1, 0, maxDist * 100))/100).ToString("F2");
         if(holderGrab.IsBeingGrabbed){
             velocity=velocityEstimator.GetVelocityEstimate().magnitude;
             velocity= Mathf.Round(velocity * 100f) / 100f;

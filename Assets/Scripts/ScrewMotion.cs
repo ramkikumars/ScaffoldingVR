@@ -15,7 +15,9 @@ public class ScrewMotion : MonoBehaviour
     [SerializeField] private AudioHapticSource rotatingHaptics;
     [SerializeField] private AudioHapticSource squeakHaptics;
     private Vector3 tempVect, newPos;
-    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle,velocity,random;
+    private float dist, unit_dist, intitialAngle, lastAngle, CurrentAngle, prevAngle, velocity, random;
+    public bool getSmoothedVelocity = true;
+
     float lerpTime = 1;
     private UxrGrabbableObject grabObj => GetComponentInChildren<UxrGrabbableObject>();
 
@@ -28,7 +30,7 @@ public class ScrewMotion : MonoBehaviour
         unit_dist = pitch / 360f;
 
         // rb = GetComponent<Rigidbody>();
-        grabObj.ConstraintsApplied+=speedChange;
+        grabObj.ConstraintsApplied += speedChange;
 
 
     }
@@ -40,28 +42,34 @@ public class ScrewMotion : MonoBehaviour
         // {
         //     translateObj.GetComponent<AudioSource>().Play();
         // }
+
+
+        
         if (grabObj.IsBeingGrabbed)
         {
-            velocity = velocityEstimator.GetAngularVelocityEstimate().magnitude;
-            velocity = Mathf.Round(velocity * 100f) / 100f;
-            Debug.Log("Ang Velocity:"+velocity);
-            Debug.Log("Ang Velocity:" + velocity);
+            Vector3 angularVelocity = UxrGrabManager.Instance.GetGrabbedObjectAngularVelocity(grabObj, getSmoothedVelocity);
             // SET IS KINEMATIC TO FALSE
-            // if (velocity == 0)
-            // {
-            //     rotatingHaptics.Stop();
-            // }
-            // else if (!rotatingHaptics.audioSource.isPlaying){
-            //     rotatingHaptics.Play();
-            // }
+            Debug.Log(angularVelocity.y);
+            // if rounded abosolute value of angular velocity is less than 0.5, stop the audio
+
+
+            if (Mathf.RoundToInt(Mathf.Abs(angularVelocity.y)) < 20)
+            {
+                Debug.Log("STOP");
+                rotatingHaptics.Stop();
+            }
+            else if (!rotatingHaptics.audioSource.isPlaying)
+            {
+                rotatingHaptics.Play();
+            }
         }
         if (rotateObj.transform.hasChanged)
         {
 
-            if (!rotatingHaptics.audioSource.isPlaying)
-            {
-                rotatingHaptics.Play();
-            }
+            // if (!rotatingHaptics.audioSource.isPlaying)
+            // {
+            //     rotatingHaptics.Play();
+            // }
             CurrentAngle = Mathf.Round(rotateObj.transform.localRotation.eulerAngles.y);
 
             if (Mathf.Abs(CurrentAngle - lastAngle) >= 2)
@@ -77,21 +85,23 @@ public class ScrewMotion : MonoBehaviour
                 lastAngle = CurrentAngle;
 
             }
-
-            // if (Mathf.Abs(CurrentAngle - prevAngle) >= 20)
+            // make a randomized call for random unlock but no two calls should be made within 5 seconds
+            // if (Mathf.Abs(CurrentAngle - prevAngle) >= 50)
             // {
-            //     StartCoroutine(WaitAndUnlock(duration));
-            //     prevAngle = CurrentAngle;
+            //     random = Random.Range(0, 100);
+            //     if (random > 95)
+            //     {
+            //         StartCoroutine(WaitAndUnlock(1f));
+            //         prevAngle = CurrentAngle;
+            //     }
             // }
 
-            // if(Random.Range(1, 10)>=5){
 
-            //     StartCoroutine(WaitAndUnlock(duration));
-            // }
             rotateObj.transform.hasChanged = false;
 
         }
-        else{
+        else
+        {
             rotatingHaptics.Stop();
         }
     }
@@ -105,7 +115,8 @@ public class ScrewMotion : MonoBehaviour
         grabObj.IsLockedInPlace = false;
         // lastAngle = CurrentAngle;
     }
-    private void speedChange(object sender, UxrApplyConstraintsEventArgs e){
-        rotateObj.transform.eulerAngles.Set(0,0,0);
+    private void speedChange(object sender, UxrApplyConstraintsEventArgs e)
+    {
+        rotateObj.transform.eulerAngles.Set(0, 0, 0);
     }
 }
