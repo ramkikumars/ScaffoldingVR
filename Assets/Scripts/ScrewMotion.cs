@@ -26,6 +26,11 @@ public class ScrewMotion : MonoBehaviour
         lastAngle = intitialAngle;
         prevAngle = intitialAngle;
         unit_dist = pitch / 360f;
+
+        // rb = GetComponent<Rigidbody>();
+        grabObj.ConstraintsApplied+=speedChange;
+
+
     }
 
     // Update is called once per frame
@@ -40,6 +45,8 @@ public class ScrewMotion : MonoBehaviour
             velocity = velocityEstimator.GetAngularVelocityEstimate().magnitude;
             velocity = Mathf.Round(velocity * 100f) / 100f;
             Debug.Log("Ang Velocity:"+velocity);
+            Debug.Log("Ang Velocity:" + velocity);
+            // SET IS KINEMATIC TO FALSE
             // if (velocity == 0)
             // {
             //     rotatingHaptics.Stop();
@@ -92,11 +99,13 @@ public class ScrewMotion : MonoBehaviour
     {
         yield return new WaitForSeconds(seconds);
         grabObj.IsLockedInPlace = true;
-
         squeakHaptics.Play();
         yield return new WaitForSeconds(seconds);
         squeakHaptics.Stop();
         grabObj.IsLockedInPlace = false;
         // lastAngle = CurrentAngle;
+    }
+    private void speedChange(object sender, UxrApplyConstraintsEventArgs e){
+        rotateObj.transform.eulerAngles.Set(0,0,0);
     }
 }

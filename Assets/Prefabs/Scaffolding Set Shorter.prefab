@@ -1323,11 +1323,24 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7260825711576501003, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1181156171458500705}
+    - target: {fileID: 7260825711576501003, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+      propertyPath: hapticMaterial
+      value: 
+      objectReference: {fileID: -6750239444755058063, guid: 7c877e1df26291b4eb464a1199402520, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
 --- !u!4 &420149112598426030 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3362792647048670877, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 3134401420388622131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1181156171458500705 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4259259812022650706, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 3134401420388622131}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2400051852339515990 stripped

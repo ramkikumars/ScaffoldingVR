@@ -449,7 +449,7 @@ public class NewMain : MonoBehaviour
         {
 
             //write on panel to go near the i th vertical and grab the measuring tape
-            WriteOnPanel($"Go near the {i + 1} th vertical");
+            WriteOnPanel($"Go near the Vertical {i+1}");
             //wait for the player to go near the i th vertical
             verticalFx[i].gameObject.SetActive(true);
             yield return new WaitUntil(() => IsPlayerInsideCollider(verticalBound[i]));
@@ -490,6 +490,7 @@ public class NewMain : MonoBehaviour
             yield return new WaitUntil(() => CheckRecentlyGrabbed(grabName));
             horizontalGrabsPairs[i, 0].GetComponent<FlashMaterial>().FlashOff();
             distMeasure[i].gameObject.SetActive(true);
+            distMeasure[i].GetComponent<MeasureDistance>().targetDist=targetHeight;
             WriteOnPanel("Grab the wingnut and rotate");
             StartCoroutine(WingNutCue(i, "snap 1"));
             yield return new WaitUntil(() => distMeasure[i].GetComponent<MeasureDistance>().reachedTarget);
