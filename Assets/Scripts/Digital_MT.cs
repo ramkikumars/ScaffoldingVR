@@ -32,7 +32,7 @@ public class Digital_MT : MonoBehaviour
         holderGrab = holder.GetComponent<UxrGrabbableObject>();
         boxGrab = box.GetComponent<UxrGrabbableObject>();
         boxGrab.Grabbed += OnBoxGrabbed;
-        boxGrab.Released+=OnBoxReleased;
+        boxGrab.Released += OnBoxReleased;
         holderGrab.Released += OnHolderReleased;
         holderGrab.Grabbed += OnHolderGrabbed;
 
@@ -59,18 +59,21 @@ public class Digital_MT : MonoBehaviour
         scaleChange.x = Mathf.Clamp(measuredDist, 1, maxDist * 100);
         tape.transform.localScale = scaleChange;
 
-        _text.text = ((Mathf.Clamp(measuredDist-1, 0, maxDist * 100))/100).ToString("F2");
-        if(holderGrab.IsBeingGrabbed){
-            velocity=velocityEstimator.GetVelocityEstimate().magnitude;
-            velocity= Mathf.Round(velocity * 100f) / 100f;
-            if(velocity<=0.01){
+        _text.text = Mathf.Clamp(measuredDist - 1, 0, maxDist * 100).ToString("F2");
+        if (holderGrab.IsBeingGrabbed)
+        {
+            velocity = velocityEstimator.GetVelocityEstimate().magnitude;
+            velocity = Mathf.Round(velocity * 100f) / 100f;
+            if (velocity <= 0.01)
+            {
                 tapeOpeningHaptics.Stop();
             }
-            else if(!tapeOpeningHaptics.audioSource.isPlaying)
+            else if (!tapeOpeningHaptics.audioSource.isPlaying)
                 tapeOpeningHaptics.Play();
-            }
-            // Debug.Log("Holder Velocity,"+velocity);
-        if(holderRel){
+        }
+        // Debug.Log("Holder Velocity,"+velocity);
+        if (holderRel)
+        {
             HolderReturn();
         }
     }
@@ -83,7 +86,7 @@ public class Digital_MT : MonoBehaviour
     }
     public void OnBoxReleased(object sender, UxrManipulationEventArgs e)
     {
-        boxGrab.IsLockedInPlace=false;
+        boxGrab.IsLockedInPlace = false;
     }
     public void OnHolderGrabbed(object sender, UxrManipulationEventArgs e)
     {
@@ -95,14 +98,16 @@ public class Digital_MT : MonoBehaviour
     public void OnHolderReleased(object sender, UxrManipulationEventArgs e)
     {
         Debug.Log("Holder is Released");
-        holderGrab.IsLockedInPlace=false;
+        holderGrab.IsLockedInPlace = false;
         tapeOpeningHaptics.Stop();
-        holderRel=true;
-        if(e.Grabber.Side.ToString()=="Right"){
+        holderRel = true;
+        if (e.Grabber.Side.ToString() == "Right")
+        {
             tapeClosingHapticsRight.Play();
-            Debug.Log("Holder Grabbed with"+"Right Hand");
+            Debug.Log("Holder Grabbed with" + "Right Hand");
         }
-        else if(e.Grabber.Side.ToString() == "Left"){
+        else if (e.Grabber.Side.ToString() == "Left")
+        {
             tapeClosingHapticsLeft.Play();
             // tapeClosingHapticsLeft1.Play();
             Debug.Log("Holder Grabbed with" + "Left Hand");
@@ -142,7 +147,8 @@ public class Digital_MT : MonoBehaviour
 
     }
 
-    private void HolderReturn(){
+    private void HolderReturn()
+    {
         float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
                                                       // AudioSource.PlayClipAtPoint(audioClip, transform.position);
 
