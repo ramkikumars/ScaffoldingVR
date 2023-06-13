@@ -39,17 +39,22 @@ public class ScrewMotion : MonoBehaviour
         {
             velocity = velocityEstimator.GetAngularVelocityEstimate().magnitude;
             velocity = Mathf.Round(velocity * 100f) / 100f;
-            if (velocity == 0)
-            {
-                rotatingHaptics.Stop();
-            }
-            else if (!rotatingHaptics.audioSource.isPlaying){
-                rotatingHaptics.Play();
-            }
+            Debug.Log("Ang Velocity:"+velocity);
+            // if (velocity == 0)
+            // {
+            //     rotatingHaptics.Stop();
+            // }
+            // else if (!rotatingHaptics.audioSource.isPlaying){
+            //     rotatingHaptics.Play();
+            // }
         }
         if (rotateObj.transform.hasChanged)
         {
 
+            if (!rotatingHaptics.audioSource.isPlaying)
+            {
+                rotatingHaptics.Play();
+            }
             CurrentAngle = Mathf.Round(rotateObj.transform.localRotation.eulerAngles.y);
 
             if (Mathf.Abs(CurrentAngle - lastAngle) >= 2)
@@ -72,12 +77,18 @@ public class ScrewMotion : MonoBehaviour
             //     prevAngle = CurrentAngle;
             // }
 
-            if(Random.Range(1, 10)>=5){
-                
-                StartCoroutine(WaitAndUnlock(duration));
-            }
+<<<<<<< Updated upstream
+            // if(Random.Range(1, 10)>=5){
+
+            //     StartCoroutine(WaitAndUnlock(duration));
+            // }
+=======
+>>>>>>> Stashed changes
             rotateObj.transform.hasChanged = false;
 
+        }
+        else{
+            rotatingHaptics.Stop();
         }
     }
     private IEnumerator WaitAndUnlock(float seconds)

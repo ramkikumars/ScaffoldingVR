@@ -415,7 +415,7 @@ public class NewMain : MonoBehaviour
             movableCup[i, 0].Rotate(eulerRot, Space.Self);
             // measureSphere[i].GetComponent<Renderer>().enabled = false;
         }
-        scaffoldingSet[0].transform.parent.transform.position=new Vector3(0,0.3f,0);
+        scaffoldingSet[0].transform.parent.transform.position=new Vector3(0,0.2f,0);
         if (playmode1 == "Training")
         {
             // playerName += "Ex2";
@@ -460,18 +460,22 @@ public class NewMain : MonoBehaviour
             // //wait for the player to grab the measuring tape
             // yield return new WaitUntil(() => CheckRecentlyGrabbed("Box"));
             //write on panel to measure the distance between base and wingnut
-            WriteOnPanel("Keep the tape on the top plane");
+            WriteOnPanel("Place the measuring tape on the top plane");
+            refPlanes[i, 0].GetComponent<FlashMaterial>().FlashOn();
             yield return new WaitUntil(() => CheckCollisionWithBox(refPlanes[i,0]));
+            refPlanes[i, 0].GetComponent<FlashMaterial>().FlashOff();
             // boxGrabObj.IsLockedInPlace=true;
-            WriteOnPanel("Pull the tape to the bottom plane");
+            WriteOnPanel("Pull the measuring tape to the bottom plane");
+            refPlanes[i, 0].GetComponent<FlashMaterial>().FlashOn();
             yield return new WaitUntil(() => CheckCollisionWithHolder(refPlanes[i, 1]));
+            refPlanes[i, 0].GetComponent<FlashMaterial>().FlashOff();
             successHaptics.Play();
-            WriteOnPanel("After Noting the Measurement, Release the tape");
+            WriteOnPanel("After Noting the Measurement, Release the measuring tape");
              yield return new WaitUntil(() => CheckRecentlyReleased("Holder"));
             WriteOnPanel("Take the measuring tape");
             yield return new WaitUntil(() => CheckRecentlyGrabbed("Box"));
-
         }
+        // WriteOnPanel("Leave the measuring tape");
         // yield return new WaitUntil(IsAllMeasurementOn);
         foreach (int i in changedVerticals)
         {
@@ -485,9 +489,11 @@ public class NewMain : MonoBehaviour
             grabName = horizontalGrabsPairs[i, 0].name;
             yield return new WaitUntil(() => CheckRecentlyGrabbed(grabName));
             horizontalGrabsPairs[i, 0].GetComponent<FlashMaterial>().FlashOff();
+            distMeasure[i].gameObject.SetActive(true);
             WriteOnPanel("Grab the wingnut and rotate");
             StartCoroutine(WingNutCue(i, "snap 1"));
             yield return new WaitUntil(() => distMeasure[i].GetComponent<MeasureDistance>().reachedTarget);
+            successHaptics.Play();
 
         }
         WriteOnPanel("You have successfully Completed the First Exercise");
