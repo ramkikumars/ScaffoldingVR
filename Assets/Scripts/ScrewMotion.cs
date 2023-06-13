@@ -77,13 +77,10 @@ public class ScrewMotion : MonoBehaviour
             //     prevAngle = CurrentAngle;
             // }
 
-<<<<<<< Updated upstream
             // if(Random.Range(1, 10)>=5){
 
             //     StartCoroutine(WaitAndUnlock(duration));
             // }
-=======
->>>>>>> Stashed changes
             rotateObj.transform.hasChanged = false;
 
         }
