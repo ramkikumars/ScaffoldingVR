@@ -244,7 +244,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &48164974
 PrefabInstance:
@@ -341,7 +341,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4538108645018549436, guid: 2feae63ce180da246b6c3ad2427015ab, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4538108645018549436, guid: 2feae63ce180da246b6c3ad2427015ab, type: 3}
       propertyPath: m_LocalPosition.x
@@ -411,11 +411,11 @@ PrefabInstance:
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 2554616067433354060, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: alwaysTrackVelocity
       value: 1
@@ -451,11 +451,11 @@ PrefabInstance:
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 6427380982008733622, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_renderer
       value: 
@@ -657,7 +657,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &133571344 stripped
 AudioSource:
@@ -1364,7 +1364,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1247228730059918, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1513507148015326, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_IsActive
@@ -1372,7 +1372,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4612787155059102, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4612787155059102, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1380,7 +1380,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4612787155059102, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.195
       objectReference: {fileID: 0}
     - target: {fileID: 4612787155059102, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1606,7 +1606,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &706040257 stripped
 GameObject:
@@ -1857,11 +1857,11 @@ PrefabInstance:
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 1756390613135326113, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1903,11 +1903,11 @@ PrefabInstance:
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 6427380982008733622, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_renderer
       value: 
@@ -2197,7 +2197,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &918657641 stripped
 Transform:
@@ -2424,7 +2424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 653868367440877032, guid: 5cec1ae7d6d22024897686a5b2e86342, type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 653868367440877032, guid: 5cec1ae7d6d22024897686a5b2e86342, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2543,7 +2543,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1173145386 stripped
 AudioSource:
@@ -2744,7 +2744,7 @@ Transform:
   - {fileID: 1124115772}
   - {fileID: 1692560018}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1350356495
 PrefabInstance:
@@ -2813,19 +2813,19 @@ PrefabInstance:
     - target: {fileID: 1436212928, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 1436212928, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 100620880982418368, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 2660475126530163169, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 3943634633755007987, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: _previewPosesRegenerationType
       value: 0
@@ -2840,7 +2840,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: c7c27714e3a85a94b94d3500dc8e0375, type: 2}
     - target: {fileID: 3943634634359492293, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 3943634634359492293, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2921,11 +2921,11 @@ PrefabInstance:
     - target: {fileID: 8099481927716126148, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 8099481927716126148, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: daa0ed99d8cb71946a79eb44f97e0a8e, type: 3}
 --- !u!114 &1436212923 stripped
@@ -3073,7 +3073,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1567470739 stripped
 GameObject:
@@ -3156,11 +3156,11 @@ PrefabInstance:
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 2950160709743475488, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -3194,11 +3194,11 @@ PrefabInstance:
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 6427380982008733622, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_renderer
       value: 
@@ -3337,52 +3337,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1671449081
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1671449082}
-  - component: {fileID: 1671449083}
-  m_Layer: 0
-  m_Name: Head R
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1671449082
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671449081}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1933133278}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1671449083
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1671449081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebe72f90241cb148ab7b48ca05a7747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BodyPart: 302
-  Side: 1
 --- !u!1 &1692560017
 GameObject:
   m_ObjectHideFlags: 0
@@ -3618,7 +3572,7 @@ Transform:
   - {fileID: 299079889}
   - {fileID: 697285673}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1772613613
 PrefabInstance:
@@ -4571,7 +4525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 474319650110039819, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 474319650110039819, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4653,53 +4607,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 474319649329670925, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
   m_PrefabInstance: {fileID: 1867750566}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1933133276
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1933133278}
-  - component: {fileID: 1933133277}
-  m_Layer: 0
-  m_Name: HapticsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1933133277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933133276}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa9d7245840628c419a4b3c72a337962, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _persistent: 1
---- !u!4 &1933133278
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933133276}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.464213, y: 0.5292784, z: 0.47786516}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1671449082}
-  - {fileID: 2073504746}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1971651247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 268207280876444454, guid: 9beb249060e2e1e4aad0187b8e6f855e, type: 3}
@@ -4915,7 +4822,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034578043
 GameObject:
@@ -4963,7 +4870,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2034578047
 MonoBehaviour:
@@ -5120,52 +5027,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 2
---- !u!1 &2073504745
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2073504746}
-  - component: {fileID: 2073504747}
-  m_Layer: 0
-  m_Name: Head L
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2073504746
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073504745}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1933133278}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2073504747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073504745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eebe72f90241cb148ab7b48ca05a7747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BodyPart: 302
-  Side: 2
 --- !u!1 &2083848920
 GameObject:
   m_ObjectHideFlags: 0
@@ -5238,7 +5099,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2083848923
 MonoBehaviour:
@@ -5507,7 +5368,7 @@ Transform:
   - {fileID: 8091132604569736421}
   - {fileID: 5328482478147101672}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &919132148768289140
 GameObject:
@@ -5934,11 +5795,11 @@ PrefabInstance:
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 1233345757252154177, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 1756390613135326113, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -6026,11 +5887,11 @@ PrefabInstance:
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[0]
       value: 
-      objectReference: {fileID: 1671449083}
+      objectReference: {fileID: 0}
     - target: {fileID: 5745471621845750840, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: hapticBodyParts.Array.data[1]
       value: 
-      objectReference: {fileID: 2073504747}
+      objectReference: {fileID: 0}
     - target: {fileID: 6427380982008733622, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
       propertyPath: m_renderer
       value: 
