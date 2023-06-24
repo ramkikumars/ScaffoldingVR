@@ -40,9 +40,8 @@ public class MimicHand : MonoBehaviour,IPunObservable
     {
         if (stream.IsWriting)
         {
-            jointTransforms = trackedHand.handModel.FingerJoints;
-            wristTransform.rotation = trackedHand.handAnimation.handModelInfo.wristTransform.rotation;
-            wristTransform.position = trackedHand.handAnimation.handModelInfo.wristTransform.position;
+            stream.SendNext(trackedHand.handAnimation.handModelInfo.wristTransform.rotation);
+            stream.SendNext(trackedHand.handAnimation.handModelInfo.wristTransform.position);
             // jointRotations = User.leftHand.
             for (int f = 0; f < 5; f++)
             {
@@ -54,6 +53,8 @@ public class MimicHand : MonoBehaviour,IPunObservable
         }
         else if(stream.IsReading)
         {
+            wristTransform.rotation=(Quaternion)stream.ReceiveNext();
+            wristTransform.position=(Vector3)stream.ReceiveNext();
             for (int f = 0; f < 5; f++)
             {
                 for (int j = 0; j < 3; j++)
