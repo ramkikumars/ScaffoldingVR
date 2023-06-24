@@ -1424,6 +1424,7 @@ MonoBehaviour:
   - {fileID: 919046157253917307}
   - {fileID: 927595829036364471}
   photonView: {fileID: 3844777310650419948}
+  mesh: {fileID: 921031311975248727}
 --- !u!114 &5224622124829608553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1517,6 +1518,7 @@ MonoBehaviour:
   - {fileID: 918906358117119489}
   - {fileID: 927721505829970245}
   photonView: {fileID: 3844777310650419948}
+  mesh: {fileID: 921043022307137837}
 --- !u!114 &6074524144124548909
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -34,10 +34,11 @@ public class MimicHand : MonoBehaviour
     Transform[][] res = new Transform[5][];
     private SG_TrackedHand trackedHand;
     public PhotonView photonView;
+    public GameObject mesh;
     void Start()
     {
         sgUser=GameObject.Find("[SG_User]").GetComponent<SG_User>();
-        photonView=GetComponent<PhotonView>();
+        // photonView=GetComponent<PhotonView>();
         switch (handSide)
         {
             case HandSide.Left:
@@ -60,7 +61,7 @@ public class MimicHand : MonoBehaviour
     void Update()
     {
         if(photonView.IsMine){
-            wristTransform.gameObject.SetActive(false);
+            mesh.SetActive(false);
             jointTransforms = trackedHand.handModel.FingerJoints;
             wristTransform.rotation = trackedHand.handAnimation.handModelInfo.wristTransform.rotation;
             // wristTransform.position=trackedHand.handAnimation.handModelInfo.wristTransform.position;
