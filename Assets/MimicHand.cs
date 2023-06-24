@@ -40,6 +40,7 @@ public class MimicHand : MonoBehaviour,IPunObservable
     {
         if (stream.IsWriting)
         {
+            jointTransforms = trackedHand.handModel.FingerJoints;
             stream.SendNext(trackedHand.handAnimation.handModelInfo.wristTransform.rotation);
             stream.SendNext(trackedHand.handAnimation.handModelInfo.wristTransform.position);
             // jointRotations = User.leftHand.
