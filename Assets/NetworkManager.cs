@@ -8,6 +8,8 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        PhotonNetwork.SendRate=20;
+        PhotonNetwork.SerializationRate=5;
         ConnectToServer();
     }
 
@@ -36,6 +38,7 @@ public class NetworkManager : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
+
         Debug.Log("Joined a Room");
         base.OnJoinedRoom();
     }

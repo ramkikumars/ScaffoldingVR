@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SG;
 using Photon.Pun;
-public class MimicHand : MonoBehaviour
+public class MimicHand : MonoBehaviour,IPunObservable
 {
     public enum HandSide{
         Right,
@@ -35,6 +35,35 @@ public class MimicHand : MonoBehaviour
     private SG_TrackedHand trackedHand;
     public PhotonView photonView;
     public GameObject mesh;
+
+    public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
+        if (stream.IsWriting)
+        {
+            jointTransforms = trackedHand.handModel.FingerJoints;
+            wristTransform.rotation = trackedHand.handAnimation.handModelInfo.wristTransform.rotation;
+            wristTransform.position = trackedHand.handAnimation.handModelInfo.wristTransform.position;
+            // jointRotations = User.leftHand.
+            for (int f = 0; f < 5; f++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    stream.SendNext(jointTransforms[f][j].rotation);
+                }
+            }
+        }
+        else if(stream.IsReading)
+        {
+            for (int f = 0; f < 5; f++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    res[f][j].rotation = (Quaternion)stream.ReceiveNext();
+                }
+            }
+        }
+    }
+
     void Start()
     {
         sgUser=GameObject.Find("[SG_User]").GetComponent<SG_User>();
@@ -55,25 +84,16 @@ public class MimicHand : MonoBehaviour
         res[2] = middleJoints;
         res[3] = ringJoints;
         res[4] = pinkyJoints;
+        if (photonView.IsMine)
+        {
+            mesh.SetActive(false);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(photonView.IsMine){
-            mesh.SetActive(false);
-            jointTransforms = trackedHand.handModel.FingerJoints;
-            wristTransform.rotation = trackedHand.handAnimation.handModelInfo.wristTransform.rotation;
-            // wristTransform.position=trackedHand.handAnimation.handModelInfo.wristTransform.position;
-            // jointRotations = User.leftHand.
-            for (int f = 0; f < 5; f++)
-            {
-                for (int j = 0; j < 3; j++)
-                {
-                    res[f][j].rotation = jointTransforms[f][j].rotation;
-                }
-            }
-        }
+
 
 
     }
