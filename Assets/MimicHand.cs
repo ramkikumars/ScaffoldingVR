@@ -35,7 +35,17 @@ public class MimicHand : MonoBehaviour,IPunObservable
     private SG_TrackedHand trackedHand;
     public PhotonView photonView;
     public GameObject mesh;
+    float currentTime = 0;
+    double currentPacketTime = 0;
+    double lastPacketTime = 0;
 
+    Vector3 wristPositionAtLastPacket = Vector3.zero;
+    Quaternion wristRotationAtLastPacket = Quaternion.identity;
+    Quaternion[][] jointRotationAtLastPacket = new Quaternion[5][];
+
+    Vector3 wristPosistionLatest=Vector3.zero;
+    Quaternion wristRotationLatest=Quaternion.identity;
+    Quaternion[][] jointRotationLatest = new Quaternion[5][];
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
@@ -54,13 +64,17 @@ public class MimicHand : MonoBehaviour,IPunObservable
         }
         else if(stream.IsReading)
         {
-            wristTransform.rotation=(Quaternion)stream.ReceiveNext();
-            wristTransform.position=(Vector3)stream.ReceiveNext();
+            wristRotationLatest=(Quaternion)stream.ReceiveNext();
+            wristPosistionLatest=(Vector3)stream.ReceiveNext();
             for (int f = 0; f < 5; f++)
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    res[f][j].rotation = (Quaternion)stream.ReceiveNext();
+                    jointRotationLatest[f][j] = (Quaternion)stream.ReceiveNext();
+                    currentTime = 0.0f;
+                    lastPacketTime = currentPacketTime;
+                    currentPacketTime = info.SentServerTime;
+                    jointRotationAtLastPacket[f][j]=res[f][j].rotation;
                 }
             }
         }
@@ -96,7 +110,23 @@ public class MimicHand : MonoBehaviour,IPunObservable
     void Update()
     {
 
+        if (!photonView.IsMine)
+        {
+            //Lag compensation
+            double timeToReachGoal = currentPacketTime - lastPacketTime;
+            currentTime += Time.deltaTime;
 
+            //Update remote player
+            wristTransform.rotation=Quaternion.Lerp(wristRotationAtLastPacket, wristRotationLatest, (float)(currentTime / timeToReachGoal));
+            wristTransform.position=Vector3.Lerp(wristPositionAtLastPacket, wristPosistionLatest, (float)(currentTime / timeToReachGoal));
+            for (int f = 0; f < 5; f++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    res[f][j].rotation=Quaternion.Lerp(jointRotationAtLastPacket[f][j],jointRotationLatest[f][j],(float)(currentTime / timeToReachGoal));
+                }
+            }
+        }
+    }
 
     }
-}
