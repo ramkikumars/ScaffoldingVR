@@ -104,6 +104,14 @@ public class MimicHand : MonoBehaviour,IPunObservable
         {
             mesh.SetActive(false);
         }
+        for (int f = 0; f < 5; f++)
+        {
+            for (int j = 0; j < 3; j++)
+            {
+                jointRotationAtLastPacket[f][j]=Quaternion.identity;
+                jointRotationLatest[f][j]=Quaternion.identity;
+            }
+        }
     }
 
     // Update is called once per frame
@@ -111,7 +119,7 @@ public class MimicHand : MonoBehaviour,IPunObservable
     {
 
         if (!photonView.IsMine)
-        {
+        {   //Remote
             //Lag compensation
             double timeToReachGoal = currentPacketTime - lastPacketTime;
             currentTime += Time.deltaTime;
@@ -123,6 +131,8 @@ public class MimicHand : MonoBehaviour,IPunObservable
             {
                 for (int j = 0; j < 3; j++)
                 {
+                    timeToReachGoal = currentPacketTime - lastPacketTime;
+                    currentTime += Time.deltaTime;
                     res[f][j].rotation=Quaternion.Lerp(jointRotationAtLastPacket[f][j],jointRotationLatest[f][j],(float)(currentTime / timeToReachGoal));
                 }
             }
