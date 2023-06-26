@@ -119,7 +119,7 @@ public class MimicHand : MonoBehaviour,IPunObservable
     {
 
         if (!photonView.IsMine)
-        {   //Remote
+        {   //Remote co
             //Lag compensation
             double timeToReachGoal = currentPacketTime - lastPacketTime;
             currentTime += Time.deltaTime;
