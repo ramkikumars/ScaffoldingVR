@@ -41,11 +41,11 @@ public class MimicHand : MonoBehaviour,IPunObservable
 
     Vector3 wristPositionAtLastPacket = Vector3.zero;
     Quaternion wristRotationAtLastPacket = Quaternion.identity;
-    Quaternion[][] jointRotationAtLastPacket = new Quaternion[5][];
+    Quaternion[,] jointRotationAtLastPacket = new Quaternion[5,3];
 
     Vector3 wristPosistionLatest=Vector3.zero;
     Quaternion wristRotationLatest=Quaternion.identity;
-    Quaternion[][] jointRotationLatest = new Quaternion[5][];
+    Quaternion[,] jointRotationLatest = new Quaternion[5,3];
     public void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
         if (stream.IsWriting)
@@ -70,11 +70,11 @@ public class MimicHand : MonoBehaviour,IPunObservable
             {
                 for (int j = 0; j < 3; j++)
                 {
-                    jointRotationLatest[f][j] = (Quaternion)stream.ReceiveNext();
+                    jointRotationLatest[f,j] = (Quaternion)stream.ReceiveNext();
                     currentTime = 0.0f;
                     lastPacketTime = currentPacketTime;
                     currentPacketTime = info.SentServerTime;
-                    jointRotationAtLastPacket[f][j]=res[f][j].rotation;
+                    jointRotationAtLastPacket[f,j]=res[f][j].rotation;
                 }
             }
         }
@@ -108,8 +108,8 @@ public class MimicHand : MonoBehaviour,IPunObservable
         {
             for (int j = 0; j < 3; j++)
             {
-                jointRotationAtLastPacket[f][j]=Quaternion.identity;
-                jointRotationLatest[f][j]=Quaternion.identity;
+                jointRotationAtLastPacket[f,j]=Quaternion.identity;
+                jointRotationLatest[f,j]=Quaternion.identity;
             }
         }
     }
@@ -133,7 +133,7 @@ public class MimicHand : MonoBehaviour,IPunObservable
                 {
                     timeToReachGoal = currentPacketTime - lastPacketTime;
                     currentTime += Time.deltaTime;
-                    res[f][j].rotation=Quaternion.Lerp(jointRotationAtLastPacket[f][j],jointRotationLatest[f][j],(float)(currentTime / timeToReachGoal));
+                    res[f][j].rotation=Quaternion.Lerp(jointRotationAtLastPacket[f,j],jointRotationLatest[f,j],(float)(currentTime / timeToReachGoal));
                 }
             }
         }
