@@ -25,12 +25,12 @@ public class SG_Digital_MT : MonoBehaviour
     private bool holderRel;
     void Start()
     {
-        holderGrab = holder.GetComponent<SG_Grabable>();
+        holderGrab = holder.GetComponent<SG_SimpleDrawer>();
         boxGrab = box.GetComponent<SG_Grabable>();
         scaleChange = new Vector3(1, 1, 1);
         maxDist = 120;
         holderGrab.ObjectGrabbed.AddListener(OnHolderGrabbed);
-        holderGrab.ObjectReleased.AddListener(OnBoxReleased);
+        holderGrab.ObjectReleased.AddListener(OnHolderReleased);
     }
 
     void Update()
@@ -77,11 +77,13 @@ public class SG_Digital_MT : MonoBehaviour
     }
     public void OnHolderGrabbed(SG_Interactable sGInteractable,SG_GrabScript sgGrabScript)
     {
+        Debug.Log("Holder Grabbed");
         holderRel=false;
     }
 
     public void OnHolderReleased(SG_Interactable sGInteractable, SG_GrabScript sgGrabScript)
     {
+        Debug.Log("Holder Released");
         holderRel=true;
     }
 

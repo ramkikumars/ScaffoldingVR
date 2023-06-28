@@ -902,18 +902,6 @@ MonoBehaviour:
   angularVelocityAverageFrames: 11
   estimateOnAwake: 0
   useLocalPosistion: 0
---- !u!114 &694894973
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3221554992308352708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &697391162
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,18 +2204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1512323323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6267048176461904418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1545642603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2389,6 +2365,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114249687839771702, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: debugEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 114257410547415106, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: vrRig
       value: 
@@ -2396,14 +2376,18 @@ PrefabInstance:
     - target: {fileID: 137225165305935688, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 30f12851047e0af48a58cd40312d0202, type: 2}
+      objectReference: {fileID: 2100000, guid: 1cc6d9f661dfbea47a81852de490c059, type: 2}
     - target: {fileID: 137343063157458402, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 30f12851047e0af48a58cd40312d0202, type: 2}
+      objectReference: {fileID: 2100000, guid: 1cc6d9f661dfbea47a81852de490c059, type: 2}
     - target: {fileID: 2489246792350500270, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4100068402358778399, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: debugEnabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
@@ -4052,7 +4036,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 360753020570797095}
-  - component: {fileID: 694894973}
   m_Layer: 0
   m_Name: LGrab
   m_TagString: Untagged
@@ -4230,7 +4213,7 @@ GameObject:
   - component: {fileID: 3943634634053097134}
   - component: {fileID: 6585582694964482164}
   - component: {fileID: 6585582694964482166}
-  - component: {fileID: 6585582694964482165}
+  - component: {fileID: 6585582694964482167}
   m_Layer: 0
   m_Name: Holder
   m_TagString: Untagged
@@ -4284,7 +4267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3943634634498919248}
   m_LocalRotation: {x: -0.004052265, y: -0.024700087, z: -0.6936581, w: 0.71986943}
-  m_LocalPosition: {x: -1.2178183, y: 4.8565507, z: 0.41259676}
+  m_LocalPosition: {x: 5.2, y: 5.1, z: 0.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4699,7 +4682,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3943634635193336734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 0.601, y: 0.894, z: -0.202}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_ConstrainProportionsScale: 0
@@ -4708,7 +4691,7 @@ Transform:
   - {fileID: 3943634635065708556}
   m_Father: {fileID: 0}
   m_RootOrder: 14
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
 --- !u!1 &3943634635193336734
 GameObject:
   m_ObjectHideFlags: 0
@@ -4848,8 +4831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
-  allowedHands: 0
+  physicsBody: {fileID: 3943634634498919254}
+  allowedHands: 4
   debugTxt: {fileID: 0}
   ObjectGrabbed:
     m_PersistentCalls:
@@ -4927,7 +4910,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6302681880880505145}
-  - component: {fileID: 1512323323}
   m_Layer: 0
   m_Name: RGrab
   m_TagString: Untagged
@@ -5027,32 +5009,6 @@ MonoBehaviour:
   angularVelocityAverageFrames: 11
   estimateOnAwake: 1
   useLocalPosistion: 0
---- !u!114 &6585582694964482165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634053097148}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aeddf9e1ae3cd74e9a853213bd6c691, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
-  allowedHands: 0
-  debugTxt: {fileID: 0}
-  ObjectGrabbed:
-    m_PersistentCalls:
-      m_Calls: []
-  ObjectReleased:
-    m_PersistentCalls:
-      m_Calls: []
-  moveSpeed: 100
-  rotateSpeed: 900
-  snapOptions: {fileID: 0}
-  alwaysTrackVelocity: 0
 --- !u!114 &6585582694964482166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5071,6 +5027,37 @@ MonoBehaviour:
   mustBeGrabbed: 0
   requiresThumb: 0
   minimumFingers: 1
+--- !u!114 &6585582694964482167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3943634634053097148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c03a2e8a2311a4fb7f9e019f19e72d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseTransform: {fileID: 0}
+  physicsBody: {fileID: 0}
+  allowedHands: 0
+  debugTxt: {fileID: 0}
+  ObjectGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  moveSpeed: 100
+  rotateSpeed: 900
+  snapOptions: {fileID: 0}
+  alwaysTrackVelocity: 1
+  moveAxis: 0
+  pushDistance: 10
+  pullDistance: 10
+  drawerDist: 0
+  drawer_slideValue: 0
 --- !u!1 &6712131613097670691
 GameObject:
   m_ObjectHideFlags: 0
