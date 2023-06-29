@@ -6,11 +6,11 @@ using Fusion;
 public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
 {
     public static NetworkPlayer Local { get; set; }
-
+    public NetworkObject networkObject => GetComponent<NetworkObject>();
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     public override void Spawned()

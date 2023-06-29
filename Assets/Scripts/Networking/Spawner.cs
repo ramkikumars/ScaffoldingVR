@@ -9,13 +9,13 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     public NetworkPlayer playerPrefab;
     // As we are in shared topology, having the StateAuthority means we are the local user
-    public bool IsLocalUser => this.GetComponentInParent<NetworkObject>().HasStateAuthority;
+    public bool IsLocalUser => playerPrefab.networkObject.HasStateAuthority;
     private SG_User sgUser;
     void Start()
     {
-        // if(IsLocalUser){
-        // sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
-        // }
+        if(IsLocalUser){
+        sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
+        }
     }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
@@ -36,15 +36,15 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         // if (characterInputHandler != null)
         //     input.Set(characterInputHandler.GetNetworkInput());
         var data = new NetworkInputData();
-        data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
-        data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
+        // data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
+        // data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
 
-        data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][0].rotation;
-        data.leftHand.Thumb_MCP=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
-        data.leftHand.Thumb_IP=sgUser.leftHand.handModel.FingerJoints[0][2].rotation;
-        data.leftHand.Thumb_FingerTip=sgUser.leftHand.handModel.FingerJoints[0][3].rotation;
+        // data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][0].rotation;
+        // data.leftHand.Thumb_MCP=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
+        // data.leftHand.Thumb_IP=sgUser.leftHand.handModel.FingerJoints[0][2].rotation;
+        // data.leftHand.Thumb_FingerTip=sgUser.leftHand.handModel.FingerJoints[0][3].rotation;
 
-        data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
+        // data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
         input.Set(data);
     }
 

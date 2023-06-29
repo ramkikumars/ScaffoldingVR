@@ -415,7 +415,7 @@ MonoBehaviour:
   AutoHideGUI: 1
   AutoClients: 1
   ServerPort: 27015
-  DefaultRoomName: 
+  DefaultRoomName: TestRoom
   AlwaysShowStats: 0
   InitialScenePath: 
   _currentStage: 0
