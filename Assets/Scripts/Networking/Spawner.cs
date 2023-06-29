@@ -4,6 +4,7 @@ using UnityEngine;
 using Fusion;
 using Fusion.Sockets;
 using System;
+using SG;
 public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     public NetworkPlayer playerPrefab;
@@ -12,9 +13,10 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     // CharacterInputHandler characterInputHandler;
 
     // Start is called before the first frame update
+    private SG_User sgUser;
     void Start()
     {
-
+        // sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
     }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
@@ -34,6 +36,11 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
 
         // if (characterInputHandler != null)
         //     input.Set(characterInputHandler.GetNetworkInput());
+        var data = new NetworkInputData();
+        // data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
+        // data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
+        // data.wristPosistion=
+        input.Set(data);
     }
 
     public void OnConnectedToServer(NetworkRunner runner) { Debug.Log("OnConnectedToServer"); }

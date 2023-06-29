@@ -17,9 +17,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Main Exercise.unity
     guid: eb7901c75ca841f4ba1a4da778bae467
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Familirisation.unity
     guid: 4493778efdd0c9d428d45369ba3b306c
+  - enabled: 1
+    path: Assets/Scenes/Trial.unity
+    guid: 07789f735b2c0c646b588d7ffb45ac6c
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b9d4f01ce3407d04bbe136e8a52ae970, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 059cd72d2a2689c45898e5bed76f4337, type: 2}

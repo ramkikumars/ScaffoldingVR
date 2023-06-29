@@ -9,14 +9,16 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1632794155137422456}
-  - component: {fileID: 3844777310650419948}
+  - component: {fileID: 4899279145163819282}
+  - component: {fileID: 304698661963901386}
+  - component: {fileID: 1657403914671344899}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1632794155137422456
 Transform:
   m_ObjectHideFlags: 0
@@ -33,7 +35,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3844777310650419948
+--- !u!114 &4899279145163819282
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42,23 +44,92 @@ MonoBehaviour:
   m_GameObject: {fileID: 710734707192272413}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Script: {fileID: 11500000, guid: 248b5db32f690f14ebe8ca3edd5bec0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 921655049894029896}
-  - {fileID: 0}
-  - {fileID: 921632354733314912}
-  - {fileID: 0}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
+  _interpolationDataSource: 0
+--- !u!114 &304698661963901386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710734707192272413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2305
+  NetworkGuid:
+    RawGuidValue: 3a0bb92bf17fc85478fb9a9e445e7eea
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 4899279145163819282}
+  - {fileID: 1657403914671344899}
+  SimulationBehaviours: []
+--- !u!114 &1657403914671344899
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710734707192272413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1952e6b10a0f645b0b59cea76c6937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  rightTransforms:
+    wrist: {fileID: 927385306023673441}
+    Thumb_CMC: {fileID: 919103784678629869}
+    Thumb_MCP: {fileID: 918917760932138807}
+    Thumb_IP: {fileID: 927266780658043549}
+    Thumb_FingerTip: {fileID: 919269491487683275}
+    Index_MCP: {fileID: 927301121001702111}
+    Index_PIP: {fileID: 927678907058103139}
+    Index_DIP: {fileID: 927505452869704269}
+    Index_FingerTip: {fileID: 927704849630750873}
+    Middle_MCP: {fileID: 927539652736689761}
+    Middle_PIP: {fileID: 919004598049064597}
+    Middle_DIP: {fileID: 927715769202845655}
+    Middle_FingerTip: {fileID: 927396788141803047}
+    Ring_MCP: {fileID: 927476991379174839}
+    Ring_PIP: {fileID: 919137621105350311}
+    Ring_DIP: {fileID: 927395627551607209}
+    Ring_FingerTip: {fileID: 927715292174675739}
+    Pinky_MCP: {fileID: 919269253722710029}
+    Pinky_PIP: {fileID: 919130613165421161}
+    Pinky_DIP: {fileID: 918906358117119489}
+    Pinky_FingerTip: {fileID: 927721505829970245}
+  leftTransforms:
+    wrist: {fileID: 927688776509548611}
+    Thumb_CMC: {fileID: 918911810485834951}
+    Thumb_MCP: {fileID: 919231022067785817}
+    Thumb_IP: {fileID: 919182789536301687}
+    Thumb_FingerTip: {fileID: 918774283681628597}
+    Index_MCP: {fileID: 927389514076751789}
+    Index_PIP: {fileID: 918879617080822829}
+    Index_DIP: {fileID: 919094295681622799}
+    Index_FingerTip: {fileID: 919159165782254781}
+    Middle_MCP: {fileID: 927197501367377073}
+    Middle_PIP: {fileID: 927242014561034531}
+    Middle_DIP: {fileID: 927218687184815631}
+    Middle_FingerTip: {fileID: 919093619516785627}
+    Ring_MCP: {fileID: 927683842877460021}
+    Ring_PIP: {fileID: 918938343186130131}
+    Ring_DIP: {fileID: 918803894256558775}
+    Ring_FingerTip: {fileID: 927238036520719241}
+    Pinky_MCP: {fileID: 927206186274384107}
+    Pinky_PIP: {fileID: 918974132860044013}
+    Pinky_DIP: {fileID: 919046157253917307}
+    Pinky_FingerTip: {fileID: 927595829036364471}
 --- !u!1 &920992709298369701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1358,7 +1429,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918804258082387233}
-  - component: {fileID: 921632354733314912}
   m_Layer: 0
   m_Name: HandModel
   m_TagString: Untagged
@@ -1384,48 +1454,6 @@ Transform:
   m_Father: {fileID: 919142505757071385}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &921632354733314912
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921632354733314913}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee10de30fd0de94ba8bfdfa752c39f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handSide: 1
-  foreArmTransform: {fileID: 919142505757071385}
-  wristTransform: {fileID: 927293854505215141}
-  thumbJoints:
-  - {fileID: 918911810485834951}
-  - {fileID: 919231022067785817}
-  - {fileID: 919182789536301687}
-  - {fileID: 918774283681628597}
-  indexJoints:
-  - {fileID: 927389514076751789}
-  - {fileID: 918879617080822829}
-  - {fileID: 919094295681622799}
-  - {fileID: 919159165782254781}
-  middleJoints:
-  - {fileID: 927197501367377073}
-  - {fileID: 927242014561034531}
-  - {fileID: 927218687184815631}
-  - {fileID: 919093619516785627}
-  ringJoints:
-  - {fileID: 927683842877460021}
-  - {fileID: 918938343186130131}
-  - {fileID: 918803894256558775}
-  - {fileID: 927238036520719241}
-  pinkyJoints:
-  - {fileID: 927206186274384107}
-  - {fileID: 918974132860044013}
-  - {fileID: 919046157253917307}
-  - {fileID: 927595829036364471}
-  photonView: {fileID: 3844777310650419948}
-  mesh: {fileID: 921031311975248727}
 --- !u!1 &921655049894029897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,7 +1463,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919280066302675479}
-  - component: {fileID: 921655049894029896}
   m_Layer: 0
   m_Name: HandModel
   m_TagString: Untagged
@@ -1461,48 +1488,6 @@ Transform:
   m_Father: {fileID: 927376111065319783}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &921655049894029896
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 921655049894029897}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fee10de30fd0de94ba8bfdfa752c39f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  handSide: 0
-  foreArmTransform: {fileID: 927376111065319783}
-  wristTransform: {fileID: 918998140880735505}
-  thumbJoints:
-  - {fileID: 919103784678629869}
-  - {fileID: 918917760932138807}
-  - {fileID: 927266780658043549}
-  - {fileID: 919269491487683275}
-  indexJoints:
-  - {fileID: 927301121001702111}
-  - {fileID: 927678907058103139}
-  - {fileID: 927505452869704269}
-  - {fileID: 927704849630750873}
-  middleJoints:
-  - {fileID: 927539652736689761}
-  - {fileID: 919004598049064597}
-  - {fileID: 927715769202845655}
-  - {fileID: 927396788141803047}
-  ringJoints:
-  - {fileID: 927476991379174839}
-  - {fileID: 919137621105350311}
-  - {fileID: 927395627551607209}
-  - {fileID: 927715292174675739}
-  pinkyJoints:
-  - {fileID: 919269253722710029}
-  - {fileID: 919130613165421161}
-  - {fileID: 918906358117119489}
-  - {fileID: 927721505829970245}
-  photonView: {fileID: 3844777310650419948}
-  mesh: {fileID: 921043022307137837}
 --- !u!1 &921675064422745603
 GameObject:
   m_ObjectHideFlags: 0
