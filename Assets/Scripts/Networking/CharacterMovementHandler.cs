@@ -68,6 +68,27 @@ public class CharacterMovementHandler : NetworkBehaviour
                 leftTransforms.Thumb_IP.rotation=data.leftHand.Thumb_IP;
                 leftTransforms.Thumb_FingerTip.rotation=data.leftHand.Thumb_FingerTip;
 
+                leftTransforms.Index_MCP.rotation=data.leftHand.Index_MCP;
+                leftTransforms.Index_PIP.rotation=data.leftHand.Index_PIP;
+                leftTransforms.Index_DIP.rotation=data.leftHand.Index_DIP;
+                leftTransforms.Index_FingerTip.rotation=data.leftHand.Index_FingerTip;
+
+                leftTransforms.Middle_MCP.rotation=data.leftHand.Middle_MCP;
+                leftTransforms.Middle_PIP.rotation=data.leftHand.Middle_PIP;
+                leftTransforms.Middle_DIP.rotation=data.leftHand.Middle_DIP;
+                leftTransforms.Middle_FingerTip.rotation=data.leftHand.Middle_FingerTip;
+
+                leftTransforms.Ring_MCP.rotation=data.leftHand.Ring_MCP;
+                leftTransforms.Ring_PIP.rotation=data.leftHand.Ring_PIP;
+                leftTransforms.Ring_DIP.rotation=data.leftHand.Ring_DIP;
+                leftTransforms.Ring_FingerTip.rotation=data.leftHand.Ring_FingerTip;
+
+                leftTransforms.Pinky_MCP.rotation=data.leftHand.Pinky_MCP;
+                leftTransforms.Pinky_PIP.rotation=data.leftHand.Pinky_PIP;
+                leftTransforms.Pinky_DIP.rotation=data.leftHand.Pinky_DIP;
+                leftTransforms.Pinky_FingerTip.rotation=data.leftHand.Pinky_FingerTip;
+
+
             // rightTransforms.wrist.position=data.rightHand.wristPosistion;
             // rightTransforms.wrist.rotation=data.rightHand.wristRotation;
         }
