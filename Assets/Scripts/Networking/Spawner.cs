@@ -13,19 +13,15 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     private SG_User sgUser;
     void Start()
     {
-        if(IsLocalUser){
-        sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
-        }
     }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
     {
-        if (runner.IsServer)
+        if (player == runner.LocalPlayer)
         {
-            Debug.Log("OnPlayerJoined we are server. Spawning player");
             runner.Spawn(playerPrefab, transform.position, Quaternion.identity, player);
+            sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
         }
-        else Debug.Log("OnPlayerJoined");
     }
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
