@@ -73,7 +73,49 @@ MonoBehaviour:
   - {fileID: 4899279145163819282}
   - {fileID: 1657403914671344899}
   - {fileID: 1942440876839698429}
+  - {fileID: 9089668488156416401}
+  - {fileID: 6084546102236095242}
+  - {fileID: 779890657309021729}
+  - {fileID: 7574681216347639605}
+  - {fileID: 911819337822936240}
+  - {fileID: 5667005263400026501}
+  - {fileID: 2764124746274278824}
+  - {fileID: 3977786632471754455}
+  - {fileID: 3745744591699162054}
+  - {fileID: 1690256059782238937}
+  - {fileID: 4118396395325157586}
+  - {fileID: 4263198839193793063}
+  - {fileID: 4897932152432793498}
+  - {fileID: 7711058976180566469}
+  - {fileID: 2968511468681368456}
+  - {fileID: 28741107499319418}
+  - {fileID: 3877622412660679019}
+  - {fileID: 2283912655068194025}
+  - {fileID: 3609293485012981405}
+  - {fileID: 5717919356315171058}
+  - {fileID: 1379799071650388854}
   - {fileID: 1527936689725583067}
+  - {fileID: 2660453193880347294}
+  - {fileID: 2234655708778337774}
+  - {fileID: 9167396065781522701}
+  - {fileID: 2846316346011218905}
+  - {fileID: 6124004481616652026}
+  - {fileID: 1703126298851503438}
+  - {fileID: 5785134750824832866}
+  - {fileID: 3047971950513376077}
+  - {fileID: 288440972768540132}
+  - {fileID: 1592456262778766629}
+  - {fileID: 2754895322802957765}
+  - {fileID: 8041647890908820381}
+  - {fileID: 464311256725448110}
+  - {fileID: 6957948580583121289}
+  - {fileID: 1002426245171685853}
+  - {fileID: 8945725513494750353}
+  - {fileID: 397480082726437163}
+  - {fileID: 5803181593202284549}
+  - {fileID: 3591836916581687596}
+  - {fileID: 4015795213649164026}
+  - {fileID: 1679750007214198143}
   SimulationBehaviours: []
 --- !u!114 &1657403914671344899
 MonoBehaviour:
@@ -176,6 +218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927476991379174839}
+  - component: {fileID: 7711058976180566469}
   m_Layer: 0
   m_Name: f_ring.01.R
   m_TagString: Untagged
@@ -199,6 +242,34 @@ Transform:
   m_Father: {fileID: 927385306023673441}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &7711058976180566469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921029778257342923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921031311975248727
 GameObject:
   m_ObjectHideFlags: 0
@@ -430,6 +501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919137621105350311}
+  - component: {fileID: 2968511468681368456}
   m_Layer: 0
   m_Name: f_ring.02.R
   m_TagString: Untagged
@@ -453,6 +525,34 @@ Transform:
   m_Father: {fileID: 927476991379174839}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2968511468681368456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921079724709179007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921109870391401737
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,6 +562,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918911810485834951}
+  - component: {fileID: 2234655708778337774}
   m_Layer: 0
   m_Name: thumb.01.R
   m_TagString: Untagged
@@ -485,6 +586,34 @@ Transform:
   m_Father: {fileID: 927688776509548611}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 146.729, z: 0}
+--- !u!114 &2234655708778337774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921109870391401737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921120125441170419
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,6 +685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919103784678629869}
+  - component: {fileID: 6084546102236095242}
   m_Layer: 0
   m_Name: thumb.01.R
   m_TagString: Untagged
@@ -579,6 +709,34 @@ Transform:
   m_Father: {fileID: 927385306023673441}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 146.729, z: 0}
+--- !u!114 &6084546102236095242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921158386197798785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921158576946126359
 GameObject:
   m_ObjectHideFlags: 0
@@ -620,6 +778,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927266780658043549}
+  - component: {fileID: 7574681216347639605}
   m_Layer: 0
   m_Name: thumb.03.R
   m_TagString: Untagged
@@ -643,6 +802,34 @@ Transform:
   m_Father: {fileID: 918917760932138807}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7574681216347639605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921177820602241407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921185022331792263
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +839,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927715292174675739}
+  - component: {fileID: 3877622412660679019}
   m_Layer: 0
   m_Name: f_ring.03.R_end
   m_TagString: Untagged
@@ -674,6 +862,34 @@ Transform:
   m_Father: {fileID: 927395627551607209}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3877622412660679019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921185022331792263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921185100029088057
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,6 +1060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918917760932138807}
+  - component: {fileID: 779890657309021729}
   m_Layer: 0
   m_Name: thumb.02.R
   m_TagString: Untagged
@@ -867,6 +1084,34 @@ Transform:
   m_Father: {fileID: 919103784678629869}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &779890657309021729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921194985278194353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921216152582948937
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +1121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918906358117119489}
+  - component: {fileID: 5717919356315171058}
   m_Layer: 0
   m_Name: f_pinky.03.R
   m_TagString: Untagged
@@ -899,6 +1145,34 @@ Transform:
   m_Father: {fileID: 919130613165421161}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 4.142, z: 0}
+--- !u!114 &5717919356315171058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921216152582948937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921250993938443679
 GameObject:
   m_ObjectHideFlags: 0
@@ -909,6 +1183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927385306023673441}
   - component: {fileID: 869020792929265673}
+  - component: {fileID: 9089668488156416401}
   m_Layer: 0
   m_Name: wrist.R
   m_TagString: Untagged
@@ -953,6 +1228,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &9089668488156416401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921250993938443679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921255381430917701
 GameObject:
   m_ObjectHideFlags: 0
@@ -962,6 +1265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927218687184815631}
+  - component: {fileID: 8041647890908820381}
   m_Layer: 0
   m_Name: f_middle.03.R
   m_TagString: Untagged
@@ -985,6 +1289,34 @@ Transform:
   m_Father: {fileID: 927242014561034531}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8041647890908820381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921255381430917701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921346548794710685
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,6 +1326,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927715769202845655}
+  - component: {fileID: 4263198839193793063}
   m_Layer: 0
   m_Name: f_middle.03.R
   m_TagString: Untagged
@@ -1017,6 +1350,34 @@ Transform:
   m_Father: {fileID: 919004598049064597}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4263198839193793063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921346548794710685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921354228863020961
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919130613165421161}
+  - component: {fileID: 3609293485012981405}
   m_Layer: 0
   m_Name: f_pinky.02.R
   m_TagString: Untagged
@@ -1049,6 +1411,34 @@ Transform:
   m_Father: {fileID: 919269253722710029}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3609293485012981405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921354228863020961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921369193423641559
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,6 +1448,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927206186274384107}
+  - component: {fileID: 5803181593202284549}
   m_Layer: 0
   m_Name: f_pinky.01.R
   m_TagString: Untagged
@@ -1081,6 +1472,34 @@ Transform:
   m_Father: {fileID: 927688776509548611}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: -3.7800002}
+--- !u!114 &5803181593202284549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921369193423641559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921550126625147999
 GameObject:
   m_ObjectHideFlags: 0
@@ -1091,6 +1510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927688776509548611}
   - component: {fileID: 896677204587448111}
+  - component: {fileID: 2660453193880347294}
   m_Layer: 0
   m_Name: wrist.R
   m_TagString: Untagged
@@ -1135,6 +1555,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2660453193880347294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921550126625147999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921557806298204115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,6 +1624,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927242014561034531}
+  - component: {fileID: 2754895322802957765}
   m_Layer: 0
   m_Name: f_middle.02.R
   m_TagString: Untagged
@@ -1199,6 +1648,34 @@ Transform:
   m_Father: {fileID: 927197501367377073}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2754895322802957765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921579050347122277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921582877906459357
 GameObject:
   m_ObjectHideFlags: 0
@@ -1208,6 +1685,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918938343186130131}
+  - component: {fileID: 1002426245171685853}
   m_Layer: 0
   m_Name: f_ring.02.R
   m_TagString: Untagged
@@ -1231,6 +1709,34 @@ Transform:
   m_Father: {fileID: 927683842877460021}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1002426245171685853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921582877906459357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921583906434088365
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919182789536301687}
+  - component: {fileID: 2846316346011218905}
   m_Layer: 0
   m_Name: thumb.03.R
   m_TagString: Untagged
@@ -1263,6 +1770,34 @@ Transform:
   m_Father: {fileID: 919231022067785817}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2846316346011218905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921583906434088365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921592094366465445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +1807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919094295681622799}
+  - component: {fileID: 3047971950513376077}
   m_Layer: 0
   m_Name: f_index.03.R
   m_TagString: Untagged
@@ -1295,6 +1831,34 @@ Transform:
   m_Father: {fileID: 918879617080822829}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3047971950513376077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921592094366465445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921596985410523111
 GameObject:
   m_ObjectHideFlags: 0
@@ -1304,6 +1868,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918879617080822829}
+  - component: {fileID: 5785134750824832866}
   m_Layer: 0
   m_Name: f_index.02.R
   m_TagString: Untagged
@@ -1327,6 +1892,34 @@ Transform:
   m_Father: {fileID: 927389514076751789}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5785134750824832866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921596985410523111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921603955755142529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +2150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927678907058103139}
+  - component: {fileID: 2764124746274278824}
   m_Layer: 0
   m_Name: f_index.02.R
   m_TagString: Untagged
@@ -1580,6 +2174,34 @@ Transform:
   m_Father: {fileID: 927301121001702111}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2764124746274278824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921675064422745603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921703095408502847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1589,6 +2211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927539652736689761}
+  - component: {fileID: 1690256059782238937}
   m_Layer: 0
   m_Name: f_middle.01.R
   m_TagString: Untagged
@@ -1612,6 +2235,34 @@ Transform:
   m_Father: {fileID: 927385306023673441}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1690256059782238937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921703095408502847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921704041899216747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1621,6 +2272,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927197501367377073}
+  - component: {fileID: 1592456262778766629}
   m_Layer: 0
   m_Name: f_middle.01.R
   m_TagString: Untagged
@@ -1644,6 +2296,34 @@ Transform:
   m_Father: {fileID: 927688776509548611}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1592456262778766629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921704041899216747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921732680198683955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1653,6 +2333,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927301121001702111}
+  - component: {fileID: 5667005263400026501}
   m_Layer: 0
   m_Name: f_index.01.R
   m_TagString: Untagged
@@ -1676,6 +2357,34 @@ Transform:
   m_Father: {fileID: 927385306023673441}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &5667005263400026501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921732680198683955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921739852124772343
 GameObject:
   m_ObjectHideFlags: 0
@@ -1685,6 +2394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927505452869704269}
+  - component: {fileID: 3977786632471754455}
   m_Layer: 0
   m_Name: f_index.03.R
   m_TagString: Untagged
@@ -1708,6 +2418,34 @@ Transform:
   m_Father: {fileID: 927678907058103139}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3977786632471754455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921739852124772343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921751176122204723
 GameObject:
   m_ObjectHideFlags: 0
@@ -1717,6 +2455,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919231022067785817}
+  - component: {fileID: 9167396065781522701}
   m_Layer: 0
   m_Name: thumb.02.R
   m_TagString: Untagged
@@ -1740,6 +2479,34 @@ Transform:
   m_Father: {fileID: 918911810485834951}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9167396065781522701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921751176122204723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921771446379589145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1749,6 +2516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918803894256558775}
+  - component: {fileID: 8945725513494750353}
   m_Layer: 0
   m_Name: f_ring.03.R
   m_TagString: Untagged
@@ -1772,6 +2540,34 @@ Transform:
   m_Father: {fileID: 918938343186130131}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -13.584001, z: 0}
+--- !u!114 &8945725513494750353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921771446379589145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921816455451425379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1844,6 +2640,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919269491487683275}
+  - component: {fileID: 911819337822936240}
   m_Layer: 0
   m_Name: thumb.03.R_end
   m_TagString: Untagged
@@ -1866,6 +2663,34 @@ Transform:
   m_Father: {fileID: 927266780658043549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &911819337822936240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921905256982513625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921907301714390795
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,6 +2700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919004598049064597}
+  - component: {fileID: 4118396395325157586}
   m_Layer: 0
   m_Name: f_middle.02.R
   m_TagString: Untagged
@@ -1898,6 +2724,34 @@ Transform:
   m_Father: {fileID: 927539652736689761}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4118396395325157586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921907301714390795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921920924522351143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +2761,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927683842877460021}
+  - component: {fileID: 6957948580583121289}
   m_Layer: 0
   m_Name: f_ring.01.R
   m_TagString: Untagged
@@ -1930,6 +2785,34 @@ Transform:
   m_Father: {fileID: 927688776509548611}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &6957948580583121289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921920924522351143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921922539603180233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1939,6 +2822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927396788141803047}
+  - component: {fileID: 4897932152432793498}
   m_Layer: 0
   m_Name: f_middle.03.R_end
   m_TagString: Untagged
@@ -1961,6 +2845,34 @@ Transform:
   m_Father: {fileID: 927715769202845655}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4897932152432793498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921922539603180233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921939238736273007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1970,6 +2882,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919046157253917307}
+  - component: {fileID: 4015795213649164026}
   m_Layer: 0
   m_Name: f_pinky.03.R
   m_TagString: Untagged
@@ -1993,6 +2906,34 @@ Transform:
   m_Father: {fileID: 918974132860044013}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 4.142, z: 0}
+--- !u!114 &4015795213649164026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921939238736273007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &921951705663573011
 GameObject:
   m_ObjectHideFlags: 0
@@ -2033,6 +2974,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919159165782254781}
+  - component: {fileID: 288440972768540132}
   m_Layer: 0
   m_Name: f_index.03.R_end
   m_TagString: Untagged
@@ -2055,6 +2997,34 @@ Transform:
   m_Father: {fileID: 919094295681622799}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288440972768540132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921972832950112097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922013748744839291
 GameObject:
   m_ObjectHideFlags: 0
@@ -2095,6 +3065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918974132860044013}
+  - component: {fileID: 3591836916581687596}
   m_Layer: 0
   m_Name: f_pinky.02.R
   m_TagString: Untagged
@@ -2118,6 +3089,34 @@ Transform:
   m_Father: {fileID: 927206186274384107}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3591836916581687596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922033983307668927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922039357558246909
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,6 +3126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919269253722710029}
+  - component: {fileID: 2283912655068194025}
   m_Layer: 0
   m_Name: f_pinky.01.R
   m_TagString: Untagged
@@ -2150,6 +3150,34 @@ Transform:
   m_Father: {fileID: 927385306023673441}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: -3.7800002}
+--- !u!114 &2283912655068194025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922039357558246909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922043552664646825
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +3218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 919093619516785627}
+  - component: {fileID: 464311256725448110}
   m_Layer: 0
   m_Name: f_middle.03.R_end
   m_TagString: Untagged
@@ -2212,6 +3241,34 @@ Transform:
   m_Father: {fileID: 927218687184815631}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &464311256725448110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922047858513938409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922060680025461867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,6 +3310,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927395627551607209}
+  - component: {fileID: 28741107499319418}
   m_Layer: 0
   m_Name: f_ring.03.R
   m_TagString: Untagged
@@ -2276,6 +3334,34 @@ Transform:
   m_Father: {fileID: 919137621105350311}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -13.584001, z: 0}
+--- !u!114 &28741107499319418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922063275953437239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922079719100506257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2285,6 +3371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927238036520719241}
+  - component: {fileID: 397480082726437163}
   m_Layer: 0
   m_Name: f_ring.03.R_end
   m_TagString: Untagged
@@ -2307,6 +3394,34 @@ Transform:
   m_Father: {fileID: 918803894256558775}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &397480082726437163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922079719100506257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922087546413639351
 GameObject:
   m_ObjectHideFlags: 0
@@ -2316,6 +3431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927704849630750873}
+  - component: {fileID: 3745744591699162054}
   m_Layer: 0
   m_Name: f_index.03.R_end
   m_TagString: Untagged
@@ -2338,6 +3454,34 @@ Transform:
   m_Father: {fileID: 927505452869704269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3745744591699162054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922087546413639351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922104920465173609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +3491,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918774283681628597}
+  - component: {fileID: 6124004481616652026}
   m_Layer: 0
   m_Name: thumb.03.R_end
   m_TagString: Untagged
@@ -2369,6 +3514,34 @@ Transform:
   m_Father: {fileID: 919182789536301687}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6124004481616652026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922104920465173609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922536544217219585
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +3648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927389514076751789}
+  - component: {fileID: 1703126298851503438}
   m_Layer: 0
   m_Name: f_index.01.R
   m_TagString: Untagged
@@ -2498,6 +3672,34 @@ Transform:
   m_Father: {fileID: 927688776509548611}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1703126298851503438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922574589226869083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922611058249163751
 GameObject:
   m_ObjectHideFlags: 0
@@ -2507,6 +3709,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927721505829970245}
+  - component: {fileID: 1379799071650388854}
   m_Layer: 0
   m_Name: f_pinky.03.R_end
   m_TagString: Untagged
@@ -2529,6 +3732,34 @@ Transform:
   m_Father: {fileID: 918906358117119489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1379799071650388854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922611058249163751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &922619054541693353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +3804,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 927595829036364471}
+  - component: {fileID: 1679750007214198143}
   m_Layer: 0
   m_Name: f_pinky.03.R_end
   m_TagString: Untagged
@@ -2595,3 +3827,31 @@ Transform:
   m_Father: {fileID: 919046157253917307}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1679750007214198143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922650208029237923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
