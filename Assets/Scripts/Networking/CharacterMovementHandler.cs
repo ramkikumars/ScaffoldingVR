@@ -61,9 +61,12 @@ public class CharacterMovementHandler : NetworkBehaviour
         //Get the input from the network
         if (GetInput(out NetworkInputData data))
         {
-            // leftTransforms.wrist.position=data.leftHand.wristPosistion;
-            // leftTransforms.wrist.rotation=data.leftHand.wristRotation;
-
+            leftTransforms.wrist.position=data.leftHand.wristPosistion;
+            leftTransforms.wrist.rotation=data.leftHand.wristRotation;
+                leftTransforms.Thumb_CMC.rotation=data.leftHand.Thumb_CMC;
+                leftTransforms.Thumb_MCP.rotation=data.leftHand.Thumb_MCP;
+                leftTransforms.Thumb_IP.rotation=data.leftHand.Thumb_IP;
+                leftTransforms.Thumb_FingerTip.rotation=data.leftHand.Thumb_FingerTip;
 
             // rightTransforms.wrist.position=data.rightHand.wristPosistion;
             // rightTransforms.wrist.rotation=data.rightHand.wristRotation;
