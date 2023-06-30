@@ -5,11 +5,13 @@ using Fusion;
 
 public struct HandJointInfo:INetworkStruct
 {
-    public Vector3 foreArmPosistion;
-    public Quaternion foreArmRotation;
-    public Vector3 wristPosistion;
-    public Quaternion wristRotation;
+    // public Vector3 foreArmPosistion;
+    // public Quaternion foreArmRotation;
+    // public Vector3 wristPosistion;
+    // public Quaternion wristRotation;
     // public Quaternion[] finggerJointRotations;
+    public Vector3 handPosistion;
+    public Quaternion handRotation;
     public Quaternion Thumb_CMC,
         Thumb_MCP,
         Thumb_IP,

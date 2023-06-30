@@ -62,10 +62,8 @@ public class CharacterMovementHandler : NetworkBehaviour
         if (GetInput(out NetworkInputData data))
         {
 
-            leftTransforms.foreArm.position=data.leftHand.foreArmPosistion;
-            leftTransforms.foreArm.rotation=data.leftHand.foreArmRotation;
-            leftTransforms.wrist.position=data.leftHand.wristPosistion;
-            leftTransforms.wrist.rotation=data.leftHand.wristRotation;
+            leftTransforms.foreArm.parent.position=data.leftHand.handPosistion;
+            leftTransforms.foreArm.parent.rotation=data.leftHand.handRotation;
                 leftTransforms.Thumb_CMC.rotation=data.leftHand.Thumb_CMC;
                 leftTransforms.Thumb_MCP.rotation=data.leftHand.Thumb_MCP;
                 leftTransforms.Thumb_IP.rotation=data.leftHand.Thumb_IP;
