@@ -6,8 +6,9 @@ using Fusion;
 public class CharacterMovementHandler : NetworkBehaviour
 {
     [System.Serializable]
-    public struct HandJointTransformations
+    public struct HandInfo
     {
+        public SkinnedMeshRenderer skinnedMesh;
         public Transform foreArm,wrist,
          Thumb_CMC,
             Thumb_MCP,
@@ -35,10 +36,9 @@ public class CharacterMovementHandler : NetworkBehaviour
             Pinky_FingerTip;
     }
     [SerializeField]
-    private HandJointTransformations rightTransforms;
+    private HandInfo rightTransforms;
     [SerializeField]
-    private HandJointTransformations leftTransforms;
-
+    private HandInfo leftTransforms;
     private void Awake()
     {
 
@@ -47,7 +47,10 @@ public class CharacterMovementHandler : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        if(GetComponent<NetworkObject>().HasStateAuthority){
+            leftTransforms.skinnedMesh.enabled=false;
+            rightTransforms.skinnedMesh.enabled=false;
+        }
     }
 
     // Update is called once per frame
