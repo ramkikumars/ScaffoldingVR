@@ -5,6 +5,8 @@ using Fusion;
 
 public struct HandJointInfo:INetworkStruct
 {
+    public Vector3 foreArmPosistion;
+    public Quaternion foreArmRotation;
     public Vector3 wristPosistion;
     public Quaternion wristRotation;
     // public Quaternion[] finggerJointRotations;

@@ -33,33 +33,37 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         // if (characterInputHandler != null)
         //     input.Set(characterInputHandler.GetNetworkInput());
         var data = new NetworkInputData();
+
+        data.leftHand.foreArmPosistion=sgUser.leftHand.handModel.foreArmTransform.position;
+        data.leftHand.foreArmRotation=sgUser.leftHand.handModel.foreArmTransform.rotation;
+
         data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
         data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
 
-        data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][0].rotation;
-        data.leftHand.Thumb_MCP=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
-        data.leftHand.Thumb_IP=sgUser.leftHand.handModel.FingerJoints[0][2].rotation;
-        data.leftHand.Thumb_FingerTip=sgUser.leftHand.handModel.FingerJoints[0][3].rotation;
+        data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.thumbJoints[0].rotation;
+        data.leftHand.Thumb_MCP=sgUser.leftHand.handModel.thumbJoints[1].rotation;
+        data.leftHand.Thumb_IP=sgUser.leftHand.handModel.thumbJoints[2].rotation;
+        data.leftHand.Thumb_FingerTip=sgUser.leftHand.handModel.thumbJoints[3].rotation;
 
-        data.leftHand.Index_MCP=sgUser.leftHand.handModel.FingerJoints[1][0].rotation;
-        data.leftHand.Index_PIP=sgUser.leftHand.handModel.FingerJoints[1][1].rotation;
-        data.leftHand.Index_DIP=sgUser.leftHand.handModel.FingerJoints[1][2].rotation;
-        data.leftHand.Index_FingerTip=sgUser.leftHand.handModel.FingerJoints[1][3].rotation;
+        data.leftHand.Index_MCP=sgUser.leftHand.handModel.indexJoints[0].rotation;
+        data.leftHand.Index_PIP=sgUser.leftHand.handModel.indexJoints[1].rotation;
+        data.leftHand.Index_DIP=sgUser.leftHand.handModel.indexJoints[2].rotation;
+        data.leftHand.Index_FingerTip=sgUser.leftHand.handModel.indexJoints[3].rotation;
 
-        data.leftHand.Middle_MCP=sgUser.leftHand.handModel.FingerJoints[2][0].rotation;
-        data.leftHand.Middle_PIP=sgUser.leftHand.handModel.FingerJoints[2][1].rotation;
-        data.leftHand.Middle_DIP=sgUser.leftHand.handModel.FingerJoints[2][2].rotation;
-        data.leftHand.Middle_FingerTip=sgUser.leftHand.handModel.FingerJoints[2][3].rotation;
+        data.leftHand.Middle_MCP=sgUser.leftHand.handModel.middleJoints[0].rotation;
+        data.leftHand.Middle_PIP=sgUser.leftHand.handModel.middleJoints[1].rotation;
+        data.leftHand.Middle_DIP=sgUser.leftHand.handModel.middleJoints[2].rotation;
+        data.leftHand.Middle_FingerTip=sgUser.leftHand.handModel.middleJoints[3].rotation;
 
-        data.leftHand.Ring_MCP=sgUser.leftHand.handModel.FingerJoints[3][0].rotation;
-        data.leftHand.Ring_PIP=sgUser.leftHand.handModel.FingerJoints[3][1].rotation;
-        data.leftHand.Ring_DIP=sgUser.leftHand.handModel.FingerJoints[3][2].rotation;
-        data.leftHand.Ring_FingerTip=sgUser.leftHand.handModel.FingerJoints[3][3].rotation;
+        data.leftHand.Ring_MCP=sgUser.leftHand.handModel.ringJoints[0].rotation;
+        data.leftHand.Ring_PIP=sgUser.leftHand.handModel.ringJoints[1].rotation;
+        data.leftHand.Ring_DIP=sgUser.leftHand.handModel.ringJoints[2].rotation;
+        data.leftHand.Ring_FingerTip=sgUser.leftHand.handModel.ringJoints[3].rotation;
 
-        data.leftHand.Pinky_MCP=sgUser.leftHand.handModel.FingerJoints[4][0].rotation;
-        data.leftHand.Pinky_PIP=sgUser.leftHand.handModel.FingerJoints[4][1].rotation;
-        data.leftHand.Pinky_DIP=sgUser.leftHand.handModel.FingerJoints[4][2].rotation;
-        data.leftHand.Pinky_FingerTip=sgUser.leftHand.handModel.FingerJoints[4][3].rotation;
+        data.leftHand.Pinky_MCP=sgUser.leftHand.handModel.pinkyJoints[0].rotation;
+        data.leftHand.Pinky_PIP=sgUser.leftHand.handModel.pinkyJoints[1].rotation;
+        data.leftHand.Pinky_DIP=sgUser.leftHand.handModel.pinkyJoints[2].rotation;
+        data.leftHand.Pinky_FingerTip=sgUser.leftHand.handModel.pinkyJoints[3].rotation;
 
 
 

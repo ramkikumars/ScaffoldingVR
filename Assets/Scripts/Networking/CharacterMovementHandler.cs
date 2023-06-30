@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
-
+// NetworkTransform
 public class CharacterMovementHandler : NetworkBehaviour
 {
     [System.Serializable]
     public struct HandJointTransformations
     {
-        public Transform wrist,
+        public Transform foreArm,wrist,
          Thumb_CMC,
             Thumb_MCP,
             Thumb_IP,
@@ -61,6 +61,9 @@ public class CharacterMovementHandler : NetworkBehaviour
         //Get the input from the network
         if (GetInput(out NetworkInputData data))
         {
+
+            leftTransforms.foreArm.position=data.leftHand.foreArmPosistion;
+            leftTransforms.foreArm.rotation=data.leftHand.foreArmRotation;
             leftTransforms.wrist.position=data.leftHand.wristPosistion;
             leftTransforms.wrist.rotation=data.leftHand.wristRotation;
                 leftTransforms.Thumb_CMC.rotation=data.leftHand.Thumb_CMC;

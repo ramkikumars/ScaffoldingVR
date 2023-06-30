@@ -131,6 +131,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   rightTransforms:
+    foreArm: {fileID: 919165580753296465}
     wrist: {fileID: 927385306023673441}
     Thumb_CMC: {fileID: 919103784678629869}
     Thumb_MCP: {fileID: 918917760932138807}
@@ -153,6 +154,7 @@ MonoBehaviour:
     Pinky_DIP: {fileID: 918906358117119489}
     Pinky_FingerTip: {fileID: 927721505829970245}
   leftTransforms:
+    foreArm: {fileID: 927402703999163419}
     wrist: {fileID: 927688776509548611}
     Thumb_CMC: {fileID: 918911810485834951}
     Thumb_MCP: {fileID: 919231022067785817}
