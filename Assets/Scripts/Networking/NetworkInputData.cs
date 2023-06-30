@@ -7,30 +7,54 @@ public struct HandJointInfo:INetworkStruct
 {
     public Vector3 wristPosistion;
     public Quaternion wristRotation;
-    public Quaternion Thumb_CMC,
-        Thumb_MCP,
-        Thumb_IP,
-        Thumb_FingerTip,
+    public Quaternion Thumb_CMCRot,
+        Thumb_MCPRot,
+        Thumb_IPRot,
+        Thumb_FingerTipRot,
 
-        Index_MCP,
-        Index_PIP,
-        Index_DIP,
-        Index_FingerTip,
+        Index_MCPRot,
+        Index_PIPRot,
+        Index_DIPRot,
+        Index_FingerTipRot,
 
-        Middle_MCP,
-        Middle_PIP,
-        Middle_DIP,
-        Middle_FingerTip,
+        Middle_MCPRot,
+        Middle_PIPRot,
+        Middle_DIPRot,
+        Middle_FingerTipRot,
 
-        Ring_MCP,
-        Ring_PIP,
-        Ring_DIP,
-        Ring_FingerTip,
+        Ring_MCPRot,
+        Ring_PIPRot,
+        Ring_DIPRot,
+        Ring_FingerTipRot,
 
-        Pinky_MCP,
-        Pinky_PIP,
-        Pinky_DIP,
-        Pinky_FingerTip;
+        Pinky_MCPRot,
+        Pinky_PIPRot,
+        Pinky_DIPRot,
+        Pinky_FingerTipRot;
+    public Vector3 Thumb_CMCPos,
+     Thumb_MCPPos,
+     Thumb_IPPos,
+     Thumb_FingerTipPos,
+
+     Index_MCPPos,
+     Index_PIPPos,
+     Index_DIPPos,
+     Index_FingerTipPos,
+
+     Middle_MCPPos,
+     Middle_PIPPos,
+     Middle_DIPPos,
+     Middle_FingerTipPos,
+
+     Ring_MCPPos,
+     Ring_PIPPos,
+     Ring_DIPPos,
+     Ring_FingerTipPos,
+
+     Pinky_MCPPos,
+     Pinky_PIPPos,
+     Pinky_DIPPos,
+     Pinky_FingerTipPos;
 }
 public struct NetworkInputData : INetworkInput
 {

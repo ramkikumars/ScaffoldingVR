@@ -38,31 +38,55 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
 
 
-        data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.thumbJoints[0].rotation;
-        data.leftHand.Thumb_MCP=sgUser.leftHand.handModel.thumbJoints[1].rotation;
-        data.leftHand.Thumb_IP=sgUser.leftHand.handModel.thumbJoints[2].rotation;
-        data.leftHand.Thumb_FingerTip=sgUser.leftHand.handModel.thumbJoints[3].rotation;
+        data.leftHand.Thumb_CMCRot=sgUser.leftHand.handModel.thumbJoints[0].rotation;
+        data.leftHand.Thumb_MCPRot =sgUser.leftHand.handModel.thumbJoints[1].rotation;
+        data.leftHand.Thumb_IPRot =sgUser.leftHand.handModel.thumbJoints[2].rotation;
+        data.leftHand.Thumb_FingerTipRot =sgUser.leftHand.handModel.thumbJoints[3].rotation;
 
-        data.leftHand.Index_MCP=sgUser.leftHand.handModel.indexJoints[0].rotation;
-        data.leftHand.Index_PIP=sgUser.leftHand.handModel.indexJoints[1].rotation;
-        data.leftHand.Index_DIP=sgUser.leftHand.handModel.indexJoints[2].rotation;
-        data.leftHand.Index_FingerTip=sgUser.leftHand.handModel.indexJoints[3].rotation;
+        data.leftHand.Index_MCPRot =sgUser.leftHand.handModel.indexJoints[0].rotation;
+        data.leftHand.Index_PIPRot =sgUser.leftHand.handModel.indexJoints[1].rotation;
+        data.leftHand.Index_DIPRot =sgUser.leftHand.handModel.indexJoints[2].rotation;
+        data.leftHand.Index_FingerTipRot =sgUser.leftHand.handModel.indexJoints[3].rotation;
 
-        data.leftHand.Middle_MCP=sgUser.leftHand.handModel.middleJoints[0].rotation;
-        data.leftHand.Middle_PIP=sgUser.leftHand.handModel.middleJoints[1].rotation;
-        data.leftHand.Middle_DIP=sgUser.leftHand.handModel.middleJoints[2].rotation;
-        data.leftHand.Middle_FingerTip=sgUser.leftHand.handModel.middleJoints[3].rotation;
+        data.leftHand.Middle_MCPRot =sgUser.leftHand.handModel.middleJoints[0].rotation;
+        data.leftHand.Middle_PIPRot =sgUser.leftHand.handModel.middleJoints[1].rotation;
+        data.leftHand.Middle_DIPRot =sgUser.leftHand.handModel.middleJoints[2].rotation;
+        data.leftHand.Middle_FingerTipRot =sgUser.leftHand.handModel.middleJoints[3].rotation;
 
-        data.leftHand.Ring_MCP=sgUser.leftHand.handModel.ringJoints[0].rotation;
-        data.leftHand.Ring_PIP=sgUser.leftHand.handModel.ringJoints[1].rotation;
-        data.leftHand.Ring_DIP=sgUser.leftHand.handModel.ringJoints[2].rotation;
-        data.leftHand.Ring_FingerTip=sgUser.leftHand.handModel.ringJoints[3].rotation;
+        data.leftHand.Ring_MCPRot =sgUser.leftHand.handModel.ringJoints[0].rotation;
+        data.leftHand.Ring_PIPRot =sgUser.leftHand.handModel.ringJoints[1].rotation;
+        data.leftHand.Ring_DIPRot =sgUser.leftHand.handModel.ringJoints[2].rotation;
+        data.leftHand.Ring_FingerTipRot =sgUser.leftHand.handModel.ringJoints[3].rotation;
 
-        data.leftHand.Pinky_MCP=sgUser.leftHand.handModel.pinkyJoints[0].rotation;
-        data.leftHand.Pinky_PIP=sgUser.leftHand.handModel.pinkyJoints[1].rotation;
-        data.leftHand.Pinky_DIP=sgUser.leftHand.handModel.pinkyJoints[2].rotation;
-        data.leftHand.Pinky_FingerTip=sgUser.leftHand.handModel.pinkyJoints[3].rotation;
+        data.leftHand.Pinky_MCPRot =sgUser.leftHand.handModel.pinkyJoints[0].rotation;
+        data.leftHand.Pinky_PIPRot =sgUser.leftHand.handModel.pinkyJoints[1].rotation;
+        data.leftHand.Pinky_DIPRot =sgUser.leftHand.handModel.pinkyJoints[2].rotation;
+        data.leftHand.Pinky_FingerTipRot =sgUser.leftHand.handModel.pinkyJoints[3].rotation;
 
+        data.leftHand.Thumb_CMCPos = sgUser.leftHand.handModel.thumbJoints[0].position;
+        data.leftHand.Thumb_MCPPos = sgUser.leftHand.handModel.thumbJoints[1].position;
+        data.leftHand.Thumb_IPPos = sgUser.leftHand.handModel.thumbJoints[2].position;
+        data.leftHand.Thumb_FingerTipPos = sgUser.leftHand.handModel.thumbJoints[3].position;
+
+        data.leftHand.Index_MCPPos = sgUser.leftHand.handModel.indexJoints[0].position;
+        data.leftHand.Index_PIPPos = sgUser.leftHand.handModel.indexJoints[1].position;
+        data.leftHand.Index_DIPPos = sgUser.leftHand.handModel.indexJoints[2].position;
+        data.leftHand.Index_FingerTipPos = sgUser.leftHand.handModel.indexJoints[3].position;
+
+        data.leftHand.Middle_MCPPos = sgUser.leftHand.handModel.middleJoints[0].position;
+        data.leftHand.Middle_PIPPos = sgUser.leftHand.handModel.middleJoints[1].position;
+        data.leftHand.Middle_DIPPos = sgUser.leftHand.handModel.middleJoints[2].position;
+        data.leftHand.Middle_FingerTipPos = sgUser.leftHand.handModel.middleJoints[3].position;
+
+        data.leftHand.Ring_MCPPos = sgUser.leftHand.handModel.ringJoints[0].position;
+        data.leftHand.Ring_PIPPos = sgUser.leftHand.handModel.ringJoints[1].position;
+        data.leftHand.Ring_DIPPos = sgUser.leftHand.handModel.ringJoints[2].position;
+        data.leftHand.Ring_FingerTipPos = sgUser.leftHand.handModel.ringJoints[3].position;
+
+        data.leftHand.Pinky_MCPPos = sgUser.leftHand.handModel.pinkyJoints[0].position;
+        data.leftHand.Pinky_PIPPos = sgUser.leftHand.handModel.pinkyJoints[1].position;
+        data.leftHand.Pinky_DIPPos = sgUser.leftHand.handModel.pinkyJoints[2].position;
+        data.leftHand.Pinky_FingerTipPos = sgUser.leftHand.handModel.pinkyJoints[3].position;
 
 
         // data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
