@@ -34,8 +34,8 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         //     input.Set(characterInputHandler.GetNetworkInput());
         var data = new NetworkInputData();
 
-        data.leftHand.handPosistion=sgUser.leftHand.handModel.foreArmTransform.parent.position;
-        data.leftHand.handRotation=sgUser.leftHand.handModel.foreArmTransform.parent.rotation;
+        data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
+        data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
 
 
         data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.thumbJoints[0].rotation;
