@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4899279145163819282}
   - component: {fileID: 304698661963901386}
   - component: {fileID: 1657403914671344899}
+  - component: {fileID: -5888278689826838409}
   m_Layer: 0
   m_Name: Network Player
   m_TagString: Untagged
@@ -72,6 +73,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 4899279145163819282}
   - {fileID: 1657403914671344899}
+  - {fileID: -5888278689826838409}
   - {fileID: 7020672004364751991}
   - {fileID: 6084546102236095242}
   - {fileID: 779890657309021729}
@@ -176,6 +178,19 @@ MonoBehaviour:
     Pinky_PIP: {fileID: 918974132860044013}
     Pinky_DIP: {fileID: 919046157253917307}
     Pinky_FingerTip: {fileID: 927595829036364471}
+--- !u!114 &-5888278689826838409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710734707192272413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6376dd7fc23b3764483a7349b58502e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
 --- !u!1 &920992709298369701
 GameObject:
   m_ObjectHideFlags: 0
