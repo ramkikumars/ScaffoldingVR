@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -537,6 +537,63 @@ MonoBehaviour:
   hardwareFamily: 3
   leftControllerModel: {fileID: 1867750568}
   rightControllerModel: {fileID: 1867750567}
+--- !u!114 &894830509 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114710115657912056, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+  m_PrefabInstance: {fileID: 894830506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894830511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a5cf26d5c03c21448e3bbf835836feb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &894830510 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114541258151201158, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+  m_PrefabInstance: {fileID: 894830506}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894830511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c1020369cd63a74b9013e2ff9daf3da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &894830511 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1564599565170020, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+  m_PrefabInstance: {fileID: 894830506}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &894830512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894830511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad4be3b6f43d6614597f035ae44bc106, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  linkedGlove: {fileID: 894830510}
+  linkedHand: {fileID: 894830509}
+  calibrationType: 0
+  startCondition: 2
+  debugEnabled: 0
+  debugText: {fileID: 0}
+  nextStepKey: 0
+  cancelKey: 0
+  resetCalibrationKey: 0
+  baseInstrMessage: 
+  instructions3D: {fileID: 0}
+  instructionsUI: {fileID: 0}
+  CalibrationFinished:
+    m_PersistentCalls:
+      m_Calls: []
+  CalibrationAbort:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &936276667
 GameObject:
   m_ObjectHideFlags: 0
