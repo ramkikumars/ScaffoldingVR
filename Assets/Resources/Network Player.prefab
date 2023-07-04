@@ -133,7 +133,7 @@ MonoBehaviour:
   rightTransforms:
     skinnedMesh: {fileID: 948482139032429805}
     foreArm: {fileID: 919165580753296465}
-    wrist: {fileID: 927293854505215141}
+    wrist: {fileID: 918998140880735505}
     Thumb_CMC: {fileID: 919103784678629869}
     Thumb_MCP: {fileID: 918917760932138807}
     Thumb_IP: {fileID: 927266780658043549}
