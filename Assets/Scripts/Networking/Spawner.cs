@@ -63,30 +63,30 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         data.leftHand.Pinky_DIPRot =sgUser.leftHand.handModel.pinkyJoints[2].rotation;
         data.leftHand.Pinky_FingerTipRot =sgUser.leftHand.handModel.pinkyJoints[3].rotation;
 
-        // data.leftHand.Thumb_CMCPos = sgUser.leftHand.handModel.thumbJoints[0].position;
-        // data.leftHand.Thumb_MCPPos = sgUser.leftHand.handModel.thumbJoints[1].position;
-        // data.leftHand.Thumb_IPPos = sgUser.leftHand.handModel.thumbJoints[2].position;
-        // data.leftHand.Thumb_FingerTipPos = sgUser.leftHand.handModel.thumbJoints[3].position;
+        data.leftHand.Thumb_CMCPos = sgUser.leftHand.handModel.thumbJoints[0].position;
+        data.leftHand.Thumb_MCPPos = sgUser.leftHand.handModel.thumbJoints[1].position;
+        data.leftHand.Thumb_IPPos = sgUser.leftHand.handModel.thumbJoints[2].position;
+        data.leftHand.Thumb_FingerTipPos = sgUser.leftHand.handModel.thumbJoints[3].position;
 
-        // data.leftHand.Index_MCPPos = sgUser.leftHand.handModel.indexJoints[0].position;
-        // data.leftHand.Index_PIPPos = sgUser.leftHand.handModel.indexJoints[1].position;
-        // data.leftHand.Index_DIPPos = sgUser.leftHand.handModel.indexJoints[2].position;
-        // data.leftHand.Index_FingerTipPos = sgUser.leftHand.handModel.indexJoints[3].position;
+        data.leftHand.Index_MCPPos = sgUser.leftHand.handModel.indexJoints[0].position;
+        data.leftHand.Index_PIPPos = sgUser.leftHand.handModel.indexJoints[1].position;
+        data.leftHand.Index_DIPPos = sgUser.leftHand.handModel.indexJoints[2].position;
+        data.leftHand.Index_FingerTipPos = sgUser.leftHand.handModel.indexJoints[3].position;
 
-        // data.leftHand.Middle_MCPPos = sgUser.leftHand.handModel.middleJoints[0].position;
-        // data.leftHand.Middle_PIPPos = sgUser.leftHand.handModel.middleJoints[1].position;
-        // data.leftHand.Middle_DIPPos = sgUser.leftHand.handModel.middleJoints[2].position;
-        // data.leftHand.Middle_FingerTipPos = sgUser.leftHand.handModel.middleJoints[3].position;
+        data.leftHand.Middle_MCPPos = sgUser.leftHand.handModel.middleJoints[0].position;
+        data.leftHand.Middle_PIPPos = sgUser.leftHand.handModel.middleJoints[1].position;
+        data.leftHand.Middle_DIPPos = sgUser.leftHand.handModel.middleJoints[2].position;
+        data.leftHand.Middle_FingerTipPos = sgUser.leftHand.handModel.middleJoints[3].position;
 
-        // data.leftHand.Ring_MCPPos = sgUser.leftHand.handModel.ringJoints[0].position;
-        // data.leftHand.Ring_PIPPos = sgUser.leftHand.handModel.ringJoints[1].position;
-        // data.leftHand.Ring_DIPPos = sgUser.leftHand.handModel.ringJoints[2].position;
-        // data.leftHand.Ring_FingerTipPos = sgUser.leftHand.handModel.ringJoints[3].position;
+        data.leftHand.Ring_MCPPos = sgUser.leftHand.handModel.ringJoints[0].position;
+        data.leftHand.Ring_PIPPos = sgUser.leftHand.handModel.ringJoints[1].position;
+        data.leftHand.Ring_DIPPos = sgUser.leftHand.handModel.ringJoints[2].position;
+        data.leftHand.Ring_FingerTipPos = sgUser.leftHand.handModel.ringJoints[3].position;
 
-        // data.leftHand.Pinky_MCPPos = sgUser.leftHand.handModel.pinkyJoints[0].position;
-        // data.leftHand.Pinky_PIPPos = sgUser.leftHand.handModel.pinkyJoints[1].position;
-        // data.leftHand.Pinky_DIPPos = sgUser.leftHand.handModel.pinkyJoints[2].position;
-        // data.leftHand.Pinky_FingerTipPos = sgUser.leftHand.handModel.pinkyJoints[3].position;
+        data.leftHand.Pinky_MCPPos = sgUser.leftHand.handModel.pinkyJoints[0].position;
+        data.leftHand.Pinky_PIPPos = sgUser.leftHand.handModel.pinkyJoints[1].position;
+        data.leftHand.Pinky_DIPPos = sgUser.leftHand.handModel.pinkyJoints[2].position;
+        data.leftHand.Pinky_FingerTipPos = sgUser.leftHand.handModel.pinkyJoints[3].position;
 
 
         data.rightHand.wristPosistion = sgUser.rightHand.handModel.wristTransform.position;
@@ -118,31 +118,32 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         data.rightHand.Pinky_DIPRot = sgUser.rightHand.handModel.pinkyJoints[2].rotation;
         data.rightHand.Pinky_FingerTipRot = sgUser.rightHand.handModel.pinkyJoints[3].rotation;
 
-        // data.rightHand.Thumb_CMCPos = sgUser.rightHand.handModel.thumbJoints[0].position;
-        // data.rightHand.Thumb_MCPPos = sgUser.rightHand.handModel.thumbJoints[1].position;
-        // data.rightHand.Thumb_IPPos = sgUser.rightHand.handModel.thumbJoints[2].position;
-        // data.rightHand.Thumb_FingerTipPos = sgUser.rightHand.handModel.thumbJoints[3].position;
+        data.rightHand.Thumb_CMCPos = sgUser.rightHand.handModel.thumbJoints[0].position;
+        data.rightHand.Thumb_MCPPos = sgUser.rightHand.handModel.thumbJoints[1].position;
+        data.rightHand.Thumb_IPPos = sgUser.rightHand.handModel.thumbJoints[2].position;
+        data.rightHand.Thumb_FingerTipPos = sgUser.rightHand.handModel.thumbJoints[3].position;
 
-        // data.rightHand.Index_MCPPos = sgUser.rightHand.handModel.indexJoints[0].position;
-        // data.rightHand.Index_PIPPos = sgUser.rightHand.handModel.indexJoints[1].position;
-        // data.rightHand.Index_DIPPos = sgUser.rightHand.handModel.indexJoints[2].position;
-        // data.rightHand.Index_FingerTipPos = sgUser.rightHand.handModel.indexJoints[3].position;
+        data.rightHand.Index_MCPPos = sgUser.rightHand.handModel.indexJoints[0].position;
+        data.rightHand.Index_PIPPos = sgUser.rightHand.handModel.indexJoints[1].position;
+        data.rightHand.Index_DIPPos = sgUser.rightHand.handModel.indexJoints[2].position;
+        data.rightHand.Index_FingerTipPos = sgUser.rightHand.handModel.indexJoints[3].position;
 
-        // data.rightHand.Middle_MCPPos = sgUser.rightHand.handModel.middleJoints[0].position;
-        // data.rightHand.Middle_PIPPos = sgUser.rightHand.handModel.middleJoints[1].position;
-        // data.rightHand.Middle_DIPPos = sgUser.rightHand.handModel.middleJoints[2].position;
-        // data.rightHand.Middle_FingerTipPos = sgUser.rightHand.handModel.middleJoints[3].position;
+        data.rightHand.Middle_MCPPos = sgUser.rightHand.handModel.middleJoints[0].position;
+        data.rightHand.Middle_PIPPos = sgUser.rightHand.handModel.middleJoints[1].position;
+        data.rightHand.Middle_DIPPos = sgUser.rightHand.handModel.middleJoints[2].position;
+        data.rightHand.Middle_FingerTipPos = sgUser.rightHand.handModel.middleJoints[3].position;
 
-        // data.rightHand.Ring_MCPPos = sgUser.rightHand.handModel.ringJoints[0].position;
-        // data.rightHand.Ring_PIPPos = sgUser.rightHand.handModel.ringJoints[1].position;
-        // data.rightHand.Ring_DIPPos = sgUser.rightHand.handModel.ringJoints[2].position;
-        // data.rightHand.Ring_FingerTipPos = sgUser.rightHand.handModel.ringJoints[3].position;
+        data.rightHand.Ring_MCPPos = sgUser.rightHand.handModel.ringJoints[0].position;
+        data.rightHand.Ring_PIPPos = sgUser.rightHand.handModel.ringJoints[1].position;
+        data.rightHand.Ring_DIPPos = sgUser.rightHand.handModel.ringJoints[2].position;
+        data.rightHand.Ring_FingerTipPos = sgUser.rightHand.handModel.ringJoints[3].position;
 
-        // data.rightHand.Pinky_MCPPos = sgUser.rightHand.handModel.pinkyJoints[0].position;
-        // data.rightHand.Pinky_PIPPos = sgUser.rightHand.handModel.pinkyJoints[1].position;
-        // data.rightHand.Pinky_DIPPos = sgUser.rightHand.handModel.pinkyJoints[2].position;
-        // data.rightHand.Pinky_FingerTipPos = sgUser.rightHand.handModel.pinkyJoints[3].position;
+        data.rightHand.Pinky_MCPPos = sgUser.rightHand.handModel.pinkyJoints[0].position;
+        data.rightHand.Pinky_PIPPos = sgUser.rightHand.handModel.pinkyJoints[1].position;
+        data.rightHand.Pinky_DIPPos = sgUser.rightHand.handModel.pinkyJoints[2].position;
+        data.rightHand.Pinky_FingerTipPos = sgUser.rightHand.handModel.pinkyJoints[3].position;
 
+        // data.leftHand.Thumb_CMC=sgUser.leftHand.handModel.FingerJoints[0][1].rotation;
         input.Set(data);
     }
 

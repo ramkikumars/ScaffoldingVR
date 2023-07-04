@@ -47,10 +47,10 @@ public class CharacterMovementHandler : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GetComponent<NetworkObject>().HasStateAuthority){
-            leftTransforms.skinnedMesh.enabled=false;
-            rightTransforms.skinnedMesh.enabled=false;
-        }
+        // if(GetComponent<NetworkObject>().HasStateAuthority){
+        //     leftTransforms.skinnedMesh.enabled=false;
+        //     rightTransforms.skinnedMesh.enabled=false;
+        // }
     }
 
     // Update is called once per frame
@@ -91,30 +91,30 @@ public class CharacterMovementHandler : NetworkBehaviour
                 leftTransforms.Pinky_PIP.rotation=data.leftHand.Pinky_PIPRot;
                 leftTransforms.Pinky_DIP.rotation=data.leftHand.Pinky_DIPRot;
                 leftTransforms.Pinky_FingerTip.rotation=data.leftHand.Pinky_FingerTipRot;
-            // leftTransforms.Thumb_CMC.position = data.leftHand.Thumb_CMCPos;
-            // leftTransforms.Thumb_MCP.position = data.leftHand.Thumb_MCPPos;
-            // leftTransforms.Thumb_IP.position = data.leftHand.Thumb_IPPos;
-            // leftTransforms.Thumb_FingerTip.position = data.leftHand.Thumb_FingerTipPos;
+            leftTransforms.Thumb_CMC.position = data.leftHand.Thumb_CMCPos;
+            leftTransforms.Thumb_MCP.position = data.leftHand.Thumb_MCPPos;
+            leftTransforms.Thumb_IP.position = data.leftHand.Thumb_IPPos;
+            leftTransforms.Thumb_FingerTip.position = data.leftHand.Thumb_FingerTipPos;
 
-            // leftTransforms.Index_MCP.position = data.leftHand.Index_MCPPos;
-            // leftTransforms.Index_PIP.position = data.leftHand.Index_PIPPos;
-            // leftTransforms.Index_DIP.position = data.leftHand.Index_DIPPos;
-            // leftTransforms.Index_FingerTip.position = data.leftHand.Index_FingerTipPos;
+            leftTransforms.Index_MCP.position = data.leftHand.Index_MCPPos;
+            leftTransforms.Index_PIP.position = data.leftHand.Index_PIPPos;
+            leftTransforms.Index_DIP.position = data.leftHand.Index_DIPPos;
+            leftTransforms.Index_FingerTip.position = data.leftHand.Index_FingerTipPos;
 
-            // leftTransforms.Middle_MCP.position = data.leftHand.Middle_MCPPos;
-            // leftTransforms.Middle_PIP.position = data.leftHand.Middle_PIPPos;
-            // leftTransforms.Middle_DIP.position = data.leftHand.Middle_DIPPos;
-            // leftTransforms.Middle_FingerTip.position = data.leftHand.Middle_FingerTipPos;
+            leftTransforms.Middle_MCP.position = data.leftHand.Middle_MCPPos;
+            leftTransforms.Middle_PIP.position = data.leftHand.Middle_PIPPos;
+            leftTransforms.Middle_DIP.position = data.leftHand.Middle_DIPPos;
+            leftTransforms.Middle_FingerTip.position = data.leftHand.Middle_FingerTipPos;
 
-            // leftTransforms.Ring_MCP.position = data.leftHand.Ring_MCPPos;
-            // leftTransforms.Ring_PIP.position = data.leftHand.Ring_PIPPos;
-            // leftTransforms.Ring_DIP.position = data.leftHand.Ring_DIPPos;
-            // leftTransforms.Ring_FingerTip.position = data.leftHand.Ring_FingerTipPos;
+            leftTransforms.Ring_MCP.position = data.leftHand.Ring_MCPPos;
+            leftTransforms.Ring_PIP.position = data.leftHand.Ring_PIPPos;
+            leftTransforms.Ring_DIP.position = data.leftHand.Ring_DIPPos;
+            leftTransforms.Ring_FingerTip.position = data.leftHand.Ring_FingerTipPos;
 
-            // leftTransforms.Pinky_MCP.position = data.leftHand.Pinky_MCPPos;
-            // leftTransforms.Pinky_PIP.position = data.leftHand.Pinky_PIPPos;
-            // leftTransforms.Pinky_DIP.position = data.leftHand.Pinky_DIPPos;
-            // leftTransforms.Pinky_FingerTip.position = data.leftHand.Pinky_FingerTipPos;
+            leftTransforms.Pinky_MCP.position = data.leftHand.Pinky_MCPPos;
+            leftTransforms.Pinky_PIP.position = data.leftHand.Pinky_PIPPos;
+            leftTransforms.Pinky_DIP.position = data.leftHand.Pinky_DIPPos;
+            leftTransforms.Pinky_FingerTip.position = data.leftHand.Pinky_FingerTipPos;
 
             rightTransforms.wrist.position = data.rightHand.wristPosistion;
             rightTransforms.wrist.rotation = data.rightHand.wristRotation;
@@ -142,30 +142,30 @@ public class CharacterMovementHandler : NetworkBehaviour
             rightTransforms.Pinky_PIP.rotation = data.rightHand.Pinky_PIPRot;
             rightTransforms.Pinky_DIP.rotation = data.rightHand.Pinky_DIPRot;
             rightTransforms.Pinky_FingerTip.rotation = data.rightHand.Pinky_FingerTipRot;
-            // rightTransforms.Thumb_CMC.position = data.rightHand.Thumb_CMCPos;
-            // rightTransforms.Thumb_MCP.position = data.rightHand.Thumb_MCPPos;
-            // rightTransforms.Thumb_IP.position = data.rightHand.Thumb_IPPos;
-            // rightTransforms.Thumb_FingerTip.position = data.rightHand.Thumb_FingerTipPos;
+            rightTransforms.Thumb_CMC.position = data.rightHand.Thumb_CMCPos;
+            rightTransforms.Thumb_MCP.position = data.rightHand.Thumb_MCPPos;
+            rightTransforms.Thumb_IP.position = data.rightHand.Thumb_IPPos;
+            rightTransforms.Thumb_FingerTip.position = data.rightHand.Thumb_FingerTipPos;
 
-            // rightTransforms.Index_MCP.position = data.rightHand.Index_MCPPos;
-            // rightTransforms.Index_PIP.position = data.rightHand.Index_PIPPos;
-            // rightTransforms.Index_DIP.position = data.rightHand.Index_DIPPos;
-            // rightTransforms.Index_FingerTip.position = data.rightHand.Index_FingerTipPos;
+            rightTransforms.Index_MCP.position = data.rightHand.Index_MCPPos;
+            rightTransforms.Index_PIP.position = data.rightHand.Index_PIPPos;
+            rightTransforms.Index_DIP.position = data.rightHand.Index_DIPPos;
+            rightTransforms.Index_FingerTip.position = data.rightHand.Index_FingerTipPos;
                                                       
-            // rightTransforms.Middle_MCP.position = data.rightHand.Middle_MCPPos;
-            // rightTransforms.Middle_PIP.position = data.rightHand.Middle_PIPPos;
-            // rightTransforms.Middle_DIP.position = data.rightHand.Middle_DIPPos;
-            // rightTransforms.Middle_FingerTip.position = data.rightHand.Middle_FingerTipPos;
+            rightTransforms.Middle_MCP.position = data.rightHand.Middle_MCPPos;
+            rightTransforms.Middle_PIP.position = data.rightHand.Middle_PIPPos;
+            rightTransforms.Middle_DIP.position = data.rightHand.Middle_DIPPos;
+            rightTransforms.Middle_FingerTip.position = data.rightHand.Middle_FingerTipPos;
 
-            // rightTransforms.Ring_MCP.position = data.rightHand.Ring_MCPPos;
-            // rightTransforms.Ring_PIP.position = data.rightHand.Ring_PIPPos;
-            // rightTransforms.Ring_DIP.position = data.rightHand.Ring_DIPPos;
-            // rightTransforms.Ring_FingerTip.position = data.rightHand.Ring_FingerTipPos;
+            rightTransforms.Ring_MCP.position = data.rightHand.Ring_MCPPos;
+            rightTransforms.Ring_PIP.position = data.rightHand.Ring_PIPPos;
+            rightTransforms.Ring_DIP.position = data.rightHand.Ring_DIPPos;
+            rightTransforms.Ring_FingerTip.position = data.rightHand.Ring_FingerTipPos;
 
-            // rightTransforms.Pinky_MCP.position = data.rightHand.Pinky_MCPPos;
-            // rightTransforms.Pinky_PIP.position = data.rightHand.Pinky_PIPPos;
-            // rightTransforms.Pinky_DIP.position = data.rightHand.Pinky_DIPPos;
-            // rightTransforms.Pinky_FingerTip.position = data.rightHand.Pinky_FingerTipPos;
+            rightTransforms.Pinky_MCP.position = data.rightHand.Pinky_MCPPos;
+            rightTransforms.Pinky_PIP.position = data.rightHand.Pinky_PIPPos;
+            rightTransforms.Pinky_DIP.position = data.rightHand.Pinky_DIPPos;
+            rightTransforms.Pinky_FingerTip.position = data.rightHand.Pinky_FingerTipPos;
 
         }
     }

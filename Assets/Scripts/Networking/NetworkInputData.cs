@@ -31,30 +31,30 @@ public struct HandJointInfo:INetworkStruct
         Pinky_PIPRot,
         Pinky_DIPRot,
         Pinky_FingerTipRot;
-    // public Vector3 Thumb_CMCPos,
-    //  Thumb_MCPPos,
-    //  Thumb_IPPos,
-    //  Thumb_FingerTipPos,
+    public Vector3 Thumb_CMCPos,
+     Thumb_MCPPos,
+     Thumb_IPPos,
+     Thumb_FingerTipPos,
 
-    //  Index_MCPPos,
-    //  Index_PIPPos,
-    //  Index_DIPPos,
-    //  Index_FingerTipPos,
+     Index_MCPPos,
+     Index_PIPPos,
+     Index_DIPPos,
+     Index_FingerTipPos,
 
-    //  Middle_MCPPos,
-    //  Middle_PIPPos,
-    //  Middle_DIPPos,
-    //  Middle_FingerTipPos,
+     Middle_MCPPos,
+     Middle_PIPPos,
+     Middle_DIPPos,
+     Middle_FingerTipPos,
 
-    //  Ring_MCPPos,
-    //  Ring_PIPPos,
-    //  Ring_DIPPos,
-    //  Ring_FingerTipPos,
+     Ring_MCPPos,
+     Ring_PIPPos,
+     Ring_DIPPos,
+     Ring_FingerTipPos,
 
-    //  Pinky_MCPPos,
-    //  Pinky_PIPPos,
-    //  Pinky_DIPPos,
-    //  Pinky_FingerTipPos;
+     Pinky_MCPPos,
+     Pinky_PIPPos,
+     Pinky_DIPPos,
+     Pinky_FingerTipPos;
 }
 public struct NetworkInputData : INetworkInput
 {
