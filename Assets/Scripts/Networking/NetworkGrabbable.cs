@@ -9,11 +9,11 @@ public class NetworkGrabbable : NetworkBehaviour
     // Start is called before the first frame update
     public SG_Grabable sgGrabable;
     [Networked]
-    public NetworkString<_16> currentGrabbed { get; set; }
+    public string currentGrabbed { get; set; }
     // [Networked]
     // public NetworkString<_16> secondGrabbed { get; set; }
     [Networked(OnChanged = nameof(OnChangedGrabber))]
-    public NetworkBool changeGrabber{ get; set; }
+    public bool changeGrabber{ get; set; }
     void Start()
     {
         sgGrabable.ObjectGrabbed.AddListener(ObjectGrabbed);
