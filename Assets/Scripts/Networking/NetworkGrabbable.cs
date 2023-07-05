@@ -36,18 +36,15 @@ public class NetworkGrabbable : NetworkBehaviour
     }
 
     private void ObjectGrabbed(SG_Interactable obj1,SG_GrabScript obj2){
-
+        currentGrabbed = Object.Runner.LocalPlayer.ToString();
+        Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
         if(!Object.HasStateAuthority){
-            if(currentGrabbed!=""){
                 changeGrabber=!changeGrabber;
-            }
-            currentGrabbed=Object.Runner.LocalPlayer.ToString();
-            Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
         }
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
-
+        currentGrabbed="";
     }
 
     async void ReqAuthorithy(NetworkObject o)
@@ -73,7 +70,7 @@ public class NetworkGrabbable : NetworkBehaviour
 
     private void ChangedGrabber()
     {
-        if(Object.HasStateAuthority){
+        if(!Object.HasStateAuthority){
             sgGrabable.ReleaseSelf();
             ReqAuthorithy(Object);
         }
