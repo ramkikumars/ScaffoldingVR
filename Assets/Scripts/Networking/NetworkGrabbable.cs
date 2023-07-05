@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
-
+using System.Threading.Tasks;
 public class NetworkGrabbable : NetworkBehaviour
 {
     // Start is called before the first frame update
+    public bool ChangeState=false;
     void Start()
     {
 
@@ -25,4 +26,6 @@ public class NetworkGrabbable : NetworkBehaviour
         }
         else Debug.Log("This Runner doesn't have StateAuthority");
     }
+
+
 }
