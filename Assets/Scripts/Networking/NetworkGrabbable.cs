@@ -14,6 +14,8 @@ public class NetworkGrabbable : NetworkBehaviour
     // public NetworkString<_16> secondGrabbed { get; set; }
     [Networked(OnChanged = nameof(OnChangedGrabber))]
     public bool changeGrabber{ get; set; }
+    private bool objGrabbed;
+    private bool objReleased;
     void Start()
     {
         sgGrabable.ObjectGrabbed.AddListener(ObjectGrabbed);
@@ -23,6 +25,20 @@ public class NetworkGrabbable : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+    public override void FixedUpdateNetwork()
+    {
+        if(objGrabbed){
+        currentGrabbed = Object.Runner.LocalPlayer.ToString();
+        Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
+        if (!Object.HasStateAuthority)
+        {
+            changeGrabber = !changeGrabber;
+        }
+        objGrabbed=false;
+        }
+
 
     }
     public override void Spawned()
@@ -36,15 +52,11 @@ public class NetworkGrabbable : NetworkBehaviour
     }
 
     private void ObjectGrabbed(SG_Interactable obj1,SG_GrabScript obj2){
-        currentGrabbed = Object.Runner.LocalPlayer.ToString();
-        Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
-        if(!Object.HasStateAuthority){
-                changeGrabber=!changeGrabber;
-        }
+        objGrabbed=true;
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
-        currentGrabbed="";
+        objReleased=true;
     }
 
     async void ReqAuthorithy(NetworkObject o)
@@ -71,8 +83,11 @@ public class NetworkGrabbable : NetworkBehaviour
     private void ChangedGrabber()
     {
         if(!Object.HasStateAuthority){
-            sgGrabable.ReleaseSelf();
             ReqAuthorithy(Object);
+        }
+        else
+        {
+            sgGrabable.ReleaseSelf();
         }
     }
 
