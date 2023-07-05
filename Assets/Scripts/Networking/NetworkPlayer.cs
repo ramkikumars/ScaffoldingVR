@@ -18,7 +18,6 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
         if (Object.HasInputAuthority)
         {
             Local = this;
-
             Debug.Log("Spawned local player");
         }
         else Debug.Log("Spawned remote player");
