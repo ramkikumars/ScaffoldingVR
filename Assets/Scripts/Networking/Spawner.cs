@@ -11,9 +11,11 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
     // As we are in shared topology, having the StateAuthority means we are the local user
     public bool IsLocalUser => playerPrefab.networkObject.HasStateAuthority;
     private SG_User sgUser;
+    private Transform headTransform;
     void Start()
     {
         sgUser = GameObject.Find("[SG_User]").GetComponent<SG_User>();
+        headTransform=GameObject.Find("[SG_User]").GetComponent<SG.XR.SG_XR_Rig>().headTransfrom;
     }
 
     public void OnPlayerJoined(NetworkRunner runner, PlayerRef player)
@@ -33,7 +35,8 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
         // if (characterInputHandler != null)
         //     input.Set(characterInputHandler.GetNetworkInput());
         var data = new NetworkInputData();
-
+        data.headPos=headTransform.position;
+        data.headRot=headTransform.rotation;
         data.leftHand.wristPosistion=sgUser.leftHand.handModel.wristTransform.position;
         data.leftHand.wristRotation=sgUser.leftHand.handModel.wristTransform.rotation;
 

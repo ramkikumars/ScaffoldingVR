@@ -39,6 +39,8 @@ public class CharacterMovementHandler : NetworkBehaviour
     private HandInfo rightTransforms;
     [SerializeField]
     private HandInfo leftTransforms;
+    [SerializeField]
+    private Transform Head;
     private void Awake()
     {
 
@@ -64,7 +66,8 @@ public class CharacterMovementHandler : NetworkBehaviour
         //Get the input from the network
         if (GetInput(out NetworkInputData data))
         {
-
+            Head.transform.position=data.headPos;
+            Head.transform.rotation=data.headRot;
             leftTransforms.wrist.position=data.leftHand.wristPosistion;
             leftTransforms.wrist.rotation=data.leftHand.wristRotation;
                 leftTransforms.Thumb_CMC.rotation=data.leftHand.Thumb_CMCRot;
@@ -151,7 +154,7 @@ public class CharacterMovementHandler : NetworkBehaviour
             rightTransforms.Index_PIP.position = data.rightHand.Index_PIPPos;
             rightTransforms.Index_DIP.position = data.rightHand.Index_DIPPos;
             rightTransforms.Index_FingerTip.position = data.rightHand.Index_FingerTipPos;
-                                                      
+
             rightTransforms.Middle_MCP.position = data.rightHand.Middle_MCPPos;
             rightTransforms.Middle_PIP.position = data.rightHand.Middle_PIPPos;
             rightTransforms.Middle_DIP.position = data.rightHand.Middle_DIPPos;

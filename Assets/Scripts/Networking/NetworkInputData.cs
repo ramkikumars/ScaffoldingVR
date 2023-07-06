@@ -60,6 +60,7 @@ public struct NetworkInputData : INetworkInput
 {
     public HandJointInfo leftHand;
     public HandJointInfo rightHand;
-
+    public Vector3 headPos;
+    public Quaternion headRot;
 
 }

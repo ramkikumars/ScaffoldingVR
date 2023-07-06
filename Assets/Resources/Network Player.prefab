@@ -33,7 +33,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 927245630957723793}
-  - {fileID: 4884012436048668257}
+  - {fileID: 8336757806273188861}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -123,7 +123,7 @@ MonoBehaviour:
   - {fileID: 3591836916581687596}
   - {fileID: 4015795213649164026}
   - {fileID: 1679750007214198143}
-  - {fileID: 4430995092327760246}
+  - {fileID: 125356504476313442}
   SimulationBehaviours: []
 --- !u!114 &1657403914671344899
 MonoBehaviour:
@@ -186,6 +186,7 @@ MonoBehaviour:
     Pinky_PIP: {fileID: 918974132860044013}
     Pinky_DIP: {fileID: 919046157253917307}
     Pinky_FingerTip: {fileID: 927595829036364471}
+  Head: {fileID: 8336757806273188861}
 --- !u!114 &-5888278689826838409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +227,7 @@ RectTransform:
   m_GameObject: {fileID: 778637255344139639}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.42589006, y: 0.42589, z: 0.42589006}
+  m_LocalScale: {x: 0.4258901, y: 0.42588997, z: 0.4258901}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4884012436048668257}
@@ -234,7 +235,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.676}
+  m_AnchoredPosition: {x: 0, y: 0.67600036}
   m_SizeDelta: {x: 2.25, y: -1.042}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &4002660136549555777
@@ -3971,10 +3972,8 @@ GameObject:
   - component: {fileID: 4884012436048668257}
   - component: {fileID: 5602328231660958800}
   - component: {fileID: 6561475626388887615}
-  - component: {fileID: 6916582870596183394}
-  - component: {fileID: 4430995092327760246}
   m_Layer: 0
-  m_Name: Head
+  m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3993,8 +3992,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3017372425486581770}
-  m_Father: {fileID: 1632794155137422456}
-  m_RootOrder: 1
+  m_Father: {fileID: 8336757806273188861}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &5602328231660958800
 MeshFilter:
@@ -4046,26 +4045,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6916582870596183394
-BoxCollider:
+--- !u!1 &6054598698216915933
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3030874366194591983}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4430995092327760246
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8336757806273188861}
+  - component: {fileID: 125356504476313442}
+  m_Layer: 0
+  m_Name: Head
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8336757806273188861
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6054598698216915933}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4884012436048668257}
+  m_Father: {fileID: 1632794155137422456}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &125356504476313442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3030874366194591983}
+  m_GameObject: {fileID: 6054598698216915933}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
@@ -4073,7 +4092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 4884012436048668257}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3

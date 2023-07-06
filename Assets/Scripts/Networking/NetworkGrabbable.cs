@@ -62,9 +62,9 @@ public class NetworkGrabbable : NetworkBehaviour
         base.Spawned();
         if (Object.HasStateAuthority)
         {
-            Debug.Log("This Runner have StateAuthority");
+            // Debug.Log("This Runner have StateAuthority");
         }
-        else Debug.Log("This Runner doesn't have StateAuthority");
+        // else Debug.Log("This Runner doesn't have StateAuthority");
     }
 
     private void ObjectGrabbed(SG_Interactable obj1,SG_GrabScript obj2){

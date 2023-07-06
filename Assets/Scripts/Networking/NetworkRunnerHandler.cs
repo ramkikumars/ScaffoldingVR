@@ -7,27 +7,38 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using System;
 using System.Linq;
-
+using Fusion.Photon.Realtime;
 
 public class NetworkRunnerHandler : MonoBehaviour
 {
     public NetworkRunner networkRunnerPrefab;
 
     NetworkRunner networkRunner;
-
+    public String region;
+    public String sessionName;
+    public String sceneName;
     // Start is called before the first frame update
     void Start()
     {
-        networkRunner = Instantiate(networkRunnerPrefab);
-        networkRunner.name = "Network runner";
 
-        var clientTask = InitializeNetworkRunner(networkRunner, GameMode.Shared, NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
+        if (networkRunner == null)
+        {
+            networkRunner = Instantiate(networkRunnerPrefab);
+            networkRunner.name = "Network runner";
 
-        Debug.Log($"Server NetworkRunner started.");
+            if (SceneManager.GetActiveScene().name != "MainMenu")
+            {
+                var clientTask = InitializeNetworkRunner(networkRunner, GameMode.Shared,sessionName, region,NetAddress.Any(), SceneManager.GetActiveScene().buildIndex, null);
+            }
+
+            Debug.Log($"Server NetworkRunner started.");
+        }
 
     }
 
-    protected virtual Task InitializeNetworkRunner(NetworkRunner runner, GameMode gameMode, NetAddress address, SceneRef scene, Action<NetworkRunner> initialized)
+
+
+    protected virtual Task InitializeNetworkRunner(NetworkRunner runner, GameMode gameMode, string sessionName,string region,NetAddress address, SceneRef scene, Action<NetworkRunner> initialized)
     {
         var sceneManager = runner.GetComponents(typeof(MonoBehaviour)).OfType<INetworkSceneManager>().FirstOrDefault();
 
@@ -38,15 +49,50 @@ public class NetworkRunnerHandler : MonoBehaviour
         }
 
         runner.ProvideInput = true;
-
+        var appSettings = BuildCustomAppSetting(region);
         return runner.StartGame(new StartGameArgs
         {
             GameMode = gameMode,
             Address = address,
             Scene = scene,
-            SessionName = "TestRoom",
+            SessionName = sessionName,
             Initialized = initialized,
-            SceneManager = sceneManager
+            SceneManager = sceneManager,
+            // CustomPhotonAppSettings=appSettings
         });
+    }
+
+    private AppSettings BuildCustomAppSetting(string region, string customAppID = null, string appVersion = "1.0.0")
+    {
+
+        var appSettings = PhotonAppSettings.Instance.AppSettings.GetCopy();
+
+        appSettings.UseNameServer = true;
+        appSettings.AppVersion = appVersion;
+
+        if (string.IsNullOrEmpty(customAppID) == false)
+        {
+            appSettings.AppIdFusion = customAppID;
+        }
+
+        if (string.IsNullOrEmpty(region) == false)
+        {
+            appSettings.FixedRegion = region.ToLower();
+        }
+
+        // If the Region is set to China (CN),
+        // the Name Server will be automatically changed to the right one
+        // appSettings.Server = "ns.photonengine.cn";
+
+        return appSettings;
+    }
+
+    public void CreateGame(string sessionName, string regionName)
+    {
+        Debug.Log($"Create session {sessionName} scene {sceneName} build Index {SceneUtility.GetBuildIndexByScenePath($"scenes/{sceneName}")}");
+
+        //Join existing game as a client
+        var clientTask = InitializeNetworkRunner(networkRunner, GameMode.Shared,sessionName,regionName,NetAddress.Any(), SceneUtility.GetBuildIndexByScenePath($"scenes/{sceneName}"), null);
+
     }
 }

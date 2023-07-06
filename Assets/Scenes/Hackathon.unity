@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 808520317207804232, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 808520317207804233, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -173,6 +177,18 @@ PrefabInstance:
     - target: {fileID: 808520317207804233, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808520317207804235, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
+      propertyPath: StartMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808520317207804235, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 808520317207804238, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 808520317207804239, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
       propertyPath: m_Name
@@ -1145,12 +1161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   sgGrabable: {fileID: 1840689788}
-  _currentGrabbed:
-    _length: 0
-    _data:
-      Data: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  _changeGrabber:
-    _value: 0
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
 --- !u!114 &1840689792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1174,9 +1187,9 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 1840689791}
-  - {fileID: 1840689794}
+  - {fileID: 1840689793}
   SimulationBehaviours: []
---- !u!114 &1840689794
+--- !u!114 &1840689793
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1185,7 +1198,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1840689783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
