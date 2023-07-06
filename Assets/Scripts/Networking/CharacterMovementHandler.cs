@@ -49,17 +49,13 @@ public class CharacterMovementHandler : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // if(GetComponent<NetworkObject>().HasStateAuthority){
-        //     leftTransforms.skinnedMesh.enabled=false;
-        //     rightTransforms.skinnedMesh.enabled=false;
-        // }
+        if(GetComponent<NetworkObject>().HasStateAuthority){
+            leftTransforms.skinnedMesh.enabled=false;
+            rightTransforms.skinnedMesh.enabled=false;
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
-    }
 
     public override void FixedUpdateNetwork()
     {
@@ -173,7 +169,5 @@ public class CharacterMovementHandler : NetworkBehaviour
         }
     }
 
-    public void SetViewInputVector(Vector2 viewInput)
-    {
-    }
+
 }
