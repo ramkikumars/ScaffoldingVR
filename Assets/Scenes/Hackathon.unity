@@ -869,6 +869,7 @@ GameObject:
   - component: {fileID: 753923746}
   - component: {fileID: 753923747}
   - component: {fileID: 753923748}
+  - component: {fileID: 753923749}
   m_Layer: 0
   m_Name: Grab2
   m_TagString: Untagged
@@ -1012,6 +1013,32 @@ MonoBehaviour:
   _currentGrabbed: 
   _grabberCount: 0
   _changeGrabber: 0
+  nobj: {fileID: 753923749}
+--- !u!114 &753923749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753923738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2561
+  NetworkGuid:
+    RawGuidValue: c5ef8c9b53a8496b9c9dbbb0d5f3fbe3
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 753923747}
+  - {fileID: 753923748}
+  SimulationBehaviours: []
 --- !u!1 &801430829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1559,7 @@ GameObject:
   - component: {fileID: 1740270187}
   - component: {fileID: 1740270188}
   - component: {fileID: 1740270189}
+  - component: {fileID: 1740270190}
   m_Layer: 0
   m_Name: Grab1
   m_TagString: Untagged
@@ -1676,6 +1704,32 @@ MonoBehaviour:
   _currentGrabbed: 
   _grabberCount: 0
   _changeGrabber: 0
+  nobj: {fileID: 1740270190}
+--- !u!114 &1740270190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740270179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2561
+  NetworkGuid:
+    RawGuidValue: 12378ce41bda4e17a04e38809f3e2842
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 1740270188}
+  - {fileID: 1740270189}
+  SimulationBehaviours: []
 --- !u!1 &1816450027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1740,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1816450028}
   - component: {fileID: 1816450029}
-  - component: {fileID: 1816450030}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1725,33 +1778,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj1: {fileID: 1740270180}
   obj2: {fileID: 753923739}
---- !u!114 &1816450030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1816450027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectInterest: 1
-  DefaultInterestGroups: []
-  DestroyWhenStateAuthorityLeaves: 0
-  AllowStateAuthorityOverride: 1
-  AoiPositionSource: {fileID: 0}
-  Flags: 2561
-  NetworkGuid:
-    RawGuidValue: ba0286215bba4bad9dc38b679cd879ba
-  NestedObjects: []
-  NetworkedBehaviours:
-  - {fileID: 1740270188}
-  - {fileID: 1740270189}
-  - {fileID: 753923747}
-  - {fileID: 753923748}
-  SimulationBehaviours: []
 --- !u!1 &1820916515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2074,6 +2100,7 @@ MonoBehaviour:
   _currentGrabbed: 
   _grabberCount: 0
   _changeGrabber: 0
+  nobj: {fileID: 1840689792}
 --- !u!114 &1840689792
 MonoBehaviour:
   m_ObjectHideFlags: 0

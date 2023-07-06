@@ -18,6 +18,7 @@ public class NetworkGrabbable : NetworkBehaviour
     public bool changeGrabber{ get; set; }
     private bool objGrabbed;
     private bool objReleased;
+    public NetworkObject nobj;
     void Start()
     {
         sgGrabable.ObjectGrabbed.AddListener(ObjectGrabbed);
@@ -32,16 +33,17 @@ public class NetworkGrabbable : NetworkBehaviour
     public override void FixedUpdateNetwork()
     {
         if(objGrabbed){
-        currentGrabbed = Object.Runner.LocalPlayer.ToString();
+        currentGrabbed = nobj.Runner.LocalPlayer.ToString();
         Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
 
-        if (!Object.HasStateAuthority)
+        if (!nobj.HasStateAuthority)
         {
                 if (grabberCount == 0)
                 {
             changeGrabber = !changeGrabber;
         grabberCount+=1;
         }
+
         }
 
         objGrabbed=false;
@@ -60,7 +62,7 @@ public class NetworkGrabbable : NetworkBehaviour
     public override void Spawned()
     {
         base.Spawned();
-        if (Object.HasStateAuthority)
+        if (nobj.HasStateAuthority)
         {
             // Debug.Log("This Runner have StateAuthority");
         }
@@ -98,8 +100,8 @@ public class NetworkGrabbable : NetworkBehaviour
 
     private void ChangedGrabber()
     {
-        if(!Object.HasStateAuthority){
-            ReqAuthorithy(Object);
+        if(!nobj.HasStateAuthority){
+            ReqAuthorithy(nobj);
         }
     }
 
