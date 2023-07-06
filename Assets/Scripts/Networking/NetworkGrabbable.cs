@@ -10,6 +10,8 @@ public class NetworkGrabbable : NetworkBehaviour
     public SG_Grabable sgGrabable;
     [Networked]
     public string currentGrabbed { get; set; }
+    [Networked]
+    public int grabberCount { get; set; }=0;
     // [Networked]
     // public NetworkString<_16> secondGrabbed { get; set; }
     [Networked(OnChanged = nameof(OnChangedGrabber))]
@@ -32,11 +34,25 @@ public class NetworkGrabbable : NetworkBehaviour
         if(objGrabbed){
         currentGrabbed = Object.Runner.LocalPlayer.ToString();
         Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
+
         if (!Object.HasStateAuthority)
         {
+                if (grabberCount == 0)
+                {
             changeGrabber = !changeGrabber;
+        grabberCount+=1;
         }
+        }
+
         objGrabbed=false;
+        }
+
+        if(objReleased){
+            if(grabberCount==2){
+                changeGrabber = !changeGrabber;
+            }
+            grabberCount -= 1;
+            objReleased=false;
         }
 
 
@@ -84,10 +100,6 @@ public class NetworkGrabbable : NetworkBehaviour
     {
         if(!Object.HasStateAuthority){
             ReqAuthorithy(Object);
-        }
-        else
-        {
-            sgGrabable.ReleaseSelf();
         }
     }
 
