@@ -11,11 +11,11 @@ public class NetworkGrabbable : NetworkBehaviour
     [Networked]
     public string currentGrabbed { get; set; }
     [Networked]
-    public int grabberCount { get; set; }=0;
+    public int grabberCount { get; set; } = 0;
     // [Networked]
     // public NetworkString<_16> secondGrabbed { get; set; }
     [Networked(OnChanged = nameof(OnChangedGrabber))]
-    public bool changeGrabber{ get; set; }
+    public bool changeGrabber { get; set; }
     private bool objGrabbed;
     private bool objReleased;
     public NetworkObject nobj;
@@ -32,31 +32,30 @@ public class NetworkGrabbable : NetworkBehaviour
     }
     public override void FixedUpdateNetwork()
     {
-        if(objGrabbed){
-        currentGrabbed = nobj.Runner.LocalPlayer.ToString();
-        Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
 
-        if (!nobj.HasStateAuthority)
+        if (objGrabbed)
         {
+            currentGrabbed = nobj.Runner.LocalPlayer.ToString();
+            Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
+
                 if (grabberCount == 0)
                 {
-            changeGrabber = !changeGrabber;
-        grabberCount+=1;
+                    changeGrabber = !changeGrabber;
+                }
+                    grabberCount += 1;
+            objGrabbed=false;
         }
 
-        }
+        if (objReleased)
+        {
 
-        objGrabbed=false;
-        }
-
-        if(objReleased){
-            if(grabberCount==2){
+            if (grabberCount == 2)
+            {
                 changeGrabber = !changeGrabber;
             }
             grabberCount -= 1;
-            objReleased=false;
+            objReleased = false;
         }
-
 
     }
     public override void Spawned()
@@ -69,12 +68,13 @@ public class NetworkGrabbable : NetworkBehaviour
         // else Debug.Log("This Runner doesn't have StateAuthority");
     }
 
-    private void ObjectGrabbed(SG_Interactable obj1,SG_GrabScript obj2){
-        objGrabbed=true;
+    private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
+    {
+        objGrabbed = true;
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
-        objReleased=true;
+        objReleased = true;
     }
 
     async void ReqAuthorithy(NetworkObject o)
@@ -100,9 +100,10 @@ public class NetworkGrabbable : NetworkBehaviour
 
     private void ChangedGrabber()
     {
-        if(!nobj.HasStateAuthority){
+
+        if (!nobj.HasStateAuthority)
+        {
             ReqAuthorithy(nobj);
         }
     }
-
 }
