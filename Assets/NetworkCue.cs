@@ -163,14 +163,14 @@ public class NetworkCue : NetworkBehaviour
         Debug.Log("Started Coroutine");
         yield return new WaitUntil(()=>(IsPlayerJoined()));
 
-            for(int i=0;i<=4;i++){
+            for(int i=0;i<4;i++){
             SwitchState("Base", 0, true);
             SetActiveSnapzone("Base", 0, true);
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
             resetObjSnapped=true;
             SetActiveSnapzone("Base", 0, false);
         }
-        for (int i = 0; i <= 4; i++)
+        for (int i = 0; i < 4; i++)
         {
             SwitchState("Vertical", 0, true);
             SetActiveSnapzone("Vertical", 0, true);
