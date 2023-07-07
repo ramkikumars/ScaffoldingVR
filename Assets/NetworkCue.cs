@@ -48,13 +48,17 @@ public class NetworkCue : NetworkBehaviour
         horizontalLowerZones=new SG_SnapDropZone[4,2];
         horizontalMiddleZones=new SG_SnapDropZone[4,2];
 
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i <4; i++)
         {
             // GameObject basee=sets[i].transform.Find("Base").gameObject;
             bases[i] = sets[i].transform.Find("Base").gameObject;
+            bases[i].SetActive(false);
             verticals[i] = sets[i].transform.Find("Ledgers/Vertical").gameObject;
+            verticals[i].SetActive(false);
             horizontalLowers[i] = sets[i].transform.Find("Ledgers/Horizontals/horizontal 1").gameObject;
+            horizontalLowers[i].SetActive(false);
             horizontalMiddles[i] = sets[i].transform.Find("Ledgers/Horizontals/horizontal 2").gameObject;
+            horizontalMiddles[i].SetActive(false);
 
             baseSnapZones[i] = sets[i].transform.Find("SnapObjects/Base").GetComponent<SG_SnapDropZone>();
             baseSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
@@ -155,19 +159,26 @@ public class NetworkCue : NetworkBehaviour
 
     IEnumerator Exercise1()
     {
-        // yield return new WaitUntil(() => Runner.IsCloudReady);
-        // yield return new WaitUntil(()=>Runner.IsRunning);
-        // yield return new WaitUntil(()=>Runner.IsCloudReady);
+
         Debug.Log("Started Coroutine");
         yield return new WaitUntil(()=>(IsPlayerJoined()));
-            // for(int i=0;i<=4;i++){
-            // int i = 0;
+
+            for(int i=0;i<=4;i++){
             SwitchState("Base", 0, true);
             SetActiveSnapzone("Base", 0, true);
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
             resetObjSnapped=true;
             SetActiveSnapzone("Base", 0, false);
-        // }
+        }
+        for (int i = 0; i <= 4; i++)
+        {
+            SwitchState("Vertical", 0, true);
+            SetActiveSnapzone("Vertical", 0, true);
+            yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
+            resetObjSnapped = true;
+            SetActiveSnapzone("Vertical", 0, false);
+        }
+
 
         // SwitchState("Base",0,true);
     }
