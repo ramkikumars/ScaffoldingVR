@@ -101,7 +101,7 @@ public class NetworkCue : NetworkBehaviour
         switch (objName)
         {
             case "Base":
-                bases[idx].SetActive(true);
+                bases[idx].SetActive(state);
                 break;
 
             case "Vertical":
@@ -205,6 +205,7 @@ public class NetworkCue : NetworkBehaviour
     private bool IsObjSnapped(string objName)
     {
         if(recentlySnapped==objName){
+            recentlySnapped="";
             return true;
         }
         else{
