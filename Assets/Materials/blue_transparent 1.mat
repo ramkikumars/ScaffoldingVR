@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: red_transparent 2
+  m_Name: blue_transparent 1
   m_Shader: {fileID: 4800000, guid: 4e49f8816b02a1e458ef5a19638e9010, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
@@ -23,7 +23,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _RimPower: 14.7
+    - _RimPower: 3.9
     m_Colors:
-    - _Color: {r: 1, g: 0.5753796, b: 0.39999998, a: 1}
+    - _Color: {r: 0.5568628, g: 0.07058822, b: 0.113287315, a: 1}
   m_BuildTextureStacks: []
