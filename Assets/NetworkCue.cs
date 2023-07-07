@@ -63,6 +63,7 @@ public class NetworkCue : NetworkBehaviour
             baseSnapZones[i] = sets[i].transform.Find("SnapObjects/Base").GetComponent<SG_SnapDropZone>();
             baseSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
             verticalSnapZones[i] = sets[i].transform.Find("SnapObjects/Vertical").GetComponent<SG_SnapDropZone>();
+            verticalSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
             for (int j = 0; j < 2; j++)
             {
                 horizontalLowerZones[i,j] = sets[i].transform.Find("SnapObjects/HorizontalLower").GetComponent<SG_SnapDropZone>();
@@ -120,7 +121,7 @@ public class NetworkCue : NetworkBehaviour
 
     public void SwitchState(string objName, int idx, bool state1)
     {
-        Rpc_SwitchState(networkObject.Runner, objName, idx, state1);
+        Rpc_SwitchState(Object.Runner, objName, idx, state1);
     }
 
 
@@ -152,7 +153,7 @@ public class NetworkCue : NetworkBehaviour
 
     public void SetActiveSnapzone(string objName, int idx, bool state)
     {
-        Rpc_SetActiveSnapzone(networkObject.Runner, objName, idx, state);
+        Rpc_SetActiveSnapzone(Object.Runner, objName, idx, state);
 
     }
 
@@ -169,6 +170,7 @@ public class NetworkCue : NetworkBehaviour
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
             resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
+            SwitchState("Base", i, false);
         }
         for (int i = 0; i < 4; i++)
         {
@@ -188,6 +190,8 @@ public class NetworkCue : NetworkBehaviour
         objSnapped = true;
         recentlySnappedObj = sgGrab.name;
     }
+
+
     private bool IsPlayerJoined(){
         if(networkObject.Runner.ActivePlayers.Count() == 2){
             Debug.Log("2 Players has joined");
