@@ -164,19 +164,19 @@ public class NetworkCue : NetworkBehaviour
         yield return new WaitUntil(()=>(IsPlayerJoined()));
 
             for(int i=0;i<4;i++){
-            SwitchState("Base", 0, true);
-            SetActiveSnapzone("Base", 0, true);
+            SwitchState("Base", i, true);
+            SetActiveSnapzone("Base", i, true);
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
             resetObjSnapped=true;
-            SetActiveSnapzone("Base", 0, false);
+            SetActiveSnapzone("Base", i, false);
         }
         for (int i = 0; i < 4; i++)
         {
-            SwitchState("Vertical", 0, true);
-            SetActiveSnapzone("Vertical", 0, true);
+            SwitchState("Vertical", i, true);
+            SetActiveSnapzone("Vertical", i, true);
             yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
             resetObjSnapped = true;
-            SetActiveSnapzone("Vertical", 0, false);
+            SetActiveSnapzone("Vertical", i, false);
         }
 
 

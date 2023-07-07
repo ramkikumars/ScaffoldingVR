@@ -26396,6 +26396,9 @@ MonoBehaviour:
   _interpolationDataSource: 0
   sets:
   - {fileID: 2503749626795892975}
+  - {fileID: 1435192341}
+  - {fileID: 17606584}
+  - {fileID: 488417795}
   _recentlySnapped: 
   networkObject: {fileID: 1442987709}
 --- !u!1 &1450521560
