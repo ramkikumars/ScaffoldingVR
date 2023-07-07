@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
 using SG;
-
-
+using Fusion.Photon.Realtime;
+using System.Linq;
+[OrderAfter]
 public class NetworkCue : NetworkBehaviour
 {
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class NetworkCue : NetworkBehaviour
     public string recentlySnapped { get; set; }
 
     private bool objSnapped;
+    private bool resetObjSnapped;
     private string recentlySnappedObj { get; set; }
     // private SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     // private SG_SnapDropZone[][] horizontalSnapZones;
@@ -45,6 +47,7 @@ public class NetworkCue : NetworkBehaviour
         verticalSnapZones =new SG_SnapDropZone[4];
         horizontalLowerZones=new SG_SnapDropZone[4,2];
         horizontalMiddleZones=new SG_SnapDropZone[4,2];
+
         for (int i = 0; i < 1; i++)
         {
             // GameObject basee=sets[i].transform.Find("Base").gameObject;
@@ -63,7 +66,9 @@ public class NetworkCue : NetworkBehaviour
             }
         }
 
-        StartCoroutine(Exercise1());
+
+
+
     }
 
     // Update is called once per frame
@@ -78,6 +83,10 @@ public class NetworkCue : NetworkBehaviour
         {
             recentlySnapped=recentlySnappedObj;
             objSnapped = false;
+        }
+        if(resetObjSnapped){
+            recentlySnapped="";
+            resetObjSnapped=false;
         }
     }
 
@@ -146,13 +155,17 @@ public class NetworkCue : NetworkBehaviour
 
     IEnumerator Exercise1()
     {
-        yield return new WaitForSeconds(5f);
+        // yield return new WaitUntil(() => Runner.IsCloudReady);
+        // yield return new WaitUntil(()=>Runner.IsRunning);
+        // yield return new WaitUntil(()=>Runner.IsCloudReady);
+        Debug.Log("Started Coroutine");
+        yield return new WaitUntil(()=>(IsPlayerJoined()));
             // for(int i=0;i<=4;i++){
-            Debug.Log("Started");
             // int i = 0;
             SwitchState("Base", 0, true);
             SetActiveSnapzone("Base", 0, true);
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
+            resetObjSnapped=true;
             SetActiveSnapzone("Base", 0, false);
         // }
 
@@ -164,7 +177,16 @@ public class NetworkCue : NetworkBehaviour
         objSnapped = true;
         recentlySnappedObj = sgGrab.name;
     }
-
+    private bool IsPlayerJoined(){
+        if(networkObject.Runner.ActivePlayers.Count() == 2){
+            Debug.Log("2 Players has joined");
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     private bool IsObjSnapped(string objName)
     {
         if(recentlySnapped==objName){
@@ -172,8 +194,18 @@ public class NetworkCue : NetworkBehaviour
         }
         else{
             return false;
+
         }
 
+    }
+
+    public override void Spawned()
+    {
+        base.Spawned();
+        Debug.Log(Object.HasStateAuthority);
+        if(Object.HasStateAuthority){
+        StartCoroutine(Exercise1());
+        }
     }
 
 }
