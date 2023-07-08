@@ -18,6 +18,7 @@ public class NetworkRunnerHandler : MonoBehaviour
     public String sessionName;
     public String sceneName;
     // Start is called before the first frame update
+    // public NetworkCue networkCue;
     void Start()
     {
 
@@ -32,6 +33,7 @@ public class NetworkRunnerHandler : MonoBehaviour
             }
 
             Debug.Log($"Server NetworkRunner started.");
+            // networkCue.enabled=true;
         }
 
     }

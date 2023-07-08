@@ -25,6 +25,7 @@ public class Spawner : MonoBehaviour, INetworkRunnerCallbacks
             runner.Spawn(playerPrefab, transform.position, Quaternion.identity, player);
 
         }
+        // GameObject.Find("Scaffolding Assembly").GetComponent<NetworkCue>().enabled=true;
     }
 
     public void OnInput(NetworkRunner runner, NetworkInput input)
