@@ -64,11 +64,12 @@ public class NetworkCue : NetworkBehaviour
             baseSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
             verticalSnapZones[i] = sets[i].transform.Find("SnapObjects/Vertical").GetComponent<SG_SnapDropZone>();
             verticalSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
-            for (int j = 0; j < 2; j++)
-            {
-                horizontalLowerZones[i,j] = sets[i].transform.Find("SnapObjects/HorizontalLower").GetComponent<SG_SnapDropZone>();
-                horizontalMiddleZones[i,j] = sets[i].transform.Find("SnapObjects/HorizontalLower").GetComponent<SG_SnapDropZone>();
-            }
+
+                horizontalLowerZones[i,0] = sets[i].transform.Find("SnapObjects/HorizontalLower/Grab1").GetComponent<SG_SnapDropZone>();
+                horizontalLowerZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalLower/Grab2").GetComponent<SG_SnapDropZone>();
+
+                horizontalMiddleZones[i,0] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab1").GetComponent<SG_SnapDropZone>();
+                horizontalMiddleZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab2").GetComponent<SG_SnapDropZone>();
         }
 
 
@@ -108,11 +109,11 @@ public class NetworkCue : NetworkBehaviour
                 verticals[idx].SetActive(state);
                 break;
 
-            case "Horizontal Lower":
+            case "HorizontalLower":
                 horizontalLowers[idx].SetActive(state);
                 break;
 
-            case "Horizontal Middle":
+            case "HorizontalMiddle":
                 horizontalMiddles[idx].SetActive(state);
                 break;
 
@@ -162,25 +163,32 @@ public class NetworkCue : NetworkBehaviour
     {
 
         Debug.Log("Started Coroutine");
-        yield return new WaitUntil(()=>(IsPlayerJoined()));
+        // yield return new WaitUntil(()=>(IsPlayerJoined()));
 
-            for(int i=0;i<4;i++){
-            SwitchState("Base", i, true);
-            SetActiveSnapzone("Base", i, true);
-            yield return new WaitUntil(() => (IsObjSnapped("Base")));
-            resetObjSnapped=true;
-            SetActiveSnapzone("Base", i, false);
-            SwitchState("Base", i, false);
-        }
-        for (int i = 0; i < 4; i++)
-        {
-            SwitchState("Vertical", i, true);
-            SetActiveSnapzone("Vertical", i, true);
-            yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
-            resetObjSnapped = true;
-            SetActiveSnapzone("Vertical", i, false);
-        }
-
+        //     for(int i=0;i<4;i++){
+        //     SwitchState("Base", i, true);
+        //     SetActiveSnapzone("Base", i, true);
+        //     yield return new WaitUntil(() => (IsObjSnapped("Base")));
+        //     resetObjSnapped=true;
+        //     SetActiveSnapzone("Base", i, false);
+        //     SwitchState("Base", i, false);
+        // }
+        // for (int i = 0; i < 4; i++)
+        // {
+        //     SwitchState("Vertical", i, true);
+        //     SetActiveSnapzone("Vertical", i, true);
+        //     yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
+        //     resetObjSnapped = true;
+        //     SetActiveSnapzone("Vertical", i, false);
+        // }
+        SwitchState("HorizontalLower",3,true);
+        SetActiveSnapzone("HorizontalLower", 3, true);
+        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        resetObjSnapped = true;
+        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        resetObjSnapped = true;
+        SwitchState("HorizontalLower", 3, false);
+        SetActiveSnapzone("HorizontalLower", 3, false);
 
         // SwitchState("Base",0,true);
     }
