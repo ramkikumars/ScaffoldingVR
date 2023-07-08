@@ -4359,7 +4359,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 146158885}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 146158882}
 --- !u!114 &146158884
 MonoBehaviour:
@@ -5069,11 +5069,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158732317}
   m_Mesh: {fileID: 8321857823794287747, guid: a4d85bc77175cf5489a30333a10cea82, type: 3}
---- !u!1 &159393391 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9009210388129149791, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
-  m_PrefabInstance: {fileID: 1554875524}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &159393392 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9009210388129149760, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -8047,11 +8042,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 299582096}
   m_Mesh: {fileID: -1716842359454501035, guid: 0208f0f5557f28f43988659aca5bd4ed, type: 3}
---- !u!1 &301111883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9009210388129149791, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
-  m_PrefabInstance: {fileID: 655035647}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &301111884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9009210388129149760, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -16717,7 +16707,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 561508101}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 561508098}
 --- !u!114 &561508100
 MonoBehaviour:
@@ -23078,7 +23068,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 753923746}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 753923749}
 --- !u!114 &753923749
 MonoBehaviour:
@@ -24107,7 +24097,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 775750227}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 775750224}
 --- !u!114 &775750226
 MonoBehaviour:
@@ -30193,11 +30183,6 @@ Transform:
   m_Father: {fileID: 2034162963}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &979939012 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9009210388129149791, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
-  m_PrefabInstance: {fileID: 1544896577}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &979939013 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9009210388129149760, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -37629,11 +37614,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1207659511}
   m_Mesh: {fileID: 8321857823794287747, guid: a4d85bc77175cf5489a30333a10cea82, type: 3}
---- !u!1 &1209698664 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9009210388129149791, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
-  m_PrefabInstance: {fileID: 811758265}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1209698665 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9009210388129149760, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -45079,7 +45059,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 1457544359}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 1457544365}
 --- !u!114 &1457544368
 MonoBehaviour:
@@ -54102,7 +54082,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 1740270187}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 1740270190}
 --- !u!114 &1740270190
 MonoBehaviour:
@@ -54583,7 +54563,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 1752385034}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 1752385031}
 --- !u!114 &1752385033
 MonoBehaviour:
@@ -57472,7 +57452,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 1823695417}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 1823695414}
 --- !u!114 &1823695416
 MonoBehaviour:
@@ -57911,7 +57891,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 1840689788}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 1840689792}
 --- !u!114 &1840689792
 MonoBehaviour:
@@ -59422,70 +59402,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2430201279923518633, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
   m_PrefabInstance: {fileID: 1867750566}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1869598375
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1869598377}
-  - component: {fileID: 1869598376}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1869598376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869598375}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67131a0010e2db94f951115fb6564d1e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerName: Ram
-  playMode: 0
-  MainCamera: {fileID: 0}
-  resetLocation: 0
-  playerPos: {fileID: 0}
-  panelText: {fileID: 0}
-  scaffoldingSet:
-  - {fileID: 301111883}
-  - {fileID: 979939012}
-  - {fileID: 159393391}
-  - {fileID: 1209698664}
-  playExercise1: 0
-  playExercise2: 0
-  targetHeight: 0
-  verticalHeight:
-  - 0
-  - 0
-  - 0
-  - 0
-  hammer: {fileID: 0}
---- !u!4 &1869598377
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1869598375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.7371076, y: 1.0678699, z: -0.23199871}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 18
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1869882285
 GameObject:
   m_ObjectHideFlags: 0
@@ -61565,6 +61481,79 @@ Transform:
   - {fileID: 514445392}
   m_Father: {fileID: 1313606763}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1914690988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1914690991}
+  - component: {fileID: 1914690990}
+  - component: {fileID: 1914690989}
+  m_Layer: 0
+  m_Name: Test Object
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1914690989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914690988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7cb8e114461ad3b42b3d753341115021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  state: 0
+  nobj: {fileID: 1914690990}
+  _counter: 0
+--- !u!114 &1914690990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914690988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2561
+  NetworkGuid:
+    RawGuidValue: 74508cd89ff5412cbaae6a5dc06bf11b
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 1914690989}
+  SimulationBehaviours: []
+--- !u!4 &1914690991
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914690988}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.62547755, y: 0.6336539, z: 4.982619}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1916299566
 GameObject:
@@ -66070,7 +66059,7 @@ MonoBehaviour:
   sgGrabable: {fileID: 2047671170}
   _currentGrabbed: 
   _grabberCount: 0
-  _changeGrabber: 0
+  _grabbedByOther: 0
   nobj: {fileID: 2047671167}
 --- !u!114 &2047671169
 MonoBehaviour:

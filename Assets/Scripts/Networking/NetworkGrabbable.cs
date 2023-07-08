@@ -12,15 +12,18 @@ public class NetworkGrabbable : NetworkBehaviour
     public string currentGrabbed { get; set; }
     [Networked]
     public int grabberCount { get; set; } = 0;
-    // [Networked]
-    // public NetworkString<_16> secondGrabbed { get; set; }
-    [Networked(OnChanged = nameof(OnChangedGrabber))]
+    [Networked]
+    public bool grabbedByOther { get; set; }
+    // [Networked(OnChanged = nameof(OnChangedGrabber))]
     public bool changeGrabber { get; set; }
     private bool objGrabbed;
     private bool objReleased;
+
     public NetworkObject nobj;
+    private static NetworkObject nobjs;
     void Start()
     {
+        nobjs=nobj;
         sgGrabable.ObjectGrabbed.AddListener(ObjectGrabbed);
         sgGrabable.ObjectReleased.AddListener(ObjectReleased);
     }
@@ -59,6 +62,8 @@ public class NetworkGrabbable : NetworkBehaviour
         }
 
     }
+
+
     public override void Spawned()
     {
         base.Spawned();
@@ -72,18 +77,28 @@ public class NetworkGrabbable : NetworkBehaviour
     private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
     {
         objGrabbed = true;
+        grabberCount+=1;
+        // if(grabbedByOther){
+
+        // }else{
+        //     grabbedByOther=false;
+        // }
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
         objReleased = true;
+        grabberCount += 1;
     }
 
-    async void ReqAuthorithy(NetworkObject o)
+
+
+
+    async static void ReqAuthorithy(NetworkObject o)
     {
         await WaitForStateAuthority(o);
     }
 
-    public async Task<bool> WaitForStateAuthority(NetworkObject o, float maxWaitTime = 8)
+    public async static Task<bool> WaitForStateAuthority(NetworkObject o, float maxWaitTime = 8)
     {
         float waitStartTime = Time.time;
         o.RequestStateAuthority();
@@ -94,17 +109,30 @@ public class NetworkGrabbable : NetworkBehaviour
         return o.HasStateAuthority;
     }
 
-    public static void OnChangedGrabber(Changed<NetworkGrabbable> changed)
-    {
-        changed.Behaviour.ChangedGrabber();
-    }
+    // public static void OnChangedGrabber(Changed<NetworkGrabbable> changed)
+    // {
+    //     changed.Behaviour.ChangedGrabber();
+    // }
 
-    private void ChangedGrabber()
-    {
+    // private void ChangedGrabber()
+    // {
 
-        if (!nobj.HasStateAuthority)
+    //     if (!nobj.HasStateAuthority)
+    //     {
+    //         ReqAuthorithy(nobj);
+    //     }
+    // }
+
+
+
+    [Rpc]
+    public static void Rpc_ReqAuthority(NetworkRunner runner)
+    {
+        if (!nobjs.HasStateAuthority)
         {
-            ReqAuthorithy(nobj);
+            ReqAuthorithy(nobjs);
         }
     }
+
+
 }
