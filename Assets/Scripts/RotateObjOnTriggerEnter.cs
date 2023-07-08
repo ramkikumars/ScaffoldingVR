@@ -79,8 +79,8 @@ public class RotateObjOnTriggerEnter : MonoBehaviour
     }
     private void ListenManipulationEvents(Transform obj)
     {
-        // obj.GetComponent<UxrGrabbableObject>().Grabbed += HammerGrabbed;
-        // obj.GetComponent<UxrGrabbableObject>().Released += HammerReleased;
+        obj.GetComponent<UxrGrabbableObject>().Grabbed += HammerGrabbed;
+        obj.GetComponent<UxrGrabbableObject>().Released += HammerReleased;
         obj.GetComponent<SG_Grabable>().ObjectGrabbed.AddListener(HammerGrabbed);
         obj.GetComponent<SG_Grabable>().ObjectReleased.AddListener(HammerReleased);
     }
