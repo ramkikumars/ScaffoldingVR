@@ -24,7 +24,6 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Enter aud");
         if (other.gameObject.CompareTag(targetTag))
         {
             VelocityEstimator estimator = other.gameObject.GetComponent<VelocityEstimator>();

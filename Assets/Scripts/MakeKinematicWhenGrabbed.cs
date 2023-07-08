@@ -14,8 +14,8 @@ public class MakeKinematicWhenGrabbed : MonoBehaviour
 
     private void ListenManipulationEvents(Transform obj)
     {
-        // obj.GetComponent<UxrGrabbableObject>().Grabbed += ObjGrabbed;
-        // obj.GetComponent<UxrGrabbableObject>().Released += ObjReleased;
+        obj.GetComponent<UxrGrabbableObject>().Grabbed += ObjGrabbed;
+        obj.GetComponent<UxrGrabbableObject>().Released += ObjReleased;
         if (obj.GetComponent<SG_SimpleDrawer>() != null)
         {
             obj.GetComponent<SG_SimpleDrawer>().ObjectGrabbed.AddListener(ObjGrabbed);

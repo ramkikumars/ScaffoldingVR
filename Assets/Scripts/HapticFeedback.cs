@@ -14,10 +14,10 @@ public class HapticFeedback : MonoBehaviour
     [SerializeField] private float hitWait;
     [SerializeField] private UxrHapticClipType UxrclipType;
     private string controllerName;
-    private UxrGrabbableObject grabObj => GetComponent<UxrGrabbableObject>();
+    private UxrGrabbableObject grabObj => GetComponentInChildren<UxrGrabbableObject>();
     // <summary> The Interactable object that we will be sending vibration commands to. </summary>
     /// <remarks> Since SG_Grabable derives from SG_Interactable, this will work for grabables, as well as any other script that derives from SG_Interactable. </remarks>
-    private SG_Interactable objectToVibrate => GetComponent<SG_Grabable>();
+    private SG_Interactable objectToVibrate => GetComponentInChildren<SG_Grabable>();
 
     /// <summary> The amplitude of the vibration. 0 = no vibration, 100 = full vibration. </summary>
     [Range(0, 100)] public int magnitude = 100;
