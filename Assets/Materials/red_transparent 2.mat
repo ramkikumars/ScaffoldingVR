@@ -23,7 +23,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _RimPower: 2.3
+    - _RimPower: 14.7
     m_Colors:
-    - _Color: {r: 0.9843137, g: 0.19215684, b: 0.2566542, a: 1}
+    - _Color: {r: 1, g: 0.5753796, b: 0.39999998, a: 1}
   m_BuildTextureStacks: []
