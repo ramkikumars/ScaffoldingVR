@@ -6,6 +6,7 @@ public class LookAtEachOther : MonoBehaviour
 {
     public Transform obj1; // Reference to the target object
     public Transform obj2;
+    public Transform horizontal;
     private void Update()
     {
         // Calculate the direction from this object to the target
@@ -22,6 +23,10 @@ public class LookAtEachOther : MonoBehaviour
             // Rotate the target objsect to look at this object
             obj2.rotation = Quaternion.LookRotation(direction);
             obj2.localRotation *= Quaternion.Euler(-90f, 0, 0);
+            horizontal.position=(obj1.position+obj2.position)/2;
+            horizontal.rotation=Quaternion.LookRotation(direction);
+            horizontal.rotation*=Quaternion.Euler(0,90f,0);
+
         }
     }
 }
