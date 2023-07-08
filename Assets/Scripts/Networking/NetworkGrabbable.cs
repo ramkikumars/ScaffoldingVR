@@ -52,8 +52,9 @@ public class NetworkGrabbable : NetworkBehaviour
             if (grabberCount == 2)
             {
                 changeGrabber = !changeGrabber;
-            }
+            }if(grabberCount>=1){
             grabberCount -= 1;
+            }
             objReleased = false;
         }
 
