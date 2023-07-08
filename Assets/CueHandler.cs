@@ -23,7 +23,8 @@ public class CueHandler : NetworkBehaviour
     private void OnValidate()
     {
         // Rpc_ReqAuthority(Object.Runner,this);
-        counter += 1;
+
+        if(state) counter += 1;
     }
 
 }
