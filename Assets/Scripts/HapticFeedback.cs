@@ -77,7 +77,6 @@ public class HapticFeedback : MonoBehaviour
             // obj = obj1 as SG_SimpleDrawer;
             controllerName = "Sg";
             // Debug.Log($"Grabbed {obj.name} with SG");
-
         }
 
     }
