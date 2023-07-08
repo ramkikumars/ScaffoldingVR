@@ -163,32 +163,32 @@ public class NetworkCue : NetworkBehaviour
     {
 
         Debug.Log("Started Coroutine");
-        // yield return new WaitUntil(()=>(IsPlayerJoined()));
+        yield return new WaitUntil(()=>(IsPlayerJoined()));
 
-        //     for(int i=0;i<4;i++){
-        //     SwitchState("Base", i, true);
-        //     SetActiveSnapzone("Base", i, true);
-        //     yield return new WaitUntil(() => (IsObjSnapped("Base")));
-        //     resetObjSnapped=true;
-        //     SetActiveSnapzone("Base", i, false);
-        //     SwitchState("Base", i, false);
-        // }
-        // for (int i = 0; i < 4; i++)
-        // {
-        //     SwitchState("Vertical", i, true);
-        //     SetActiveSnapzone("Vertical", i, true);
-        //     yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
-        //     resetObjSnapped = true;
-        //     SetActiveSnapzone("Vertical", i, false);
-        // }
-        SwitchState("HorizontalLower",3,true);
-        SetActiveSnapzone("HorizontalLower", 3, true);
-        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
-        resetObjSnapped = true;
-        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
-        resetObjSnapped = true;
-        SwitchState("HorizontalLower", 3, false);
-        SetActiveSnapzone("HorizontalLower", 3, false);
+            for(int i=0;i<4;i++){
+            SwitchState("Base", i, true);
+            SetActiveSnapzone("Base", i, true);
+            yield return new WaitUntil(() => (IsObjSnapped("Base")));
+            resetObjSnapped=true;
+            SetActiveSnapzone("Base", i, false);
+            SwitchState("Base", i, false);
+        }
+        for (int i = 0; i < 4; i++)
+        {
+            SwitchState("Vertical", i, true);
+            SetActiveSnapzone("Vertical", i, true);
+            yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
+            resetObjSnapped = true;
+            SetActiveSnapzone("Vertical", i, false);
+        }
+        SwitchState("HorizontalLower",0,true);
+        SetActiveSnapzone("HorizontalLower", 0, true);
+        // yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        // resetObjSnapped = true;
+        // yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        // resetObjSnapped = true;
+        // SwitchState("HorizontalLower", 3, false);
+        // SetActiveSnapzone("HorizontalLower", 3, false);
 
         // SwitchState("Base",0,true);
     }
@@ -197,6 +197,7 @@ public class NetworkCue : NetworkBehaviour
     {
         objSnapped = true;
         recentlySnappedObj = sgGrab.name;
+        Debug.Log($"Object Snaooed{objSnapped}");
     }
 
 
