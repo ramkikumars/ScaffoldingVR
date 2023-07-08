@@ -14014,8 +14014,8 @@ MonoBehaviour:
     RawGuidValue: 9198c9cd66094ad4befc1cafa222cde8
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 721291847}
   - {fileID: 721291846}
+  - {fileID: 721291847}
   SimulationBehaviours: []
 --- !u!1 &742766316
 GameObject:
@@ -19144,8 +19144,8 @@ MonoBehaviour:
     RawGuidValue: dbc280f9d56345d282696817613c199b
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 966469608}
   - {fileID: 966469607}
+  - {fileID: 966469608}
   SimulationBehaviours: []
 --- !u!1 &967845723
 GameObject:
@@ -29122,8 +29122,8 @@ MonoBehaviour:
     RawGuidValue: a2ef8bcedb9042d993c0b8bde063ea5a
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 1470787034}
   - {fileID: 1470787033}
+  - {fileID: 1470787034}
   SimulationBehaviours: []
 --- !u!1 &1471158314
 GameObject:
@@ -44029,8 +44029,8 @@ MonoBehaviour:
     RawGuidValue: b565af7e9875491b9b6a1327d088879d
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 2066425913}
   - {fileID: 2066425912}
+  - {fileID: 2066425913}
   SimulationBehaviours: []
 --- !u!1 &2071699345
 GameObject:
