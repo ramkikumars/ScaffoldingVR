@@ -3008,7 +3008,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_Name
-      value: Base (3)
+      value: Base
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_IsActive
@@ -8043,7 +8043,7 @@ GameObject:
   - component: {fileID: 473649534}
   - component: {fileID: 473649535}
   m_Layer: 0
-  m_Name: Horizontal (1)
+  m_Name: Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13852,7 +13852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516441274245337666, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_Name
-      value: Vertical Ledger (1)
+      value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 6955384766860011259, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_IsActive
@@ -14331,9 +14331,9 @@ GameObject:
   - component: {fileID: 753923740}
   - component: {fileID: 753923745}
   - component: {fileID: 753923746}
-  - component: {fileID: 753923747}
   - component: {fileID: 753923748}
   - component: {fileID: 753923749}
+  - component: {fileID: 753923750}
   m_Layer: 0
   m_Name: HGrab
   m_TagString: Untagged
@@ -14432,34 +14432,6 @@ MonoBehaviour:
   snapOptions: {fileID: 0}
   alwaysTrackVelocity: 0
   refObject: {fileID: 1740270180}
---- !u!114 &753923747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753923738}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 536408606}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &753923748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14500,9 +14472,37 @@ MonoBehaviour:
     RawGuidValue: 3ee2ca2897f441838b54247b5c0dc2b5
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 753923747}
   - {fileID: 753923748}
+  - {fileID: 753923750}
   SimulationBehaviours: []
+--- !u!114 &753923750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753923738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 536408606}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &759128726
 GameObject:
   m_ObjectHideFlags: 0
@@ -18982,7 +18982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516441274245337666, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_Name
-      value: Vertical Ledger (3)
+      value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 6955384766860011259, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_IsActive
@@ -28960,7 +28960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516441274245337666, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_Name
-      value: Vertical Ledger (2)
+      value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 6955384766860011259, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_IsActive
@@ -34706,9 +34706,9 @@ GameObject:
   - component: {fileID: 1740270182}
   - component: {fileID: 1740270186}
   - component: {fileID: 1740270187}
-  - component: {fileID: 1740270188}
   - component: {fileID: 1740270189}
   - component: {fileID: 1740270190}
+  - component: {fileID: 1740270191}
   m_Layer: 0
   m_Name: HGrab
   m_TagString: Untagged
@@ -34808,34 +34808,6 @@ MonoBehaviour:
   snapOptions: {fileID: 0}
   alwaysTrackVelocity: 0
   refObject: {fileID: 753923739}
---- !u!114 &1740270188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1740270179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 753508341}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &1740270189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34876,9 +34848,37 @@ MonoBehaviour:
     RawGuidValue: d31887378ba1471f82e3fc6cdeaff836
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 1740270188}
   - {fileID: 1740270189}
+  - {fileID: 1740270191}
   SimulationBehaviours: []
+--- !u!114 &1740270191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1740270179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 753508341}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &1741062790
 GameObject:
   m_ObjectHideFlags: 0
@@ -35139,7 +35139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_Name
-      value: Base (2)
+      value: Base
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_IsActive
@@ -36961,7 +36961,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_Name
-      value: Base (1)
+      value: Base
       objectReference: {fileID: 0}
     - target: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_IsActive
@@ -43867,7 +43867,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3516441274245337666, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_Name
-      value: Vertical Ledger (4)
+      value: Vertical
       objectReference: {fileID: 0}
     - target: {fileID: 6955384766860011259, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_IsActive
