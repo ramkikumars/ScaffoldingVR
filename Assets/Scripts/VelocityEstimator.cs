@@ -25,9 +25,24 @@ public class VelocityEstimator : MonoBehaviour
 	public float currentVelocity;
 	public SG_Grabable TrackedObject;
 	public bool starRoutine;
+    Vector3 previousPosition;
+    Quaternion previousRotation;
 	void Start(){
-		// TrackedObject.ObjectGrabbed.AddListener(ObjectGrabbed);
-		// TrackedObject.ObjectReleased.AddListener(ObjectReleased);
+        // TrackedObject.ObjectGrabbed.AddListener(ObjectGrabbed);
+        // TrackedObject.ObjectReleased.AddListener(ObjectReleased);
+        sampleCount = 0;
+        velocitySamples = new Vector3[velocityAverageFrames];
+        angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
+        previousPosition = Vector3.zero;
+        if (useLocalPosistion)
+        {
+            previousPosition = transform.localPosition;
+        }
+        else
+        {
+            previousPosition = transform.position;
+        }
+        previousRotation = transform.rotation;
 	}
 	//-------------------------------------------------
 	public void BeginEstimatingVelocity()
@@ -189,20 +204,10 @@ public class VelocityEstimator : MonoBehaviour
 		// if(starRoutine){
 		// 	BeginEstimatingVelocity();
 		// }
-        sampleCount = 0;
 
-        Vector3 previousPosition = Vector3.zero;
-        if (useLocalPosistion)
-        {
-            previousPosition = transform.localPosition;
-        }
-        else
-        {
-            previousPosition = transform.position;
-        }
         Quaternion previousRotation = transform.rotation;
-        // while (true)
-        // {
+        while (true)
+        {
             // yield return new WaitForEndOfFrame();
             // yield return null;
 
@@ -243,6 +248,6 @@ public class VelocityEstimator : MonoBehaviour
 
             previousPosition = transform.position;
             previousRotation = transform.rotation;
-        // }s
+        }
 	}
 }
