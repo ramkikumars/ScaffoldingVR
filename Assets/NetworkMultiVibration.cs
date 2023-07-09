@@ -17,8 +17,8 @@ public class NetworkMultiVibration : NetworkBehaviour
     public bool randomizePitch = true;
     public float minPitch = 0.8f;
     public float maxPitch = 1.2f;
-    private static Vector3 handPos;
-    private Vector3 hammerPos;
+    private static Vector3 handPos=Vector3.zero;
+    private Vector3 hammerPos=Vector3.zero;
     private static bool handPlaced=false;
     void Start()
     {
@@ -79,7 +79,7 @@ source = GetComponent<AudioSource>();
         }
     }
 
-[Rpc]
+    [Rpc]
     public static void Rpc_GiveVibrationOtherHand(NetworkRunner runner,Vector3 hammerPos)
     {
         if(handPlaced){
