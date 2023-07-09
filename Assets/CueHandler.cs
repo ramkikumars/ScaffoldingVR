@@ -9,7 +9,8 @@ public class CueHandler : NetworkBehaviour
     // Start is called before the first frame update
     // public int set=1;
     // public int objNo=1;
-    public bool state=false;
+    public bool reqAuth=false;
+    public bool relAuth=false;
     private NetworkCue networkCue;
     private string recentlySnapped;
     public NetworkObject nobj;
@@ -25,20 +26,24 @@ public class CueHandler : NetworkBehaviour
 
     public override void FixedUpdateNetwork()
     {
-        if(state){
-            counter+=1;
-            state=false;
-        }
+        // if(state){
+        //     counter+=1;
+        //     state=false;
+        // }
     }
     private void OnValidate()
     {
         // Rpc_ReqAuthority(Object.Runner,this);
 
-        if(state) counter += 1;
+        // if(state) counter += 1;
+        if(reqAuth) Object.RequestStateAuthority();
+        if(relAuth) Object.ReleaseStateAuthority();
     }
 
     void Update(){
         velMag=velocityEstimator.GetVelocityEstimate().magnitude;
     }
+
+
 
 }
