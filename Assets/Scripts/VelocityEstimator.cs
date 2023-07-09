@@ -205,9 +205,8 @@ public class VelocityEstimator : MonoBehaviour
 		// 	BeginEstimatingVelocity();
 		// }
 
-        Quaternion previousRotation = transform.rotation;
-        while (true)
-        {
+        // while (true)
+        // {
             // yield return new WaitForEndOfFrame();
             // yield return null;
 
@@ -248,6 +247,6 @@ public class VelocityEstimator : MonoBehaviour
 
             previousPosition = transform.position;
             previousRotation = transform.rotation;
-        }
+        // }
 	}
 }

@@ -41526,7 +41526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 1341254847}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
