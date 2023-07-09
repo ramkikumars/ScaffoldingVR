@@ -189,8 +189,9 @@ public class NetworkCue : NetworkBehaviour
             SetActiveSnapzone("Base", i, true);
             Debug.Log($"Waiting for Base {i} to be snapped");
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
+            recentlySnapped="";
             Debug.Log($"Base {i} snapped");
-            resetObjSnapped=true;
+            // resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
             SwitchState("Base", i, false);
         }
@@ -198,8 +199,11 @@ public class NetworkCue : NetworkBehaviour
         {
             SwitchState("Vertical", i, true);
             SetActiveSnapzone("Vertical", i, true);
+            Debug.Log($"Waiting for Vertical {i} to be snapped");
             yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
-            resetObjSnapped = true;
+            Debug.Log($"Vertical {i} snapped");
+            recentlySnapped="";
+            // resetObjSnapped = true;
             SetActiveSnapzone("Vertical", i, false);
         }
         SwitchState("HorizontalLower",0,true);
