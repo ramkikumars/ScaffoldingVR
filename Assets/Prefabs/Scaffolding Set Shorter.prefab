@@ -1745,6 +1745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BH Grab 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3267563515838671300, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4556906872417752508, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
       propertyPath: n
       value: 2
@@ -1771,7 +1775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6054059468978482351, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7148593605498447701, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
       propertyPath: m_Name
@@ -1821,7 +1825,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8009780791994303554, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
+    - {fileID: 6688960347580019966, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
+    - {fileID: 7954324723826438328, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
 --- !u!1 &645351809798256565 stripped
 GameObject:
@@ -1857,6 +1864,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &3418035255000608859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7148593605498447701, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
+  m_PrefabInstance: {fileID: 5502172746623194894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6220721300641462031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3418035255000608859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef9f63bedf78a74aba20fe3ffec42ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseTransform: {fileID: 0}
+  physicsBody: {fileID: 0}
+  allowedHands: 0
+  debugTxt: {fileID: 0}
+  ObjectGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  moveSpeed: 100
+  rotateSpeed: 900
+  snapOptions: {fileID: 0}
+  alwaysTrackVelocity: 0
+  moveAxis: 2
+  pushDistance: 0
+  pullDistance: 1
+  MakeItFree: 0
+  drawerDist: 0
+  drawer_slideValue: 0
 --- !u!1 &4682724124811259027 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 911913220666129309, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
@@ -1891,6 +1935,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 212ce82ef45e9684daf388b699410086, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &6990452223043485386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267563515838671300, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}
+  m_PrefabInstance: {fileID: 5502172746623194894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7331099701655332914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6990452223043485386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef9f63bedf78a74aba20fe3ffec42ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseTransform: {fileID: 0}
+  physicsBody: {fileID: 0}
+  allowedHands: 0
+  debugTxt: {fileID: 0}
+  ObjectGrabbed:
+    m_PersistentCalls:
+      m_Calls: []
+  ObjectReleased:
+    m_PersistentCalls:
+      m_Calls: []
+  moveSpeed: 100
+  rotateSpeed: 900
+  snapOptions: {fileID: 0}
+  alwaysTrackVelocity: 0
+  moveAxis: 2
+  pushDistance: 0
+  pullDistance: 1
+  MakeItFree: 0
+  drawerDist: 0
+  drawer_slideValue: 0
 --- !u!4 &7334546684558755786 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2995509132681498820, guid: ed978d64254f9f94bbe91d9e0b04bb02, type: 3}

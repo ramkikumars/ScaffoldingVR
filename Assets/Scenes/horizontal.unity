@@ -1697,10 +1697,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3324435128081456572, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+    - {fileID: 550249273603262684, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+    - {fileID: 7565903383441960627, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+    - {fileID: 4356026358361166486, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+    - {fileID: 1872693446758461623, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+    - {fileID: 1772270823720553657, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
---- !u!1 &796897415 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3324435128081456560, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+--- !u!54 &796897415 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3324435129357158528, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
   m_PrefabInstance: {fileID: 796897414}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &796897416 stripped
@@ -1708,38 +1713,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3324435129357158546, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
   m_PrefabInstance: {fileID: 796897414}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &796897417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &796897417 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3324435129357158540, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+  m_PrefabInstance: {fileID: 796897414}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 796897415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ef9f63bedf78a74aba20fe3ffec42ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
-  allowedHands: 0
-  debugTxt: {fileID: 0}
-  ObjectGrabbed:
-    m_PersistentCalls:
-      m_Calls: []
-  ObjectReleased:
-    m_PersistentCalls:
-      m_Calls: []
-  moveSpeed: 100
-  rotateSpeed: 900
-  snapOptions: {fileID: 0}
-  alwaysTrackVelocity: 0
-  moveAxis: 2
-  pushDistance: 0
-  pullDistance: 1
-  MakeItFree: 1
-  drawerDist: 0
-  drawer_slideValue: 0
 --- !u!114 &796897418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1752,8 +1730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef9f63bedf78a74aba20fe3ffec42ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  baseTransform: {fileID: 796897417}
+  physicsBody: {fileID: 796897415}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -1766,7 +1744,7 @@ MonoBehaviour:
   rotateSpeed: 900
   snapOptions: {fileID: 0}
   alwaysTrackVelocity: 0
-  moveAxis: 2
+  moveAxis: 0
   pushDistance: 0
   pullDistance: 1
   MakeItFree: 1
