@@ -23,7 +23,7 @@ public class NetworkMultiVibration : NetworkBehaviour
     public static SG_FixedRod fixedRod;
 
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
-    public static bool[] fingers = new bool[5] { true, true, true, true, false };
+    public static bool[] fingers = new bool[5] { true, true, true, true, true };
 
     /// <summary> The vibration command to be send. Cached so we do not need to regenerate it every frame. </summary>
     protected static SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
@@ -102,8 +102,8 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     {
         if(handPlaced){
             float dist=Vector3.Distance(handPos,hammerPos);
-            float mag = Mathf.InverseLerp(0, 1, dist) * 100;
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.02f);
+            float mag = Mathf.InverseLerp(0.2f, 1, dist) * 100;
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, 100-(int)mag),0.5f);
             fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
         }
     }
