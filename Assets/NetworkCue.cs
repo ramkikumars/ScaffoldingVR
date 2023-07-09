@@ -28,7 +28,7 @@ public class NetworkCue : NetworkBehaviour
     // private static GameObject =new GameObject
     private static SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     private static SG_SnapDropZone[,] horizontalLowerZones, horizontalMiddleZones;
-    public string recentlySnapped;
+    public static string recentlySnapped="";
 
     private bool objSnapped;
     private bool resetObjSnapped;
@@ -84,15 +84,7 @@ public class NetworkCue : NetworkBehaviour
 
     public override void FixedUpdateNetwork()
     {
-        if (objSnapped)
-        {
-            recentlySnapped=recentlySnappedObj;
-            objSnapped = false;
-        }
-        if(resetObjSnapped){
-            recentlySnapped="";
-            resetObjSnapped=false;
-        }
+
     }
 
     [Rpc]
@@ -179,7 +171,11 @@ public class NetworkCue : NetworkBehaviour
         Rpc_SetActiveSnapzone(Object.Runner, objName, idx, state);
 
     }
-
+[Rpc]
+    public static void Rpc_ObjectSnapped(NetworkRunner runner, string snappedObj)
+    {
+        recentlySnapped=snappedObj;
+    }
 
     IEnumerator Exercise1()
     {
@@ -221,8 +217,9 @@ public class NetworkCue : NetworkBehaviour
     private void ObjectSnapped(SG_Grabable sgGrab)
     {
         objSnapped = true;
-        recentlySnappedObj = sgGrab.name;
-        Debug.Log($"Object Snaooed{objSnapped}");
+        // recentlySnapped= sgGrab.name;
+        Rpc_ObjectSnapped(Object.Runner,sgGrab.name);
+        // Debug.Log($"Object Snapped{objSnapped}");
     }
 
 
