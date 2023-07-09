@@ -1138,7 +1138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808520317207804239, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
@@ -41898,6 +41898,8 @@ MonoBehaviour:
   estimateOnAwake: 1
   useLocalPosistion: 0
   currentVelocity: 0
+  TrackedObject: {fileID: 1341254850}
+  starRoutine: 0
 --- !u!4 &1341254855
 Transform:
   m_ObjectHideFlags: 0
@@ -45117,6 +45119,8 @@ MonoBehaviour:
   estimateOnAwake: 1
   useLocalPosistion: 0
   currentVelocity: 0
+  TrackedObject: {fileID: 1457544359}
+  starRoutine: 0
 --- !u!4 &1457544364
 Transform:
   m_ObjectHideFlags: 0

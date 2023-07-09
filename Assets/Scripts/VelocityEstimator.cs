@@ -6,7 +6,7 @@
 
 using UnityEngine;
 using System.Collections;
-
+using SG;
 
 
 //-------------------------------------------------------------------------
@@ -16,14 +16,19 @@ public class VelocityEstimator : MonoBehaviour
 	public int velocityAverageFrames = 5;
 	[Tooltip( "How many frames to average over for computing angular velocity" )]
 	public int angularVelocityAverageFrames = 11;
-	public bool estimateOnAwake = false;
+	public bool estimateOnAwake = true;
 	public bool useLocalPosistion=false;
 	private Coroutine routine;
 	private int sampleCount;
 	private Vector3[] velocitySamples;
 	private Vector3[] angularVelocitySamples;
 	public float currentVelocity;
-
+	public SG_Grabable TrackedObject;
+	public bool starRoutine;
+	void Start(){
+		// TrackedObject.ObjectGrabbed.AddListener(ObjectGrabbed);
+		// TrackedObject.ObjectReleased.AddListener(ObjectReleased);
+	}
 	//-------------------------------------------------
 	public void BeginEstimatingVelocity()
 	{
@@ -43,7 +48,16 @@ public class VelocityEstimator : MonoBehaviour
 		}
 	}
 
-
+    private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
+    {
+        velocitySamples = new Vector3[velocityAverageFrames];
+        angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
+            BeginEstimatingVelocity();
+    }
+    private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
+    {
+        // FinishEstimatingVelocity();
+    }
 	//-------------------------------------------------
 	public Vector3 GetVelocityEstimate()
 	{
@@ -172,5 +186,8 @@ public class VelocityEstimator : MonoBehaviour
 
 	void Update(){
 		currentVelocity=GetVelocityEstimate().magnitude;
+		if(starRoutine){
+			BeginEstimatingVelocity();
+		}
 	}
 }
