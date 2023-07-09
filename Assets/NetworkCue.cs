@@ -188,8 +188,9 @@ public class NetworkCue : NetworkBehaviour
             SwitchState("Base", i, true);
             SetActiveSnapzone("Base", i, true);
             Debug.Log($"Waiting for Base {i} to be snapped");
-            yield return new WaitUntil(() => (IsObjSnapped("Base")));
             recentlySnapped="";
+            yield return new WaitUntil(() => (IsObjSnapped("Base")));
+            recentlySnapped = "";
             Debug.Log($"Base {i} snapped");
             // resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
@@ -243,7 +244,7 @@ public class NetworkCue : NetworkBehaviour
     private bool IsObjSnapped(string objName)
     {
         if(recentlySnapped==objName){
-            recentlySnapped="";
+            recentlySnapped = "";
             return true;
         }
         else{
