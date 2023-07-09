@@ -22,7 +22,7 @@ public class VelocityEstimator : MonoBehaviour
 	private int sampleCount;
 	private Vector3[] velocitySamples;
 	private Vector3[] angularVelocitySamples;
-
+	public float currentVelocity;
 
 	//-------------------------------------------------
 	public void BeginEstimatingVelocity()
@@ -168,5 +168,9 @@ public class VelocityEstimator : MonoBehaviour
 			previousPosition = transform.position;
 			previousRotation = transform.rotation;
 		}
+	}
+
+	void Update(){
+		currentVelocity=GetVelocityEstimate().magnitude;
 	}
 }
