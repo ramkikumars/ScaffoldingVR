@@ -70528,7 +70528,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.025276065
+  m_Radius: 0.03
   m_Height: 1.17
   m_Direction: 0
   m_Center: {x: 0, y: 0, z: 0}
@@ -79718,6 +79718,7 @@ GameObject:
   - component: {fileID: 9108481071149252750}
   - component: {fileID: 4847257639253242724}
   - component: {fileID: 1762855502284691772}
+  - component: {fileID: 9108481071149252755}
   - component: {fileID: 5778591347880641566}
   - component: {fileID: 4804723030727862122}
   - component: {fileID: 1163251446233861061}
@@ -83041,7 +83042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 4847257639253242724}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -83054,6 +83055,24 @@ MonoBehaviour:
   rotateSpeed: 900
   snapOptions: {fileID: 0}
   alwaysTrackVelocity: 0
+--- !u!114 &9108481071149252755
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7306860832486793563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb79c54106a7c8f42bbd7e30991b639a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialProperties: {fileID: 0}
+  breakable: 0
+  yieldDistance: 0.03
+  mustBeGrabbed: 0
+  requiresThumb: 0
+  minimumFingers: 1
 --- !u!4 &9131671276802380700
 Transform:
   m_ObjectHideFlags: 0
