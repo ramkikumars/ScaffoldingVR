@@ -9,6 +9,7 @@ TagManager:
   - Hammer
   - Box
   - cube
+  - tapecomponent
   layers:
   - Default
   - TransparentFX

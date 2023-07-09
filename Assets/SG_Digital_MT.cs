@@ -22,6 +22,7 @@ public class SG_Digital_MT : MonoBehaviour
     private SG_Grabable holderGrab;
     private SG_Grabable boxGrab;
     private float velocity;
+    
     private bool holderRel;
     void Start()
     {
