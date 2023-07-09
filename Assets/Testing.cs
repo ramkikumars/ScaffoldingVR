@@ -40,12 +40,31 @@ public class Testing : MonoBehaviour
         Quaternion initialRotation = transform.rotation;
         maxDist = 120;
         vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
+        grabable.ObjectGrabbed.AddListener(ObjectGrabbed);
+grabable.ObjectReleased.AddListener(ObjectReleased);
+    
 
     }
 
 
     public bool comeback = false;
+    public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
+                Debug.Log("GRB");
 
+        grabbed = true;
+        comeback = false;
+boxGrab.MakeItFree=false;
+       
+    }
+    public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+        Debug.Log("REL");
+                grabbed = false;
+
+               comeback = true;
+               boxGrab.MakeItFree=true;
+
+    }
     public void Comeback()
     {
         Debug.Log("Cameback");
@@ -60,7 +79,7 @@ public class Testing : MonoBehaviour
         // // add game component sg_grabable to the tape component
         // tapeComponent.AddComponent<SG_Grabable>();
 
-        // comeback = true;
+        comeback = true;
 
 
     }

@@ -36,7 +36,7 @@ namespace SG
         public float pushDistance = 0.0f;
         /// <summary> How far can the drawer be pulled out from it's starting position. Should be Positive </summary>
         public float pullDistance = 1.0f;
-        public bool MakeItFree = false;
+        public bool MakeItFree = true;
         /// <summary> The distance that the drawer has moved in world space [m] </summary>
         public float drawerDist = 0;
         /// <summary> How far the drawer had been pushed in/slid out, as a decima; [0 = fully pushed in, 1 = fully pulles out] </summary>
