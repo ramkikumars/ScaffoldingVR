@@ -29,10 +29,10 @@ public class NetworkMultiVibration : NetworkBehaviour
     protected static SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
     void Start()
     {
+fixedRod=GetComponent<SG_FixedRod>();
 source = GetComponent<AudioSource>();
 fixedRod.ObjectGrabbed.AddListener(ObjectGrabbed);
 fixedRod.ObjectReleased.AddListener(ObjectReleased);
-fixedRod=GetComponent<SG_FixedRod>();
     }
 
     // Update is called once per frame
@@ -41,11 +41,11 @@ fixedRod=GetComponent<SG_FixedRod>();
 
     }
     public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
-
+        handPlaced=true;
     }
     public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
     {
-
+        handPlaced = false;
     }
     private void OnTriggerEnter(Collider other)
     {
