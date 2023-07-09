@@ -1512,29 +1512,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1709077011135082436, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
-      propertyPath: useVelocity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3516441274245337666, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: m_Name
       value: Vertical
       objectReference: {fileID: 0}
-    - target: {fileID: 5422126550777086133, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
-      propertyPath: useVelocity
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7210151331357547477, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
       propertyPath: useVelocity
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7595862130668830658, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
-      propertyPath: useVelocity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8320979853644296219, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
-      propertyPath: useVelocity
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64cea9db7bb93ac46a91937b593302c5, type: 3}
