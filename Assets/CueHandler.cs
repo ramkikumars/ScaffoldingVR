@@ -19,6 +19,7 @@ public class CueHandler : NetworkBehaviour
     public VelocityEstimator velocityEstimator;
     public float velMag;
     public int val;
+    [Range(0, 1)] public float drawer_slideValue = 0;
     void Start()
     {
         networkCue=GetComponent<NetworkCue>();
@@ -39,6 +40,7 @@ public class CueHandler : NetworkBehaviour
         // if(state) counter += 1;
         if(reqAuth) Object.RequestStateAuthority();
         if(relAuth) Object.ReleaseStateAuthority();
+        Debug.Log(Mathf.InverseLerp(1,0,drawer_slideValue));
         // Rpc_SetActiveSnapzone(Object.Runner,GameObject.Find("Cube"));
     }
 
