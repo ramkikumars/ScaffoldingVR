@@ -19,6 +19,8 @@ public class NetworkGrabbable : NetworkBehaviour
     private bool objGrabbed;
     private bool objReleased;
     public NetworkObject nobj;
+    public bool reqAuth = false;
+    public bool relAuth = false;
     void Start()
     {
         sgGrabable.ObjectGrabbed.AddListener(ObjectGrabbed);
@@ -28,6 +30,14 @@ public class NetworkGrabbable : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (reqAuth) {
+        Object.RequestStateAuthority();
+        reqAuth=false;
+        }
+        if (relAuth) {
+        Object.ReleaseStateAuthority();
+        reqAuth=false;
+        }
 
     }
     public override void FixedUpdateNetwork()
@@ -110,4 +120,6 @@ public class NetworkGrabbable : NetworkBehaviour
             ReqAuthorithy(nobj);
         }
     }
+
+
 }
