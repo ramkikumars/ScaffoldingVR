@@ -36,7 +36,7 @@ namespace SG
         public float pushDistance = 0.0f;
         /// <summary> How far can the drawer be pulled out from it's starting position. Should be Positive </summary>
         public float pullDistance = 1.0f;
-
+        public bool MakeItFree = true;
         /// <summary> The distance that the drawer has moved in world space [m] </summary>
         public float drawerDist = 0;
         /// <summary> How far the drawer had been pushed in/slid out, as a decima; [0 = fully pushed in, 1 = fully pulles out] </summary>
@@ -57,34 +57,42 @@ namespace SG
         {
             base.SetupScript();
 
-            this.SetPhysicsbody(false, this.physicsBody != null ? this.physicsBody.isKinematic : true, RigidbodyConstraints.FreezeRotation); //unlock the movement, freeze the rotation.
-            this.UpdateRigidbodyDefaults(); //should always return to this.
+            // this.SetPhysicsbody(false, this.physicsBody != null ? this.physicsBody.isKinematic : true, RigidbodyConstraints.FreezeRotation); //unlock the movement, freeze the rotation.
+            // this.UpdateRigidbodyDefaults(); //should always return to this.
 
             RecalculateBaseLocation();
         }
 
 
-        /// <summary> Updates the drawer's position </summary>
-        /// <param name="dT"></param>
+
         protected override void UpdateLocation(float dT)
         {
             List<GrabArguments> heldBy = this.grabbedBy;
             if (heldBy.Count > 0) //I'm actually grabbed by something
             {
-                Vector3 targetPosition; Quaternion targetRotation;
-                CalculateTargetLocation(heldBy, out targetPosition, out targetRotation);
-                //My targetPosition is projected onto the MovementAxis. My targetRotation is ignored (set to parent).
+                if (!MakeItFree)
+                {
+                    Vector3 targetPosition; Quaternion targetRotation;
+                    CalculateTargetLocation(heldBy, out targetPosition, out targetRotation);
+                    //My targetPosition is projected onto the MovementAxis. My targetRotation is ignored (set to parent).
 
-                Vector3 projPos; Quaternion projRot;
-                CalculateDrawerTarget(this, targetPosition, out projPos, out projRot, out this.drawerDist);
-                CalculateSliderValue();
-
-                MoveToTargetLocation(projPos, projRot, dT);
+                    Vector3 projPos; Quaternion projRot;
+                    CalculateDrawerTarget(this, targetPosition, out projPos, out projRot, out this.drawerDist);
+                    CalculateSliderValue();
+                    MoveToTargetLocation(projPos, projRot, dT);
+                }
+                else
+                {
+                    Vector3 targetPosition; Quaternion targetRotation;
+                    CalculateTargetLocation(heldBy, out targetPosition, out targetRotation);
+                    MoveToTargetLocation(targetPosition, targetRotation, dT);
+                    RecalculateBaseLocation();
+                }
             }
-            else if (this.IsMovedByPhysics) //I have a physicsBody
-            {
-                throw new System.NotImplementedException("The SG_Drawer feature is not yet available for non-Kinematic Rigidbodies.");
-            }
+            // else if (this.IsMovedByPhysics) //I have a physicsBody
+            // {
+            //     throw new System.NotImplementedException("The SG_Drawer feature is not yet available for non-Kinematic Rigidbodies.");
+            // }
         }
 
 
@@ -116,7 +124,7 @@ namespace SG
         {
             get
             {
-                Vector3 localAxis = SG.Util.SG_Util.GetAxis( (Util.MoveAxis) this.moveAxis ); //I can cast to the Utils moveAxis because the also use XYZ at the start
+                Vector3 localAxis = SG.Util.SG_Util.GetAxis((Util.MoveAxis)this.moveAxis); //I can cast to the Utils moveAxis because the also use XYZ at the start
                 return this.transform.TransformDirection(localAxis);
             }
         }
@@ -129,7 +137,7 @@ namespace SG
         /// <param name="drawerDist"></param>
         public static void CalculateDrawerTarget(SG_SimpleDrawer drawer, Vector3 nextPositon, out Vector3 targetPos, out Quaternion targetRot, out float drawerDist)
         {
-           // Calculate the ference point for this drawer
+            // Calculate the ference point for this drawer
             Vector3 basePos;
             drawer.GetBaseLocation(out basePos, out targetRot);
 
@@ -144,12 +152,12 @@ namespace SG
             //ToDO: Limit movement
             projectedPos[ax] = Mathf.Clamp(projectedPos[ax], -Mathf.Abs(drawer.pushDistance), drawer.pullDistance);
             drawerDist = projectedPos[ax];
-            
+
             //finally: Reproject local back to abs.
             targetPos = basePos + (targetRot * projectedPos);
         }
 
-        
+
 
         /// <summary> Sets the drawer to a certain pulled-out value (0 = fully pushed in, 1 = fully pulled out) </summary>
         /// <param name="slideValue01"></param>
@@ -196,7 +204,7 @@ namespace SG
             this.CalculateSliderValue();
         }
 
-  
+
     }
 
 }
