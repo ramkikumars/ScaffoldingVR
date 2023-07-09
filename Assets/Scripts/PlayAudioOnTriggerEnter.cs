@@ -32,6 +32,7 @@ public class PlayAudioOnTriggerEnter : MonoBehaviour
             {
                 float v = estimator.GetVelocityEstimate().magnitude;
                 float volume = Mathf.InverseLerp(minVelocity, maxVelocity, v);
+                Debug.Log($"Hit with Velocity {v} and volume is {volume}");
                 if (randomizePitch)
                 {
                     source.pitch = Random.Range(minPitch, maxPitch);

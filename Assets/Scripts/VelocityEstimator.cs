@@ -16,7 +16,6 @@ public class VelocityEstimator : MonoBehaviour
 	public int velocityAverageFrames = 5;
 	[Tooltip( "How many frames to average over for computing angular velocity" )]
 	public int angularVelocityAverageFrames = 11;
-
 	public bool estimateOnAwake = false;
 	public bool useLocalPosistion=false;
 	private Coroutine routine;
@@ -132,7 +131,8 @@ public class VelocityEstimator : MonoBehaviour
 		Quaternion previousRotation = transform.rotation;
 		while ( true )
 		{
-			yield return new WaitForEndOfFrame();
+			// yield return new WaitForEndOfFrame();
+			yield return null;
 
 			float velocityFactor = 1.0f / Time.deltaTime;
 

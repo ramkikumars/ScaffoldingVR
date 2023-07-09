@@ -13,7 +13,11 @@ public class HapticFeedback : MonoBehaviour
     [SerializeField] private float duration;
     [SerializeField] private float hitWait;
     [SerializeField] private UxrHapticClipType UxrclipType;
+    public float minVelocity = 0;
+    public float maxVelocity = 2f;
     private string controllerName;
+    private VelocityEstimator velocityEstimator;
+    private float hitVelocity;
     private UxrGrabbableObject grabObj => GetComponent<UxrGrabbableObject>();
     // <summary> The Interactable object that we will be sending vibration commands to. </summary>
     /// <remarks> Since SG_Grabable derives from SG_Interactable, this will work for grabables, as well as any other script that derives from SG_Interactable. </remarks>
@@ -40,7 +44,8 @@ public class HapticFeedback : MonoBehaviour
     {
         // grabInteractable.selectEntered.AddListener(ObjGrabbed);
         //regenerate the vibration command. We'll make it 0.02f (20ms) long so there will be overlap between two frames for a continuous vibration.
-        vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
+        // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
+        velocityEstimator = GetComponent<VelocityEstimator>();
 
     }
 
@@ -60,7 +65,11 @@ public class HapticFeedback : MonoBehaviour
 
         if (grabObj.IsBeingGrabbed || objectToVibrate.IsGrabbed())
         {
-            StartCoroutine(HitAndWait());
+            // StartCoroutine(HitAndWait());
+            float v = velocityEstimator.GetVelocityEstimate().magnitude;
+            float mag = Mathf.InverseLerp(minVelocity, maxVelocity, v)*100;
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag), 0.02f);
+            objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
         }
     }
     private void ObjGrabbed(object obj1, object obj2)
@@ -93,6 +102,9 @@ public class HapticFeedback : MonoBehaviour
         }
         if (controllerName == "Sg")
         {
+
+            //regenerate the vibration command. We'll make it 0.02f (20ms) long so there will be overlap between two frames for a continuous vibration.
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
             objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             // objectToVibrate.SendCmd(vibrationCmd);
             yield return null;
