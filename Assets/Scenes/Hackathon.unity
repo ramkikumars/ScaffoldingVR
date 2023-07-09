@@ -4361,6 +4361,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 146158882}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &146158884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16572,6 +16574,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 561508098}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &561508100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22933,6 +22937,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 753923749}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &753923749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23962,6 +23968,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 775750224}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &775750226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40603,7 +40611,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1309332856
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41990,6 +41998,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1341254857}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &1344331201
 GameObject:
   m_ObjectHideFlags: 0
@@ -44419,7 +44429,6 @@ MonoBehaviour:
   - {fileID: 1435192341}
   - {fileID: 17606584}
   - {fileID: 488417795}
-  _recentlySnapped: 
   networkObject: {fileID: 1442987709}
 --- !u!1 &1448368406
 GameObject:
@@ -45210,6 +45219,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1457544365}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &1457544368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54176,6 +54187,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1740270190}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &1740270190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54657,6 +54670,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1752385031}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &1752385033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57409,6 +57424,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1823695414}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &1823695416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57679,6 +57696,7 @@ MonoBehaviour:
   _counter: 0
   velocityEstimator: {fileID: 1341254854}
   velMag: 0
+  val: 0
 --- !u!114 &1837995238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57954,6 +57972,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 1840689792}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &1840689792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66044,6 +66064,8 @@ MonoBehaviour:
   _grabberCount: 0
   _changeGrabber: 0
   nobj: {fileID: 2047671167}
+  reqAuth: 0
+  relAuth: 0
 --- !u!114 &2047671169
 MonoBehaviour:
   m_ObjectHideFlags: 0
