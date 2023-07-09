@@ -18,6 +18,7 @@ public class CueHandler : NetworkBehaviour
     public int counter { get; set; }
     public VelocityEstimator velocityEstimator;
     public float velMag;
+    public int val;
     void Start()
     {
         networkCue=GetComponent<NetworkCue>();
@@ -38,12 +39,18 @@ public class CueHandler : NetworkBehaviour
         // if(state) counter += 1;
         if(reqAuth) Object.RequestStateAuthority();
         if(relAuth) Object.ReleaseStateAuthority();
+        Rpc_SetActiveSnapzone(Object.Runner,val);
     }
 
     void Update(){
         velMag=velocityEstimator.GetVelocityEstimate().magnitude;
     }
 
+    [Rpc]
+        public static void Rpc_SetActiveSnapzone(NetworkRunner runner,int a)
+        {
+            Debug.Log($"The Value is {a}");
+        }
 
 
 }

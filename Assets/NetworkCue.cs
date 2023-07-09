@@ -28,12 +28,11 @@ public class NetworkCue : NetworkBehaviour
     // private static GameObject =new GameObject
     private static SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     private static SG_SnapDropZone[,] horizontalLowerZones, horizontalMiddleZones;
-    [Networked]
-    public string recentlySnapped { get; set; }
+    public string recentlySnapped;
 
     private bool objSnapped;
     private bool resetObjSnapped;
-    private string recentlySnappedObj { get; set; }
+    private string recentlySnappedObj;
     // private SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     // private SG_SnapDropZone[][] horizontalSnapZones;
     public NetworkObject networkObject;
@@ -150,7 +149,30 @@ public class NetworkCue : NetworkBehaviour
 
         }
     }
+// [Rpc]
+//     public static void Rpc_SetActiveSnapzone(NetworkRunner runner)
+//     {
+//         switch (objName)
+//         {
+//             case "Base":
+//                 baseSnapZones[idx].enabled = state;
+//                 break;
 
+//             case "Vertical":
+//                 verticalSnapZones[idx].enabled = state;
+//                 break;
+
+//             case "HorizontalLower":
+//                 horizontalLowerZones[idx, 0].enabled = state;
+//                 horizontalLowerZones[idx, 1].enabled = state;
+//                 break;
+//             case "HorizontalMiddle":
+//                 horizontalMiddleZones[idx, 0].enabled = state;
+//                 horizontalMiddleZones[idx, 1].enabled = state;
+//                 break;
+
+//         }
+//     }
 
     public void SetActiveSnapzone(string objName, int idx, bool state)
     {
@@ -166,9 +188,12 @@ public class NetworkCue : NetworkBehaviour
         yield return new WaitUntil(()=>(IsPlayerJoined()));
 
             for(int i=0;i<4;i++){
+
             SwitchState("Base", i, true);
             SetActiveSnapzone("Base", i, true);
+            Debug.Log($"Waiting for Base {i} to be snapped");
             yield return new WaitUntil(() => (IsObjSnapped("Base")));
+            Debug.Log($"Base {i} snapped");
             resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
             SwitchState("Base", i, false);
@@ -211,6 +236,7 @@ public class NetworkCue : NetworkBehaviour
             return false;
         }
     }
+
     private bool IsObjSnapped(string objName)
     {
         if(recentlySnapped==objName){
