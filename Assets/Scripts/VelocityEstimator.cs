@@ -186,8 +186,63 @@ public class VelocityEstimator : MonoBehaviour
 
 	void Update(){
 		currentVelocity=GetVelocityEstimate().magnitude;
-		if(starRoutine){
-			BeginEstimatingVelocity();
-		}
+		// if(starRoutine){
+		// 	BeginEstimatingVelocity();
+		// }
+        sampleCount = 0;
+
+        Vector3 previousPosition = Vector3.zero;
+        if (useLocalPosistion)
+        {
+            previousPosition = transform.localPosition;
+        }
+        else
+        {
+            previousPosition = transform.position;
+        }
+        Quaternion previousRotation = transform.rotation;
+        // while (true)
+        // {
+            // yield return new WaitForEndOfFrame();
+            // yield return null;
+
+            float velocityFactor = 1.0f / Time.deltaTime;
+
+            int v = sampleCount % velocitySamples.Length;
+            int w = sampleCount % angularVelocitySamples.Length;
+            sampleCount++;
+
+            // Estimate linear velocity
+
+            if (useLocalPosistion)
+            {
+                velocitySamples[v] = velocityFactor * (transform.localPosition - previousPosition);
+            }
+            else
+            {
+                velocitySamples[v] = velocityFactor * (transform.position - previousPosition);
+            }
+
+
+            // Estimate angular velocity
+            Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(previousRotation);
+
+            float theta = 2.0f * Mathf.Acos(Mathf.Clamp(deltaRotation.w, -1.0f, 1.0f));
+            if (theta > Mathf.PI)
+            {
+                theta -= 2.0f * Mathf.PI;
+            }
+
+            Vector3 angularVelocity = new Vector3(deltaRotation.x, deltaRotation.y, deltaRotation.z);
+            if (angularVelocity.sqrMagnitude > 0.0f)
+            {
+                angularVelocity = theta * velocityFactor * angularVelocity.normalized;
+            }
+
+            angularVelocitySamples[w] = angularVelocity;
+
+            previousPosition = transform.position;
+            previousRotation = transform.rotation;
+        // }s
 	}
 }
