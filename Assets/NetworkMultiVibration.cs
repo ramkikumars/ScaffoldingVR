@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fusion;
-
+using SG;
 public class NetworkMultiVibration : NetworkBehaviour
 {
     // Start is called before the first frame update
@@ -20,9 +20,19 @@ public class NetworkMultiVibration : NetworkBehaviour
     private static Vector3 handPos=Vector3.zero;
     private Vector3 hammerPos=Vector3.zero;
     private static bool handPlaced=false;
+    public static SG_FixedRod fixedRod;
+
+    /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
+    public static bool[] fingers = new bool[5] { true, true, true, true, false };
+
+    /// <summary> The vibration command to be send. Cached so we do not need to regenerate it every frame. </summary>
+    protected static SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
     void Start()
     {
 source = GetComponent<AudioSource>();
+fixedRod.ObjectGrabbed.AddListener(ObjectGrabbed);
+fixedRod.ObjectReleased.AddListener(ObjectReleased);
+fixedRod=GetComponent<SG_FixedRod>();
     }
 
     // Update is called once per frame
@@ -30,7 +40,13 @@ source = GetComponent<AudioSource>();
     {
 
     }
+    public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
 
+    }
+    public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Hand"))
@@ -75,6 +91,7 @@ source = GetComponent<AudioSource>();
             // Get the contact points for this collision
             int numContacts = other.GetContacts(contacts);
             hammerPos=contacts[0].point;
+
             Rpc_GiveVibrationOtherHand(Object.Runner,hammerPos);
         }
     }
@@ -84,7 +101,8 @@ source = GetComponent<AudioSource>();
     {
         if(handPlaced){
             float dist=Vector3.Distance(handPos,hammerPos);
-            Debug.Log($"The distance between hammer and hand {dist}");
+            float mag = Mathf.InverseLerp(0, 1, dist) * 100;
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.02f);
         }
     }
 
