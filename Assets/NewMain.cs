@@ -325,7 +325,7 @@ public class NewMain : MonoBehaviour
         {
             // text.text = "Tape length: " + tapeLength.ToString();
             measuredHeight[i] = digital_MT.measuredDist;
-            // boxGrabObj.IsLockedInPlace = true;
+            boxGrabObj.IsLockedInPlace = true;
             Debug.Log("Trigger Pressed");
             string temp = "";
             for (int j = 0; j <= 3; j++)
