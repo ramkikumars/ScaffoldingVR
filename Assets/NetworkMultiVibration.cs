@@ -42,6 +42,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     }
     public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
         handPlaced=true;
+        handPos = sgGrab.transform.position;
     }
     public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
     {
