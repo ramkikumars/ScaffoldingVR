@@ -39,7 +39,7 @@ public class CueHandler : NetworkBehaviour
         // if(state) counter += 1;
         if(reqAuth) Object.RequestStateAuthority();
         if(relAuth) Object.ReleaseStateAuthority();
-        Rpc_SetActiveSnapzone(Object.Runner,val);
+        Rpc_SetActiveSnapzone(Object.Runner,GameObject.Find("Cube"));
     }
 
     void Update(){
@@ -47,9 +47,10 @@ public class CueHandler : NetworkBehaviour
     }
 
     [Rpc]
-        public static void Rpc_SetActiveSnapzone(NetworkRunner runner,int a)
+        public static void Rpc_SetActiveSnapzone(NetworkRunner runner,GameObject cube)
         {
-            Debug.Log($"The Value is {a}");
+            // Debug.Log($"The Value is {a}");
+            cube.SetActive(false);
         }
 
 
