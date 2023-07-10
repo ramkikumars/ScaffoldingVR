@@ -1901,7 +1901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 83495150}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -4314,7 +4314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 158374507}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -23946,7 +23946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 860769291}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -28693,7 +28693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 0}
+  physicsBody: {fileID: 996460826}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
