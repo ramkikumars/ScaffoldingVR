@@ -214,12 +214,13 @@ public class NetworkCue : NetworkBehaviour
         }
         SwitchState("HorizontalLower",0,true);
         SetActiveSnapzone("HorizontalLower", 0, true);
-        // yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
-        // resetObjSnapped = true;
-        // yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
-        // resetObjSnapped = true;
-        // SwitchState("HorizontalLower", 3, false);
-        // SetActiveSnapzone("HorizontalLower", 3, false);
+        recentlySnapped="";
+        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        recentlySnapped="";
+        yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
+        recentlySnapped="";
+        SwitchState("HorizontalLower", 0, false);
+        SetActiveSnapzone("HorizontalLower", 0, false);
 
         // SwitchState("Base",0,true);
     }
