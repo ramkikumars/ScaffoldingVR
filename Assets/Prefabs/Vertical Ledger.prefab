@@ -666,12 +666,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1915433532191208082}
-  - component: {fileID: 4496675581485136227}
   - component: {fileID: 1709077011135082436}
   - component: {fileID: 7210151331357547477}
   - component: {fileID: 8685449016113729441}
   - component: {fileID: 2425534727356703038}
   - component: {fileID: 3744630932047574918}
+  - component: {fileID: 3794808636998378293}
+  - component: {fileID: 1733985864308106121}
   m_Layer: 0
   m_Name: Cup 1
   m_TagString: Untagged
@@ -695,22 +696,6 @@ Transform:
   m_Father: {fileID: 2680708218933611010}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4496675581485136227
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423069002897315907}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 90
-  m_CollisionDetection: 1
 --- !u!114 &1709077011135082436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -939,6 +924,57 @@ MonoBehaviour:
   _dropSnapMode: 3
   _dropProximityTransformUseSelf: 1
   _dropProximityTransform: {fileID: 0}
+--- !u!114 &3794808636998378293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2423069002897315907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 0
+  NetworkGuid:
+    RawGuidValue: 00000000000000000000000000000000
+  NestedObjects: []
+  NetworkedBehaviours: []
+  SimulationBehaviours: []
+--- !u!114 &1733985864308106121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2423069002897315907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &2537519912723260642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1279,12 +1315,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4762358065415596100}
-  - component: {fileID: 7339145721913365568}
   - component: {fileID: 1578550168993110062}
   - component: {fileID: 1563322292618066801}
   - component: {fileID: 5090234442060873846}
   - component: {fileID: 5422126550777086133}
   - component: {fileID: 452523254891619913}
+  - component: {fileID: 570829431747699547}
+  - component: {fileID: 6240399020488558313}
   m_Layer: 0
   m_Name: Cup 3
   m_TagString: Untagged
@@ -1308,22 +1345,6 @@ Transform:
   m_Father: {fileID: 2680708218933611010}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &7339145721913365568
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352945232397329475}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 90
-  m_CollisionDetection: 1
 --- !u!82 &1578550168993110062
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1552,6 +1573,57 @@ MonoBehaviour:
   _dropSnapMode: 3
   _dropProximityTransformUseSelf: 1
   _dropProximityTransform: {fileID: 0}
+--- !u!114 &570829431747699547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352945232397329475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 0
+  NetworkGuid:
+    RawGuidValue: 00000000000000000000000000000000
+  NestedObjects: []
+  NetworkedBehaviours: []
+  SimulationBehaviours: []
+--- !u!114 &6240399020488558313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352945232397329475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &3481488070046465369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2402,12 +2474,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6515361374176813941}
-  - component: {fileID: 4594613084451578563}
   - component: {fileID: 6022105357268722517}
   - component: {fileID: 1167762462559016862}
   - component: {fileID: 7595862130668830658}
   - component: {fileID: 8033526751183616114}
   - component: {fileID: 7301302278090415368}
+  - component: {fileID: 4930769914599990883}
+  - component: {fileID: 7901598173392711898}
   m_Layer: 0
   m_Name: Cup 4
   m_TagString: Untagged
@@ -2431,22 +2504,6 @@ Transform:
   m_Father: {fileID: 2680708218933611010}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &4594613084451578563
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6955384766860011259}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 90
-  m_CollisionDetection: 1
 --- !u!82 &6022105357268722517
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2675,6 +2732,57 @@ MonoBehaviour:
   _dropSnapMode: 3
   _dropProximityTransformUseSelf: 1
   _dropProximityTransform: {fileID: 0}
+--- !u!114 &4930769914599990883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955384766860011259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 0
+  NetworkGuid:
+    RawGuidValue: 00000000000000000000000000000000
+  NestedObjects: []
+  NetworkedBehaviours: []
+  SimulationBehaviours: []
+--- !u!114 &7901598173392711898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955384766860011259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &6971214635543425937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,12 +3281,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4162493386365790246}
-  - component: {fileID: 5253261927772261305}
   - component: {fileID: 4021943831188179300}
   - component: {fileID: 537881132101607378}
   - component: {fileID: 5326385287264063553}
   - component: {fileID: 8320979853644296219}
   - component: {fileID: 818325060425150265}
+  - component: {fileID: 443610539697552574}
+  - component: {fileID: 3533223335159098718}
   m_Layer: 0
   m_Name: Cup 2
   m_TagString: Untagged
@@ -3202,22 +3311,6 @@ Transform:
   m_Father: {fileID: 2680708218933611010}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &5253261927772261305
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8122388939323743221}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 90
-  m_CollisionDetection: 1
 --- !u!82 &4021943831188179300
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3446,6 +3539,57 @@ MonoBehaviour:
   _dropSnapMode: 3
   _dropProximityTransformUseSelf: 1
   _dropProximityTransform: {fileID: 0}
+--- !u!114 &443610539697552574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122388939323743221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 0
+  NetworkGuid:
+    RawGuidValue: 00000000000000000000000000000000
+  NestedObjects: []
+  NetworkedBehaviours: []
+  SimulationBehaviours: []
+--- !u!114 &3533223335159098718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122388939323743221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &8932350217616660047
 GameObject:
   m_ObjectHideFlags: 0
@@ -3672,6 +3816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: movable_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 8125959730494514217, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: nobj
+      value: 
+      objectReference: {fileID: 443610539697552574}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
 --- !u!1 &6013649841389340798 stripped
@@ -3679,6 +3827,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_PrefabInstance: {fileID: 4040270496966250783}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592929482839028114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6013649841389340798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!114 &4414983581900538386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3763,6 +3939,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: movable_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 8125959730494514217, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: nobj
+      value: 
+      objectReference: {fileID: 4930769914599990883}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
 --- !u!1 &6274342922426499773 stripped
@@ -3770,6 +3950,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_PrefabInstance: {fileID: 4357192585648102364}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2723078365291246866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6274342922426499773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!114 &7560643465865928625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3858,6 +4066,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: movable_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 8125959730494514217, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: nobj
+      value: 
+      objectReference: {fileID: 3794808636998378293}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
 --- !u!1 &1069701618398227555 stripped
@@ -3865,6 +4077,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_PrefabInstance: {fileID: 7331154046175933698}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &701991998181097831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069701618398227555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!114 &3688987617812316340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3949,6 +4189,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: movable_cup
       objectReference: {fileID: 0}
+    - target: {fileID: 8125959730494514217, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: nobj
+      value: 
+      objectReference: {fileID: 570829431747699547}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
 --- !u!4 &1653350839802981263 stripped
@@ -3981,3 +4225,31 @@ MonoBehaviour:
   maxVelocity: 2
   magnitude: 100
   fingers: 0101000000
+--- !u!114 &3338996309571520679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1653350839802983538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
