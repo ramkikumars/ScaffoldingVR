@@ -3620,6 +3620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4162493386365790246}
     m_Modifications:
+    - target: {fileID: 4058001598440123553, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: _interpolationDataSource
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3707,6 +3711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6515361374176813941}
     m_Modifications:
+    - target: {fileID: 4058001598440123553, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: _interpolationDataSource
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3797,6 +3805,10 @@ PrefabInstance:
     - target: {fileID: 450919289283484678, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: _selectedAvatarForGrips
       value: 
+      objectReference: {fileID: 474319650110039828, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
+    - target: {fileID: 4058001598440123553, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: _interpolationDataSource
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: m_RootOrder
@@ -3885,6 +3897,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4762358065415596100}
     m_Modifications:
+    - target: {fileID: 4058001598440123553, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: _interpolationDataSource
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: m_RootOrder
       value: 0
