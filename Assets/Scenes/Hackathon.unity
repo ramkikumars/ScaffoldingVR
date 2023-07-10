@@ -45310,11 +45310,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
-  sgGrabable: {fileID: 0}
+  sgGrabable: {fileID: 1226333366}
   _currentGrabbed: 
   _grabberCount: 0
   _changeGrabber: 0
-  nobj: {fileID: 0}
+  nobj: {fileID: 1458614503}
   reqAuth: 0
   relAuth: 0
 --- !u!1 &1458614505 stripped
@@ -45445,11 +45445,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
-  sgGrabable: {fileID: 0}
+  sgGrabable: {fileID: 1458614526}
   _currentGrabbed: 
   _grabberCount: 0
   _changeGrabber: 0
-  nobj: {fileID: 0}
+  nobj: {fileID: 1458614516}
   reqAuth: 0
   relAuth: 0
 --- !u!1 &1459859776
