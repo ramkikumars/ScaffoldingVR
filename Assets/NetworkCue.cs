@@ -210,6 +210,7 @@ public class NetworkCue : NetworkBehaviour
             // resetObjSnapped = true;
             SetActiveSnapzone("Vertical", i, false);
             SwitchState("Vertical", i, false);
+             yield return new WaitForSeconds(1f);
         }
         SwitchState("HorizontalLower",0,true);
         SetActiveSnapzone("HorizontalLower", 0, true);
