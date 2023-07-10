@@ -45144,8 +45144,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 216805403483200949, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+      propertyPath: MakeItFree
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 216805403483200949, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
       propertyPath: pullDistance
       value: 7.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 756884362204310829, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+      propertyPath: moveAxis
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1772270824053043310, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
       propertyPath: boxGrab
