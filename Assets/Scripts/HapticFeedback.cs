@@ -18,11 +18,11 @@ public class HapticFeedback : MonoBehaviour
     private string controllerName;
     private VelocityEstimator velocityEstimator;
     private float hitVelocity;
-    private UxrGrabbableObject grabObj => GetComponent<UxrGrabbableObject>();
+    // private UxrGrabbableObject grabObj => GetComponent<UxrGrabbableObject>();
     // <summary> The Interactable object that we will be sending vibration commands to. </summary>
     /// <remarks> Since SG_Grabable derives from SG_Interactable, this will work for grabables, as well as any other script that derives from SG_Interactable. </remarks>
-    private SG_Interactable objectToVibrate => GetComponent<SG_Grabable>();
 
+    private SG_Grabable objectToVibrate => GetComponent<SG_Grabable>();
     /// <summary> The amplitude of the vibration. 0 = no vibration, 100 = full vibration. </summary>
     [Range(0, 100)] public int magnitude = 100;
 
@@ -33,12 +33,12 @@ public class HapticFeedback : MonoBehaviour
     protected SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
     private void OnEnable()
     {
-        grabObj.Grabbed += ObjGrabbed;
+        // grabObj.Grabbed += ObjGrabbed;
         objectToVibrate.ObjectGrabbed.AddListener(ObjGrabbed);
     }
     private void OnDisable()
     {
-        grabObj.Grabbed -= ObjGrabbed;
+        // grabObj.Grabbed -= ObjGrabbed;
     }
     void Start()
     {
@@ -61,10 +61,10 @@ public class HapticFeedback : MonoBehaviour
     // }
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Hit");
 
-        if (grabObj.IsBeingGrabbed || objectToVibrate.IsGrabbed())
+        if (objectToVibrate.IsGrabbed())
         {
+        Debug.Log("Hit");
             float v = velocityEstimator.GetVelocityEstimate().magnitude;
             magnitude = (int) Mathf.InverseLerp(minVelocity, maxVelocity, v)*100;
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag), 0.5f);
@@ -92,24 +92,26 @@ public class HapticFeedback : MonoBehaviour
 
     IEnumerator HitAndWait()
     {
-        if (controllerName == "Uxr")
-        {
-            grabObj.IsLockedInPlace = true;
-            UxrAvatar.LocalAvatar.ControllerInput.SendGrabbableHapticFeedback(grabObj, UxrclipType, intensity, duration);
-            // objectToVibrate.SendCmd(vibrationCmd);
-            yield return new WaitForSeconds(hitWait);
-            grabObj.IsLockedInPlace = false;
-        }
-        if (controllerName == "Sg")
-        {
-
+        // if (controllerName == "Uxr")
+        // {
+        //     grabObj.IsLockedInPlace = true;
+        //     UxrAvatar.LocalAvatar.ControllerInput.SendGrabbableHapticFeedback(grabObj, UxrclipType, intensity, duration);
+        //     // objectToVibrate.SendCmd(vibrationCmd);
+        //     yield return new WaitForSeconds(hitWait);
+        //     grabObj.IsLockedInPlace = false;
+        // }
+        // if (controllerName == "Sg")
+        // {
+            Debug.Log($"Mag:{magnitude}");
             //regenerate the vibration command. We'll make it 0.02f (20ms) long so there will be overlap between two frames for a continuous vibration.
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
+            // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
+            // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+             vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude),1f);
             objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             // objectToVibrate.SendCmd(vibrationCmd);
             yield return null;
 
-        }
+        // }
     }
 
 
