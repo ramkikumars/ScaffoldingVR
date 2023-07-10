@@ -65,11 +65,11 @@ public class HapticFeedback : MonoBehaviour
 
         if (grabObj.IsBeingGrabbed || objectToVibrate.IsGrabbed())
         {
-            // StartCoroutine(HitAndWait());
             float v = velocityEstimator.GetVelocityEstimate().magnitude;
-            float mag = Mathf.InverseLerp(minVelocity, maxVelocity, v)*100;
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag), 0.02f);
-            objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+            magnitude = (int) Mathf.InverseLerp(minVelocity, maxVelocity, v)*100;
+            // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag), 0.5f);
+            // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+            StartCoroutine(HitAndWait());
         }
     }
     private void ObjGrabbed(object obj1, object obj2)

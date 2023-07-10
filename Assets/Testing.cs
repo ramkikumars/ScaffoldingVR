@@ -24,7 +24,7 @@ public class Testing : NetworkBehaviour
     public GameObject tapeComponent;
 
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
-    public bool[] fingers = new bool[5] { true, true, false, false, false };
+    public bool[] fingers = new bool[5] { true, true, true, true, false };
 
     public bool state;
     public static bool grabbed = false;
@@ -180,7 +180,7 @@ boxGrab.MakeItFree=false;
             Debug.Log("collided");
             // boxGrab.MakeItFree = true;
             // boxGrab.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-            
+
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.05f);
             // Vector3(-0.0500000007,-0.0500000007,0)
             transform.localPosition = new Vector3(-0.0500000007f, -0.0500000007f, 0);
@@ -192,7 +192,7 @@ boxGrab.MakeItFree=false;
             transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
             comeback = false;
             Rpc_HolderRel(Object.Runner);
-            // Vector3(-3.66857171,3.24736714,0) 
+            // Vector3(-3.66857171,3.24736714,0)
 
 
         }

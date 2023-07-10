@@ -238,7 +238,7 @@ public class NetworkCue : NetworkBehaviour
 
 
     private bool IsPlayerJoined(){
-        if(networkObject.Runner.ActivePlayers.Count() == 2){
+        if(networkObject.Runner.ActivePlayers.Count() > 1){
             Debug.Log("2 Players has joined");
             return true;
         }
