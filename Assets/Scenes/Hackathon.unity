@@ -4959,7 +4959,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.043
+  m_Radius: 0.045
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -9213,7 +9213,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.043
+  m_Radius: 0.045
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -13284,7 +13284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &473649534
 Transform:
   m_ObjectHideFlags: 0
@@ -16845,7 +16845,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2561
+  Flags: 133633
   NetworkGuid:
     RawGuidValue: c5ef8c9b53a8496b9c9dbbb0d5f3fbe3
   NestedObjects: []
@@ -17427,7 +17427,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.043
+  m_Radius: 0.045
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -25079,7 +25079,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2561
+  Flags: 133633
   NetworkGuid:
     RawGuidValue: 12378ce41bda4e17a04e38809f3e2842
   NestedObjects: []
@@ -64218,7 +64218,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.043
+  m_Radius: 0.045
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
