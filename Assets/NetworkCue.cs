@@ -196,7 +196,7 @@ public class NetworkCue : NetworkBehaviour
             // resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
             SwitchState("Base", i, false);
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(1f);
         }
         for (int i = 0; i < 4; i++)
         {
@@ -209,6 +209,7 @@ public class NetworkCue : NetworkBehaviour
             recentlySnapped="";
             // resetObjSnapped = true;
             SetActiveSnapzone("Vertical", i, false);
+            SwitchState("Vertical", i, false);
         }
         SwitchState("HorizontalLower",0,true);
         SetActiveSnapzone("HorizontalLower", 0, true);

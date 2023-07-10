@@ -4867,6 +4867,7 @@ GameObject:
   - component: {fileID: 158374509}
   - component: {fileID: 158374508}
   - component: {fileID: 158374507}
+  - component: {fileID: 158374515}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -4959,6 +4960,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 158374508}
+  - {fileID: 158374515}
   SimulationBehaviours: []
 --- !u!136 &158374510
 CapsuleCollider:
@@ -5068,6 +5070,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 158374505}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &158374515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158374505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 158374512}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 158374509}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &158732317
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,6 +9205,7 @@ GameObject:
   - component: {fileID: 325969246}
   - component: {fileID: 325969245}
   - component: {fileID: 325969244}
+  - component: {fileID: 325969252}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -9275,6 +9298,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 325969245}
+  - {fileID: 325969252}
   SimulationBehaviours: []
 --- !u!136 &325969247
 CapsuleCollider:
@@ -9384,6 +9408,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 325969242}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &325969252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 325969242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 158374512}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 158374509}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &328250249
 GameObject:
   m_ObjectHideFlags: 0
@@ -17287,6 +17331,7 @@ GameObject:
   - component: {fileID: 580184867}
   - component: {fileID: 580184866}
   - component: {fileID: 580184865}
+  - component: {fileID: 580184873}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -17379,6 +17424,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 580184866}
+  - {fileID: 580184873}
   SimulationBehaviours: []
 --- !u!136 &580184868
 CapsuleCollider:
@@ -17488,6 +17534,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 580184863}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &580184873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 580184863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 158374512}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 158374509}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &580471847
 GameObject:
   m_ObjectHideFlags: 0
@@ -62550,6 +62616,7 @@ GameObject:
   - component: {fileID: 1923838549}
   - component: {fileID: 1923838548}
   - component: {fileID: 1923838547}
+  - component: {fileID: 1923838555}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -62642,6 +62709,7 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours:
   - {fileID: 1923838548}
+  - {fileID: 1923838555}
   SimulationBehaviours: []
 --- !u!136 &1923838550
 CapsuleCollider:
@@ -62751,6 +62819,26 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923838545}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &1923838555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923838545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 158374512}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 158374509}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1001 &1925143612
 PrefabInstance:
   m_ObjectHideFlags: 0
