@@ -27772,6 +27772,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1867750567}
     - target: {fileID: 1466558087, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466558087, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: CalibrationFinished.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -27798,6 +27802,10 @@ PrefabInstance:
     - target: {fileID: 1466558087, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: CalibrationFinished.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2122503969, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2122503969, guid: 10165189c26095442b2cefc1acb4c734, type: 3}
       propertyPath: CalibrationFinished.m_PersistentCalls.m_Calls.Array.size
@@ -45171,6 +45179,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HARD_Tape12
       objectReference: {fileID: 0}
+    - target: {fileID: 3324435128081456560, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3324435128081456562, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
       propertyPath: m_RootOrder
       value: 20
@@ -45288,7 +45300,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2561
+  Flags: 133633
   NetworkGuid:
     RawGuidValue: d51b25a819e2426aa47f1200def73791
   NestedObjects:
@@ -45384,7 +45396,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2561
+  Flags: 133633
   NetworkGuid:
     RawGuidValue: b2ecfbb1255f48e2b2759068e3245513
   NestedObjects: []

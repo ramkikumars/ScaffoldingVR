@@ -28,18 +28,18 @@ public class NetworkGrabbable : NetworkBehaviour
     }
 
     // Update is called once per frame
-    // void Update()
-    // {
-    //     // if (reqAuth) {
-    //     // Object.RequestStateAuthority();
-    //     // reqAuth=false;
-    //     // }
-    //     // if (relAuth) {
-    //     // Object.ReleaseStateAuthority();
-    //     // reqAuth=false;
-    //     // }
+    void Update()
+    {
+        if (reqAuth) {
+        Object.RequestStateAuthority();
+        reqAuth=false;
+        }
+        if (relAuth) {
+        Object.ReleaseStateAuthority();
+        reqAuth=false;
+        }
 
-    // }
+    }
     public override void FixedUpdateNetwork()
     {
 
@@ -54,8 +54,8 @@ public class NetworkGrabbable : NetworkBehaviour
             //     }
             //         grabberCount += 1;
             // if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
-            // objGrabbed=false;
             changeGrabber = !changeGrabber;
+            objGrabbed=false;
 
         }
 
