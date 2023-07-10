@@ -142,11 +142,12 @@ public async Task<bool> WaitForRelAuthority(NetworkObject o, float maxWaitTime =
 
     public override void Spawned()
     {
-        base.Spawned();
-        Debug.Log(Object.HasStateAuthority);
-        if (Object.HasStateAuthority)
+        // base.Spawned();
+        Debug.Log(nobj.HasStateAuthority);
+        if (nobj.HasStateAuthority)
         {
-            Object.ReleaseStateAuthority();
+            nobj.RequestStateAuthority();
+            RelAuthorithy(nobj);
         }
     }
 
