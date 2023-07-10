@@ -7,16 +7,16 @@
 using UnityEngine;
 using System.Collections;
 using SG;
-
+using Fusion;
 
 //-------------------------------------------------------------------------
-public class VelocityEstimator : MonoBehaviour
+public class VelocityEstimator : NetworkBehaviour
 {
 	[Tooltip( "How many frames to average over for computing velocity" )]
 	public int velocityAverageFrames = 5;
 	[Tooltip( "How many frames to average over for computing angular velocity" )]
 	public int angularVelocityAverageFrames = 11;
-	public bool estimateOnAwake = true;
+	public bool estimateOnAwake = false;
 	public bool useLocalPosistion=false;
 	private Coroutine routine;
 	private int sampleCount;
@@ -63,16 +63,16 @@ public class VelocityEstimator : MonoBehaviour
 		}
 	}
 
-    private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
-    {
-        velocitySamples = new Vector3[velocityAverageFrames];
-        angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
-        BeginEstimatingVelocity();
-    }
-    private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
-    {
-        FinishEstimatingVelocity();
-    }
+    // private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
+    // {
+    //     velocitySamples = new Vector3[velocityAverageFrames];
+    //     angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
+    //     BeginEstimatingVelocity();
+    // }
+    // private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
+    // {
+    //     FinishEstimatingVelocity();
+    // }
 	//-------------------------------------------------
 	public Vector3 GetVelocityEstimate()
 	{
@@ -149,7 +149,7 @@ public class VelocityEstimator : MonoBehaviour
 	private IEnumerator EstimateVelocityCoroutine()
 	{
 		sampleCount = 0;
-		Debug.Log("Entered Vel Coroutine");
+		Debug.Log("Entered Velocity Estimator Coroutine");
         Vector3 previousPosition = Vector3.zero;
         if(useLocalPosistion){
 		previousPosition = transform.localPosition;
@@ -199,11 +199,11 @@ public class VelocityEstimator : MonoBehaviour
 		}
 	}
 
-	// void Update(){
-	// 	currentVelocity=GetVelocityEstimate().magnitude;
-	// 	// if(starRoutine){
-	// 	// 	BeginEstimatingVelocity();
-	// 	// }
+	void Update(){
+		currentVelocity=GetVelocityEstimate().magnitude;
+		if(starRoutine){
+			BeginEstimatingVelocity();
+		}
 
     //     // while (true)
     //     // {
@@ -247,6 +247,16 @@ public class VelocityEstimator : MonoBehaviour
 
     //         previousPosition = transform.position;
     //         previousRotation = transform.rotation;
-        // }
+        }
+
+		public override void Spawned()
+    {
+        base.Spawned();
+		velocitySamples = new Vector3[velocityAverageFrames];
+		angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
+
+			BeginEstimatingVelocity();
+        
+    }
 	
 }

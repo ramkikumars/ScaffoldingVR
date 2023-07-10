@@ -20,6 +20,7 @@ public class NetworkMultiVibration : NetworkBehaviour
     private static Vector3 handPos=Vector3.zero;
     private Vector3 hammerPos=Vector3.zero;
     private static bool handPlaced=false;
+    private static float dist;
     public static SG_FixedRod fixedRod;
 
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
@@ -93,21 +94,30 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
             int numContacts = other.GetContacts(contacts);
             hammerPos=contacts[0].point;
 
-            Rpc_GiveVibrationOtherHand(Object.Runner,hammerPos);
+            Rpc_GiveVibrationOtherHand(Object.Runner,hammerPos,this);
         }
     }
 
     [Rpc]
-    public static void Rpc_GiveVibrationOtherHand(NetworkRunner runner,Vector3 hammerPos)
+    public static void Rpc_GiveVibrationOtherHand(NetworkRunner runner,Vector3 hammerPos,NetworkMultiVibration nmult)
     {
         if(handPlaced){
-            float dist=Vector3.Distance(handPos,hammerPos);
-            float dist1=Mathf.Abs(handPos.z-hammerPos.z);
+         
+         dist=Vector3.Distance(handPos,hammerPos);
+            // float dist1=Mathf.Abs(handPos.z-hammerPos.z);
+            nmult.StartCoroutine(HitAndWait());
+        }
+    }
+     static IEnumerator HitAndWait()
+    {
+          
             Debug.Log($"Dist bw hammr and hand");
             float mag = Mathf.InverseLerp(1, 0, dist) * 100;
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),2f);
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);
             fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-        }
+            yield return new WaitForSeconds(0.5f);
+
+        // }
     }
 
 }

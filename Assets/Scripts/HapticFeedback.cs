@@ -67,7 +67,7 @@ public class HapticFeedback : MonoBehaviour
         Debug.Log("Hit");
             float v = velocityEstimator.GetVelocityEstimate().magnitude;
             magnitude = (int) Mathf.InverseLerp(minVelocity, maxVelocity, v)*100;
-            // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag), 0.5f);
+            // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
             // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             StartCoroutine(HitAndWait());
         }
@@ -107,10 +107,10 @@ public class HapticFeedback : MonoBehaviour
             //regenerate the vibration command. We'll make it 0.02f (20ms) long so there will be overlap between two frames for a continuous vibration.
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
             // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-             vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude),1f);
-            objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-            // objectToVibrate.SendCmd(vibrationCmd);
-            yield return null;
+             vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude),0.1f);
+            // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+            objectToVibrate.SendCmd(vibrationCmd);
+            yield return new WaitForSeconds(0.1f);
 
         // }
     }
