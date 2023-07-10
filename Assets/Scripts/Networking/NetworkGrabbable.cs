@@ -59,18 +59,18 @@ public class NetworkGrabbable : NetworkBehaviour
 
         }
 
-        if (objReleased)
-        {
+        // if (objReleased)
+        // {
 
-            // if (grabberCount == 2)
-            // {
-            //     changeGrabber = !changeGrabber;
-            // }if(grabberCount>=1){
-            // grabberCount -= 1;
-            // }
-            // if (nobj.HasStateAuthority) RelAuthorithy(nobj);
-            // objReleased = false;
-        }
+        //     // if (grabberCount == 2)
+        //     // {
+        //     //     changeGrabber = !changeGrabber;
+        //     // }if(grabberCount>=1){
+        //     // grabberCount -= 1;
+        //     // }
+        //     // if (nobj.HasStateAuthority) RelAuthorithy(nobj);
+        //     // objReleased = false;
+        // }
 
     }
     // public override void Spawned()
