@@ -4549,7 +4549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 3
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 811955427}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -4561,7 +4561,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
+  UseLegacySharedModeInterpolation: 1
   TargetInterpolationDelay: 0.03
 --- !u!1 &150270002
 GameObject:
@@ -15431,6 +15431,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536408605}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &537699663 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1752385026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &537915328
 GameObject:
   m_ObjectHideFlags: 0
@@ -25956,6 +25961,11 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: a4d85bc77175cf5489a30333a10cea82, type: 3}
+--- !u!4 &797009961 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1823695409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &801430829
 GameObject:
   m_ObjectHideFlags: 0
@@ -26239,6 +26249,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809859759}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!4 &811955427 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 146158877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &814919151 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1913893958803671982, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -33535,6 +33550,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1039394766 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1840689782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1041656027
 GameObject:
   m_ObjectHideFlags: 0
@@ -56916,7 +56936,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 3
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 537699663}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -56928,7 +56948,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
+  UseLegacySharedModeInterpolation: 1
   TargetInterpolationDelay: 0.03
 --- !u!1 &1754363745
 GameObject:
@@ -59656,7 +59676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 3
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 797009961}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -59668,7 +59688,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
+  UseLegacySharedModeInterpolation: 1
   TargetInterpolationDelay: 0.03
 --- !u!1 &1825478053
 GameObject:
@@ -60144,7 +60164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 3
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1039394766}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -60156,7 +60176,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
+  UseLegacySharedModeInterpolation: 1
   TargetInterpolationDelay: 0.03
 --- !u!1 &1844437218
 GameObject:
