@@ -51,7 +51,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   playerName: Rama
-  playerNameTmPro: {fileID: 2038201734767549059}
   _nickName:
     _length: 4
     _data:
@@ -3988,8 +3987,8 @@ Transform:
   m_GameObject: {fileID: 3062385976427437704}
   m_LocalRotation: {x: -0, y: -0.9996208, z: -0, w: 0.02753792}
   m_LocalPosition: {x: -0.00068680214, y: 0.445, z: -0.024920227}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4115545029004510556}
   - {fileID: 7120642536141064173}
