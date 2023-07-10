@@ -22613,13 +22613,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721276029}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.0066589387, y: 0.1857652, z: 0.00034299493}
-  m_LocalScale: {x: 0.07209503, y: 0.07209503, z: 0.07209503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.081120566, y: -0.0021370756, z: 2.5766714}
+  m_LocalScale: {x: 0.87313354, y: 0.451079, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1341254855}
-  m_RootOrder: 3
+  m_Father: {fileID: 1781092737}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &721276031
 MeshRenderer:
@@ -41974,7 +41974,6 @@ Transform:
   - {fileID: 153718876}
   - {fileID: 965782090}
   - {fileID: 1781092737}
-  - {fileID: 721276030}
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -42037,7 +42036,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1781092737}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -51342,7 +51341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1629126197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51380,7 +51379,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 2561
+  Flags: 133633
   NetworkGuid:
     RawGuidValue: 9521aecef171472980f90524eb487345
   NestedObjects: []
@@ -56099,7 +56098,8 @@ Transform:
   m_LocalPosition: {x: 0.00003922, y: 0, z: 0.0000015348}
   m_LocalScale: {x: 0.08257044, y: 0.15982795, z: 0.07209503}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 721276030}
   m_Father: {fileID: 1341254855}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
