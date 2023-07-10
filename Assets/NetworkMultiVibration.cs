@@ -105,7 +105,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
             float dist1=Mathf.Abs(handPos.z-hammerPos.z);
             Debug.Log($"Dist bw hammr and hand");
             float mag = Mathf.InverseLerp(1, 0, dist) * 100;
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),1f);
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),2f);
             fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
         }
     }

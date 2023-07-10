@@ -1138,7 +1138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 808520317207804239, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c0a0957529cbfe94883d66c7f40b66d8, type: 3}
@@ -41730,8 +41730,8 @@ GameObject:
   - component: {fileID: 1341254848}
   - component: {fileID: 1341254847}
   - component: {fileID: 1341254857}
-  - component: {fileID: 1341254856}
   - component: {fileID: 1341254858}
+  - component: {fileID: 1341254859}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Hammer
@@ -41970,34 +41970,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!114 &1341254856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1341254846}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &1341254857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42020,8 +41992,8 @@ MonoBehaviour:
     RawGuidValue: f4ddd5d0dbe643da9a306f16208efc24
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 1341254856}
   - {fileID: 1341254858}
+  - {fileID: 1341254859}
   SimulationBehaviours: []
 --- !u!114 &1341254858
 MonoBehaviour:
@@ -42043,6 +42015,34 @@ MonoBehaviour:
   nobj: {fileID: 1341254857}
   reqAuth: 0
   relAuth: 0
+--- !u!114 &1341254859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1341254846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &1344331201
 GameObject:
   m_ObjectHideFlags: 0
@@ -45295,7 +45295,28 @@ MonoBehaviour:
   - {fileID: 1458614516}
   NetworkedBehaviours:
   - {fileID: 1458614502}
+  - {fileID: 1458614504}
   SimulationBehaviours: []
+--- !u!114 &1458614504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458614500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 0}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 0}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &1458614505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1772270823338036649, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
@@ -45370,6 +45391,7 @@ MonoBehaviour:
   NetworkedBehaviours:
   - {fileID: 1458614501}
   - {fileID: 1458614520}
+  - {fileID: 1458614537}
   SimulationBehaviours: []
 --- !u!114 &1458614520
 MonoBehaviour:
@@ -45410,6 +45432,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef9f63bedf78a74aba20fe3ffec42ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1458614537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458614515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  sgGrabable: {fileID: 0}
+  _currentGrabbed: 
+  _grabberCount: 0
+  _changeGrabber: 0
+  nobj: {fileID: 0}
+  reqAuth: 0
+  relAuth: 0
 --- !u!1 &1459859776
 GameObject:
   m_ObjectHideFlags: 0
@@ -51281,8 +51323,8 @@ GameObject:
   - component: {fileID: 1629126201}
   - component: {fileID: 1629126200}
   - component: {fileID: 1629126199}
-  - component: {fileID: 1629126198}
   - component: {fileID: 1629126197}
+  - component: {fileID: 1629126209}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Hammer
@@ -51310,34 +51352,6 @@ MonoBehaviour:
   nobj: {fileID: 1629126199}
   reqAuth: 0
   relAuth: 0
---- !u!114 &1629126198
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629126196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &1629126199
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51360,8 +51374,8 @@ MonoBehaviour:
     RawGuidValue: 9521aecef171472980f90524eb487345
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 1629126198}
   - {fileID: 1629126197}
+  - {fileID: 1629126209}
   SimulationBehaviours: []
 --- !u!54 &1629126200
 Rigidbody:
@@ -51594,6 +51608,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &1629126209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629126196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &1631867898
 GameObject:
   m_ObjectHideFlags: 0
