@@ -4425,6 +4425,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 146158877}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &146158879 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 146158877}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146158880 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
@@ -4549,7 +4554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 811955427}
+  InterpolationTarget: {fileID: 146158879}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -15431,11 +15436,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 536408605}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &537699663 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
-  m_PrefabInstance: {fileID: 1752385026}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &537915328
 GameObject:
   m_ObjectHideFlags: 0
@@ -25961,11 +25961,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4711208715938537054, guid: a4d85bc77175cf5489a30333a10cea82, type: 3}
---- !u!4 &797009961 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
-  m_PrefabInstance: {fileID: 1823695409}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &801430829
 GameObject:
   m_ObjectHideFlags: 0
@@ -26249,11 +26244,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809859759}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
---- !u!4 &811955427 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
-  m_PrefabInstance: {fileID: 146158877}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &814919151 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1913893958803671982, guid: dbed44c8974f3b44e9f2b9a05cde2fb4, type: 3}
@@ -33550,11 +33540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cedfb3f0093317488d183f73f0d476d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1039394766 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7782112921276157655, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
-  m_PrefabInstance: {fileID: 1840689782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1041656027
 GameObject:
   m_ObjectHideFlags: 0
@@ -56812,6 +56797,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 1752385026}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1752385028 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1752385026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1752385029 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
@@ -56936,7 +56926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 537699663}
+  InterpolationTarget: {fileID: 1752385028}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -59552,6 +59542,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 1823695409}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1823695411 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1823695409}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1823695412 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
@@ -59676,7 +59671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 797009961}
+  InterpolationTarget: {fileID: 1823695411}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -60056,6 +60051,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 1840689782}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1840689785 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 1840689782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!54 &1840689787 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 8729185269562808994, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
@@ -60164,7 +60164,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 1039394766}
+  InterpolationTarget: {fileID: 1840689785}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -75509,6 +75509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9009210387325780473}
     m_Modifications:
+    - target: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3362792647048670877, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.141
@@ -80134,7 +80138,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7493535132780113372}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!64 &5516308718818240029
 MeshCollider:
