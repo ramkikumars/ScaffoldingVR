@@ -51284,7 +51284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1629126197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51322,7 +51322,7 @@ MonoBehaviour:
   DestroyWhenStateAuthorityLeaves: 0
   AllowStateAuthorityOverride: 1
   AoiPositionSource: {fileID: 0}
-  Flags: 133633
+  Flags: 2561
   NetworkGuid:
     RawGuidValue: 9521aecef171472980f90524eb487345
   NestedObjects: []
