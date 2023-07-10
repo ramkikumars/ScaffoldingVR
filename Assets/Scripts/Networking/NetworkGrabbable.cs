@@ -82,8 +82,8 @@ public class NetworkGrabbable : NetworkBehaviour
     private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
     {
         // objGrabbed = true;
-        // ReqAuthorithy(nobj);
-        nobj.RequestStateAuthority();
+        ReqAuthorithy(nobj);
+        // nobj.RequestStateAuthority();
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
@@ -96,6 +96,11 @@ public class NetworkGrabbable : NetworkBehaviour
         await WaitForStateAuthority(o);
     }
 
+    async void RelAuthorithy(NetworkObject o)
+    {
+        await WaitForRelAuthority(o);
+    }
+
     public async Task<bool> WaitForStateAuthority(NetworkObject o, float maxWaitTime = 8)
     {
         float waitStartTime = Time.time;
@@ -106,7 +111,16 @@ public class NetworkGrabbable : NetworkBehaviour
         }
         return o.HasStateAuthority;
     }
-
+public async Task<bool> WaitForRelAuthority(NetworkObject o, float maxWaitTime = 8)
+    {
+        float waitStartTime = Time.time;
+        o.ReleaseStateAuthority();
+        while (o.HasStateAuthority && (Time.time - waitStartTime) < maxWaitTime)
+        {
+            await System.Threading.Tasks.Task.Delay(1);
+        }
+        return o.HasStateAuthority;
+    }
     public static void OnChangedGrabber(Changed<NetworkGrabbable> changed)
     {
         changed.Behaviour.ChangedGrabber();
