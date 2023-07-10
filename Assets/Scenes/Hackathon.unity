@@ -1866,7 +1866,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.045
+  m_Radius: 0.03
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -1901,7 +1901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 83495150}
+  physicsBody: {fileID: 0}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -4279,7 +4279,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.045
+  m_Radius: 0.03
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -4314,7 +4314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 158374507}
+  physicsBody: {fileID: 0}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -23911,7 +23911,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.045
+  m_Radius: 0.03
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -23946,7 +23946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 860769291}
+  physicsBody: {fileID: 0}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
@@ -28658,7 +28658,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.045
+  m_Radius: 0.03
   m_Height: 2.000001
   m_Direction: 1
   m_Center: {x: 0.0000000037252903, y: 1.0000005, z: -0.00000012479725}
@@ -28693,7 +28693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseTransform: {fileID: 0}
-  physicsBody: {fileID: 996460826}
+  physicsBody: {fileID: 0}
   allowedHands: 0
   debugTxt: {fileID: 0}
   ObjectGrabbed:
