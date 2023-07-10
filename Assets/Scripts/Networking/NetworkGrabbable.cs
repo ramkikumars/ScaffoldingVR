@@ -53,8 +53,9 @@ public class NetworkGrabbable : NetworkBehaviour
             //         changeGrabber = !changeGrabber;
             //     }
             //         grabberCount += 1;
-            if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
-            objGrabbed=false;
+            // if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
+            // objGrabbed=false;
+            changeGrabber = !changeGrabber;
 
         }
 
@@ -67,8 +68,8 @@ public class NetworkGrabbable : NetworkBehaviour
             // }if(grabberCount>=1){
             // grabberCount -= 1;
             // }
-            if (nobj.HasStateAuthority) RelAuthorithy(nobj);
-            objReleased = false;
+            // if (nobj.HasStateAuthority) RelAuthorithy(nobj);
+            // objReleased = false;
         }
 
     }
