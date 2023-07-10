@@ -43,30 +43,33 @@ public class NetworkGrabbable : NetworkBehaviour
     public override void FixedUpdateNetwork()
     {
 
-        // if (objGrabbed)
-        // {
-        //     currentGrabbed = nobj.Runner.LocalPlayer.ToString();
-        //     Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
+        if (objGrabbed)
+        {
+            // currentGrabbed = nobj.Runner.LocalPlayer.ToString();
+            // Debug.Log($"{this.gameObject.name} was grabbed by {currentGrabbed}");
 
-        //         if (grabberCount == 0)
-        //         {
-        //             changeGrabber = !changeGrabber;
-        //         }
-        //             grabberCount += 1;
-        //     objGrabbed=false;
-        // }
+            //     if (grabberCount == 0)
+            //     {
+            //         changeGrabber = !changeGrabber;
+            //     }
+            //         grabberCount += 1;
+            if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
+            objGrabbed=false;
 
-        // if (objReleased)
-        // {
+        }
 
-        //     if (grabberCount == 2)
-        //     {
-        //         changeGrabber = !changeGrabber;
-        //     }if(grabberCount>=1){
-        //     grabberCount -= 1;
-        //     }
-        //     objReleased = false;
-        // }
+        if (objReleased)
+        {
+
+            // if (grabberCount == 2)
+            // {
+            //     changeGrabber = !changeGrabber;
+            // }if(grabberCount>=1){
+            // grabberCount -= 1;
+            // }
+            if (nobj.HasStateAuthority) RelAuthorithy(nobj);
+            objReleased = false;
+        }
 
     }
     // public override void Spawned()
@@ -81,14 +84,15 @@ public class NetworkGrabbable : NetworkBehaviour
 
     private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
     {
-        // objGrabbed = true;
-        ReqAuthorithy(nobj);
+        objGrabbed = true;
+        // if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
         // nobj.RequestStateAuthority();
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
-        // objReleased = true;
-        nobj.ReleaseStateAuthority();
+        objReleased = true;
+        // nobj.ReleaseStateAuthority();
+        // if (nobj.HasStateAuthority) RelAuthorithy(nobj);
     }
 
     async void ReqAuthorithy(NetworkObject o)
