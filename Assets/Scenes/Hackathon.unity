@@ -4547,7 +4547,7 @@ MonoBehaviour:
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 3
+  _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 811955427}
   InterpolateErrorCorrection: 1
@@ -4561,7 +4561,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 1
+  UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
 --- !u!1 &150270002
 GameObject:
@@ -56934,7 +56934,7 @@ MonoBehaviour:
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 3
+  _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 537699663}
   InterpolateErrorCorrection: 1
@@ -56948,7 +56948,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 1
+  UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
 --- !u!1 &1754363745
 GameObject:
@@ -59674,7 +59674,7 @@ MonoBehaviour:
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 3
+  _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 797009961}
   InterpolateErrorCorrection: 1
@@ -59688,7 +59688,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 1
+  UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
 --- !u!1 &1825478053
 GameObject:
@@ -60162,7 +60162,7 @@ MonoBehaviour:
   m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _interpolationDataSource: 3
+  _interpolationDataSource: 0
   InterpolationSpace: 0
   InterpolationTarget: {fileID: 1039394766}
   InterpolateErrorCorrection: 1
@@ -60176,7 +60176,7 @@ MonoBehaviour:
     RotBlendStart: 0.1
     RotBlendEnd: 0.5
     RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 1
+  UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
 --- !u!1 &1844437218
 GameObject:
