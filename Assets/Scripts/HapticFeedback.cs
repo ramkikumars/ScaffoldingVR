@@ -74,19 +74,20 @@ public class HapticFeedback : MonoBehaviour
     }
     private void ObjGrabbed(object obj1, object obj2)
     {
-        // Object obj = new Object();
-        if (obj1.GetType() == typeof(UxrGrabbableObject))
-        {
-            // obj = obj1 as UxrGrabbableObject;
-            controllerName = "Uxr";
-            // Debug.Log($"Grabbed {obj.name} with UxR");
-        }
-        else if (obj1.GetType() == typeof(SG_Grabable))
-        {
-            // obj = obj1 as SG_SimpleDrawer;
-            controllerName = "Sg";
-            // Debug.Log($"Grabbed {obj.name} with SG");
-        }
+        // // Object obj = new Object();
+        // if (obj1.GetType() == typeof(UxrGrabbableObject))
+        // {
+        //     // obj = obj1 as UxrGrabbableObject;
+        //     controllerName = "Uxr";
+        //     // Debug.Log($"Grabbed {obj.name} with UxR");
+        // }
+        // else if (obj1.GetType() == typeof(SG_Grabable))
+        // {
+        //     // obj = obj1 as SG_SimpleDrawer;
+        //     controllerName = "Sg";
+        //     // Debug.Log($"Grabbed {obj.name} with SG");
+        // }
+        velocityEstimator.BeginEstimatingVelocity();
 
     }
 

@@ -67,11 +67,11 @@ public class VelocityEstimator : MonoBehaviour
     {
         velocitySamples = new Vector3[velocityAverageFrames];
         angularVelocitySamples = new Vector3[angularVelocityAverageFrames];
-            BeginEstimatingVelocity();
+        BeginEstimatingVelocity();
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
-        // FinishEstimatingVelocity();
+        FinishEstimatingVelocity();
     }
 	//-------------------------------------------------
 	public Vector3 GetVelocityEstimate()
@@ -149,7 +149,7 @@ public class VelocityEstimator : MonoBehaviour
 	private IEnumerator EstimateVelocityCoroutine()
 	{
 		sampleCount = 0;
-
+		Debug.Log("Entered Vel Coroutine");
         Vector3 previousPosition = Vector3.zero;
         if(useLocalPosistion){
 		previousPosition = transform.localPosition;
@@ -199,54 +199,54 @@ public class VelocityEstimator : MonoBehaviour
 		}
 	}
 
-	void Update(){
-		currentVelocity=GetVelocityEstimate().magnitude;
-		// if(starRoutine){
-		// 	BeginEstimatingVelocity();
-		// }
+	// void Update(){
+	// 	currentVelocity=GetVelocityEstimate().magnitude;
+	// 	// if(starRoutine){
+	// 	// 	BeginEstimatingVelocity();
+	// 	// }
 
-        // while (true)
-        // {
-            // yield return new WaitForEndOfFrame();
-            // yield return null;
+    //     // while (true)
+    //     // {
+    //         // yield return new WaitForEndOfFrame();
+    //         // yield return null;
 
-            float velocityFactor = 1.0f / Time.deltaTime;
+    //         float velocityFactor = 1.0f / Time.deltaTime;
 
-            int v = sampleCount % velocitySamples.Length;
-            int w = sampleCount % angularVelocitySamples.Length;
-            sampleCount++;
+    //         int v = sampleCount % velocitySamples.Length;
+    //         int w = sampleCount % angularVelocitySamples.Length;
+    //         sampleCount++;
 
-            // Estimate linear velocity
+    //         // Estimate linear velocity
 
-            if (useLocalPosistion)
-            {
-                velocitySamples[v] = velocityFactor * (transform.localPosition - previousPosition);
-            }
-            else
-            {
-                velocitySamples[v] = velocityFactor * (transform.position - previousPosition);
-            }
+    //         if (useLocalPosistion)
+    //         {
+    //             velocitySamples[v] = velocityFactor * (transform.localPosition - previousPosition);
+    //         }
+    //         else
+    //         {
+    //             velocitySamples[v] = velocityFactor * (transform.position - previousPosition);
+    //         }
 
 
-            // Estimate angular velocity
-            Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(previousRotation);
+    //         // Estimate angular velocity
+    //         Quaternion deltaRotation = transform.rotation * Quaternion.Inverse(previousRotation);
 
-            float theta = 2.0f * Mathf.Acos(Mathf.Clamp(deltaRotation.w, -1.0f, 1.0f));
-            if (theta > Mathf.PI)
-            {
-                theta -= 2.0f * Mathf.PI;
-            }
+    //         float theta = 2.0f * Mathf.Acos(Mathf.Clamp(deltaRotation.w, -1.0f, 1.0f));
+    //         if (theta > Mathf.PI)
+    //         {
+    //             theta -= 2.0f * Mathf.PI;
+    //         }
 
-            Vector3 angularVelocity = new Vector3(deltaRotation.x, deltaRotation.y, deltaRotation.z);
-            if (angularVelocity.sqrMagnitude > 0.0f)
-            {
-                angularVelocity = theta * velocityFactor * angularVelocity.normalized;
-            }
+    //         Vector3 angularVelocity = new Vector3(deltaRotation.x, deltaRotation.y, deltaRotation.z);
+    //         if (angularVelocity.sqrMagnitude > 0.0f)
+    //         {
+    //             angularVelocity = theta * velocityFactor * angularVelocity.normalized;
+    //         }
 
-            angularVelocitySamples[w] = angularVelocity;
+    //         angularVelocitySamples[w] = angularVelocity;
 
-            previousPosition = transform.position;
-            previousRotation = transform.rotation;
+    //         previousPosition = transform.position;
+    //         previousRotation = transform.rotation;
         // }
-	}
+	
 }
