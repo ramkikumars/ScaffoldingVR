@@ -13389,6 +13389,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5512902906658455638, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
   m_PrefabInstance: {fileID: 540425609}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &540425611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 369577101924319901, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
+  m_PrefabInstance: {fileID: 540425609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &540425612 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4115298682947474595, guid: cc9d29e95b8b76f41a6ab3e7dfc51140, type: 3}
@@ -13492,12 +13497,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 540425612}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 615213581}
+  InterpolationTarget: {fileID: 540425611}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -16100,7 +16105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 615213582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -40671,7 +40676,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1427641782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -54119,7 +54124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1840689783}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
