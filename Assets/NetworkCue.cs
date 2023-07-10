@@ -225,11 +225,14 @@ public class NetworkCue : NetworkBehaviour
     private void ObjectSnapped(SG_Grabable sgGrab)
     {
         objSnapped = true;
+        if(!Object.HasStateAuthority){
+        Rpc_ObjectSnapped(Object.Runner,sgGrab.name);
+        }
+        else{
         recentlySnapped= sgGrab.name;
-        // if(!Object.HasStateAuthority){
-        // Rpc_ObjectSnapped(Object.Runner,sgGrab.name);
-        // }
-        // Debug.Log($"Object Snapped{objSnapped}");
+
+        }
+        Debug.Log($"Object Snapped{objSnapped}");
     }
 
 
