@@ -171,6 +171,7 @@ public class NetworkCue : NetworkBehaviour
         Rpc_SetActiveSnapzone(Object.Runner, objName, idx, state);
 
     }
+
 [Rpc]
     public static void Rpc_ObjectSnapped(NetworkRunner runner, string snappedObj)
     {
@@ -195,12 +196,14 @@ public class NetworkCue : NetworkBehaviour
             // resetObjSnapped=true;
             SetActiveSnapzone("Base", i, false);
             SwitchState("Base", i, false);
+            yield return new WaitForSeconds(2f);
         }
         for (int i = 0; i < 4; i++)
         {
             SwitchState("Vertical", i, true);
             SetActiveSnapzone("Vertical", i, true);
             Debug.Log($"Waiting for Vertical {i} to be snapped");
+            recentlySnapped="";
             yield return new WaitUntil(() => (IsObjSnapped("Vertical")));
             Debug.Log($"Vertical {i} snapped");
             recentlySnapped="";
@@ -223,9 +226,9 @@ public class NetworkCue : NetworkBehaviour
     {
         objSnapped = true;
         recentlySnapped= sgGrab.name;
-        if(!Object.HasStateAuthority){
-        Rpc_ObjectSnapped(Object.Runner,sgGrab.name);
-        }
+        // if(!Object.HasStateAuthority){
+        // Rpc_ObjectSnapped(Object.Runner,sgGrab.name);
+        // }
         // Debug.Log($"Object Snapped{objSnapped}");
     }
 
