@@ -672,8 +672,8 @@ GameObject:
   - component: {fileID: 2425534727356703038}
   - component: {fileID: 3744630932047574918}
   - component: {fileID: 3794808636998378293}
-  - component: {fileID: 1733985864308106121}
   - component: {fileID: 3038478428970033604}
+  - component: {fileID: 7519673011648436706}
   m_Layer: 0
   m_Name: Cup 1
   m_TagString: Untagged
@@ -898,7 +898,7 @@ MonoBehaviour:
     _defaultGripPoseInfo:
       _avatarPrefabGuid: 
       _handPose: {fileID: 0}
-      _poseBlendValue: 0
+      _poseBlendValue: -1
       _gripAlignTransformHandLeft: {fileID: 0}
       _gripAlignTransformHandRight: {fileID: 0}
     _snapMode: 3
@@ -948,34 +948,6 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours: []
   SimulationBehaviours: []
---- !u!114 &1733985864308106121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423069002897315907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!54 &3038478428970033604
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -992,6 +964,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 2
+--- !u!114 &7519673011648436706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2423069002897315907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 3
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &2537519912723260642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1338,8 +1338,8 @@ GameObject:
   - component: {fileID: 5422126550777086133}
   - component: {fileID: 452523254891619913}
   - component: {fileID: 570829431747699547}
-  - component: {fileID: 6240399020488558313}
   - component: {fileID: 5939102353144584599}
+  - component: {fileID: 4588370946526879630}
   m_Layer: 0
   m_Name: Cup 3
   m_TagString: Untagged
@@ -1564,7 +1564,7 @@ MonoBehaviour:
     _defaultGripPoseInfo:
       _avatarPrefabGuid: 
       _handPose: {fileID: 0}
-      _poseBlendValue: 0
+      _poseBlendValue: -1
       _gripAlignTransformHandLeft: {fileID: 0}
       _gripAlignTransformHandRight: {fileID: 0}
     _snapMode: 3
@@ -1614,34 +1614,6 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours: []
   SimulationBehaviours: []
---- !u!114 &6240399020488558313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352945232397329475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!54 &5939102353144584599
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1658,6 +1630,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 2
+--- !u!114 &4588370946526879630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3352945232397329475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 3
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &3481488070046465369
 GameObject:
   m_ObjectHideFlags: 0
@@ -2514,8 +2514,8 @@ GameObject:
   - component: {fileID: 8033526751183616114}
   - component: {fileID: 7301302278090415368}
   - component: {fileID: 4930769914599990883}
-  - component: {fileID: 7901598173392711898}
   - component: {fileID: 6293254874400494932}
+  - component: {fileID: 8688324462944759576}
   m_Layer: 0
   m_Name: Cup 4
   m_TagString: Untagged
@@ -2740,7 +2740,7 @@ MonoBehaviour:
     _defaultGripPoseInfo:
       _avatarPrefabGuid: 
       _handPose: {fileID: 0}
-      _poseBlendValue: 0
+      _poseBlendValue: -1
       _gripAlignTransformHandLeft: {fileID: 0}
       _gripAlignTransformHandRight: {fileID: 0}
     _snapMode: 3
@@ -2790,34 +2790,6 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours: []
   SimulationBehaviours: []
---- !u!114 &7901598173392711898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6955384766860011259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!54 &6293254874400494932
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2834,6 +2806,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 2
+--- !u!114 &8688324462944759576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6955384766860011259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 3
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &6971214635543425937
 GameObject:
   m_ObjectHideFlags: 0
@@ -3338,8 +3338,8 @@ GameObject:
   - component: {fileID: 8320979853644296219}
   - component: {fileID: 818325060425150265}
   - component: {fileID: 443610539697552574}
-  - component: {fileID: 3533223335159098718}
   - component: {fileID: 3656869520359659856}
+  - component: {fileID: 1978721551963500851}
   m_Layer: 0
   m_Name: Cup 2
   m_TagString: Untagged
@@ -3564,7 +3564,7 @@ MonoBehaviour:
     _defaultGripPoseInfo:
       _avatarPrefabGuid: 
       _handPose: {fileID: 0}
-      _poseBlendValue: 0
+      _poseBlendValue: -1
       _gripAlignTransformHandLeft: {fileID: 0}
       _gripAlignTransformHandRight: {fileID: 0}
     _snapMode: 3
@@ -3614,34 +3614,6 @@ MonoBehaviour:
   NestedObjects: []
   NetworkedBehaviours: []
   SimulationBehaviours: []
---- !u!114 &3533223335159098718
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8122388939323743221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!54 &3656869520359659856
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3658,6 +3630,34 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 90
   m_CollisionDetection: 2
+--- !u!114 &1978721551963500851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8122388939323743221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 3
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 0}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &8932350217616660047
 GameObject:
   m_ObjectHideFlags: 0
@@ -3891,6 +3891,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1134583924531963567, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+--- !u!4 &6013649840281450512 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738637951988754703, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+  m_PrefabInstance: {fileID: 4040270496966250783}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6013649841389340798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
@@ -3910,7 +3915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 6013649840281450512}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -3924,26 +3929,6 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
---- !u!114 &4414983581900538386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6013649841389340798}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969d4205afba89f4e9df5221e3efda9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 0
-  duration: 0
-  hitWait: 0
-  UxrclipType: 0
-  minVelocity: 0
-  maxVelocity: 2
-  magnitude: 100
-  fingers: 0101000000
 --- !u!4 &6013649841389344643 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
@@ -4034,7 +4019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 6274342923465142995}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -4048,29 +4033,14 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
---- !u!114 &7560643465865928625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6274342922426499773}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969d4205afba89f4e9df5221e3efda9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 0
-  duration: 0
-  hitWait: 0
-  UxrclipType: 0
-  minVelocity: 0
-  maxVelocity: 2
-  magnitude: 100
-  fingers: 0101000000
 --- !u!4 &6274342922426506560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+  m_PrefabInstance: {fileID: 4357192585648102364}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &6274342923465142995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738637951988754703, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_PrefabInstance: {fileID: 4357192585648102364}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7331154046175933698
@@ -4143,6 +4113,11 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 1134583924531963567, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+--- !u!4 &1069701617359428621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738637951988754703, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+  m_PrefabInstance: {fileID: 7331154046175933698}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1069701618398227555 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
@@ -4162,7 +4137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1069701617359428621}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -4176,26 +4151,6 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
---- !u!114 &3688987617812316340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069701618398227555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969d4205afba89f4e9df5221e3efda9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 0
-  duration: 0
-  hitWait: 0
-  UxrclipType: 0
-  minVelocity: 0
-  maxVelocity: 2
-  magnitude: 100
-  fingers: 0101000000
 --- !u!4 &1069701618398229406 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7738637950949426844, guid: c055a29559e47794d951451e08d52cd9, type: 3}
@@ -4277,26 +4232,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738637950949431649, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_PrefabInstance: {fileID: 9049081727787363603}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2631518125666644686
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1653350839802983538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 969d4205afba89f4e9df5221e3efda9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  intensity: 0
-  duration: 0
-  hitWait: 0
-  UxrclipType: 0
-  minVelocity: 0
-  maxVelocity: 2
-  magnitude: 100
-  fingers: 0101000000
 --- !u!114 &3338996309571520679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4311,7 +4246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1653350840844092444}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -4325,3 +4260,8 @@ MonoBehaviour:
     RotTeleportRadians: 1.5
   UseLegacySharedModeInterpolation: 0
   TargetInterpolationDelay: 0.03
+--- !u!4 &1653350840844092444 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7738637951988754703, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+  m_PrefabInstance: {fileID: 9049081727787363603}
+  m_PrefabAsset: {fileID: 0}

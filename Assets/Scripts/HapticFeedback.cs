@@ -27,7 +27,7 @@ public class HapticFeedback : MonoBehaviour
     [Range(0, 100)] public int magnitude = 100;
 
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
-    public bool[] fingers = new bool[5] { true, true, false, false, false };
+    public bool[] fingers = new bool[5] { true, true, true, true, true };
 
     /// <summary> The vibration command to be send. Cached so we do not need to regenerate it every frame. </summary>
     protected SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
@@ -104,7 +104,7 @@ public class HapticFeedback : MonoBehaviour
         {
 
             //regenerate the vibration command. We'll make it 0.02f (20ms) long so there will be overlap between two frames for a continuous vibration.
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
+            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
             objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             // objectToVibrate.SendCmd(vibrationCmd);
             yield return null;
