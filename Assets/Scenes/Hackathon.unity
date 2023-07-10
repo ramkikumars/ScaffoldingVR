@@ -1769,9 +1769,9 @@ GameObject:
   - component: {fileID: 83495154}
   - component: {fileID: 83495153}
   - component: {fileID: 83495152}
-  - component: {fileID: 83495151}
   - component: {fileID: 83495150}
   - component: {fileID: 83495149}
+  - component: {fileID: 83495158}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -1831,34 +1831,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &83495151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 83495147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 2095557337}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &83495152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,8 +1853,8 @@ MonoBehaviour:
     RawGuidValue: 455a8f13c6a1406b9f7b7abd23e9aae4
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 83495151}
   - {fileID: 83495149}
+  - {fileID: 83495158}
   SimulationBehaviours: []
 --- !u!136 &83495153
 CapsuleCollider:
@@ -1992,6 +1964,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 83495147}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &83495158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83495147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 2095557337}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &83791615
 GameObject:
   m_ObjectHideFlags: 0
@@ -4202,9 +4202,9 @@ GameObject:
   - component: {fileID: 158374511}
   - component: {fileID: 158374510}
   - component: {fileID: 158374509}
-  - component: {fileID: 158374508}
   - component: {fileID: 158374507}
   - component: {fileID: 158374515}
+  - component: {fileID: 158374516}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -4244,34 +4244,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &158374508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 158374505}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 365684081}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &158374509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4294,8 +4266,8 @@ MonoBehaviour:
     RawGuidValue: e630c2800d34443eaca3e563f68c2e4f
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 158374508}
   - {fileID: 158374515}
+  - {fileID: 158374516}
   SimulationBehaviours: []
 --- !u!136 &158374510
 CapsuleCollider:
@@ -4425,6 +4397,34 @@ MonoBehaviour:
   nobj: {fileID: 158374509}
   reqAuth: 0
   relAuth: 0
+--- !u!114 &158374516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158374505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 365684081}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &158732317
 GameObject:
   m_ObjectHideFlags: 0
@@ -17701,6 +17701,11 @@ MonoBehaviour:
   m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &647228913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3324435127739356542, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+  m_PrefabInstance: {fileID: 1458614499}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &647795302
 GameObject:
   m_ObjectHideFlags: 0
@@ -23809,9 +23814,9 @@ GameObject:
   - component: {fileID: 860769295}
   - component: {fileID: 860769294}
   - component: {fileID: 860769293}
-  - component: {fileID: 860769292}
   - component: {fileID: 860769291}
   - component: {fileID: 860769290}
+  - component: {fileID: 860769299}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -23871,34 +23876,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &860769292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 860769288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 722130661}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &860769293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23921,8 +23898,8 @@ MonoBehaviour:
     RawGuidValue: da0b47cad55741c5a952f93dd6d5c53b
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 860769292}
   - {fileID: 860769290}
+  - {fileID: 860769299}
   SimulationBehaviours: []
 --- !u!136 &860769294
 CapsuleCollider:
@@ -24032,6 +24009,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 860769288}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &860769299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 860769288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 722130661}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &861574019
 GameObject:
   m_ObjectHideFlags: 0
@@ -28556,9 +28561,9 @@ GameObject:
   - component: {fileID: 996460830}
   - component: {fileID: 996460829}
   - component: {fileID: 996460828}
-  - component: {fileID: 996460827}
   - component: {fileID: 996460826}
   - component: {fileID: 996460825}
+  - component: {fileID: 996460834}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -28618,34 +28623,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &996460827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 996460823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 2026937180}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!114 &996460828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28668,8 +28645,8 @@ MonoBehaviour:
     RawGuidValue: 5513a5b9889748518bdabe2d8aaa601e
   NestedObjects: []
   NetworkedBehaviours:
-  - {fileID: 996460827}
   - {fileID: 996460825}
+  - {fileID: 996460834}
   SimulationBehaviours: []
 --- !u!136 &996460829
 CapsuleCollider:
@@ -28779,6 +28756,34 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 996460823}
   m_Mesh: {fileID: 4967224183553403863, guid: 9d8169d48da1dc64487995a611395a04, type: 3}
+--- !u!114 &996460834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996460823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 2026937180}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &999385070
 GameObject:
   m_ObjectHideFlags: 0
@@ -41884,6 +41889,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 87.983
       objectReference: {fileID: 0}
+    - target: {fileID: 3324435128444970712, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3324435129357158536, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
       propertyPath: m_Center.x
       value: 3.72
@@ -41894,7 +41903,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 315469143923642030, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
-    - {fileID: 3324435128081456563, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
 --- !u!1 &1458614500 stripped
 GameObject:
@@ -42421,6 +42429,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468366012}
   m_Mesh: {fileID: 1353746659569323740, guid: 16bdb2e8854489c42857865f535679f1, type: 3}
+--- !u!114 &1470269378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1458614500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d484933bca07044bbd8483bdd085338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  box: {fileID: 647228913}
+  holder: {fileID: 1458614515}
+  _text: {fileID: 1804089995}
 --- !u!1 &1471158314
 GameObject:
   m_ObjectHideFlags: 0
@@ -53041,6 +53064,17 @@ Transform:
   m_Father: {fileID: 1900986220}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!114 &1804089995 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3324435127480931761, guid: 57eff2fa27da449478ee790f9ec742e0, type: 3}
+  m_PrefabInstance: {fileID: 1458614499}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1804372023
 GameObject:
   m_ObjectHideFlags: 0
