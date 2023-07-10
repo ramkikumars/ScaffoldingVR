@@ -82,13 +82,13 @@ public class NetworkGrabbable : NetworkBehaviour
     private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
     {
         // objGrabbed = true;
-        ReqAuthorithy(nobj);
-        // nobj.RequestStateAuthority();
+        // ReqAuthorithy(nobj);
+        nobj.RequestStateAuthority();
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
     {
         // objReleased = true;
-        // nobj.ReleaseStateAuthority();
+        nobj.ReleaseStateAuthority();
     }
 
     async void ReqAuthorithy(NetworkObject o)
