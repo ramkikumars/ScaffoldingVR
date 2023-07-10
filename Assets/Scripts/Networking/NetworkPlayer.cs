@@ -9,7 +9,7 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
     public NetworkObject networkObject => GetComponent<NetworkObject>();
     // Start is called before the first frame update
     public string playerName;
-    public TextMeshPro playerNameTmPro;
+    // public TextMeshPro playerNameTmPro;
 
     // [System.Serializable]
     [Networked]
@@ -40,6 +40,6 @@ public class NetworkPlayer : NetworkBehaviour, IPlayerLeft
         changed.Behaviour.OnNickNameChanged();
     }
     private void OnNickNameChanged(){
-        playerNameTmPro.text=nickName.ToString();
+        // playerNameTmPro.text=nickName.ToString();
     }
 }
