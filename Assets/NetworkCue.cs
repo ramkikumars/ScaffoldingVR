@@ -217,6 +217,7 @@ public class NetworkCue : NetworkBehaviour
         recentlySnapped="";
         yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
         recentlySnapped="";
+        yield return new WaitForSeconds(1f);
         yield return new WaitUntil(() => (IsObjSnapped("HGrab")));
         recentlySnapped="";
         SwitchState("HorizontalLower", 0, false);
