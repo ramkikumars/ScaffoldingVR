@@ -6878,7 +6878,7 @@ MonoBehaviour:
   snapPoint: {fileID: 276722111}
   snapToPosition: 1
   snapToRotation: 0
-  snapSmoothing: {fileID: 276722117}
+  snapSmoothing: {fileID: 0}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -47548,7 +47548,7 @@ MonoBehaviour:
   snapPoint: {fileID: 1595137498}
   snapToPosition: 1
   snapToRotation: 0
-  snapSmoothing: {fileID: 1595137504}
+  snapSmoothing: {fileID: 0}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
