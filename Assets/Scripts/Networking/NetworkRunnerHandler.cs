@@ -16,12 +16,12 @@ public class NetworkRunnerHandler : MonoBehaviour
     NetworkRunner networkRunner;
     public String region;
     public String sessionName;
-    public String sceneName;
     // Start is called before the first frame update
     // public NetworkCue networkCue;
     void Start()
     {
-
+        region=PlayerPrefs.GetString("RegionName");
+        sessionName=PlayerPrefs.GetString("SessionName");
         if (networkRunner == null)
         {
             networkRunner = Instantiate(networkRunnerPrefab);
@@ -89,12 +89,5 @@ public class NetworkRunnerHandler : MonoBehaviour
         return appSettings;
     }
 
-    public void CreateGame(string sessionName, string regionName)
-    {
-        Debug.Log($"Create session {sessionName} scene {sceneName} build Index {SceneUtility.GetBuildIndexByScenePath($"scenes/{sceneName}")}");
 
-        //Join existing game as a client
-        var clientTask = InitializeNetworkRunner(networkRunner, GameMode.Shared,sessionName,regionName,NetAddress.Any(), SceneUtility.GetBuildIndexByScenePath($"scenes/{sceneName}"), null);
-
-    }
 }

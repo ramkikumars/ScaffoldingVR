@@ -18,6 +18,7 @@ public class HapticFeedback : MonoBehaviour
     private string controllerName;
     private VelocityEstimator velocityEstimator;
     private float hitVelocity;
+    private SG_HandSection sgHand=new SG_HandSection();
     // private UxrGrabbableObject grabObj => GetComponent<UxrGrabbableObject>();
     // <summary> The Interactable object that we will be sending vibration commands to. </summary>
     /// <remarks> Since SG_Grabable derives from SG_Interactable, this will work for grabables, as well as any other script that derives from SG_Interactable. </remarks>
@@ -109,7 +110,8 @@ public class HapticFeedback : MonoBehaviour
             // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
              vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude),0.1f);
             // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-            objectToVibrate.SendCmd(vibrationCmd);
+            // objectToVibrate.SendCmd(vibrationCmd);
+            objectToVibrate.SendImpactVibration(SG_HandSection.Wrist,magnitude);
             yield return new WaitForSeconds(0.1f);
 
         // }

@@ -2557,6 +2557,7 @@ GameObject:
   - component: {fileID: 103628124}
   - component: {fileID: 103628126}
   - component: {fileID: 103628125}
+  - component: {fileID: 103628127}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -2608,7 +2609,7 @@ MonoBehaviour:
   snapPoint: {fileID: 103628124}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 103628127}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -2628,6 +2629,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &103628127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103628123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &104377041
 GameObject:
   m_ObjectHideFlags: 0
@@ -6789,6 +6827,7 @@ GameObject:
   - component: {fileID: 276722114}
   - component: {fileID: 276722113}
   - component: {fileID: 276722112}
+  - component: {fileID: 276722117}
   m_Layer: 0
   m_Name: Grab2
   m_TagString: Untagged
@@ -6839,7 +6878,7 @@ MonoBehaviour:
   snapPoint: {fileID: 276722111}
   snapToPosition: 1
   snapToRotation: 0
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 276722117}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -6923,6 +6962,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 276722110}
   m_Mesh: {fileID: 6239881831769578202, guid: b8e14b5208155404bb5bea96e2e7a739, type: 3}
+--- !u!114 &276722117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276722110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &277149666
 GameObject:
   m_ObjectHideFlags: 0
@@ -18501,6 +18577,7 @@ GameObject:
   - component: {fileID: 674476021}
   - component: {fileID: 674476023}
   - component: {fileID: 674476022}
+  - component: {fileID: 674476024}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -18568,10 +18645,47 @@ MonoBehaviour:
   snapPoint: {fileID: 674476021}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 674476024}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &674476024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 674476020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &675825560
 GameObject:
   m_ObjectHideFlags: 0
@@ -24669,6 +24783,7 @@ GameObject:
   - component: {fileID: 871365529}
   - component: {fileID: 871365531}
   - component: {fileID: 871365530}
+  - component: {fileID: 871365532}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -24720,7 +24835,7 @@ MonoBehaviour:
   snapPoint: {fileID: 871365529}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 871365532}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -24740,6 +24855,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &871365532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871365528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &875359806
 GameObject:
   m_ObjectHideFlags: 0
@@ -24751,6 +24903,7 @@ GameObject:
   - component: {fileID: 875359807}
   - component: {fileID: 875359809}
   - component: {fileID: 875359808}
+  - component: {fileID: 875359810}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -24818,10 +24971,47 @@ MonoBehaviour:
   snapPoint: {fileID: 875359807}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 875359810}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &875359810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 875359806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &879856041
 GameObject:
   m_ObjectHideFlags: 0
@@ -26641,6 +26831,7 @@ GameObject:
   - component: {fileID: 923892832}
   - component: {fileID: 923892834}
   - component: {fileID: 923892833}
+  - component: {fileID: 923892835}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -26692,7 +26883,7 @@ MonoBehaviour:
   snapPoint: {fileID: 923892832}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 923892835}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -26712,6 +26903,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &923892835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923892831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &927041831
 GameObject:
   m_ObjectHideFlags: 0
@@ -28089,6 +28317,7 @@ GameObject:
   - component: {fileID: 984244407}
   - component: {fileID: 984244406}
   - component: {fileID: 984244405}
+  - component: {fileID: 984244410}
   m_Layer: 0
   m_Name: Grab2
   m_TagString: Untagged
@@ -28139,7 +28368,7 @@ MonoBehaviour:
   snapPoint: {fileID: 984244404}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 984244410}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -28223,6 +28452,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984244403}
   m_Mesh: {fileID: 6239881831769578202, guid: b8e14b5208155404bb5bea96e2e7a739, type: 3}
+--- !u!114 &984244410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984244403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &987272115
 GameObject:
   m_ObjectHideFlags: 0
@@ -30641,6 +30907,7 @@ GameObject:
   - component: {fileID: 1059577039}
   - component: {fileID: 1059577040}
   - component: {fileID: 1059577041}
+  - component: {fileID: 1059577042}
   m_Layer: 0
   m_Name: Vertical
   m_TagString: Untagged
@@ -30708,10 +30975,47 @@ MonoBehaviour:
   snapPoint: {fileID: 1059577039}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 1059577042}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1059577042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059577038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1059690933
 GameObject:
   m_ObjectHideFlags: 0
@@ -31014,6 +31318,7 @@ GameObject:
   - component: {fileID: 1068313506}
   - component: {fileID: 1068313508}
   - component: {fileID: 1068313507}
+  - component: {fileID: 1068313509}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -31081,10 +31386,47 @@ MonoBehaviour:
   snapPoint: {fileID: 1068313506}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 1068313509}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1068313509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068313505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1069555544
 GameObject:
   m_ObjectHideFlags: 0
@@ -41093,6 +41435,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
+  baseObj:
+  - {fileID: 1840689783}
+  - {fileID: 540425612}
+  - {fileID: 615213582}
+  - {fileID: 1427641782}
+  verticalObj:
+  - {fileID: 158374505}
+  - {fileID: 860769288}
+  - {fileID: 83495147}
+  - {fileID: 996460823}
+  horizontalObj:
+  - {fileID: 1816450027}
   sets:
   - {fileID: 2503749626795892975}
   - {fileID: 1435192341}
@@ -47079,6 +47433,7 @@ GameObject:
   - component: {fileID: 1595137499}
   - component: {fileID: 1595137503}
   - component: {fileID: 1595137502}
+  - component: {fileID: 1595137504}
   m_Layer: 0
   m_Name: Grab1
   m_TagString: Untagged
@@ -47193,7 +47548,7 @@ MonoBehaviour:
   snapPoint: {fileID: 1595137498}
   snapToPosition: 1
   snapToRotation: 0
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 1595137504}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -47213,6 +47568,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1595137504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595137497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1598945263
 GameObject:
   m_ObjectHideFlags: 0
@@ -57994,6 +58386,7 @@ GameObject:
   - component: {fileID: 1954524402}
   - component: {fileID: 1954524401}
   - component: {fileID: 1954524400}
+  - component: {fileID: 1954524405}
   m_Layer: 0
   m_Name: Grab1
   m_TagString: Untagged
@@ -58044,7 +58437,7 @@ MonoBehaviour:
   snapPoint: {fileID: 1954524399}
   snapToPosition: 1
   snapToRotation: 0
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 1954524405}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -58128,6 +58521,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954524398}
   m_Mesh: {fileID: 6239881831769578202, guid: b8e14b5208155404bb5bea96e2e7a739, type: 3}
+--- !u!114 &1954524405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1954524398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1955415296
 GameObject:
   m_ObjectHideFlags: 0
@@ -58142,6 +58572,7 @@ GameObject:
   - component: {fileID: 1955415300}
   - component: {fileID: 1955415299}
   - component: {fileID: 1955415298}
+  - component: {fileID: 1955415303}
   m_Layer: 0
   m_Name: Grab1
   m_TagString: Untagged
@@ -58192,7 +58623,7 @@ MonoBehaviour:
   snapPoint: {fileID: 1955415297}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 1955415303}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
@@ -58276,6 +58707,43 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955415296}
   m_Mesh: {fileID: 6239881831769578202, guid: b8e14b5208155404bb5bea96e2e7a739, type: 3}
+--- !u!114 &1955415303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955415296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1957656634
 GameObject:
   m_ObjectHideFlags: 0
@@ -59595,6 +60063,7 @@ GameObject:
   - component: {fileID: 2003782016}
   - component: {fileID: 2003782018}
   - component: {fileID: 2003782017}
+  - component: {fileID: 2003782019}
   m_Layer: 0
   m_Name: Base
   m_TagString: Untagged
@@ -59662,10 +60131,47 @@ MonoBehaviour:
   snapPoint: {fileID: 2003782016}
   snapToPosition: 1
   snapToRotation: 1
-  snapSmoothing: {fileID: 0}
+  snapSmoothing: {fileID: 2003782019}
   ObjectSnapped:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2003782019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003782015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5eea24fc6ff63d46a83ae4516d11f1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementTime: 1
+  movementProfile:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2005086902
 GameObject:
   m_ObjectHideFlags: 0

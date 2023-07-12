@@ -12,8 +12,8 @@ public class MainMenuUIHandler : MonoBehaviour
     public GameObject createSessionPanel;
     public GameObject statusPanel;
 
-    [Header("Player settings")]
-    public TMP_InputField playerNameInputField;
+    // [Header("Player settings")]
+    // public TMP_InputField playerNameInputField;
 
     [Header("Room Name")]
     public TMP_InputField roomNameInputField;
@@ -24,8 +24,11 @@ public class MainMenuUIHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey("PlayerNickname"))
-            playerNameInputField.text = PlayerPrefs.GetString("PlayerNickname");
+        if (PlayerPrefs.HasKey("RegionName"))
+            regionNameInputField.text = PlayerPrefs.GetString("RegionName");
+        if (PlayerPrefs.HasKey("SessionName"))
+            roomNameInputField.text = PlayerPrefs.GetString("SessionName");
+
     }
 
     void HideAllPanels()
@@ -38,14 +41,16 @@ public class MainMenuUIHandler : MonoBehaviour
 
     public void OnStartGameClicked()
     {
-        PlayerPrefs.SetString("PlayerNickname", playerNameInputField.text);
+        // PlayerPrefs.SetString("PlayerNickname", playerNameInputField.text);
+        PlayerPrefs.SetString("SessionName", roomNameInputField.text);
+        PlayerPrefs.SetString("RegionName", regionNameInputField.text);
         PlayerPrefs.Save();
-
+        SceneManager.LoadScene("Scenes/Hackathon",LoadSceneMode.Single);
         // GameManager.instance.playerNickName = playerNameInputField.text;
 
-        NetworkRunnerHandler networkRunnerHandler = FindObjectOfType<NetworkRunnerHandler>();
+        // NetworkRunnerHandler networkRunnerHandler = FindObjectOfType<NetworkRunnerHandler>();
 
-        networkRunnerHandler.CreateGame(roomNameInputField.text,regionNameInputField.text);
+        // networkRunnerHandler.CreateGame(roomNameInputField.text,regionNameInputField.text);
 
 
     }
@@ -57,16 +62,7 @@ public class MainMenuUIHandler : MonoBehaviour
     //     createSessionPanel.SetActive(true);
     // }
 
-    // public void OnStartNewSessionClicked()
-    // {
-    //     NetworkRunnerHandler networkRunnerHandler = FindObjectOfType<NetworkRunnerHandler>();
-
-    //     networkRunnerHandler.CreateGame(sessionNameInputField.text, "World1");
-
-    //     HideAllPanels();
-
-    //     statusPanel.gameObject.SetActive(true);
-    // }
+    // s
 
     // public void OnJoiningServer()
     // {

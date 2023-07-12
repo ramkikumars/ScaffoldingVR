@@ -19,7 +19,11 @@ public class NetworkCue : NetworkBehaviour
     // [Header("Scaffolding Objects")]
     //
     // private static GameObject [] basess,verticalss,horizontalLowerss,horizontalMiddless;
-    // // private static GameObject[] set1s, set2s, set3s, set4s;
+    public  GameObject [] baseObj,verticalObj,horizontalObj;
+    private static GameObject [] baseObjs,verticalObjs,horizontalObjs;
+    private static Vector3 [] basessPos,verticalssPos,horizontalPos;
+    private static Quaternion [] basessRot,verticalssRot,horizontalRot;
+    // private static GameObject[] set1s, set2s, set3s, set4s;
     // private static SG_SnapDropZone [] baseSnapZoness,verticalSnapZoness;
     // private static SG_SnapDropZone [][] horizontalSnapZoness;
 
@@ -36,6 +40,7 @@ public class NetworkCue : NetworkBehaviour
     // private SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     // private SG_SnapDropZone[][] horizontalSnapZones;
     public NetworkObject networkObject;
+    private static Coroutine routine;
     void Start()
     {
         bases=new GameObject[4];
@@ -47,6 +52,16 @@ public class NetworkCue : NetworkBehaviour
         horizontalLowerZones=new SG_SnapDropZone[4,2];
         horizontalMiddleZones=new SG_SnapDropZone[4,2];
 
+        baseObjs=new GameObject[4];
+        verticalObjs=new GameObject[4];
+        horizontalObjs=new GameObject[1];
+
+        basessPos=new Vector3[4];
+        basessRot=new Quaternion[4];
+        verticalssPos=new Vector3[4];
+        verticalssRot=new Quaternion[4];
+        horizontalPos=new Vector3[4];
+        horizontalRot=new Quaternion[4];
         for (int i = 0; i <4; i++)
         {
             // GameObject basee=sets[i].transform.Find("Base").gameObject;
@@ -65,13 +80,38 @@ public class NetworkCue : NetworkBehaviour
             verticalSnapZones[i].ObjectSnapped.AddListener(ObjectSnapped);
 
                 horizontalLowerZones[i,0] = sets[i].transform.Find("SnapObjects/HorizontalLower/Grab1").GetComponent<SG_SnapDropZone>();
+            horizontalLowerZones[i,0].ObjectSnapped.AddListener(ObjectSnapped);
                 horizontalLowerZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalLower/Grab2").GetComponent<SG_SnapDropZone>();
+            horizontalLowerZones[i,1].ObjectSnapped.AddListener(ObjectSnapped);
+
 
                 horizontalMiddleZones[i,0] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab1").GetComponent<SG_SnapDropZone>();
+            horizontalLowerZones[i, 0].ObjectSnapped.AddListener(ObjectSnapped);
                 horizontalMiddleZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab2").GetComponent<SG_SnapDropZone>();
+            horizontalMiddleZones[i, 1].ObjectSnapped.AddListener(ObjectSnapped);
+
         }
 
 
+        for(int i=0;i<baseObj.Length;i++){
+        baseObjs[i]= baseObj[i];
+        basessPos[i] = baseObj[i].transform.position;
+        basessRot[i] = baseObj[i].transform.rotation;
+        }
+
+        for (int i = 0; i < verticalObj.Length; i++)
+        {
+        verticalObjs[i] = verticalObj[i];
+        verticalssPos[i] = verticalObj[i].transform.position;
+        verticalssRot[i] = verticalObj[i].transform.rotation;
+        }
+        for (int i = 0; i < horizontalObj.Length; i++)
+        {
+
+        horizontalObjs[i]= horizontalObj[i];
+        horizontalPos[i] = horizontalObj[i].transform.position;
+        horizontalRot[i] = horizontalObj[i].transform.rotation;
+        }
 
 
     }
@@ -79,7 +119,12 @@ public class NetworkCue : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKey(KeyCode.Space))
+        {
+            print("Initial Setup Done");
+            // InitialSetup(this);
+            Rpc_InitialSetup(Object.Runner,this);
+        }
     }
 
     public override void FixedUpdateNetwork()
@@ -116,6 +161,11 @@ public class NetworkCue : NetworkBehaviour
         Rpc_SwitchState(Object.Runner, objName, idx, state1);
     }
 
+    [Rpc]
+    public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
+    {
+        InitialSetup(networkCue);
+    }
 
     [Rpc]
     public static void Rpc_SetActiveSnapzone(NetworkRunner runner, string objName, int idx, bool state)
@@ -182,7 +232,7 @@ public class NetworkCue : NetworkBehaviour
     {
 
         Debug.Log("Started Coroutine");
-        yield return new WaitUntil(()=>(IsPlayerJoined()));
+        // yield return new WaitUntil(()=>(IsPlayerJoined()));
 
             for(int i=0;i<4;i++){
 
@@ -263,14 +313,58 @@ public class NetworkCue : NetworkBehaviour
         }
 
     }
+    private static void InitialSetup(NetworkCue networkCue){
+        for (int i = 0; i < baseObjs.Length; i++)
+        {
+             baseObjs[i].transform.position=basessPos[i];
+             baseObjs[i].transform.rotation=basessRot[i];
+        }
 
+        for (int i = 0; i < verticalObjs.Length; i++)
+        {
+            verticalObjs[i].transform.position=verticalssPos[i];
+             verticalObjs[i].transform.rotation=verticalssRot[i];
+        }
+        for (int i = 0; i < horizontalObjs.Length; i++)
+        {
+            horizontalObjs[i].transform.position=horizontalPos[i];
+             horizontalObjs[i].transform.rotation=horizontalRot[i];
+        }
+        for(int i=0;i<4;i++){
+            baseSnapZones[i].enabled=false;
+            verticalSnapZones[i].enabled=false;
+            horizontalLowerZones[i,0].enabled=false;
+            horizontalLowerZones[i,1].enabled=false;
+            horizontalMiddleZones[i,0].enabled=false;
+            horizontalMiddleZones[i,1].enabled=false;
+                bases[i].SetActive(false);
+
+                verticals[i].SetActive(false);
+
+                horizontalLowers[i].SetActive(false);
+
+                horizontalMiddles[i].SetActive(false);
+        }
+
+        if (routine != null)
+        {
+            networkCue.StopCoroutine(routine);
+            routine = null;
+        }
+        routine=networkCue.StartCoroutine(networkCue.Exercise1());
+
+    }
     public override void Spawned()
     {
         base.Spawned();
         Debug.Log(Object.HasStateAuthority);
-        if(Object.HasStateAuthority){
+
         StartCoroutine(Exercise1());
-        }
+        // if(Object.HasStateAuthority){
+        // StartCoroutine(Exercise1());
+        // }
     }
+
+
 
 }

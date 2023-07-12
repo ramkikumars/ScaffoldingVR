@@ -1261,7 +1261,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3324435128081456562}
-  - component: {fileID: 3324435128081456563}
   - component: {fileID: 3324435128081456575}
   - component: {fileID: 3324435128081456574}
   - component: {fileID: 756884362204310829}
@@ -1290,26 +1289,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 87.983}
---- !u!114 &3324435128081456563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3324435128081456560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c99ba627a1b9345a44fc3c62e886f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  box: {fileID: 3324435128081456560}
-  holder: {fileID: 3324435129357158546}
-  tape: {fileID: 3324435128444970712}
-  _text: {fileID: 3324435127480931761}
-  tapeOpeningHaptics: {fileID: 0}
-  tapeClosingHapticsRight: {fileID: 0}
-  tapeClosingHapticsLeft: {fileID: 0}
-  velocityEstimator: {fileID: 4899052717169774170}
 --- !u!65 &3324435128081456575
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1870,6 +1849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1899afeb6fcb84c8d5fc7551940e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 1

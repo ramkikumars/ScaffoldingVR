@@ -22,7 +22,6 @@ public class NetworkMultiVibration : NetworkBehaviour
     private static bool handPlaced=false;
     private static float dist;
     public static SG_FixedRod fixedRod;
-
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
     public static bool[] fingers = new bool[5] { true, true, true, true, true };
 
@@ -102,7 +101,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     public static void Rpc_GiveVibrationOtherHand(NetworkRunner runner,Vector3 hammerPos,NetworkMultiVibration nmult)
     {
         if(handPlaced){
-         
+
          dist=Vector3.Distance(handPos,hammerPos);
             // float dist1=Mathf.Abs(handPos.z-hammerPos.z);
             nmult.StartCoroutine(HitAndWait());
@@ -110,7 +109,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     }
      static IEnumerator HitAndWait()
     {
-          
+
             Debug.Log($"Dist bw hammr and hand");
             float mag = Mathf.InverseLerp(1, 0, dist) * 100;
             vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);

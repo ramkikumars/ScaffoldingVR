@@ -16,20 +16,20 @@ MonoBehaviour:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: -0.0041656494
-      value: 1.0278015
+      time: 0
+      value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
     - serializedVersion: 3
-      time: 0.9833435
-      value: 0.989646
+      time: 1
+      value: 1
       inSlope: 0
       outSlope: 0
-      tangentMode: 0
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
       outWeight: 0
@@ -37,10 +37,10 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration_s: 0.2
-  magnitude: 100
-  thumb: 0
-  index: 1
+  magnitude: 85
+  thumb: 1
+  index: 0
   middle: 0
   ring: 0
   pinky: 0
-  wrist: 0
+  wrist: 1
