@@ -80363,7 +80363,7 @@ MonoBehaviour:
   randomizePitch: 1
   minPitch: 0.8
   maxPitch: 1.2
-  waveForm: {fileID: 0}
+  waveForm: {fileID: 11400000, guid: bd55c0fbac6b9c04b9052f842a5eebeb, type: 2}
 --- !u!114 &9108481071149252752
 MonoBehaviour:
   m_ObjectHideFlags: 0
