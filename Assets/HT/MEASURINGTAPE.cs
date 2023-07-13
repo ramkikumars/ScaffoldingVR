@@ -8,9 +8,9 @@ public class MEASURINGTAPE : MonoBehaviour
     public GameObject box;
     // make an array to store plane1 plane 2...
     public GameObject[] planes;
-    float maxDistance = 73f;
+    float maxDistance = 19f;
     float minValue = 0f;
-    float maxValue = 73f;
+    float maxValue = 19f;
     int minIndex = 0;
     int maxIndex = 9;
     void Start()
@@ -33,11 +33,13 @@ public class MEASURINGTAPE : MonoBehaviour
 
             // when the planes global posiition is ahead of the box then make the plane active
 
-            // when global position of planes x y and z 
+            // when global position of planes x y and z
             // if (planes[i].transform.position.x > box.transform.position.x)
-            int mappedIndex = MapValueToIndex((Distance(box, plane)), minValue, maxValue, minIndex, maxIndex);
+            // int mappedIndex = MapValueToIndex((Distance(box, plane)), minValue, maxValue, minIndex, maxIndex);
 
-            if (GlobalDistance(planes[i], box) < 0.1f || i < mappedIndex)
+            Vector3 planeLocal=box.transform.InverseTransformPoint(planes[i].transform.position);
+            float xVal=planeLocal.x;
+            if (xVal> -1.5f) //|| i < mappedIndex)
             {
                 planes[i].SetActive(true);
             }
@@ -45,6 +47,14 @@ public class MEASURINGTAPE : MonoBehaviour
             {
                 planes[i].SetActive(false);
             }
+            // if (GlobalDistance(planes[i], box) < 0.1f) //|| i < mappedIndex)
+            // {
+            //     planes[i].SetActive(true);
+            // }
+            // else
+            // {
+            //     planes[i].SetActive(false);
+            // }
 
         }
     }

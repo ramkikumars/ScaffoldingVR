@@ -21,7 +21,10 @@ public class NetworkMultiVibration : NetworkBehaviour
     private Vector3 hammerPos=Vector3.zero;
     private static bool handPlaced=false;
     private static float dist;
+    private static float hammerMag;
     public static SG_FixedRod fixedRod;
+    public  SG_Waveform waveForm;
+    public  static SG_Waveform waveForms;
     /// <summary> To which fingers the vibration command will be sent. 0 = thumb, 4 = pinky. </summary>
     public static bool[] fingers = new bool[5] { true, true, true, true, true };
 
@@ -33,6 +36,12 @@ fixedRod=GetComponent<SG_FixedRod>();
 source = GetComponent<AudioSource>();
 fixedRod.ObjectGrabbed.AddListener(ObjectGrabbed);
 fixedRod.ObjectReleased.AddListener(ObjectReleased);
+waveForms=waveForm;
+// waveForm.index=true;
+// waveForm.middle=true;
+// waveForm.ring=true;
+// waveForm.pinky=true;
+
     }
 
     // Update is called once per frame
@@ -47,6 +56,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
     {
         handPlaced = false;
+        sgGrab.StopAllVibrations();
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -68,7 +78,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
 
     private void OnCollisionEnter(Collision other)
     {
-        Debug.Log("Enter aud");
+        // Debug.Log("Enter aud");
         if (other.gameObject.CompareTag(targetTag))
         {
             VelocityEstimator estimator = other.gameObject.GetComponent<VelocityEstimator>();
@@ -76,6 +86,7 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
             {
                 float v = estimator.GetVelocityEstimate().magnitude;
                 float volume = Mathf.InverseLerp(minVelocity, maxVelocity, v);
+                hammerMag=Mathf.InverseLerp(minVelocity, maxVelocity, v);
                 Debug.Log($"Hit with Velocity {v} and volume is {volume}");
                 if (randomizePitch)
                 {
@@ -102,19 +113,23 @@ fixedRod.ObjectReleased.AddListener(ObjectReleased);
     {
         if(handPlaced){
 
-         dist=Vector3.Distance(handPos,hammerPos);
-            // float dist1=Mathf.Abs(handPos.z-hammerPos.z);
+        //  dist=Vector3.Distance(handPos,hammerPos);
+            float dist=Mathf.Abs(handPos.x-hammerPos.x);
             nmult.StartCoroutine(HitAndWait());
         }
     }
      static IEnumerator HitAndWait()
     {
 
-            Debug.Log($"Dist bw hammr and hand");
-            float mag = Mathf.InverseLerp(1, 0, dist) * 100;
-            vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);
-            fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
-            yield return new WaitForSeconds(0.5f);
+            Debug.Log($"Dist bw hammer and hand");
+        float distMag = Mathf.InverseLerp(1.1f, 0, dist) * 100f;
+        float totalMag=(distMag+hammerMag)/2;
+        float clampedVal = Mathf.Clamp(totalMag, 10, 100);
+            // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);
+            // fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+            waveForms.magnitude=(int)clampedVal;
+            fixedRod.SendCmd(waveForms);
+            yield return null;
 
         // }
     }

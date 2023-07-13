@@ -109,7 +109,7 @@ public class HapticFeedback : MonoBehaviour
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.5f);
             // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
              vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude),0.1f);
-            // objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+            objectToVibrate.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             // objectToVibrate.SendCmd(vibrationCmd);
             objectToVibrate.SendImpactVibration(SG_HandSection.Wrist,magnitude);
             yield return new WaitForSeconds(0.1f);

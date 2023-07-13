@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using Fusion;
 using SG;
@@ -124,6 +125,7 @@ public class NetworkCue : NetworkBehaviour
             print("Initial Setup Done");
             // InitialSetup(this);
             Rpc_InitialSetup(Object.Runner,this);
+            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 
@@ -164,7 +166,8 @@ public class NetworkCue : NetworkBehaviour
     [Rpc]
     public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
     {
-        InitialSetup(networkCue);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        // InitialSetup(networkCue);
     }
 
     [Rpc]
@@ -359,10 +362,10 @@ public class NetworkCue : NetworkBehaviour
         base.Spawned();
         Debug.Log(Object.HasStateAuthority);
 
-        StartCoroutine(Exercise1());
-        // if(Object.HasStateAuthority){
         // StartCoroutine(Exercise1());
-        // }
+        if(Object.HasStateAuthority){
+        StartCoroutine(Exercise1());
+        }
     }
 
 

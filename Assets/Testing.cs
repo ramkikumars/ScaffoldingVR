@@ -28,6 +28,7 @@ public class Testing : NetworkBehaviour
 
     public bool state;
     public static bool grabbed = false;
+    public bool grabbedInspector=false;
     private Vector3 initialPosition;
     protected static SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
 
@@ -35,23 +36,22 @@ public class Testing : NetworkBehaviour
     // private float initialScale;
     public VelocityEstimator velocityEstimator;
     public static bool comeback = false;
+    public bool comebackInspector=false;
     private void Start()
 
     {
         Vector3 initialPosition = transform.position;
         Quaternion initialRotation = transform.rotation;
-        maxDist = 120;
+        maxDist = 19;
         vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
         grabable.ObjectGrabbed.AddListener(ObjectGrabbed);
 grabable.ObjectReleased.AddListener(ObjectReleased);
         boxGrabs=boxGrab;
-
     }
 
 
     public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
                 Debug.Log("GRB");
-
         grabbed = true;
         comeback = false;
 boxGrab.MakeItFree=false;
@@ -108,8 +108,10 @@ boxGrab.MakeItFree=false;
         boxPosition = box.transform.InverseTransformPoint(globalBoxPosition);
         holderPosition = box.transform.InverseTransformPoint(globalHolderPosition);
         measuredDist = Vector3.Distance(tapePosition, holderPosition);
-        if (grabbed)
+        if (grabbedInspector)
         {
+        // if (grabbed)
+        // {
             float trackedVelocity = velocityEstimator.GetVelocityEstimate().magnitude;
             // Debug.Log("Tracked Velocity: " + trackedVelocity);
             //     Vector3 velocity = SG_Grabable.GetTrackedVelocity();
@@ -117,7 +119,7 @@ boxGrab.MakeItFree=false;
             print("trackedVelocity: " + trackedVelocity);
             if (trackedVelocity >= 0.01)
             {
-                grabable.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+                // grabable.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             }
         }
 
@@ -128,15 +130,17 @@ boxGrab.MakeItFree=false;
         //     {
         //         HolderReturn();
         //     }
-        if (comeback)
+        if (comebackInspector)
         {
+        // if (comeback)
+        // {
             float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
                                                           // AudioSource.PlayClipAtPoint(audioClip, transform.position);
 
 
             float lerpSpeed = Mathf.Lerp(0.05f, 1f, distanceRatio); // Adjust the lerp speed based on the distance ratio
 
-            Vector3 startPosition = new Vector3(0, 0, 0); // Define the start position for the holder
+            Vector3 startPosition = new Vector3(2f, 0, 0); // Define the start position for the holder
 
             Vector3 clampedPosition = Vector3.Lerp(holder.transform.localPosition, startPosition, lerpSpeed);
 
@@ -151,15 +155,17 @@ boxGrab.MakeItFree=false;
         }
         else
         {
-            if (grabbed == false)
+            if (grabbedInspector==false)
             {
-            transform.localPosition = new Vector3(-0.0500000007f, -0.0500000007f, 0);
+            // if (grabbed == false)
+            // {
+            transform.localPosition = new Vector3(2f, 0f, 0f);
             // transform.localPosition = new Vector3(-3.66857171f, 3.24736714f, 0);
             //Vector3(0,0,272.728668)
             // transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
 
             // Vector3(0,0,272.728668)
-            transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
+            // transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
             }
         }
 
@@ -183,13 +189,13 @@ boxGrab.MakeItFree=false;
 
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.05f);
             // Vector3(-0.0500000007,-0.0500000007,0)
-            transform.localPosition = new Vector3(-0.0500000007f, -0.0500000007f, 0);
+            transform.localPosition = new Vector3(2f, 0, 0);
             // transform.localPosition = new Vector3(-3.66857171f, 3.24736714f, 0);
             //Vector3(0,0,272.728668)
             // transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
 
             // Vector3(0,0,272.728668)
-            transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
+            // transform.localRotation = Quaternion.Euler(0, 0, 272.728668f);
             comeback = false;
             Rpc_HolderRel(Object.Runner);
             // Vector3(-3.66857171,3.24736714,0)
