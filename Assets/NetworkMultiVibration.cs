@@ -51,7 +51,8 @@ waveForms=waveForm;
     }
     public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
         handPlaced=true;
-        handPos = sgGrab.transform.position;
+        handPos = sgScript.TrackedHand.handModel.wristTransform.position;
+        // fixedRod.ScriptsGrabbingMe()[0].TrackedHand.transform;
     }
     public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
     {
@@ -113,8 +114,8 @@ waveForms=waveForm;
     {
         if(handPlaced){
 
-        //  dist=Vector3.Distance(handPos,hammerPos);
-            float dist=Mathf.Abs(handPos.x-hammerPos.x);
+         dist=Vector3.Distance(handPos,hammerPos);
+            // float dist=Mathf.Abs(handPos.x-hammerPos.x);
             nmult.StartCoroutine(HitAndWait());
         }
     }
@@ -124,7 +125,8 @@ waveForms=waveForm;
             Debug.Log($"Dist bw hammer and hand");
         float distMag = Mathf.InverseLerp(1.1f, 0, dist) * 100f;
         // float totalMag=(distMag+hammerMag)/2;
-        float clampedVal = Mathf.Clamp(distMag, 10, 100);
+        float clampedVal = Mathf.Clamp(distMag, 20, 100);
+        Debug.Log($"Clamped Mag{clampedVal}");
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);
             // fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             waveForms.magnitude=(int)clampedVal;
