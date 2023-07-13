@@ -238,7 +238,7 @@ public class NetworkCue : NetworkBehaviour
     {
 
         Debug.Log("Started Coroutine");
-        // yield return new WaitUntil(()=>(IsPlayerJoined()));
+        yield return new WaitUntil(()=>(IsPlayerJoined()));
 
             for(int i=0;i<4;i++){
 
