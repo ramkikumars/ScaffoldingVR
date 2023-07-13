@@ -123,8 +123,8 @@ waveForms=waveForm;
 
             Debug.Log($"Dist bw hammer and hand");
         float distMag = Mathf.InverseLerp(1.1f, 0, dist) * 100f;
-        float totalMag=(distMag+hammerMag)/2;
-        float clampedVal = Mathf.Clamp(totalMag, 10, 100);
+        // float totalMag=(distMag+hammerMag)/2;
+        float clampedVal = Mathf.Clamp(distMag, 10, 100);
             // vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, (int)mag),0.5f);
             // fixedRod.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             waveForms.magnitude=(int)clampedVal;
