@@ -30,12 +30,13 @@ public class NetworkCue : NetworkBehaviour
     // private static SG_SnapDropZone [][] horizontalSnapZoness;
 
     public GameObject[] sets;
-    private static GameObject[] bases, verticals, horizontalLowers, horizontalMiddles;
+    private static GameObject[] bases, verticals, horizontalLowers, horizontalMiddles,parentCups,childCups;
     // private static GameObject =new GameObject
     private static SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     private static SG_SnapDropZone[,] horizontalLowerZones, horizontalMiddleZones;
     public static string recentlySnapped="";
-
+    public static Vector3[] parentCupPos,childCupPos;
+    public static Quaternion[] parentCupRot,childCupRot;
     private bool objSnapped;
     private bool resetObjSnapped;
     private string recentlySnappedObj;
@@ -66,6 +67,14 @@ public class NetworkCue : NetworkBehaviour
         verticalssRot=new Quaternion[4];
         horizontalPos=new Vector3[4];
         horizontalRot=new Quaternion[4];
+
+        childCupPos=new Vector3[16];
+        childCupRot=new Quaternion[16];
+
+        parentCupPos=new Vector3[16];
+        parentCupRot=new Quaternion[16];
+        parentCups=GameObject.FindGameObjectsWithTag("parent_cup");
+        childCups=GameObject.FindGameObjectsWithTag("movable_cup");
         for (int i = 0; i <4; i++)
         {
             // GameObject basee=sets[i].transform.Find("Base").gameObject;
@@ -116,7 +125,12 @@ public class NetworkCue : NetworkBehaviour
         horizontalPos[i] = horizontalObj[i].transform.position;
         horizontalRot[i] = horizontalObj[i].transform.rotation;
         }
-
+        for(int i=0;i<16;i++){
+            parentCupPos[i]=parentCups[i].transform.localPosition;
+            parentCupRot[i]=parentCups[i].transform.localRotation;
+            childCupPos[i]=childCups[i].transform.localPosition;
+            childCupRot[i]=childCups[i].transform.localRotation;
+        }
 
     }
 
@@ -170,7 +184,8 @@ public class NetworkCue : NetworkBehaviour
     public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
     {
 
-       networkCue.StartCoroutine(ReloadScene(runner));
+        //    networkCue.StartCoroutine(ReloadScene(runner));
+        InitialSetup(networkCue);
     }
 
     [Rpc]
@@ -350,6 +365,13 @@ public class NetworkCue : NetworkBehaviour
                 horizontalLowers[i].SetActive(false);
 
                 horizontalMiddles[i].SetActive(false);
+        }
+        for (int i = 0; i < 16; i++)
+        {
+            parentCups[i].transform.localPosition=parentCupPos[i] ;
+            parentCups[i].transform.localRotation=parentCupRot[i] ;
+            childCups[i].transform.localPosition=childCupPos[i] ;
+            childCups[i].transform.localRotation=childCupRot[i] ;
         }
 
         if (routine != null)

@@ -674,7 +674,7 @@ GameObject:
   - component: {fileID: 3038478428970033604}
   m_Layer: 0
   m_Name: Cup 1
-  m_TagString: Untagged
+  m_TagString: parent_cup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 5939102353144584599}
   m_Layer: 0
   m_Name: Cup 3
-  m_TagString: Untagged
+  m_TagString: parent_cup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2296,7 +2296,7 @@ GameObject:
   - component: {fileID: 6293254874400494932}
   m_Layer: 0
   m_Name: Cup 4
-  m_TagString: Untagged
+  m_TagString: parent_cup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3010,7 +3010,7 @@ GameObject:
   - component: {fileID: 3656869520359659856}
   m_Layer: 0
   m_Name: Cup 2
-  m_TagString: Untagged
+  m_TagString: parent_cup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

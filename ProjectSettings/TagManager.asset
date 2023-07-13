@@ -9,6 +9,9 @@ TagManager:
   - Hammer
   - Box
   - Hand
+  - cube
+  - tapecomponent
+  - parent_cup
   layers:
   - Default
   - TransparentFX
