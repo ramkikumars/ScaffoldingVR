@@ -193,7 +193,7 @@ public class Testing : NetworkBehaviour
 
 
     }
-    void OnCollisionEnter(Collision other)
+     private void OnTriggerEnter(Collider other)
     {
 
 
@@ -204,7 +204,7 @@ public class Testing : NetworkBehaviour
             // transform.position = initialPosition;
             // transform.rotation = initialRotation;
             // Grabbed();
-            Debug.Log("collided");
+            Debug.Log("collided with cube");
             // boxGrab.MakeItFree = true;
             // boxGrab.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
 
@@ -245,7 +245,7 @@ public class Testing : NetworkBehaviour
     {
          boxGrabs.MakeItFree = true;
         if(boxGrabbed==true){
-        boxGrabs.SendImpactVibration(SG_HandSection.Wrist,0.8f);
+        boxGrabs.SendImpactVibration(SG_HandSection.Wrist,80f);
         }
     }
 
