@@ -6,6 +6,7 @@ using Fusion;
 using SG;
 using Fusion.Photon.Realtime;
 using System.Linq;
+
 [OrderAfter]
 public class NetworkCue : NetworkBehaviour
 {
@@ -42,8 +43,10 @@ public class NetworkCue : NetworkBehaviour
     // private SG_SnapDropZone[][] horizontalSnapZones;
     public NetworkObject networkObject;
     private static Coroutine routine;
+    private static NetworkRunner nrunner;
     void Start()
     {
+        nrunner=Runner;
         bases=new GameObject[4];
         verticals =new GameObject[4];
         horizontalLowers=new GameObject[4];
@@ -166,8 +169,8 @@ public class NetworkCue : NetworkBehaviour
     [Rpc]
     public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        // InitialSetup(networkCue);
+
+       networkCue.StartCoroutine(ReloadScene(runner));
     }
 
     [Rpc]
@@ -367,7 +370,15 @@ public class NetworkCue : NetworkBehaviour
         StartCoroutine(Exercise1());
         }
     }
-
+    static IEnumerator  ReloadScene(NetworkRunner runner)
+    {
+        // nrunner.SetActiveScene(SceneManager.GetSceneByName("LoadingScene").buildIndex);
+        // yield return null;
+        runner.SetActiveScene(SceneUtility.GetBuildIndexByScenePath("Scenes/Hackathon1"));
+        // SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        // SceneManager.LoadSceneAsync("Scenes/Hackathon1",LoadSceneMode.Single);
+        yield return null;
+    }
 
 
 }

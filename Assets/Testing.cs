@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using SG;
 using Fusion;
+using System.Threading.Tasks;
 public class Testing : NetworkBehaviour
 {
     [SerializeField] private GameObject box;
@@ -28,7 +29,9 @@ public class Testing : NetworkBehaviour
 
     public bool state;
     public static bool grabbed = false;
-    public bool grabbedInspector=false;
+    public static bool boxGrabbed = false;
+    // public bool grabbedInspector=false;
+    public static NetworkObject holderNobj;
     private Vector3 initialPosition;
     protected static SGCore.Haptics.SG_TimedBuzzCmd vibrationCmd;
 
@@ -36,7 +39,7 @@ public class Testing : NetworkBehaviour
     // private float initialScale;
     public VelocityEstimator velocityEstimator;
     public static bool comeback = false;
-    public bool comebackInspector=false;
+    // public bool comebackInspector=false;
     private void Start()
 
     {
@@ -44,27 +47,45 @@ public class Testing : NetworkBehaviour
         Quaternion initialRotation = transform.rotation;
         maxDist = 19;
         vibrationCmd = new SGCore.Haptics.SG_TimedBuzzCmd(new SGCore.Haptics.SG_BuzzCmd(fingers, magnitude), 0.02f);
-        grabable.ObjectGrabbed.AddListener(ObjectGrabbed);
-grabable.ObjectReleased.AddListener(ObjectReleased);
+        grabable.ObjectGrabbed.AddListener(HolderGrabbed);
+        grabable.ObjectReleased.AddListener(HolderReleased);
+        boxGrab.ObjectGrabbed.AddListener(BoxGrabbed);
+        boxGrab.ObjectReleased.AddListener(BoxReleased);
         boxGrabs=boxGrab;
+        holderNobj=this.GetComponent<NetworkObject>();
     }
 
 
-    public void ObjectGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
-                Debug.Log("GRB");
+    public void HolderGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
+        Debug.Log("Holder Grabbed");
         grabbed = true;
         comeback = false;
-boxGrab.MakeItFree=false;
+        boxGrab.MakeItFree=false;
        Rpc_HolderGrabbed(Object.Runner);
     }
-    public void ObjectReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+
+    public void HolderReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
     {
-        Debug.Log("REL");
+        Debug.Log("Holder Released");
                 grabbed = false;
                comeback = true;
                boxGrab.MakeItFree=true;
 
     }
+    public void BoxGrabbed(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+
+        boxGrabbed=true;
+        Rpc_BoxGrabbed(Object.Runner);
+    }
+    public void BoxReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+        boxGrabbed = true;
+        Rpc_BoxRel(Object.Runner);
+
+    }
+
+
     public void Comeback()
     {
         Debug.Log("Cameback");
@@ -108,10 +129,10 @@ boxGrab.MakeItFree=false;
         boxPosition = box.transform.InverseTransformPoint(globalBoxPosition);
         holderPosition = box.transform.InverseTransformPoint(globalHolderPosition);
         measuredDist = Vector3.Distance(tapePosition, holderPosition);
-        if (grabbedInspector)
-        {
-        // if (grabbed)
+        // if (grabbedInspector)
         // {
+        if (grabbed)
+        {
             float trackedVelocity = velocityEstimator.GetVelocityEstimate().magnitude;
             // Debug.Log("Tracked Velocity: " + trackedVelocity);
             //     Vector3 velocity = SG_Grabable.GetTrackedVelocity();
@@ -119,7 +140,7 @@ boxGrab.MakeItFree=false;
             print("trackedVelocity: " + trackedVelocity);
             if (trackedVelocity >= 0.01)
             {
-                // grabable.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+                grabable.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
             }
         }
 
@@ -130,10 +151,10 @@ boxGrab.MakeItFree=false;
         //     {
         //         HolderReturn();
         //     }
-        if (comebackInspector)
-        {
-        // if (comeback)
+        // if (comebackInspector)
         // {
+        if (comeback)
+        {
             float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
                                                           // AudioSource.PlayClipAtPoint(audioClip, transform.position);
 
@@ -155,10 +176,10 @@ boxGrab.MakeItFree=false;
         }
         else
         {
-            if (grabbedInspector==false)
-            {
-            // if (grabbed == false)
+            // if (grabbedInspector==false)
             // {
+            if (grabbed == false)
+            {
             transform.localPosition = new Vector3(2f, 0f, 0f);
             // transform.localPosition = new Vector3(-3.66857171f, 3.24736714f, 0);
             //Vector3(0,0,272.728668)
@@ -223,7 +244,46 @@ boxGrab.MakeItFree=false;
     public static void Rpc_HolderRel(NetworkRunner runner)
     {
          boxGrabs.MakeItFree = true;
-        boxGrabs.ScriptsGrabbingMe()[0].TrackedHand.SendCmd(vibrationCmd);
+        if(boxGrabbed==true){
+        boxGrabs.SendImpactVibration(SG_HandSection.Wrist,0.8f);
+        }
+    }
+
+
+    [Rpc]
+    public static void Rpc_BoxGrabbed(NetworkRunner runner)
+    {
+        boxGrabbed=true;
+        if(grabbed==false){
+            if(!holderNobj.HasStateAuthority){
+                ReqAuthorithy(holderNobj);
+            }
+        }
+
+    }
+
+     [Rpc]
+    public static void Rpc_BoxRel(NetworkRunner runner)
+    {
+        boxGrabbed = false;
+    }
+
+    async static void ReqAuthorithy(NetworkObject o)
+    {
+        await WaitForStateAuthority(o);
+    }
+
+
+
+    public async static Task<bool> WaitForStateAuthority(NetworkObject o, float maxWaitTime = 8)
+    {
+        float waitStartTime = Time.time;
+        o.RequestStateAuthority();
+        while (!o.HasStateAuthority && (Time.time - waitStartTime) < maxWaitTime)
+        {
+            await System.Threading.Tasks.Task.Delay(1);
+        }
+        return o.HasStateAuthority;
     }
 
 }
