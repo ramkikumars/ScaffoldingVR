@@ -37,7 +37,7 @@ public class RotateObjOnTriggerEnter : MonoBehaviour
         if (other.gameObject.CompareTag(targetTag))
         {
             VelocityEstimator estimator = other.gameObject.GetComponent<VelocityEstimator>();
-            if (estimator && useVelocity)
+            if (useVelocity)
             {
                 float v = estimator.GetVelocityEstimate().magnitude;
                 float value = Mathf.InverseLerp(minVelocity, maxVelocity, v);
@@ -51,13 +51,14 @@ public class RotateObjOnTriggerEnter : MonoBehaviour
                 Debug.Log($"Cumilative Angle: {cumilativeAngle}");
                 if (cumilativeAngle <= maxAngleToRotate)
                 {
-                    transform.GetComponent<Rigidbody>().MoveRotation(quatRot);
+                    transform.GetComponentInChildren<Rigidbody>().MoveRotation(quatRot);
                     // childCup.transform.eulerAngles = rot;
                     reachedLimit = false;
                 }
                 else
                 {
                     Debug.Log("Cup reached the max limit");
+                    GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
                     reachedLimit = true;
                 }
 
@@ -69,13 +70,13 @@ public class RotateObjOnTriggerEnter : MonoBehaviour
     private void HammerGrabbed(object obj1, object obj2)
     {
         initialConstraints = GetComponent<Rigidbody>().constraints;
-        GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-        GetComponent<Rigidbody>().isKinematic = false;
+        GetComponentInChildren<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+        GetComponentInChildren<Rigidbody>().isKinematic = false;
     }
     private void HammerReleased(object obj1, object obj2)
     {
-        GetComponent<Rigidbody>().constraints = initialConstraints;
-        GetComponent<Rigidbody>().isKinematic = true;
+        GetComponentInChildren<Rigidbody>().constraints = initialConstraints;
+        GetComponentInChildren<Rigidbody>().isKinematic = true;
     }
     private void ListenManipulationEvents(Transform obj)
     {

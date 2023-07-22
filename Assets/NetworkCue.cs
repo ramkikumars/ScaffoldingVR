@@ -141,7 +141,11 @@ public class NetworkCue : NetworkBehaviour
         {
             print("Initial Setup Done");
             // InitialSetup(this);
-            Rpc_InitialSetup(Object.Runner,this);
+            // Rpc_InitialSetup(Object.Runner,this);
+            Object.Runner.Shutdown();
+            Scene scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+            // ReloadScene(Object.Runner);
             // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
@@ -395,10 +399,10 @@ public class NetworkCue : NetworkBehaviour
     static IEnumerator  ReloadScene(NetworkRunner runner)
     {
         // nrunner.SetActiveScene(SceneManager.GetSceneByName("LoadingScene").buildIndex);
-        // yield return null;
-        runner.SetActiveScene(SceneUtility.GetBuildIndexByScenePath("Scenes/Hackathon1"));
-        // SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-        // SceneManager.LoadSceneAsync("Scenes/Hackathon1",LoadSceneMode.Single);
+        runner.Shutdown();
+        yield return new WaitUntil(() => (runner.IsShutdown));
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
         yield return null;
     }
 

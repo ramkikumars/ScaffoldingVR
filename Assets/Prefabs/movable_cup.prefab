@@ -335,6 +335,11 @@ GameObject:
   - component: {fileID: 2573124564700728548}
   - component: {fileID: 450919289283484678}
   - component: {fileID: 8125959730494514217}
+  - component: {fileID: 988843397856111684}
+  - component: {fileID: 5584217993480644737}
+  - component: {fileID: 6887118121808236868}
+  - component: {fileID: 5788162409690122758}
+  - component: {fileID: 5618858076759364279}
   m_Layer: 0
   m_Name: movable_cup
   m_TagString: movable_cup
@@ -554,6 +559,107 @@ MonoBehaviour:
   nobj: {fileID: 0}
   reqAuth: 0
   relAuth: 0
+--- !u!54 &988843397856111684
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738637950949431649}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 90
+  m_CollisionDetection: 2
+--- !u!114 &5584217993480644737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738637950949431649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3f41c255225c9d44aa48f12c4b6b0cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6887118121808236868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738637950949431649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3c57d184abc1ac40ae7d36c84483439, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minStepAngle: 5
+  maxStepAngle: 10
+  maxAngleToRotate: 50
+  targetTag: Hammer
+  useVelocity: 1
+  minVelocity: 0
+  maxVelocity: 2
+  reachedLimit: 0
+--- !u!114 &5788162409690122758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738637950949431649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1552182283, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectInterest: 1
+  DefaultInterestGroups: []
+  DestroyWhenStateAuthorityLeaves: 0
+  AllowStateAuthorityOverride: 1
+  AoiPositionSource: {fileID: 0}
+  Flags: 2305
+  NetworkGuid:
+    RawGuidValue: c055a29559e47794d951451e08d52cd9
+  NestedObjects: []
+  NetworkedBehaviours:
+  - {fileID: 8125959730494514217}
+  - {fileID: 5618858076759364279}
+  SimulationBehaviours: []
+--- !u!114 &5618858076759364279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738637950949431649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
+  InterpolationSpace: 0
+  InterpolationTarget: {fileID: 7738637951988754703}
+  InterpolateErrorCorrection: 1
+  InterpolatedErrorCorrectionSettings:
+    MinRate: 3.3
+    MaxRate: 10
+    PosBlendStart: 0.25
+    PosBlendEnd: 1
+    PosMinCorrection: 0.025
+    PosTeleportDistance: 2
+    RotBlendStart: 0.1
+    RotBlendEnd: 0.5
+    RotTeleportRadians: 1.5
+  UseLegacySharedModeInterpolation: 0
+  TargetInterpolationDelay: 0.03
 --- !u!1 &7738637951988754702
 GameObject:
   m_ObjectHideFlags: 0
