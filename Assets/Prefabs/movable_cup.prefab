@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 7738637950949426847}
   - component: {fileID: 7738637950949426846}
   - component: {fileID: 2573124564700728548}
-  - component: {fileID: 4367735320575071465}
+  - component: {fileID: 4813553375915795449}
   m_Layer: 0
   m_Name: movable_cup
   m_TagString: movable_cup
@@ -399,7 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   diasableMeshRendererNotFlashing: 0
---- !u!114 &4367735320575071465
+--- !u!114 &4813553375915795449
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
