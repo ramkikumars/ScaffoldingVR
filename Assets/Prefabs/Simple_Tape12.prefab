@@ -387,10 +387,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a1899afeb6fcb84c8d5fc7551940e2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _interpolationDataSource: 0
   velocityAverageFrames: 5
   angularVelocityAverageFrames: 11
   estimateOnAwake: 1
   useLocalPosistion: 0
+  currentVelocity: 0
+  TrackedObject: {fileID: 0}
+  starRoutine: 0
 --- !u!1 &3943634634359492295
 GameObject:
   m_ObjectHideFlags: 0
@@ -400,12 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3943634634359492293}
-  - component: {fileID: 3943634634359492292}
-  - component: {fileID: 2250320010147191723}
-  - component: {fileID: 8099481927716126148}
-  - component: {fileID: 114734082403967691}
-  - component: {fileID: 2660475126530163169}
-  - component: {fileID: 100620880982418368}
+  - component: {fileID: 5175108133587027379}
   m_Layer: 0
   m_Name: Simple_Tape12
   m_TagString: Untagged
@@ -430,7 +429,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3943634634359492292
+--- !u!114 &5175108133587027379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,273 +438,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 3943634634359492295}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7c99ba627a1b9345a44fc3c62e886f7, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d484933bca07044bbd8483bdd085338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   box: {fileID: 3943634635341219337}
   holder: {fileID: 3943634633755007973}
   tape: {fileID: 3943634634696701359}
   _text: {fileID: 3943634635092133574}
-  tapeOpeningHaptics: {fileID: 8099481927716126148}
-  tapeClosingHapticsRight: {fileID: 2660475126530163169}
-  tapeClosingHapticsLeft: {fileID: 100620880982418368}
-  velocityEstimator: {fileID: 6585582694189358381}
---- !u!82 &2250320010147191723
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634359492295}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c500dfdc9d2c8914da576f2ef5944f68, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &8099481927716126148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634359492295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add947522e3b4e3489a84d14109063fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticMaterial: {fileID: -6750239444755058063, guid: 8a8cf7c70cf78eb4a9b5162b4c7b70ae, type: 3}
-  vibrationOffset: 0
-  textureOffset: 0
-  stiffnessOffset: 0
-  debugMode: 0
-  audioSource: {fileID: 2250320010147191723}
-  hapticBodyParts:
-  - {fileID: 0}
-  - {fileID: 0}
-  playOnAwake: 0
---- !u!82 &114734082403967691
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634359492295}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 87d86928c1dfdee4eb1fe575da4bb28d, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &2660475126530163169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634359492295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add947522e3b4e3489a84d14109063fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticMaterial: {fileID: -6750239444755058063, guid: 7f459d41f47f4f64ebe8f64573d6af28, type: 3}
-  vibrationOffset: 0
-  textureOffset: 0
-  stiffnessOffset: 0
-  debugMode: 0
-  audioSource: {fileID: 114734082403967691}
-  hapticBodyParts:
-  - {fileID: 0}
-  playOnAwake: 0
---- !u!114 &100620880982418368
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3943634634359492295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: add947522e3b4e3489a84d14109063fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hapticMaterial: {fileID: -6750239444755058063, guid: 7f459d41f47f4f64ebe8f64573d6af28, type: 3}
-  vibrationOffset: 0
-  textureOffset: 0
-  stiffnessOffset: 0
-  debugMode: 0
-  audioSource: {fileID: 114734082403967691}
-  hapticBodyParts:
-  - {fileID: 0}
-  playOnAwake: 0
 --- !u!1 &3943634634696701359
 GameObject:
   m_ObjectHideFlags: 0

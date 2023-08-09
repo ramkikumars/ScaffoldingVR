@@ -1,8 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UltimateXR;
-using UltimateXR.Manipulation;
+// using UltimateXR;
+// using UltimateXR.Manipulation;
 using Interhaptics.Utils;
 using Interhaptics;
 public class Digital_MT : MonoBehaviour
@@ -10,7 +10,7 @@ public class Digital_MT : MonoBehaviour
 
     [SerializeField] private GameObject box;
     [SerializeField] private GameObject holder;
-    // [SerializeField] private GameObject tape;
+    [SerializeField] private GameObject tape;
     [SerializeField] private TextMeshPro _text;
     // [SerializeField] private AudioHapticSource tapeOpeningHaptics;
     // [SerializeField] private AudioHapticSource tapeClosingHapticsRight;
@@ -45,16 +45,16 @@ public class Digital_MT : MonoBehaviour
     {
         globalBoxPosition = box.transform.position;
         globalHolderPosition = holder.transform.position;
-        // globalTapePosition = tape.transform.position;
+        globalTapePosition = tape.transform.position;
 
         boxPosition = box.transform.InverseTransformPoint(globalBoxPosition);
         holderPosition = box.transform.InverseTransformPoint(globalHolderPosition);
-        // tapePosition = box.transform.InverseTransformPoint(globalTapePosition);
+        tapePosition = box.transform.InverseTransformPoint(globalTapePosition);
 
         measuredDist = Vector3.Distance(boxPosition, holderPosition);
 
-        // scaleChange.x = Mathf.Clamp(measuredDist, 1, maxDist * 100);
-        // tape.transform.localScale = scaleChange;
+        scaleChange.x = Mathf.Clamp(measuredDist, 1, maxDist * 100);
+        tape.transform.localScale = scaleChange;
 
         _text.text = Mathf.Clamp(measuredDist-1.82f, 0, maxDist * 100).ToString("F2");
         // if(holderGrab.IsBeingGrabbed){
@@ -67,9 +67,9 @@ public class Digital_MT : MonoBehaviour
         //         tapeOpeningHaptics.Play();
         //     }
         //     // Debug.Log("Holder Velocity,"+velocity);
-        // if(holderRel){
-        //     HolderReturn();
-        // }
+        if(holderRel){
+            HolderReturn();
+        }
     }
 
     // public void OnBoxGrabbed(object sender, UxrManipulationEventArgs e)
@@ -93,14 +93,14 @@ public class Digital_MT : MonoBehaviour
     // {
     //     Debug.Log("Holder is Released");
     //     holderGrab.IsLockedInPlace=false;
-    //     tapeOpeningHaptics.Stop();
+    //     // tapeOpeningHaptics.Stop();
     //     holderRel=true;
     //     if(e.Grabber.Side.ToString()=="Right"){
-    //         tapeClosingHapticsRight.Play();
+    //         // tapeClosingHapticsRight.Play();
     //         Debug.Log("Holder Grabbed with"+"Right Hand");
     //     }
     //     else if(e.Grabber.Side.ToString() == "Left"){
-    //         tapeClosingHapticsLeft.Play();
+    //         // tapeClosingHapticsLeft.Play();
     //         // tapeClosingHapticsLeft1.Play();
     //         Debug.Log("Holder Grabbed with" + "Left Hand");
     //     }
@@ -139,25 +139,25 @@ public class Digital_MT : MonoBehaviour
 
     // }
 
-    // private void HolderReturn(){
-    //     float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
-    //                                                   // AudioSource.PlayClipAtPoint(audioClip, transform.position);
+    private void HolderReturn(){
+        float distanceRatio = measuredDist / maxDist; // Calculate the ratio of measured distance to maximum distance
+                                                      // AudioSource.PlayClipAtPoint(audioClip, transform.position);
 
 
-    //     float lerpSpeed = Mathf.Lerp(0.05f, 1f, distanceRatio); // Adjust the lerp speed based on the distance ratio
+        float lerpSpeed = Mathf.Lerp(0.05f, 1f, distanceRatio); // Adjust the lerp speed based on the distance ratio
 
-    //     Vector3 startPosition = new Vector3(0, 0, 0); // Define the start position for the holder
+        Vector3 startPosition = new Vector3(0, 0, 0); // Define the start position for the holder
 
-    //     Vector3 clampedPosition = Vector3.Lerp(holder.transform.localPosition, startPosition, lerpSpeed);
+        Vector3 clampedPosition = Vector3.Lerp(holder.transform.localPosition, startPosition, lerpSpeed);
 
-    //     // Clamp the clampedPosition within a certain range if needed
-    //     float clampRange = 0.1f; // Example: clamping range of 0.1 units
-    //     clampedPosition.x = Mathf.Clamp(clampedPosition.x, startPosition.x - clampRange, startPosition.x + clampRange);
-    //     clampedPosition.y = Mathf.Clamp(clampedPosition.y, startPosition.y - clampRange, startPosition.y + clampRange);
-    //     clampedPosition.z = Mathf.Clamp(clampedPosition.z, startPosition.z - clampRange, startPosition.z + clampRange);
+        // Clamp the clampedPosition within a certain range if needed
+        float clampRange = 0.1f; // Example: clamping range of 0.1 units
+        clampedPosition.x = Mathf.Clamp(clampedPosition.x, startPosition.x - clampRange, startPosition.x + clampRange);
+        clampedPosition.y = Mathf.Clamp(clampedPosition.y, startPosition.y - clampRange, startPosition.y + clampRange);
+        clampedPosition.z = Mathf.Clamp(clampedPosition.z, startPosition.z - clampRange, startPosition.z + clampRange);
 
-    //     holder.transform.localPosition = clampedPosition;
-    // }
+        holder.transform.localPosition = clampedPosition;
+    }
 
 
 
