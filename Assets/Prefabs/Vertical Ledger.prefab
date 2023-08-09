@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 5001766187259208849}
   - component: {fileID: 2561858073520191619}
   - component: {fileID: 237959482552772376}
-  - component: {fileID: 51046723189184280}
+  - component: {fileID: 8743598976894443407}
   m_Layer: 0
   m_Name: Cup 1
   m_TagString: parent_cup
@@ -1039,7 +1039,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &51046723189184280
+--- !u!114 &8743598976894443407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2423069002897315907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -1417,7 +1417,7 @@ GameObject:
   - component: {fileID: 5500016555951855985}
   - component: {fileID: 3069798520968040333}
   - component: {fileID: 2245857350904905990}
-  - component: {fileID: 8891144441143686112}
+  - component: {fileID: 6391584438969478096}
   m_Layer: 0
   m_Name: Cup 3
   m_TagString: parent_cup
@@ -1780,7 +1780,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8891144441143686112
+--- !u!114 &6391584438969478096
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1789,7 +1789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3352945232397329475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -2668,7 +2668,7 @@ GameObject:
   - component: {fileID: 2663958247804654849}
   - component: {fileID: 4842707984040110010}
   - component: {fileID: 8075690363371858788}
-  - component: {fileID: 6215791843770513434}
+  - component: {fileID: 1564276920380844540}
   m_Layer: 0
   m_Name: Cup 4
   m_TagString: parent_cup
@@ -3031,7 +3031,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6215791843770513434
+--- !u!114 &1564276920380844540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3040,7 +3040,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6955384766860011259}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -3567,7 +3567,7 @@ GameObject:
   - component: {fileID: 5681241570165492963}
   - component: {fileID: 7932376857330758366}
   - component: {fileID: 1111825730510580006}
-  - component: {fileID: 6832164004940044509}
+  - component: {fileID: 5370400145750242163}
   m_Layer: 0
   m_Name: Cup 2
   m_TagString: parent_cup
@@ -3930,7 +3930,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6832164004940044509
+--- !u!114 &5370400145750242163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3939,7 +3939,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8122388939323743221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 158639473, guid: e725a070cec140c4caffb81624c8c787, type: 3}
+  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
@@ -4278,6 +4278,10 @@ PrefabInstance:
       propertyPath: _selectedAvatarForGrips
       value: 
       objectReference: {fileID: 474319650110039828, guid: dc011efb41f2d4a419389aefb4b4270d, type: 3}
+    - target: {fileID: 2573124564700728548, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4058001598440123553, guid: c055a29559e47794d951451e08d52cd9, type: 3}
       propertyPath: _interpolationDataSource
       value: 3
