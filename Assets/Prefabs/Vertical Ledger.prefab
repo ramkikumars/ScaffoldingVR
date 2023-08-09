@@ -1053,7 +1053,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1069701618398229406}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -1794,7 +1794,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 1653350839802981263}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -3045,7 +3045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 6274342922426506560}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -3944,7 +3944,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _interpolationDataSource: 0
   InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
+  InterpolationTarget: {fileID: 6013649841389344643}
   InterpolateErrorCorrection: 1
   InterpolatedErrorCorrectionSettings:
     MinRate: 3.3
@@ -4339,6 +4339,7 @@ PrefabInstance:
     - {fileID: 5584217993480644737, guid: c055a29559e47794d951451e08d52cd9, type: 3}
     - {fileID: 4371964130080991568, guid: c055a29559e47794d951451e08d52cd9, type: 3}
     - {fileID: 988843397856111684, guid: c055a29559e47794d951451e08d52cd9, type: 3}
+    - {fileID: 4076461571812479905, guid: c055a29559e47794d951451e08d52cd9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c055a29559e47794d951451e08d52cd9, type: 3}
 --- !u!4 &1069701618398229406 stripped
 Transform:
