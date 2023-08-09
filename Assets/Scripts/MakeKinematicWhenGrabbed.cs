@@ -9,7 +9,8 @@ public class MakeKinematicWhenGrabbed : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ListenManipulationEvents(transform.GetChild(0));
+        // ListenManipulationEvents(transform.GetChild(0));
+        ListenManipulationEvents(transform);
     }
 
     private void ListenManipulationEvents(Transform obj)
