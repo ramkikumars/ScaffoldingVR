@@ -22,24 +22,24 @@ public class NetworkCue : NetworkBehaviour
     //
     // private static GameObject [] basess,verticalss,horizontalLowerss,horizontalMiddless;
     public  GameObject [] baseObj,verticalObj,horizontalObj;
-    private static GameObject [] baseObjs,verticalObjs,horizontalObjs;
-    private static Vector3 [] basessPos,verticalssPos,horizontalPos;
-    private static Quaternion [] basessRot,verticalssRot,horizontalRot;
+    // private static GameObject [] baseObjs,verticalObjs,horizontalObjs;
+    // private static Vector3 [] basessPos,verticalssPos,horizontalPos;
+    // private static Quaternion [] basessRot,verticalssRot,horizontalRot;
     // private static GameObject[] set1s, set2s, set3s, set4s;
     // private static SG_SnapDropZone [] baseSnapZoness,verticalSnapZoness;
     // private static SG_SnapDropZone [][] horizontalSnapZoness;
 
     public GameObject[] sets;
-    private static GameObject[] bases, verticals, horizontalLowers, horizontalMiddles,parentCups,childCups;
+    private static GameObject[] bases, verticals, horizontalLowers, horizontalMiddles;
     // private static GameObject =new GameObject
     private static SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     private static SG_SnapDropZone[,] horizontalLowerZones, horizontalMiddleZones;
     public static string recentlySnapped="";
-    public static Vector3[] parentCupPos,childCupPos;
-    public static Quaternion[] parentCupRot,childCupRot;
+    // public static Vector3[] parentCupPos,childCupPos;
+    // public static Quaternion[] parentCupRot,childCupRot;
     private bool objSnapped;
-    private bool resetObjSnapped;
-    private string recentlySnappedObj;
+    // private bool resetObjSnapped;
+    // private string recentlySnappedObj;
     // private SG_SnapDropZone[] baseSnapZones, verticalSnapZones;
     // private SG_SnapDropZone[][] horizontalSnapZones;
     public NetworkObject networkObject;
@@ -57,24 +57,24 @@ public class NetworkCue : NetworkBehaviour
         horizontalLowerZones=new SG_SnapDropZone[4,2];
         horizontalMiddleZones=new SG_SnapDropZone[4,2];
 
-        baseObjs=new GameObject[4];
-        verticalObjs=new GameObject[4];
-        horizontalObjs=new GameObject[1];
+        // baseObjs=new GameObject[4];
+        // verticalObjs=new GameObject[4];
+        // horizontalObjs=new GameObject[1];
 
-        basessPos=new Vector3[4];
-        basessRot=new Quaternion[4];
-        verticalssPos=new Vector3[4];
-        verticalssRot=new Quaternion[4];
-        horizontalPos=new Vector3[4];
-        horizontalRot=new Quaternion[4];
+        // basessPos=new Vector3[4];
+        // basessRot=new Quaternion[4];
+        // verticalssPos=new Vector3[4];
+        // verticalssRot=new Quaternion[4];
+        // horizontalPos=new Vector3[4];
+        // horizontalRot=new Quaternion[4];
 
-        childCupPos=new Vector3[16];
-        childCupRot=new Quaternion[16];
+        // childCupPos=new Vector3[16];
+        // childCupRot=new Quaternion[16];
 
-        parentCupPos=new Vector3[16];
-        parentCupRot=new Quaternion[16];
-        parentCups=GameObject.FindGameObjectsWithTag("parent_cup");
-        childCups=GameObject.FindGameObjectsWithTag("movable_cup");
+        // parentCupPos=new Vector3[16];
+        // parentCupRot=new Quaternion[16];
+        // parentCups=GameObject.FindGameObjectsWithTag("parent_cup");
+        // childCups=GameObject.FindGameObjectsWithTag("movable_cup");
         for (int i = 0; i <4; i++)
         {
             // GameObject basee=sets[i].transform.Find("Base").gameObject;
@@ -97,7 +97,6 @@ public class NetworkCue : NetworkBehaviour
                 horizontalLowerZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalLower/Grab2").GetComponent<SG_SnapDropZone>();
             horizontalLowerZones[i,1].ObjectSnapped.AddListener(ObjectSnapped);
 
-
                 horizontalMiddleZones[i,0] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab1").GetComponent<SG_SnapDropZone>();
             horizontalLowerZones[i, 0].ObjectSnapped.AddListener(ObjectSnapped);
                 horizontalMiddleZones[i,1] = sets[i].transform.Find("SnapObjects/HorizontalMiddle/Grab2").GetComponent<SG_SnapDropZone>();
@@ -106,49 +105,49 @@ public class NetworkCue : NetworkBehaviour
         }
 
 
-        for(int i=0;i<baseObj.Length;i++){
-        baseObjs[i]= baseObj[i];
-        basessPos[i] = baseObj[i].transform.position;
-        basessRot[i] = baseObj[i].transform.rotation;
-        }
+        // for(int i=0;i<baseObj.Length;i++){
+        // baseObjs[i]= baseObj[i];
+        // basessPos[i] = baseObj[i].transform.position;
+        // basessRot[i] = baseObj[i].transform.rotation;
+        // }
 
-        for (int i = 0; i < verticalObj.Length; i++)
-        {
-        verticalObjs[i] = verticalObj[i];
-        verticalssPos[i] = verticalObj[i].transform.position;
-        verticalssRot[i] = verticalObj[i].transform.rotation;
-        }
-        for (int i = 0; i < horizontalObj.Length; i++)
-        {
+        // for (int i = 0; i < verticalObj.Length; i++)
+        // {
+        // verticalObjs[i] = verticalObj[i];
+        // verticalssPos[i] = verticalObj[i].transform.position;
+        // verticalssRot[i] = verticalObj[i].transform.rotation;
+        // }
+        // for (int i = 0; i < horizontalObj.Length; i++)
+        // {
 
-        horizontalObjs[i]= horizontalObj[i];
-        horizontalPos[i] = horizontalObj[i].transform.position;
-        horizontalRot[i] = horizontalObj[i].transform.rotation;
-        }
-        for(int i=0;i<16;i++){
-            parentCupPos[i]=parentCups[i].transform.localPosition;
-            parentCupRot[i]=parentCups[i].transform.localRotation;
-            childCupPos[i]=childCups[i].transform.localPosition;
-            childCupRot[i]=childCups[i].transform.localRotation;
-        }
+        // horizontalObjs[i]= horizontalObj[i];
+        // horizontalPos[i] = horizontalObj[i].transform.position;
+        // horizontalRot[i] = horizontalObj[i].transform.rotation;
+        // }
+        // for(int i=0;i<16;i++){
+        //     parentCupPos[i]=parentCups[i].transform.localPosition;
+        //     parentCupRot[i]=parentCups[i].transform.localRotation;
+        //     childCupPos[i]=childCups[i].transform.localPosition;
+        //     childCupRot[i]=childCups[i].transform.localRotation;
+        // }
 
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKey(KeyCode.Space))
-        {
-            print("Initial Setup Done");
-            // InitialSetup(this);
-            // Rpc_InitialSetup(Object.Runner,this);
-            Object.Runner.Shutdown();
-            Scene scene = SceneManager.GetActiveScene();
-            SceneManager.LoadScene(scene.name);
-            // ReloadScene(Object.Runner);
-            // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
-    }
+    // void Update()
+    // {
+    //     if (Input.GetKey(KeyCode.Space))
+    //     {
+    //         print("Initial Setup Done");
+    //         // InitialSetup(this);
+    //         // Rpc_InitialSetup(Object.Runner,this);
+    //         Object.Runner.Shutdown();
+    //         Scene scene = SceneManager.GetActiveScene();
+    //         SceneManager.LoadScene(scene.name);
+    //         // ReloadScene(Object.Runner);
+    //         // SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    //     }
+    // }
 
     public override void FixedUpdateNetwork()
     {
@@ -184,13 +183,13 @@ public class NetworkCue : NetworkBehaviour
         Rpc_SwitchState(Object.Runner, objName, idx, state1);
     }
 
-    [Rpc]
-    public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
-    {
+    // [Rpc]
+    // public static void Rpc_InitialSetup(NetworkRunner runner, NetworkCue networkCue)
+    // {
 
-        //    networkCue.StartCoroutine(ReloadScene(runner));
-        InitialSetup(networkCue);
-    }
+    //     //    networkCue.StartCoroutine(ReloadScene(runner));
+    //     InitialSetup(networkCue);
+    // }
 
     [Rpc]
     public static void Rpc_SetActiveSnapzone(NetworkRunner runner, string objName, int idx, bool state)
@@ -338,54 +337,54 @@ public class NetworkCue : NetworkBehaviour
         }
 
     }
-    private static void InitialSetup(NetworkCue networkCue){
-        for (int i = 0; i < baseObjs.Length; i++)
-        {
-             baseObjs[i].transform.position=basessPos[i];
-             baseObjs[i].transform.rotation=basessRot[i];
-        }
+    // private static void InitialSetup(NetworkCue networkCue){
+    //     for (int i = 0; i < baseObjs.Length; i++)
+    //     {
+    //          baseObjs[i].transform.position=basessPos[i];
+    //          baseObjs[i].transform.rotation=basessRot[i];
+    //     }
 
-        for (int i = 0; i < verticalObjs.Length; i++)
-        {
-            verticalObjs[i].transform.position=verticalssPos[i];
-             verticalObjs[i].transform.rotation=verticalssRot[i];
-        }
-        for (int i = 0; i < horizontalObjs.Length; i++)
-        {
-            horizontalObjs[i].transform.position=horizontalPos[i];
-             horizontalObjs[i].transform.rotation=horizontalRot[i];
-        }
-        for(int i=0;i<4;i++){
-            baseSnapZones[i].enabled=false;
-            verticalSnapZones[i].enabled=false;
-            horizontalLowerZones[i,0].enabled=false;
-            horizontalLowerZones[i,1].enabled=false;
-            horizontalMiddleZones[i,0].enabled=false;
-            horizontalMiddleZones[i,1].enabled=false;
-                bases[i].SetActive(false);
+    //     for (int i = 0; i < verticalObjs.Length; i++)
+    //     {
+    //         verticalObjs[i].transform.position=verticalssPos[i];
+    //          verticalObjs[i].transform.rotation=verticalssRot[i];
+    //     }
+    //     for (int i = 0; i < horizontalObjs.Length; i++)
+    //     {
+    //         horizontalObjs[i].transform.position=horizontalPos[i];
+    //          horizontalObjs[i].transform.rotation=horizontalRot[i];
+    //     }
+    //     for(int i=0;i<4;i++){
+    //         baseSnapZones[i].enabled=false;
+    //         verticalSnapZones[i].enabled=false;
+    //         horizontalLowerZones[i,0].enabled=false;
+    //         horizontalLowerZones[i,1].enabled=false;
+    //         horizontalMiddleZones[i,0].enabled=false;
+    //         horizontalMiddleZones[i,1].enabled=false;
+    //             bases[i].SetActive(false);
 
-                verticals[i].SetActive(false);
+    //             verticals[i].SetActive(false);
 
-                horizontalLowers[i].SetActive(false);
+    //             horizontalLowers[i].SetActive(false);
 
-                horizontalMiddles[i].SetActive(false);
-        }
-        for (int i = 0; i < 16; i++)
-        {
-            parentCups[i].transform.localPosition=parentCupPos[i] ;
-            parentCups[i].transform.localRotation=parentCupRot[i] ;
-            childCups[i].transform.localPosition=childCupPos[i] ;
-            childCups[i].transform.localRotation=childCupRot[i] ;
-        }
+    //             horizontalMiddles[i].SetActive(false);
+    //     }
+    //     for (int i = 0; i < 16; i++)
+    //     {
+    //         parentCups[i].transform.localPosition=parentCupPos[i] ;
+    //         parentCups[i].transform.localRotation=parentCupRot[i] ;
+    //         childCups[i].transform.localPosition=childCupPos[i] ;
+    //         childCups[i].transform.localRotation=childCupRot[i] ;
+    //     }
 
-        if (routine != null)
-        {
-            networkCue.StopCoroutine(routine);
-            routine = null;
-        }
-        routine=networkCue.StartCoroutine(networkCue.Exercise1());
+    //     if (routine != null)
+    //     {
+    //         networkCue.StopCoroutine(routine);
+    //         routine = null;
+    //     }
+    //     routine=networkCue.StartCoroutine(networkCue.Exercise1());
 
-    }
+    // }
     public override void Spawned()
     {
         base.Spawned();
@@ -396,15 +395,15 @@ public class NetworkCue : NetworkBehaviour
         StartCoroutine(Exercise1());
         }
     }
-    static IEnumerator  ReloadScene(NetworkRunner runner)
-    {
-        // nrunner.SetActiveScene(SceneManager.GetSceneByName("LoadingScene").buildIndex);
-        runner.Shutdown();
-        yield return new WaitUntil(() => (runner.IsShutdown));
-        Scene scene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(scene.name);
-        yield return null;
-    }
+    // static IEnumerator  ReloadScene(NetworkRunner runner)
+    // {
+    //     // nrunner.SetActiveScene(SceneManager.GetSceneByName("LoadingScene").buildIndex);
+    //     runner.Shutdown();
+    //     yield return new WaitUntil(() => (runner.IsShutdown));
+    //     Scene scene = SceneManager.GetActiveScene();
+    //     SceneManager.LoadScene(scene.name);
+    //     yield return null;
+    // }
 
 
 }
