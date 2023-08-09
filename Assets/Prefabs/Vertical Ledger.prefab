@@ -675,7 +675,6 @@ GameObject:
   - component: {fileID: 6658898043696471368}
   - component: {fileID: 5001766187259208849}
   - component: {fileID: 2561858073520191619}
-  - component: {fileID: 7819095750196694034}
   - component: {fileID: 237959482552772376}
   m_Layer: 0
   m_Name: Cup 1
@@ -943,34 +942,6 @@ MonoBehaviour:
   randomizePitch: 1
   minPitch: 0.8
   maxPitch: 1.2
---- !u!114 &7819095750196694034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2423069002897315907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!82 &237959482552772376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1416,7 +1387,6 @@ GameObject:
   - component: {fileID: 2588712831231460786}
   - component: {fileID: 5500016555951855985}
   - component: {fileID: 3069798520968040333}
-  - component: {fileID: 2177297989155488308}
   - component: {fileID: 2245857350904905990}
   m_Layer: 0
   m_Name: Cup 3
@@ -1684,34 +1654,6 @@ MonoBehaviour:
   randomizePitch: 1
   minPitch: 0.8
   maxPitch: 1.2
---- !u!114 &2177297989155488308
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3352945232397329475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!82 &2245857350904905990
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2667,7 +2609,6 @@ GameObject:
   - component: {fileID: 5270342415610210617}
   - component: {fileID: 2663958247804654849}
   - component: {fileID: 4842707984040110010}
-  - component: {fileID: 2333897616518737209}
   - component: {fileID: 8075690363371858788}
   m_Layer: 0
   m_Name: Cup 4
@@ -2935,34 +2876,6 @@ MonoBehaviour:
   randomizePitch: 1
   minPitch: 0.8
   maxPitch: 1.2
---- !u!114 &2333897616518737209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6955384766860011259}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!82 &8075690363371858788
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3566,7 +3479,6 @@ GameObject:
   - component: {fileID: 251696487595186413}
   - component: {fileID: 5681241570165492963}
   - component: {fileID: 7932376857330758366}
-  - component: {fileID: 5042652315821116892}
   - component: {fileID: 1111825730510580006}
   m_Layer: 0
   m_Name: Cup 2
@@ -3834,34 +3746,6 @@ MonoBehaviour:
   randomizePitch: 1
   minPitch: 0.8
   maxPitch: 1.2
---- !u!114 &5042652315821116892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8122388939323743221}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1710889294, guid: e725a070cec140c4caffb81624c8c787, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interpolationDataSource: 0
-  InterpolationSpace: 0
-  InterpolationTarget: {fileID: 0}
-  InterpolateErrorCorrection: 1
-  InterpolatedErrorCorrectionSettings:
-    MinRate: 3.3
-    MaxRate: 10
-    PosBlendStart: 0.25
-    PosBlendEnd: 1
-    PosMinCorrection: 0.025
-    PosTeleportDistance: 2
-    RotBlendStart: 0.1
-    RotBlendEnd: 0.5
-    RotTeleportRadians: 1.5
-  UseLegacySharedModeInterpolation: 0
-  TargetInterpolationDelay: 0.03
 --- !u!82 &1111825730510580006
 AudioSource:
   m_ObjectHideFlags: 0
