@@ -23,8 +23,7 @@ public class LookAtEachOther : MonoBehaviour
             // Rotate the target objsect to look at this object
             obj2.transform.rotation = Quaternion.LookRotation(direction);
             obj2.transform.localRotation *= Quaternion.Euler(-90f, 0, 0);
-            horizontal.transform.position=(obj1.transform.position+obj2.transform.position)/2;
-            horizontal.transform.rotation=Quaternion.LookRotation(direction);
+            horizontal.transform.SetPositionAndRotation((obj1.transform.position+obj2.transform.position)/2, Quaternion.LookRotation(direction));
             horizontal.transform.rotation*=Quaternion.Euler(0,90f,0);
 
         }
