@@ -20,8 +20,8 @@ public class NetworkRunnerHandler : MonoBehaviour
     // public NetworkCue networkCue;
     void Start()
     {
-        region=PlayerPrefs.GetString("RegionName");
-        sessionName=PlayerPrefs.GetString("SessionName");
+        // region=PlayerPrefs.GetString("RegionName");
+        // sessionName=PlayerPrefs.GetString("SessionName");
         if (networkRunner == null)
         {
             networkRunner = Instantiate(networkRunnerPrefab);
@@ -60,7 +60,7 @@ public class NetworkRunnerHandler : MonoBehaviour
             SessionName = sessionName,
             Initialized = initialized,
             SceneManager = sceneManager,
-            // CustomPhotonAppSettings=appSettings
+            CustomPhotonAppSettings=appSettings
         });
     }
 

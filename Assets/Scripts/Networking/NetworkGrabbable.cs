@@ -86,7 +86,7 @@ public class NetworkGrabbable : NetworkBehaviour
     private void ObjectGrabbed(SG_Interactable obj1, SG_GrabScript obj2)
     {
         objGrabbed = true;
-        // if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
+        if(!nobj.HasStateAuthority) ReqAuthorithy(nobj);
         // nobj.RequestStateAuthority();
     }
     private void ObjectReleased(SG_Interactable obj1, SG_GrabScript obj2)
