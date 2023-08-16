@@ -25,5 +25,5 @@ Material:
     m_Floats:
     - _RimPower: 3.9
     m_Colors:
-    - _Color: {r: 0.7924528, g: 0.055322148, b: 0.47630152, a: 1}
+    - _Color: {r: 0.054901946, g: 0.7921569, b: 0.08141975, a: 1}
   m_BuildTextureStacks: []

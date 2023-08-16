@@ -5,6 +5,7 @@ using TMPro;
 // using UltimateXR.Manipulation;
 using Interhaptics.Utils;
 using Interhaptics;
+using SG;
 public class Digital_MT : MonoBehaviour
 {
 
@@ -23,18 +24,22 @@ public class Digital_MT : MonoBehaviour
     [System.NonSerialized]
     public float measuredDist, maxDist;
 
-    // private UxrGrabbableObject holderGrab;
-    // private UxrGrabbableObject boxGrab;
+    private SG_Grabable holderGrab;
+    private SG_Grabable boxGrab;
     private float velocity;
-    private bool holderRel;
+    public bool holderRel;
     void Start()
     {
-        // holderGrab = holder.GetComponent<UxrGrabbableObject>();
-        // boxGrab = box.GetComponent<UxrGrabbableObject>();
+        holderGrab = holder.GetComponent<SG_SimpleDrawer>();
+        boxGrab = box.GetComponent<SG_Grabable>();
         // boxGrab.Grabbed += OnBoxGrabbed;
         // boxGrab.Released+=OnBoxReleased;
         // holderGrab.Released += OnHolderReleased;
         // holderGrab.Grabbed += OnHolderGrabbed;
+           holderGrab.ObjectGrabbed.AddListener(HolderGrabbed);
+        holderGrab.ObjectReleased.AddListener(HolderReleased);
+        boxGrab.ObjectGrabbed.AddListener(BoxGrabbed);
+        boxGrab.ObjectReleased.AddListener(BoxReleased);
         scaleChange = new Vector3(1, 1, 1);
         maxDist = 120;
 
@@ -146,7 +151,7 @@ public class Digital_MT : MonoBehaviour
 
         float lerpSpeed = Mathf.Lerp(0.05f, 1f, distanceRatio); // Adjust the lerp speed based on the distance ratio
 
-        Vector3 startPosition = new Vector3(0, 0, 0); // Define the start position for the holder
+        Vector3 startPosition = new Vector3(1, 0, 0); // Define the start position for the holder
 
         Vector3 clampedPosition = Vector3.Lerp(holder.transform.localPosition, startPosition, lerpSpeed);
 
@@ -160,6 +165,27 @@ public class Digital_MT : MonoBehaviour
     }
 
 
+public void HolderGrabbed(SG_Interactable sgGrab,SG_GrabScript sgScript){
+        Debug.Log("Holder Grabbed");
+      holderRel=false;
+    }
 
+    public void HolderReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+        Debug.Log("Holder Released");
+               holderRel=true;
+
+    }
+
+    public void BoxGrabbed(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+
+        
+    }
+    public void BoxReleased(SG_Interactable sgGrab, SG_GrabScript sgScript)
+    {
+    
+
+    }
 
 }
